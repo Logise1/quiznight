@@ -594,13 +594,13 @@
     "correct": 1
   },
   {
-    "type": "cultura",
+    "type": "bala",
     "question": "¿En qué año cayó el Muro de Berlín?",
     "options": ["1987", "1991", "1989", "1990"],
     "correct": 2
   },
   {
-    "type": "bala",
+    "type": "cultura",
     "question": "¿Cuánto es 8 + 2?",
     "options": ["12", "9", "10", "8"],
     "correct": 2
@@ -892,5 +892,3767 @@
     "question": "¿Qué instrumento musical tiene teclas blancas y negras?",
     "options": ["Guitarra", "Violín", "Piano", "Flauta"],
     "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 10 x 5?",
+    "options": ["50", "15", "5", "500"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso físico desarrolló la Teoría de la Relatividad General?",
+    "options": ["Isaac Newton", "Niels Bohr", "Albert Einstein", "Galileo Galilei"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal es conocido por su caparazón?",
+    "options": ["Serpiente", "Tortuga", "Lobo", "Pez"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el gas principal en la composición de la atmósfera terrestre?",
+    "options": ["Oxígeno", "Dióxido de carbono", "Nitrógeno", "Argón"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usamos para comer sopa?",
+    "options": ["Cuchillo", "Tenedor", "Cuchara", "Palillos"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién pintó el famoso fresco 'La Creación de Adán' en la Capilla Sixtina?",
+    "options": ["Leonardo da Vinci", "Rafael", "Miguel Ángel", "Donatello"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántas estaciones tiene el año en el hemisferio norte?",
+    "options": ["2", "4", "3", "5"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué ciudad se encuentra la sede principal de la ONU?",
+    "options": ["Ginebra", "Londres", "Nueva York", "París"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color resulta de mezclar azul y amarillo?",
+    "options": ["Rojo", "Naranja", "Verde", "Morado"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre del protagonista de 'Don Quijote de la Mancha'?",
+    "options": ["Sancho Panza", "Dulcinea", "Alonso Quijano", "Rocinante"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número es impar?",
+    "options": ["4", "10", "7", "2"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué océano es el más grande del mundo?",
+    "options": ["Atlántico", "Índico", "Pacífico", "Ártico"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué parte de la planta está bajo tierra?",
+    "options": ["Hoja", "Tallo", "Flor", "Raíz"],
+    "correct": 3
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año se disolvió la Unión Soviética?",
+    "options": ["1989", "1991", "1995", "1985"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal hace 'Quiquiriquí'?",
+    "options": ["Pato", "Gallo", "Cerdo", "Vaca"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué vitamina se produce cuando la piel se expone a la luz solar?",
+    "options": ["Vitamina A", "Vitamina B12", "Vitamina C", "Vitamina D"],
+    "correct": 3
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es la capital de Italia?",
+    "options": ["Milán", "Roma", "Venecia", "Nápoles"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién es el autor de 'El Viejo y el Mar'?",
+    "options": ["F. Scott Fitzgerald", "Ernest Hemingway", "William Faulkner", "Mark Twain"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color es el cielo en un día despejado?",
+    "options": ["Gris", "Blanco", "Azul", "Rojo"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cómo se llama la fuerza que nos atrae hacia el centro de la Tierra?",
+    "options": ["Fricción", "Gravedad", "Magnetismo", "Inercia"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué es 12 dividido por 3?",
+    "options": ["3", "4", "6", "9"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué país se originó la pizza?",
+    "options": ["España", "Grecia", "Italia", "Francia"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número sigue a 10?",
+    "options": ["9", "12", "11", "100"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué instrumento se utiliza para medir la temperatura?",
+    "options": ["Barómetro", "Termómetro", "Anemómetro", "Higrómetro"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué comes en el desayuno?",
+    "options": ["Cena", "Bocadillo", "Desayuno", "Almuerzo"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el primer presidente de los Estados Unidos?",
+    "options": ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué palabra rima con 'queso'?",
+    "options": ["Mesa", "Gato", "Perro", "Juego"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el metal más abundante en la corteza terrestre?",
+    "options": ["Hierro", "Aluminio", "Cobre", "Oro"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos días tiene el mes de febrero en un año no bisiesto?",
+    "options": ["29", "28", "30", "31"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso edificio en Londres tiene un reloj de campana conocido como Big Ben?",
+    "options": ["Palacio de Buckingham", "Torre de Londres", "Palacio de Westminster", "Catedral de San Pablo"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal es el mejor amigo del hombre?",
+    "options": ["Gato", "Caballo", "Perro", "Pez"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué río atraviesa la ciudad de El Cairo?",
+    "options": ["Éufrates", "Tigris", "Nilo", "Ganges"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Si tengo dos manzanas y me como una, ¿cuántas me quedan?",
+    "options": ["3", "1", "0", "2"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Australia?",
+    "options": ["Sídney", "Melbourne", "Canberra", "Perth"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usamos para cepillarnos los dientes?",
+    "options": ["Peine", "Cepillo de dientes", "Cuchara", "Goma"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cómo se llama la unidad básica de la herencia genética?",
+    "options": ["Célula", "Proteína", "Gen", "Tejido"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para cortar papel?",
+    "options": ["Cuchara", "Tijeras", "Lápiz", "Martillo"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué instrumento toca Yo-Yo Ma?",
+    "options": ["Violín", "Piano", "Violonchelo", "Flauta"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos lados tiene un triángulo?",
+    "options": ["2", "4", "3", "5"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre del famoso detective creado por Arthur Conan Doyle?",
+    "options": ["Hércules Poirot", "Sherlock Holmes", "Miss Marple", "Auguste Dupin"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué día de la semana es hoy si mañana es sábado?",
+    "options": ["Lunes", "Viernes", "Domingo", "Jueves"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué país se conoce como la 'Tierra del Sol Naciente'?",
+    "options": ["China", "Corea del Sur", "Japón", "Vietnam"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal relincha?",
+    "options": ["Burro", "Caballo", "Vaca", "Pato"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió 'La Odisea' y 'La Ilíada'?",
+    "options": ["Virgilio", "Sófocles", "Homero", "Platón"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color es opuesto al blanco?",
+    "options": ["Rojo", "Negro", "Gris", "Amarillo"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué siglo se desarrolló la Ilustración?",
+    "options": ["XV", "XVII", "XVIII", "XX"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué parte del cuerpo humano bombea sangre?",
+    "options": ["Pulmón", "Estómago", "Corazón", "Hígado"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre científico del ser humano?",
+    "options": ["Homo erectus", "Homo habilis", "Homo sapiens", "Australopithecus"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número es el resultado de 10 - 7?",
+    "options": ["2", "3", "4", "5"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué país se encuentra la Gran Barrera de Coral?",
+    "options": ["México", "Australia", "Brasil", "Indonesia"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se necesita para encender un fuego?",
+    "options": ["Agua", "Aire", "Tierra", "Hielo"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el primer hombre en pisar la Luna?",
+    "options": ["Yuri Gagarin", "Buzz Aldrin", "Neil Armstrong", "Michael Collins"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos meses tienen 31 días?",
+    "options": ["6", "7", "5", "8"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Marruecos?",
+    "options": ["Casablanca", "Marrakech", "Rabat", "Fez"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene rayas blancas y negras?",
+    "options": ["Leopardo", "Jirafa", "Cebra", "Tigre"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la sustancia más dura conocida en la Tierra?",
+    "options": ["Grafito", "Cuarzo", "Diamante", "Acero"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué comida es redonda y se hornea?",
+    "options": ["Ensalada", "Sopa", "Pan", "Jugo"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso dramaturgo inglés escribió 'Hamlet' y 'Romeo y Julieta'?",
+    "options": ["Christopher Marlowe", "Ben Jonson", "William Shakespeare", "George Bernard Shaw"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número es el doble de 8?",
+    "options": ["10", "16", "18", "4"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el puerto de origen del Titanic?",
+    "options": ["Liverpool", "Southampton", "Londres", "Belfast"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene una cola que usa para balancearse?",
+    "options": ["Vaca", "Mono", "Oso", "Pez"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de la India?",
+    "options": ["Bombay", "Bangalore", "Nueva Delhi", "Calcuta"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos años tiene un siglo?",
+    "options": ["10", "100", "1000", "50"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué nombre recibe el miedo a los espacios abiertos?",
+    "options": ["Claustrofobia", "Acrofobia", "Agorafobia", "Hidrofobia"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para barrer el suelo?",
+    "options": ["Aspiradora", "Mopa", "Escoba", "Fregona"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué planeta se conoce como el 'Planeta Rojo'?",
+    "options": ["Venus", "Marte", "Júpiter", "Saturno"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el opuesto de 'Caliente'?",
+    "options": ["Templado", "Húmedo", "Frío", "Seco"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el principal ingrediente del guacamole?",
+    "options": ["Tomate", "Aguacate", "Cebolla", "Maíz"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene cuernos grandes y vive en la nieve?",
+    "options": ["Conejo", "Reno", "Tigre", "Delfín"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso químico propuso la tabla periódica de los elementos?",
+    "options": ["Lavoisier", "Dalton", "Mendeléyev", "Bohr"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 9 + 1?",
+    "options": ["8", "11", "10", "91"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué tipo de arte representa 'La Gioconda' o 'Mona Lisa'?",
+    "options": ["Escultura", "Pintura", "Grabado", "Mosaico"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué mes tiene la Nochevieja?",
+    "options": ["Enero", "Noviembre", "Diciembre", "Febrero"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué país limita al norte con Estados Unidos y al sur con Guatemala y Belice?",
+    "options": ["Canadá", "Honduras", "México", "Colombia"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal maúlla?",
+    "options": ["Perro", "Gato", "Pájaro", "Serpiente"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Suecia?",
+    "options": ["Oslo", "Helsinki", "Estocolmo", "Copenhague"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para escribir con tinta?",
+    "options": ["Lápiz", "Bolígrafo", "Tiza", "Rotulador"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capa más externa de la Tierra?",
+    "options": ["Manto", "Núcleo externo", "Corteza", "Núcleo interno"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el primer día de la semana?",
+    "options": ["Martes", "Sábado", "Domingo", "Lunes"],
+    "correct": 3
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso compositor escribió la 'Novena Sinfonía'?",
+    "options": ["Mozart", "Beethoven", "Bach", "Vivaldi"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color es el resultado de mezclar rojo y azul?",
+    "options": ["Verde", "Naranja", "Morado", "Marrón"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año se firmó la Declaración de Independencia de los Estados Unidos?",
+    "options": ["1776", "1789", "1812", "1865"],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué vehículo se mueve sobre raíles?",
+    "options": ["Coche", "Avión", "Tren", "Barco"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el hueso más largo del cuerpo humano?",
+    "options": ["Tibia", "Fémur", "Peroné", "Húmero"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos días tiene un año normal?",
+    "options": ["360", "365", "366", "350"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué ciudad se conoce como la 'Ciudad Eterna'?",
+    "options": ["Atenas", "París", "Roma", "Venecia"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el opuesto de 'Mucho'?",
+    "options": ["Grande", "Pequeño", "Poco", "Rápido"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió el libro '1984'?",
+    "options": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "J.R.R. Tolkien"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene melena?",
+    "options": ["Cebra", "Tigre", "León", "Hiena"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Brasil?",
+    "options": ["Río de Janeiro", "São Paulo", "Brasilia", "Salvador"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué parte de la cara usamos para oler?",
+    "options": ["Ojos", "Boca", "Nariz", "Orejas"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué enfermedad erradicó la vacuna desarrollada por Edward Jenner?",
+    "options": ["Poliomielitis", "Sarampión", "Viruela", "Gripe"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿20 - 5?",
+    "options": ["10", "15", "25", "5"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿A qué familia de animales pertenecen los pandas?",
+    "options": ["Félidos", "Úrsidos", "Cánidos", "Mustélidos"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para abrigarse en invierno?",
+    "options": ["Chancletas", "Sombrero", "Bufanda", "Gafas"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año se hundió el RMS Titanic?",
+    "options": ["1910", "1912", "1914", "1916"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el nombre de la mascota de Sonic?",
+    "options": ["Tails", "Knuckles", "Shadow", "Amy"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué pintor holandés se cortó parte de su oreja?",
+    "options": ["Rembrandt", "Monet", "Van Gogh", "Vermeer"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántas alas tiene una mariposa?",
+    "options": ["2", "4", "6", "8"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Egipto?",
+    "options": ["Luxor", "Alejandría", "El Cairo", "Giza"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué tiene una cáscara dura?",
+    "options": ["Leche", "Nuez", "Agua", "Mantequilla"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el símbolo del elemento químico Sodio?",
+    "options": ["So", "Sd", "Na", "Ni"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Croac'?",
+    "options": ["Pato", "Rana", "Serpiente", "Perro"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué país se encuentra la antigua ciudad de Cartago?",
+    "options": ["Argelia", "Marruecos", "Túnez", "Libia"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color es el más cálido?",
+    "options": ["Azul", "Rojo", "Verde", "Blanco"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién compuso 'Las cuatro estaciones'?",
+    "options": ["Bach", "Mozart", "Vivaldi", "Handel"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos años tiene una década?",
+    "options": ["5", "10", "50", "100"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué cordillera separa Europa de Asia?",
+    "options": ["Alpes", "Pirineos", "Urales", "Cárpatos"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué fruta es grande y de color amarillo o verde?",
+    "options": ["Uva", "Melón", "Fresa", "Kiwi"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué instrumento usan los astrónomos para ver objetos lejanos?",
+    "options": ["Microscopio", "Telescopio", "Periscopio", "Binoculares"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para beber agua?",
+    "options": ["Plato", "Vaso", "Tenedor", "Cuchillo"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el libro sagrado del Islam?",
+    "options": ["La Biblia", "La Torá", "El Corán", "El Talmud"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 3 x 3?",
+    "options": ["6", "9", "12", "33"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso escultor creó 'El Pensador'?",
+    "options": ["Bernini", "Rodin", "Miguel Ángel", "Donatello"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué hace un coche?",
+    "options": ["Vuela", "Nada", "Conduce", "Salta"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué país se encuentra el volcán Fuji?",
+    "options": ["China", "Corea", "Japón", "Filipinas"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene ocho brazos?",
+    "options": ["Pez", "Calamar", "Pulpo", "Cangrejo"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Portugal?",
+    "options": ["Oporto", "Lisboa", "Coimbra", "Faro"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para dormir?",
+    "options": ["Silla", "Cama", "Mesa", "Lámpara"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué proceso convierte el dióxido de carbono en oxígeno por las plantas?",
+    "options": ["Respiración", "Transpiración", "Fotosíntesis", "Fermentación"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el opuesto de 'Lento'?",
+    "options": ["Pesado", "Rápido", "Tarde", "Despacio"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué batalla naval es famosa por la derrota de la Armada Invencible española?",
+    "options": ["Trafalgar", "Lepanto", "Batalla del Cabo Norte", "Batalla de Gravelinas"],
+    "correct": 3
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué estación del año viene después de la Primavera?",
+    "options": ["Invierno", "Otoño", "Verano", "Lluvia"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién es el autor de 'El Principito'?",
+    "options": ["Julio Verne", "Antoine de Saint-Exupéry", "Albert Camus", "Marcel Proust"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color es el más frío?",
+    "options": ["Rojo", "Naranja", "Azul", "Amarillo"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la moneda oficial de Japón?",
+    "options": ["Won", "Yuan", "Yen", "Dólar"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para ver de noche?",
+    "options": ["Linterna", "Radio", "Martillo", "Cubo"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué ciudad es conocida como la 'Venecia del Norte'?",
+    "options": ["Ámsterdam", "Brujas", "San Petersburgo", "Hamburgo"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 100 dividido entre 2?",
+    "options": ["25", "50", "10", "2"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el rey fundador del Imperio Inca?",
+    "options": ["Atahualpa", "Pachacútec", "Manco Cápac", "Túpac Amaru"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal vive en un nido?",
+    "options": ["Pez", "Pájaro", "Perro", "Vaca"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué planeta es el más cercano al Sol?",
+    "options": ["Venus", "Marte", "Mercurio", "Tierra"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué día es hoy si pasado mañana es martes?",
+    "options": ["Domingo", "Lunes", "Sábado", "Miércoles"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Rusia?",
+    "options": ["San Petersburgo", "Kiev", "Moscú", "Minsk"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usamos para beber café caliente?",
+    "options": ["Vaso", "Taza", "Plato", "Cubo"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cómo se llama el proceso de cambio de sólido a líquido?",
+    "options": ["Sublimación", "Evaporación", "Fusión", "Solidificación"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué hace un perro?",
+    "options": ["Maullar", "Ladrar", "Relinchar", "Graznar"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué dramaturgo griego escribió 'Edipo Rey'?",
+    "options": ["Esquilo", "Eurípides", "Sófocles", "Aristófanes"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el número más pequeño de un solo dígito (sin incluir cero)?",
+    "options": ["10", "0", "1", "2"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el líder del movimiento de independencia de la India?",
+    "options": ["Jawaharlal Nehru", "Indira Gandhi", "Mahatma Gandhi", "Muhammad Ali Jinnah"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué fruta es roja y tiene semillas dentro?",
+    "options": ["Plátano", "Manzana", "Limón", "Pera"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué país se encuentra la Gran Muralla China?",
+    "options": ["Japón", "India", "China", "Corea"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se necesita para viajar por mar?",
+    "options": ["Avión", "Tren", "Barco", "Moto"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué pintor se conoce por usar la técnica del 'puntillismo'?",
+    "options": ["Monet", "Seurat", "Cézanne", "Degas"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántas horas hay en medio día?",
+    "options": ["6", "12", "24", "48"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Canadá?",
+    "options": ["Toronto", "Montreal", "Vancouver", "Ottawa"],
+    "correct": 3
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene joroba?",
+    "options": ["Caballo", "Jirafa", "Camello", "Oso"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué científico formuló las tres leyes del movimiento?",
+    "options": ["Galileo", "Copérnico", "Newton", "Einstein"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué es 5 x 5?",
+    "options": ["10", "25", "50", "15"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué guerra civil fue la Batalla de Gettysburg?",
+    "options": ["Guerra de Secesión", "Guerra Civil Española", "Guerra de los Cien Años", "Guerra de Vietnam"],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el opuesto de 'Entrar'?",
+    "options": ["Subir", "Salir", "Saltar", "Quedarse"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el principal componente del gas natural?",
+    "options": ["Propano", "Butano", "Metano", "Etano"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para ver la televisión?",
+    "options": ["Mando a distancia", "Libro", "Cuchara", "Gafas"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué filósofo griego fue maestro de Platón?",
+    "options": ["Aristóteles", "Sócrates", "Heráclito", "Demócrito"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántas patas tiene un pájaro?",
+    "options": ["4", "2", "6", "0"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué país se encuentra la ciudad de Macao?",
+    "options": ["Corea del Sur", "Vietnam", "China", "Japón"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el número de la mala suerte en algunos países occidentales?",
+    "options": ["7", "13", "1", "10"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué personaje es el capitán del Nautilus en la obra de Julio Verne?",
+    "options": ["Phileas Fogg", "Capitán Ahab", "Capitán Nemo", "Michel Ardan"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se necesita para ver bien un microscopio?",
+    "options": ["Lupa", "Electricidad", "Telescopio", "Una muestra"],
+    "correct": 3
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año terminó la Primera Guerra Mundial?",
+    "options": ["1917", "1918", "1919", "1916"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el color de las hojas en otoño?",
+    "options": ["Verde", "Blanco", "Marrón/Rojo/Amarillo", "Azul"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el metal líquido a temperatura ambiente?",
+    "options": ["Bromo", "Sodio", "Mercurio", "Plomo"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 10 + 10?",
+    "options": ["10", "20", "100", "0"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué pintor español es famoso por sus relojes blandos?",
+    "options": ["Picasso", "Miró", "Dalí", "Goya"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal vive en el agua y tiene aletas?",
+    "options": ["Pájaro", "Perro", "Pez", "Mono"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Grecia?",
+    "options": ["Esparta", "Salónica", "Atenas", "Corinto"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántas veces se puede restar 1 de 10?",
+    "options": ["10", "1", "9", "Infinitas"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué se celebra el 4 de julio en EE. UU.?",
+    "options": ["Día de la Constitución", "Día de Acción de Gracias", "Día de la Independencia", "Día del Trabajo"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué fruta es un cítrico y de color naranja?",
+    "options": ["Manzana", "Plátano", "Naranja", "Uva"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué elemento tiene el símbolo 'Fe'?",
+    "options": ["Flúor", "Fósforo", "Hierro", "Fermio"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para protegerte del sol?",
+    "options": ["Guantes", "Sombrero", "Botas", "Abrigo"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre del famoso caballo de Alejandro Magno?",
+    "options": ["Pegaso", "Bucéfalo", "Incitato", "Palomo"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el opuesto de 'Adelante'?",
+    "options": ["Izquierda", "Atrás", "Rápido", "Lento"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año se disolvió el Imperio Romano de Occidente?",
+    "options": ["395 d.C.", "476 d.C.", "1453 d.C.", "1806 d.C."],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Bee'?",
+    "options": ["Vaca", "Oveja", "Perro", "Gato"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué compositor es conocido por el sobrenombre de 'El Cisne de Pesaro'?",
+    "options": ["Verdi", "Puccini", "Rossini", "Bellini"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos son 10 - 2?",
+    "options": ["7", "8", "9", "6"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Alemania?",
+    "options": ["Múnich", "Hamburgo", "Berlín", "Fráncfort"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para cocinar?",
+    "options": ["Cama", "Mesa", "Olla", "Silla"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué filósofo escribió 'Así habló Zaratustra'?",
+    "options": ["Kant", "Hegel", "Nietzsche", "Schopenhauer"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número es el resultado de 3 + 4?",
+    "options": ["6", "7", "8", "9"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué océano se encuentra entre Europa y América?",
+    "options": ["Pacífico", "Índico", "Atlántico", "Ártico"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene el cuello más largo?",
+    "options": ["Elefante", "Jirafa", "Tigre", "Oso"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año llegó Cristóbal Colón a América?",
+    "options": ["1488", "1492", "1501", "1519"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué comes en el postre?",
+    "options": ["Carne", "Pescado", "Helado", "Sopa"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué artista cortó su oreja izquierda?",
+    "options": ["Degas", "Gauguin", "Van Gogh", "Cézanne"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos colores tiene el arcoíris?",
+    "options": ["5", "7", "6", "8"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Tailandia?",
+    "options": ["Hanói", "Kuala Lumpur", "Bangkok", "Singapur"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué objeto te pones en la cabeza?",
+    "options": ["Guantes", "Calcetines", "Sombrero", "Zapatos"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el primer Nobel de Literatura de América Latina?",
+    "options": ["Gabriel García Márquez", "Pablo Neruda", "Gabriela Mistral", "Mario Vargas Llosa"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 15 dividido entre 5?",
+    "options": ["3", "5", "10", "1"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso astrónomo formuló la ley de la gravitación universal?",
+    "options": ["Copérnico", "Kepler", "Newton", "Ptolomeo"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color es el de las ambulancias en algunos países?",
+    "options": ["Negro", "Amarillo", "Rojo", "Azul"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué museo se encuentra 'Las Meninas'?",
+    "options": ["El Louvre", "Museo del Prado", "Metropolitan", "Tate Modern"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal es un reptil y no tiene patas?",
+    "options": ["Lagarto", "Cocodrilo", "Serpiente", "Tortuga"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cómo se llama el estrecho que separa Asia de América del Norte?",
+    "options": ["Estrecho de Magallanes", "Estrecho de Gibraltar", "Estrecho de Bering", "Canal de Panamá"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para abrir una puerta?",
+    "options": ["Llave", "Martillo", "Cuchillo", "Lápiz"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Sudáfrica (administrativa)?",
+    "options": ["Ciudad del Cabo", "Johannesburgo", "Pretoria", "Durban"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número es el doble de 10?",
+    "options": ["5", "10", "20", "30"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el dios romano del mar?",
+    "options": ["Júpiter", "Marte", "Neptuno", "Plutón"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué haces en una piscina?",
+    "options": ["Correr", "Nadar", "Comer", "Dormir"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre del protagonista de 'Moby Dick'?",
+    "options": ["Capitán Nemo", "Ismael", "Capitán Ahab", "Heathcliff"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué mes viene antes de Mayo?",
+    "options": ["Marzo", "Abril", "Junio", "Julio"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué país tiene forma de bota?",
+    "options": ["Grecia", "Italia", "España", "Portugal"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal come bambú?",
+    "options": ["León", "Cebra", "Panda", "Tigre"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año se lanzó el primer satélite artificial, Sputnik 1?",
+    "options": ["1955", "1957", "1961", "1969"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué es más pequeño, un ratón o un gato?",
+    "options": ["Gato", "Perro", "Ratón", "Vaca"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió la ópera 'Carmen'?",
+    "options": ["Verdi", "Wagner", "Bizet", "Puccini"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el nombre del protagonista de 'Toy Story'?",
+    "options": ["Buzz", "Woody", "Rex", "Slinky"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué cordillera atraviesa América del Sur de norte a sur?",
+    "options": ["Rocosas", "Alpes", "Andes", "Himalaya"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué es 10 menos 4?",
+    "options": ["4", "6", "14", "10"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué elemento tiene el símbolo 'O' y es esencial para la vida?",
+    "options": ["Oro", "Osmio", "Oxígeno", "Plata"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usamos para ver la hora en la muñeca?",
+    "options": ["Anillo", "Pulsera", "Reloj de pulsera", "Collar"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el científico que formuló la teoría de la evolución por selección natural?",
+    "options": ["Gregor Mendel", "Charles Darwin", "Louis Pasteur", "Isaac Newton"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿De qué color son las cerezas?",
+    "options": ["Azules", "Amarillas", "Rojas", "Verdes"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Vietnam?",
+    "options": ["Ciudad Ho Chi Minh", "Da Nang", "Hanói", "Hué"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos días tiene un lustro?",
+    "options": ["10", "5", "50", "100"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué obra de arte es conocida por la frase 'Punto final al Renacimiento'?",
+    "options": ["La última cena", "La piedad", "La Escuela de Atenas", "El David"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal vive en el mar y tiene diez patas?",
+    "options": ["Pez", "Foca", "Cangrejo", "Delfín"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué país se conoce como 'el país del hielo y el fuego'?",
+    "options": ["Noruega", "Canadá", "Islandia", "Groenlandia"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué es lo opuesto de 'Mojado'?",
+    "options": ["Caliente", "Frío", "Seco", "Líquido"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el primer emperador romano?",
+    "options": ["Julio César", "Nerón", "Augusto", "Constantino"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número sigue en la serie: 5, 10, 15...",
+    "options": ["18", "20", "25", "30"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Nueva Zelanda?",
+    "options": ["Auckland", "Christchurch", "Wellington", "Queenstown"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para hacer la compra?",
+    "options": ["Mochila", "Cesta/Carrito", "Libro", "Botella"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué poeta escribió 'Veinte poemas de amor y una canción desesperada'?",
+    "options": ["Federico García Lorca", "Antonio Machado", "Pablo Neruda", "Octavio Paz"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color es la zanahoria?",
+    "options": ["Verde", "Rojo", "Naranja", "Amarillo"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el punto de ebullición del agua a nivel del mar en grados Celsius?",
+    "options": ["0°C", "50°C", "100°C", "212°C"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal vive en un árbol y come bellotas?",
+    "options": ["Conejo", "Ardilla", "Topo", "Pájaro"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el componente principal del vidrio?",
+    "options": ["Caliza", "Feldespato", "Sílice (arena)", "Arcilla"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántas décadas hay en un siglo?",
+    "options": ["5", "10", "20", "100"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso guitarrista fue conocido como 'Mano Lenta'?",
+    "options": ["Jimi Hendrix", "Eric Clapton", "B.B. King", "Jimmy Page"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué es 10 dividido entre 10?",
+    "options": ["0", "1", "10", "100"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué enfermedad causó la pandemia de la 'Peste Negra' en la Edad Media?",
+    "options": ["Tifus", "Cólera", "Peste bubónica", "Gripe"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué haces en el cine?",
+    "options": ["Comer", "Bañarte", "Ver películas", "Dormir"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre del famoso físico que desarrolló la ecuación $E=mc^2$?",
+    "options": ["Newton", "Heisenberg", "Einstein", "Bohr"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Guau'?",
+    "options": ["Gato", "Perro", "Vaca", "Pato"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué país se encuentra la ciudad de Machu Picchu?",
+    "options": ["Ecuador", "Chile", "Perú", "Bolivia"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿De qué color es la nieve?",
+    "options": ["Transparente", "Blanca", "Gris", "Azul"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Finlandia?",
+    "options": ["Oslo", "Estocolmo", "Helsinki", "Copenhague"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para cortar carne?",
+    "options": ["Tenedor", "Cuchillo", "Cuchara", "Palillos"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué estructura se encuentra en el núcleo de casi todas las células?",
+    "options": ["Mitocondria", "Ribosoma", "Núcleo", "Vacuola"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué objeto te pones en los pies?",
+    "options": ["Sombrero", "Guantes", "Zapatos", "Bufanda"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió 'Crimen y Castigo'?",
+    "options": ["Tolstói", "Dostoievski", "Chéjov", "Gogol"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos son 5 + 2?",
+    "options": ["6", "7", "8", "9"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué animal es conocido por tejer telarañas?",
+    "options": ["Hormiga", "Araña", "Mariposa", "Mosquito"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color es el de las hojas en verano?",
+    "options": ["Marrón", "Amarillo", "Verde", "Rojo"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué civilización construyó las pirámides de Giza?",
+    "options": ["Mesopotamia", "Romana", "Egipcia", "Griega"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número es el doble de 5?",
+    "options": ["2", "5", "10", "15"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el río más caudaloso del mundo?",
+    "options": ["Nilo", "Misisipi", "Amazonas", "Yangtsé"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal es un mamífero marino muy grande?",
+    "options": ["Tiburón", "Ballena", "Foca", "Pulpo"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué filósofo es famoso por la frase 'Solo sé que no sé nada'?",
+    "options": ["Platón", "Aristóteles", "Sócrates", "Diógenes"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para encender un cigarrillo?",
+    "options": ["Linterna", "Mechero/Fósforo", "Libro", "Vaso"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año se descubrió el Océano Pacífico por Vasco Núñez de Balboa?",
+    "options": ["1492", "1513", "1521", "1532"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántas patas tiene una mosca?",
+    "options": ["2", "4", "6", "8"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué pintor se conoce por 'El grito'?",
+    "options": ["Klimt", "Munch", "Schiele", "Picasso"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se necesita para viajar por aire?",
+    "options": ["Coche", "Tren", "Avión", "Barco"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Irlanda?",
+    "options": ["Edimburgo", "Cardiff", "Dublín", "Belfast"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el opuesto de 'Duro'?",
+    "options": ["Blando", "Fuerte", "Largo", "Corto"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué ciencia estudia los fósiles?",
+    "options": ["Arqueología", "Geología", "Paleontología", "Antropología"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 8 dividido entre 4?",
+    "options": ["1", "2", "3", "4"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre del famoso científico que desarrolló la teoría de la relatividad especial?",
+    "options": ["Planck", "Bohr", "Einstein", "Curie"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal es un marsupial y vive en Australia?",
+    "options": ["León", "Oso polar", "Canguro", "Panda"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año se coronó Napoleón Bonaparte como emperador?",
+    "options": ["1799", "1804", "1815", "1821"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué mes tiene la Semana Santa (generalmente)?",
+    "options": ["Noviembre", "Julio", "Marzo/Abril", "Diciembre"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Hungría?",
+    "options": ["Praga", "Viena", "Budapest", "Varsovia"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para medir una línea recta?",
+    "options": ["Balón", "Regla", "Libro", "Taza"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué personaje de Disney es un carpintero que crea a Pinocho?",
+    "options": ["Mickey", "Geppetto", "Donald", "Goofy"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color es la banana madura?",
+    "options": ["Verde", "Amarilla", "Roja", "Marrón"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el elemento químico más ligero?",
+    "options": ["Helio", "Oxígeno", "Hidrógeno", "Litio"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para cocinar en el horno?",
+    "options": ["Nevera", "Congelador", "Bandeja", "Microondas"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el primer Nobel de la Paz africano?",
+    "options": ["Nelson Mandela", "Desmond Tutu", "Kofi Annan", "Wangari Maathai"],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 12 + 3?",
+    "options": ["14", "15", "16", "17"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué pintor español es famoso por 'Los fusilamientos del 3 de mayo'?",
+    "options": ["Velázquez", "Goya", "El Greco", "Ribera"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué forma tiene un dado estándar?",
+    "options": ["Circular", "Cuadrada", "Cúbica", "Triangular"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el lago de agua dulce más grande por volumen?",
+    "options": ["Lago Victoria", "Lago Superior", "Lago Baikal", "Gran Lago Salado"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal nada en el mar y tiene un cuerno en la cabeza?",
+    "options": ["Delfín", "Narval", "Tiburón", "Pez espada"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué instrumento musical tiene seis cuerdas y se toca con púa o dedos?",
+    "options": ["Violín", "Ukelele", "Guitarra", "Bajo"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el opuesto de 'Encendido'?",
+    "options": ["Rápido", "Lento", "Apagado", "Frío"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué elemento tiene el símbolo 'Au'?",
+    "options": ["Plata", "Aluminio", "Oro", "Cobre"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué parte del cuerpo humano está unida al brazo?",
+    "options": ["Pie", "Mano", "Rodilla", "Oreja"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió 'La metamorfosis'?",
+    "options": ["Goethe", "Kafka", "Hesse", "Mann"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para encender un fuego en una chimenea?",
+    "options": ["Agua", "Fósforos/Mechero", "Hielo", "Libro"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Kenia?",
+    "options": ["Mombasa", "Dar es-Salam", "Nairobi", "Adís Abeba"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número es el triple de 3?",
+    "options": ["6", "9", "12", "15"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso edificio de Roma fue un templo dedicado a todos los dioses?",
+    "options": ["Coliseo", "Foro Romano", "Panteón", "Basílica de San Pedro"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal es grande y tiene un cuerno en la nariz?",
+    "options": ["Hipopótamo", "Rinoceronte", "Elefante", "Jirafa"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién dirigió la película 'Pulp Fiction'?",
+    "options": ["Martin Scorsese", "Quentin Tarantino", "Steven Spielberg", "Stanley Kubrick"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué mes es el séptimo del año?",
+    "options": ["Junio", "Julio", "Agosto", "Septiembre"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la enzima que ayuda a digerir el almidón?",
+    "options": ["Lipasa", "Pepsina", "Amilasa", "Sacarasa"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usamos para pagar en una tienda?",
+    "options": ["Monedas/Billetes", "Libro", "Vaso", "Reloj"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre del famoso físico que desarrolló la mecánica cuántica?",
+    "options": ["Newton", "Bohr", "Planck", "Curie"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color resulta de mezclar rojo y blanco?",
+    "options": ["Morado", "Rosa", "Marrón", "Verde"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el dios griego del sol?",
+    "options": ["Zeus", "Apolo", "Hades", "Poseidón"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para pintar sobre un lienzo?",
+    "options": ["Tiza", "Cuchillo", "Pincel", "Lápiz"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué país se encuentra la ciudad de Liverpool?",
+    "options": ["Escocia", "Gales", "Inglaterra", "Irlanda"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el opuesto de 'Pesado'?",
+    "options": ["Lento", "Rápido", "Ligero", "Grande"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso dramaturgo griego escribió 'Las Nubes'?",
+    "options": ["Esquilo", "Sófocles", "Eurípides", "Aristófanes"],
+    "correct": 3
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 100 - 50?",
+    "options": ["40", "50", "60", "70"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Argentina?",
+    "options": ["Córdoba", "Rosario", "Buenos Aires", "Mendoza"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene ocho tentáculos?",
+    "options": ["Pez", "Medusa", "Pulpo", "Calamar"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la galaxia en la que se encuentra nuestro Sistema Solar?",
+    "options": ["Andrómeda", "Triángulo", "Vía Láctea", "Remolino"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para abrir una lata?",
+    "options": ["Cuchillo", "Abrelatas", "Tenedor", "Cuchara"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el líder soviético durante la Crisis de los Misiles de Cuba?",
+    "options": ["Stalin", "Gorbachev", "Kruschev", "Brezhnev"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Hiii Hiii' (risa)?",
+    "options": ["Lobo", "Hiena", "Perro", "Mono"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el único mamífero capaz de volar?",
+    "options": ["Ardilla voladora", "Murciélago", "Pterodáctilo", "Petauro del azúcar"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántas horas tiene un día?",
+    "options": ["12", "24", "48", "60"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué gas se utiliza para la anestesia general?",
+    "options": ["Oxígeno", "Dióxido de carbono", "Óxido nitroso", "Nitrógeno"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué parte de la planta es la flor?",
+    "options": ["Raíz", "Tallo", "Flor", "Hoja"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién pintó 'La última cena' (fresco de Milán)?",
+    "options": ["Miguel Ángel", "Rafael", "Leonardo da Vinci", "Tiziano"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿De qué color es el cielo por la noche?",
+    "options": ["Azul", "Blanco", "Negro", "Amarillo"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Corea del Sur?",
+    "options": ["Busan", "Incheon", "Seúl", "Daegu"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para barrer las hojas en el jardín?",
+    "options": ["Escoba", "Pala", "Rastrillo", "Cuchara"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué escritor es famoso por 'El viejo y el mar' y 'Por quién doblan las campanas'?",
+    "options": ["Scott Fitzgerald", "John Steinbeck", "Ernest Hemingway", "William Faulkner"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número es impar y está entre 1 y 5?",
+    "options": ["2", "3", "4", "6"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso monumento fue construido en honor a la diosa Atenea?",
+    "options": ["Coliseo", "Partenón", "Acrópolis", "Templo de Zeus"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se necesita para ver el agua hirviendo?",
+    "options": ["Frío", "Fuego/Calor", "Hielo", "Viento"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el órgano que filtra la sangre y produce bilis?",
+    "options": ["Corazón", "Riñón", "Hígado", "Estómago"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número es el resultado de 10 - 1?",
+    "options": ["8", "9", "11", "10"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el compositor de la ópera 'El Barbero de Sevilla'?",
+    "options": ["Mozart", "Verdi", "Rossini", "Puccini"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene la capacidad de cambiar de color?",
+    "options": ["Perro", "Gato", "Camaleón", "Vaca"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Colombia?",
+    "options": ["Medellín", "Cali", "Bogotá", "Cartagena"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para limpiar el suelo mojado?",
+    "options": ["Escoba", "Aspiradora", "Fregona", "Mopa"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué metal se extrae principalmente del mineral bauxita?",
+    "options": ["Hierro", "Cobre", "Aluminio", "Plomo"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántas patas tiene un caballo?",
+    "options": ["2", "4", "6", "8"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el primer Nobel de la Paz?",
+    "options": ["Teddy Roosevelt", "Frédéric Passy", "Henri Dunant", "Martin Luther King Jr."],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué es 4 x 4?",
+    "options": ["8", "12", "16", "20"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el país más pequeño del mundo por área terrestre?",
+    "options": ["Mónaco", "Nauru", "Vaticano", "San Marino"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué te pones cuando llueve?",
+    "options": ["Gafas de sol", "Chaqueta impermeable", "Sandalias", "Gorra"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso matemático griego gritó '¡Eureka!'?",
+    "options": ["Pitágoras", "Euclides", "Arquímedes", "Tales de Mileto"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal vive en la sabana y tiene un cuello muy largo?",
+    "options": ["Elefante", "Jirafa", "Tigre", "Oso"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre del protagonista de 'El Señor de los Anillos'?",
+    "options": ["Gandalf", "Aragorn", "Frodo Bolsón", "Legolas"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color es el más oscuro?",
+    "options": ["Gris", "Blanco", "Negro", "Marrón"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué ciudad es conocida por albergar la torre CN?",
+    "options": ["Nueva York", "Chicago", "Toronto", "Vancouver"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 10 + 5?",
+    "options": ["5", "15", "20", "10"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre de la estrella más cercana a la Tierra (aparte del Sol)?",
+    "options": ["Sirio", "Alpha Centauri", "Próxima Centauri", "Polaris"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué parte de la cara usamos para besar?",
+    "options": ["Ojos", "Boca", "Nariz", "Frente"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió 'La Ilíada'?",
+    "options": ["Sófocles", "Eurípides", "Homero", "Virgilio"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal es una mascota pequeña y tiene bigotes?",
+    "options": ["Perro", "Gato", "Vaca", "Pato"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Chile?",
+    "options": ["Valparaíso", "Concepción", "Santiago", "Antofagasta"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para hacer ruido en una fiesta?",
+    "options": ["Libro", "Matraca/Silbato", "Vaso", "Reloj"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué cordillera es el techo del mundo?",
+    "options": ["Alpes", "Andes", "Himalaya", "Rocosas"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número es el triple de 5?",
+    "options": ["10", "15", "20", "25"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año se abolió la esclavitud en Estados Unidos?",
+    "options": ["1850", "1865", "1890", "1901"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal vive en la nieve y es blanco y negro?",
+    "options": ["Oso pardo", "Pingüino", "Cisne", "Delfín"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el fundador de la dinastía Ming en China?",
+    "options": ["Kublai Kan", "Hongwu", "Yongle", "Kangxi"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué día es hoy si ayer fue lunes?",
+    "options": ["Domingo", "Martes", "Miércoles", "Jueves"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué elemento químico tiene el símbolo 'Ca'?",
+    "options": ["Carbono", "Cobre", "Calcio", "Cadmio"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué es 100 dividido entre 10?",
+    "options": ["1", "10", "100", "1000"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué compositor es famoso por la 'Marcha Turca'?",
+    "options": ["Chopin", "Liszt", "Mozart", "Beethoven"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para cocinar en la sartén?",
+    "options": ["Cuchara", "Tenedor", "Aceite", "Vaso"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Países Bajos (legalmente)?",
+    "options": ["Róterdam", "Utrecht", "Ámsterdam", "La Haya"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene plumas?",
+    "options": ["Perro", "Pez", "Pájaro", "Serpiente"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió el famoso musical 'Los Miserables'?",
+    "options": ["Alejandro Dumas", "Victor Hugo", "Émile Zola", "Gustave Flaubert"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué forma tiene una moneda?",
+    "options": ["Cuadrada", "Redonda", "Triangular", "Plana"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué vitamina previene el escorbuto?",
+    "options": ["Vitamina A", "Vitamina B1", "Vitamina C", "Vitamina K"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para ver en la oscuridad?",
+    "options": ["Espejo", "Lámpara", "Radio", "Taza"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año ocurrió el crack de la Bolsa de Nueva York?",
+    "options": ["1925", "1929", "1933", "1941"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es la mitad de 20?",
+    "options": ["5", "10", "40", "15"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué escritor creó el personaje de Drácula?",
+    "options": ["Mary Shelley", "Edgar Allan Poe", "Bram Stoker", "H.P. Lovecraft"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal es grande y tiene orejas grandes?",
+    "options": ["Ratón", "Elefante", "Serpiente", "Pez"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Perú?",
+    "options": ["Cuzco", "Arequipa", "Lima", "Trujillo"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para taparse en la cama?",
+    "options": ["Silla", "Manta", "Mesa", "Lámpara"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso director dirigió 'Psicosis' y 'Los pájaros'?",
+    "options": ["Orson Welles", "Stanley Kubrick", "Alfred Hitchcock", "Fritz Lang"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color es el más oscuro después del negro?",
+    "options": ["Rojo", "Azul oscuro", "Gris", "Blanco"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre del famoso detective creado por Agatha Christie?",
+    "options": ["Sherlock Holmes", "Hércules Poirot", "Miss Marple", "Philip Marlowe"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Oinc Oinc'?",
+    "options": ["Vaca", "Cerdo", "Pato", "Gallo"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué país es conocido por la Fiesta de la Cerveza (Oktoberfest)?",
+    "options": ["Austria", "Suiza", "Alemania", "Bélgica"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántas patas tiene un perro?",
+    "options": ["2", "4", "6", "8"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el metal más ligero?",
+    "options": ["Aluminio", "Magnesio", "Litio", "Titanio"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué es lo opuesto de 'Abierto'?",
+    "options": ["Rápido", "Lento", "Cerrado", "Grande"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso navegante dio la primera vuelta al mundo (aunque murió en el camino)?",
+    "options": ["Cristóbal Colón", "Vasco de Gama", "Fernando de Magallanes", "Juan Sebastián Elcano"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene una cola peluda y es pequeño?",
+    "options": ["Perro", "Gato", "Ratón", "Vaca"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Egipto?",
+    "options": ["Alejandría", "Lúxor", "El Cairo", "Giza"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para cocinar en la barbacoa?",
+    "options": ["Agua", "Fuego/Carbón", "Hielo", "Vaso"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió el libro 'Orgullo y Prejuicio'?",
+    "options": ["Hermanas Brontë", "Louisa May Alcott", "Jane Austen", "Virginia Woolf"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 5 x 2?",
+    "options": ["7", "10", "12", "52"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué instrumento se usa para medir la presión atmosférica?",
+    "options": ["Termómetro", "Barómetro", "Higrómetro", "Anemómetro"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal es una mascota y le gusta jugar?",
+    "options": ["Tiburón", "Perro", "Serpiente", "Araña"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué civilización inventó el papel y la pólvora?",
+    "options": ["India", "Romana", "China", "Griega"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos días tiene el mes de enero?",
+    "options": ["30", "31", "28", "29"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre de la famosa escultura de Miguel Ángel en la Basílica de San Pedro?",
+    "options": ["El David", "El Moisés", "La Piedad", "El Esclavo"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para barrer migas de la mesa?",
+    "options": ["Mopa", "Aspiradora", "Recogedor/Cepillo de mano", "Cuchara"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el gas noble más abundante en la atmósfera terrestre?",
+    "options": ["Neón", "Helio", "Argón", "Kriptón"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color es el resultado de mezclar verde y rojo (opuestos en el círculo cromático)?",
+    "options": ["Marrón", "Amarillo", "Azul", "Blanco"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue la primera mujer en el espacio?",
+    "options": ["Sally Ride", "Valentina Tereshkova", "Svetlana Savítskaya", "Kalpana Chawla"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué parte de la cara usamos para masticar?",
+    "options": ["Ojos", "Boca/Mandíbula", "Nariz", "Orejas"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Suecia?",
+    "options": ["Oslo", "Helsinki", "Estocolmo", "Copenhague"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos son 8 - 5?",
+    "options": ["2", "3", "4", "5"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué científico descubrió el radio y el polonio?",
+    "options": ["Niels Bohr", "Albert Einstein", "Marie Curie", "Nikola Tesla"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Cuac Cuac'?",
+    "options": ["Pájaro", "Pato", "Gallo", "Vaca"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué mar está entre Europa y África?",
+    "options": ["Mar Rojo", "Mar Negro", "Mar Mediterráneo", "Mar Caspio"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para ver en el teatro?",
+    "options": ["Linterna", "Prismáticos", "Gafas de sol", "Reloj"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el autor de 'El Extranjero'?",
+    "options": ["Jean-Paul Sartre", "Albert Camus", "Franz Kafka", "Marcel Proust"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el opuesto de 'Dentro'?",
+    "options": ["Arriba", "Abajo", "Fuera", "Izquierda"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año se firmó el armisticio de la Guerra de Corea?",
+    "options": ["1950", "1953", "1955", "1960"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué forma tiene un libro?",
+    "options": ["Redonda", "Cuadrada", "Rectangular", "Circular"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué ciudad es la capital de la Toscana, Italia?",
+    "options": ["Milán", "Venecia", "Florencia", "Nápoles"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para regar las plantas?",
+    "options": ["Vaso", "Regadera/Manguera", "Cuchara", "Libro"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la moneda de Suiza?",
+    "options": ["Euro", "Franco Suizo", "Corona", "Dólar"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal vive en el desierto y tiene una joroba?",
+    "options": ["Serpiente", "Camello", "León", "Pingüino"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué parte del ojo enfoca la luz en la retina?",
+    "options": ["Iris", "Pupila", "Cristalino", "Córnea"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 10 x 2?",
+    "options": ["12", "20", "22", "102"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el famoso líder de la Revolución Cubana?",
+    "options": ["Che Guevara", "Fidel Castro", "Raúl Castro", "Camilo Cienfuegos"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué mes viene antes de Julio?",
+    "options": ["Mayo", "Junio", "Agosto", "Septiembre"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué país tiene la Torre de Tokio?",
+    "options": ["Corea del Sur", "China", "Japón", "Vietnam"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para escribir en un cuaderno?",
+    "options": ["Tiza", "Lápiz/Bolígrafo", "Pincel", "Rotulador"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué compositor es famoso por la ópera 'El anillo del nibelungo'?",
+    "options": ["Verdi", "Wagner", "Puccini", "Mozart"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número es par y está entre 5 y 10?",
+    "options": ["6, 8", "7, 9", "10", "5"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Grecia?",
+    "options": ["Salónica", "Patras", "Atenas", "Corfú"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene una caparazón en la espalda?",
+    "options": ["Serpiente", "Tortuga", "Lagarto", "Cocodrilo"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué instrumento se usa para medir ángulos?",
+    "options": ["Regla", "Compás", "Transportador", "Escuadra"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué es 10 dividido entre 2?",
+    "options": ["2", "5", "10", "20"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso escritor escribió 'Cumbres Borrascosas'?",
+    "options": ["Charlotte Brontë", "Emily Brontë", "Jane Austen", "George Eliot"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Grrr'?",
+    "options": ["Gato", "León/Tigre", "Pájaro", "Serpiente"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Polonia?",
+    "options": ["Cracovia", "Lodz", "Varsovia", "Gdansk"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para ver un mapa de cerca?",
+    "options": ["Telescopio", "Lupa", "Prismáticos", "Gafas"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué fenómeno es el 'canto del cisne'?",
+    "options": ["Cantar bien", "Última obra maestra", "Morir joven", "Cantar mal"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el color de la tierra?",
+    "options": ["Verde", "Marrón", "Azul", "Blanco"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué vitamina es importante para la coagulación de la sangre?",
+    "options": ["Vitamina A", "Vitamina C", "Vitamina K", "Vitamina D"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene ocho ojos?",
+    "options": ["Mosca", "Araña", "Mariposa", "Hormiga"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué siglo se fundó la ciudad de Tenochtitlan?",
+    "options": ["XII", "XIII", "XIV", "XV"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para beber sopa en un cuenco?",
+    "options": ["Cuchillo", "Cuchara", "Tenedor", "Palillos"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué gas noble se utiliza en carteles luminosos (neón)?",
+    "options": ["Argón", "Kriptón", "Neón", "Xenón"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 7 x 3?",
+    "options": ["10", "21", "24", "18"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el famoso inventor del teléfono?",
+    "options": ["Edison", "Tesla", "Graham Bell", "Marconi"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene alas y se alimenta de néctar?",
+    "options": ["Mariposa", "Mosca", "Abeja", "Hormiga"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Dinamarca?",
+    "options": ["Oslo", "Estocolmo", "Copenhague", "Helsinki"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para abrir el coche?",
+    "options": ["Llave/Mando", "Martillo", "Cuchillo", "Libro"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso pintor español es conocido por el 'Guernica'?",
+    "options": ["Dalí", "Miró", "Picasso", "Goya"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color es el de las uvas?",
+    "options": ["Rojas/Verdes", "Azules", "Amarillas", "Negras"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Venezuela?",
+    "options": ["Maracaibo", "Valencia", "Caracas", "Barquisimeto"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se necesita para ver las estrellas?",
+    "options": ["Día", "Noche oscura", "Sol", "Nubes"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso científico descubrió la penicilina?",
+    "options": ["Louis Pasteur", "Robert Koch", "Alexander Fleming", "Jonas Salk"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número es el doble de 1?",
+    "options": ["1", "2", "3", "4"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué animal es un reptil que cambia de piel?",
+    "options": ["Pájaro", "Serpiente", "Perro", "Gato"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos son 100 - 90?",
+    "options": ["1", "10", "90", "110"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre del famoso explorador que llegó al Polo Sur?",
+    "options": ["Robert Falcon Scott", "Ernest Shackleton", "Roald Amundsen", "James Cook"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para abrigarse el cuello?",
+    "options": ["Gorro", "Bufanda", "Guantes", "Zapatos"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el órgano del cuerpo humano que produce insulina?",
+    "options": ["Hígado", "Páncreas", "Riñón", "Estómago"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número es impar y está entre 10 y 15?",
+    "options": ["12", "13, 11", "14", "16"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió 'La Divina Comedia'?",
+    "options": ["Boccaccio", "Petrarca", "Dante Alighieri", "Maquiavelo"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Grasnar'?",
+    "options": ["Pájaro", "Cuervo/Ganso", "Perro", "Gato"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Cuba?",
+    "options": ["Santiago de Cuba", "Varadero", "La Habana", "Camagüey"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué parte de la cara usamos para escuchar?",
+    "options": ["Ojos", "Boca", "Nariz", "Orejas"],
+    "correct": 3
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué fenómeno óptico causa el arcoíris?",
+    "options": ["Absorción", "Reflexión", "Refracción/Dispersión", "Difracción"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 6 + 6?",
+    "options": ["10", "12", "14", "16"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué compositor es famoso por la ópera 'Aida'?",
+    "options": ["Puccini", "Verdi", "Rossini", "Bizet"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal vive en un estanque y salta?",
+    "options": ["Pez", "Rana", "Pato", "Serpiente"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Noruega?",
+    "options": ["Copenhague", "Estocolmo", "Oslo", "Helsinki"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para abrigarse las manos?",
+    "options": ["Gorro", "Bufanda", "Guantes", "Zapatos"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el famoso líder de la India que abogó por la resistencia no violenta?",
+    "options": ["Jawaharlal Nehru", "Mahatma Gandhi", "Subhas Chandra Bose", "Indira Gandhi"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué forma tiene una pelota de tenis?",
+    "options": ["Cuadrada", "Redonda", "Ovalada", "Plana"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el país más grande del mundo por área terrestre?",
+    "options": ["Canadá", "Estados Unidos", "China", "Rusia"],
+    "correct": 3
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'muu'?",
+    "options": ["Gato", "Vaca", "Perro", "Pato"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué órgano del cuerpo humano se encarga de la respiración?",
+    "options": ["Corazón", "Estómago", "Pulmones", "Hígado"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 50 + 10?",
+    "options": ["40", "50", "60", "70"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió 'El Quijote'?",
+    "options": ["Lope de Vega", "Cervantes", "Góngora", "Quevedo"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para cocinar huevos?",
+    "options": ["Vaso", "Sartén", "Plato", "Cuchara"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el planeta más grande del Sistema Solar?",
+    "options": ["Saturno", "Urano", "Júpiter", "Neptuno"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene una trompa y colmillos grandes?",
+    "options": ["Rinoceronte", "Elefante", "Hipopótamo", "Jirafa"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso pintor pintó 'La persistencia de la memoria'?",
+    "options": ["Picasso", "Miró", "Dalí", "Magritte"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿De qué color es el cielo por la mañana?",
+    "options": ["Rojo", "Azul", "Negro", "Gris"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de México?",
+    "options": ["Guadalajara", "Monterrey", "Ciudad de México", "Puebla"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para encender una vela?",
+    "options": ["Agua", "Fósforo/Mechero", "Cuchara", "Libro"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué científico es conocido por la teoría de la deriva continental?",
+    "options": ["Charles Lyell", "Alfred Wegener", "James Hutton", "Georges Cuvier"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos son 9 - 3?",
+    "options": ["5", "6", "7", "8"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué país fue el centro del Imperio Otomano?",
+    "options": ["Egipto", "Grecia", "Turquía", "Irán"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene alas y pone huevos?",
+    "options": ["Perro", "Vaca", "Pájaro", "Serpiente"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el autor de 'El amor en los tiempos del cólera'?",
+    "options": ["Julio Cortázar", "Gabriel García Márquez", "Mario Vargas Llosa", "Carlos Fuentes"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para colgar la ropa mojada?",
+    "options": ["Cama", "Percha/Cuerda", "Mesa", "Lámpara"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el símbolo del elemento químico Plata?",
+    "options": ["Au", "Ag", "Fe", "Cu"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número es el cuádruple de 2?",
+    "options": ["4", "6", "8", "10"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famosa batalla naval resultó en la muerte de Horatio Nelson?",
+    "options": ["Batalla del Nilo", "Batalla de Waterloo", "Batalla de Trafalgar", "Batalla de Jutlandia"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal vive en el mar y tiene concha?",
+    "options": ["Pez", "Caracol de mar", "Foca", "Pulpo"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Ucrania?",
+    "options": ["Leópolis", "Odesa", "Kiev", "Járkov"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para limpiar los cristales?",
+    "options": ["Escoba", "Trapo/Limpiacristales", "Tenedor", "Cuchara"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso compositor escribió 'El Mesías' (Oratorio)?",
+    "options": ["Bach", "Handel", "Mozart", "Beethoven"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántas patas tiene una mesa estándar?",
+    "options": ["2", "3", "4", "5"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué país es conocido por la invención del ajedrez?",
+    "options": ["China", "Egipto", "India", "Grecia"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para cubrir la cabeza cuando hace frío?",
+    "options": ["Gafas", "Gorro", "Bufanda", "Guantes"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el proceso de cambio de líquido a gas?",
+    "options": ["Fusión", "Solidificación", "Evaporación", "Condensación"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 9 + 5?",
+    "options": ["13", "14", "15", "16"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué pintor se conoce por 'Los Girasoles'?",
+    "options": ["Monet", "Gauguin", "Van Gogh", "Renoir"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color es la sangre (fuera del cuerpo)?",
+    "options": ["Azul", "Roja", "Verde", "Amarilla"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué país es conocido por el Palacio de Versalles?",
+    "options": ["Italia", "Reino Unido", "Francia", "España"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene rayas negras y naranjas?",
+    "options": ["Cebra", "Tigre", "Leopardo", "Jirafa"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso físico descubrió el electrón?",
+    "options": ["Rutherford", "Thomson", "Bohr", "Chadwick"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos son 20 dividido entre 4?",
+    "options": ["4", "5", "6", "10"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién es el autor de 'El Retrato de Dorian Gray'?",
+    "options": ["Charles Dickens", "Oscar Wilde", "Jane Austen", "H.G. Wells"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para ver un texto borroso?",
+    "options": ["Telescopio", "Lupa", "Microscopio", "Prismáticos"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre del famoso explorador que llegó al Polo Norte?",
+    "options": ["Roald Amundsen", "Robert Peary", "Ernest Shackleton", "Matthew Henson"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Pío Pío'?",
+    "options": ["Pato", "Pollito", "Gallo", "Vaca"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso líder militar cruzó los Alpes con elefantes de guerra?",
+    "options": ["Julio César", "Aníbal Barca", "Alejandro Magno", "Napoleón"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿De qué color es la piel de un plátano maduro?",
+    "options": ["Verde", "Amarilla", "Roja", "Marrón"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de la República Checa?",
+    "options": ["Bratislava", "Viena", "Praga", "Budapest"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para abrigarse en la cabeza en invierno?",
+    "options": ["Bufanda", "Gorro", "Guantes", "Zapatos"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué elemento tiene el símbolo 'H' y es el más abundante del universo?",
+    "options": ["Helio", "Oxígeno", "Hidrógeno", "Nitrógeno"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene aletas y vive en el hielo?",
+    "options": ["Ballena", "Foca", "Tiburón", "Delfín"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue la primera mujer en ganar un Premio Nobel?",
+    "options": ["Rosalind Franklin", "Ada Lovelace", "Marie Curie", "Dorothy Crowfoot Hodgkin"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 8 x 3?",
+    "options": ["16", "24", "32", "18"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso director dirigió '2001: Una odisea del espacio'?",
+    "options": ["George Lucas", "Steven Spielberg", "Stanley Kubrick", "Ridley Scott"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué parte del cuerpo humano está en la cara y usamos para sonreír?",
+    "options": ["Ojos", "Boca", "Nariz", "Orejas"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué país se conoce como la 'Tierra de los Mil Lagos'?",
+    "options": ["Suecia", "Noruega", "Finlandia", "Canadá"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el opuesto de 'Mojado'?",
+    "options": ["Húmedo", "Seco", "Caliente", "Frío"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el autor de 'El guardián entre el centeno'?",
+    "options": ["Truman Capote", "J.D. Salinger", "Jack Kerouac", "Ernest Hemingway"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal es una mascota y vive en una jaula (casi siempre)?",
+    "options": ["Perro", "Pájaro", "Gato", "Caballo"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Turquía?",
+    "options": ["Estambul", "Esmirna", "Ankara", "Antalya"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para cocinar pasta?",
+    "options": ["Sartén", "Olla", "Plato", "Vaso"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué parte de la célula produce energía (ATP)?",
+    "options": ["Núcleo", "Mitocondria", "Ribosoma", "Retículo endoplasmático"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número es par y está entre 1 y 5?",
+    "options": ["1, 3", "2, 4", "5", "6"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre de la famosa estatua de Zeus en Olimpia (una de las 7 maravillas)?",
+    "options": ["Coloso de Rodas", "Estatua de Zeus", "Templo de Artemisa", "Mausoleo de Halicarnaso"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para abrigarse la cabeza?",
+    "options": ["Guantes", "Gorra/Gorro", "Bufanda", "Zapatos"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué país se encuentra la ciudad de Bombay?",
+    "options": ["Pakistán", "India", "Nepal", "Bangladesh"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 10 + 3?",
+    "options": ["12", "13", "14", "15"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el famoso bailarín de ballet ruso conocido por 'El Cisne Moribundo'?",
+    "options": ["Rudolf Nuréyev", "Vaslav Nijinsky", "Mikhail Baryshnikov", "George Balanchine"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Hipopótamo'?",
+    "options": ["Elefante", "Hipopótamo", "Rinoceronte", "Jirafa"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Irán?",
+    "options": ["Isfahán", "Shiraz", "Teherán", "Mashhad"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para lavarse las manos?",
+    "options": ["Agua/Jabón", "Arena", "Leche", "Jugo"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué pintor español es famoso por 'Las Meninas'?",
+    "options": ["Goya", "El Greco", "Velázquez", "Murillo"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué número es el resultado de 15 - 5?",
+    "options": ["5", "10", "15", "20"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué elemento tiene el símbolo 'W' y se utiliza en filamentos de bombillas?",
+    "options": ["Wolframio (Tungsteno)", "Wismuto", "Estaño", "Zinc"],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal vive en el desierto y es conocido por su lentitud?",
+    "options": ["León", "Tortuga del desierto", "Serpiente", "Camello"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el famoso director de cine conocido por 'Ciudadano Kane'?",
+    "options": ["Alfred Hitchcock", "Stanley Kubrick", "Orson Welles", "John Ford"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué mes viene después de Junio?",
+    "options": ["Mayo", "Julio", "Agosto", "Septiembre"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué cordillera es la más larga de Europa?",
+    "options": ["Alpes", "Pirineos", "Cárpatos", "Montes Urales"],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para abrigarse los pies?",
+    "options": ["Guantes", "Bufanda", "Calcetines/Zapatos", "Gorro"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué es la 'Ley de Ohm' en electricidad?",
+    "options": ["Relación entre voltaje y potencia", "Relación entre resistencia, voltaje y corriente", "Relación entre corriente y calor", "Relación entre potencia y energía"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Glú Glú'?",
+    "options": ["Pato", "Pavo", "Gallo", "Vaca"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Hungría?",
+    "options": ["Praga", "Viena", "Budapest", "Varsovia"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para ver en el cielo?",
+    "options": ["Microscopio", "Telescopio", "Lupa", "Gafas"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué elemento tiene el símbolo 'K'?",
+    "options": ["Kriptón", "Potasio", "Calcio", "Cobalto"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 7 + 7?",
+    "options": ["13", "14", "15", "16"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el famoso filósofo que propuso la 'Duda Metódica'?",
+    "options": ["Spinoza", "Locke", "Descartes", "Hume"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene manchas y es grande?",
+    "options": ["Cebra", "Leopardo", "Cisne", "Ratón"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué ciudad fue la capital del Imperio Bizantino?",
+    "options": ["Atenas", "Roma", "Constantinopla", "Alejandría"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el opuesto de 'Exterior'?",
+    "options": ["Lateral", "Interior", "Superior", "Inferior"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió 'La Guerra de los Mundos'?",
+    "options": ["Julio Verne", "Isaac Asimov", "H.G. Wells", "Arthur C. Clarke"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para medir el peso?",
+    "options": ["Regla", "Báscula", "Termómetro", "Reloj"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Grecia?",
+    "options": ["Esparta", "Salónica", "Atenas", "Corinto"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Oink'?",
+    "options": ["Vaca", "Cerdo", "Pato", "Gallo"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué pintor se conoce por 'El Nacimiento de Venus'?",
+    "options": ["Leonardo", "Rafael", "Botticelli", "Tiziano"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos días tiene la semana laboral estándar (de Lunes a Viernes)?",
+    "options": ["4", "5", "6", "7"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué escritor creó el personaje de Sherlock Holmes?",
+    "options": ["Agatha Christie", "Arthur Conan Doyle", "Edgar Allan Poe", "Raymond Chandler"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para abrigarse la cara?",
+    "options": ["Guantes", "Pasamontañas/Máscara", "Bufanda", "Gorro"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre del famoso matemático griego que desarrolló el teorema de Pitágoras?",
+    "options": ["Euclides", "Arquímedes", "Pitágoras", "Tales de Mileto"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué fruta es grande, redonda y verde por fuera?",
+    "options": ["Fresa", "Melón/Sandía", "Naranja", "Limón"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre del protagonista de 'Moby Dick'?",
+    "options": ["Ishmael", "Ahab", "Starbuck", "Queequeg"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 10 dividido entre 5?",
+    "options": ["1", "2", "5", "10"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué elemento tiene el símbolo 'P' y es esencial para el ADN?",
+    "options": ["Plomo", "Potasio", "Fósforo", "Plata"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene una cresta roja en la cabeza?",
+    "options": ["Pato", "Gallo", "Ganso", "Pavo"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué ciudad es conocida por albergar la Puerta de Brandeburgo?",
+    "options": ["Viena", "París", "Berlín", "Roma"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para escribir con tinta sobre papel?",
+    "options": ["Lápiz", "Bolígrafo", "Tiza", "Cuchara"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el famoso líder que unió a las tribus mongolas?",
+    "options": ["Kublai Kan", "Atila", "Genghis Kan", "Tamerlán"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué mes es el segundo del año?",
+    "options": ["Enero", "Febrero", "Marzo", "Abril"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Australia?",
+    "options": ["Sídney", "Melbourne", "Canberra", "Perth"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para ver objetos muy pequeños?",
+    "options": ["Telescopio", "Microscopio", "Prismáticos", "Lupa"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso compositor es conocido por 'Las bodas de Fígaro'?",
+    "options": ["Beethoven", "Bach", "Mozart", "Vivaldi"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Maullido'?",
+    "options": ["Perro", "Gato", "Vaca", "Pato"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el mineral más común en la corteza terrestre?",
+    "options": ["Oro", "Calcita", "Cuarzo", "Hierro"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 2 x 5?",
+    "options": ["7", "10", "12", "15"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió el libro 'El Conde de Montecristo'?",
+    "options": ["Víctor Hugo", "Alejandro Dumas", "Julio Verne", "Honoré de Balzac"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para abrir una botella de vino?",
+    "options": ["Cuchillo", "Sacacorchos", "Tenedor", "Cuchara"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Bélgica?",
+    "options": ["Amberes", "Gante", "Bruselas", "Brujas"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal es una mascota y se arrastra?",
+    "options": ["Perro", "Gato", "Hámster", "Serpiente"],
+    "correct": 3
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué planeta es conocido por sus anillos visibles?",
+    "options": ["Júpiter", "Urano", "Saturno", "Neptuno"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el opuesto de 'Grande'?",
+    "options": ["Alto", "Pequeño", "Gordo", "Delgado"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el famoso líder militar de la Revolución Francesa que se convirtió en emperador?",
+    "options": ["Luis XVI", "Robespierre", "Napoleón Bonaparte", "Marqués de La Fayette"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para abrigarse todo el cuerpo en invierno?",
+    "options": ["Pantalones cortos", "Abrigo", "Camiseta", "Falda"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué elemento tiene el símbolo 'Hg' y es un metal líquido?",
+    "options": ["Oro", "Plata", "Mercurio", "Bromo"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Zzzzz'?",
+    "options": ["Pájaro", "Mosquito/Abeja", "Gato", "Perro"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso edificio en París se conoce por sus gárgolas?",
+    "options": ["Torre Eiffel", "Notre Dame", "Arco del Triunfo", "El Louvre"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos son 25 dividido entre 5?",
+    "options": ["4", "5", "6", "10"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Suiza?",
+    "options": ["Zúrich", "Ginebra", "Berna", "Lausana"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para medir la hora en la pared?",
+    "options": ["Reloj de pared", "Termómetro", "Báscula", "Brújula"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso físico formuló la ley de la palanca?",
+    "options": ["Pitágoras", "Euclides", "Arquímedes", "Galileo"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal vive en el hielo y es un mamífero?",
+    "options": ["Pingüino", "Oso polar", "Foca", "Lobo"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió el libro 'La máquina del tiempo'?",
+    "options": ["Julio Verne", "Isaac Asimov", "H.G. Wells", "Arthur C. Clarke"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el opuesto de 'Frío'?",
+    "options": ["Húmedo", "Caliente", "Seco", "Tibio"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de México?",
+    "options": ["Guadalajara", "Monterrey", "Ciudad de México", "Puebla"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué fruta es pequeña y roja y tiene pepitas por dentro?",
+    "options": ["Fresa", "Cereza", "Naranja", "Limón"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famosa batalla marcó el fin del reinado de Napoleón?",
+    "options": ["Austerlitz", "Borodino", "Waterloo", "Leipzig"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Cocorocó'?",
+    "options": ["Pato", "Gallo", "Ganso", "Pavo"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué escritor creó el personaje de James Bond?",
+    "options": ["Graham Greene", "Ian Fleming", "John le Carré", "Frederick Forsyth"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para abrigarse la parte inferior del cuerpo?",
+    "options": ["Camiseta", "Pantalones", "Bufanda", "Gorro"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre del famoso río que pasa por Roma?",
+    "options": ["Po", "Arno", "Tíber", "Adigio"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 10 + 4?",
+    "options": ["13", "14", "15", "16"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué elemento tiene el símbolo 'Au'?",
+    "options": ["Plata", "Cobre", "Oro", "Platino"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Muge'?",
+    "options": ["Perro", "Vaca", "Gato", "Pato"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el famoso director de cine conocido por 'Tiburón' y 'E.T.'?",
+    "options": ["George Lucas", "Martin Scorsese", "Steven Spielberg", "Quentin Tarantino"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos días tiene el mes de abril?",
+    "options": ["30", "31", "28", "29"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso edificio fue la sede del Papa en Aviñón durante el Cisma de Occidente?",
+    "options": ["Palacio de los Dogos", "Castillo Sant'Angelo", "Palacio de los Papas", "Catedral de Notre Dame"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para abrigarse las manos en invierno?",
+    "options": ["Bufanda", "Guantes", "Gorro", "Zapatos"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso físico descubrió la teoría de la gravitación universal?",
+    "options": ["Galileo", "Copérnico", "Newton", "Einstein"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal es una mascota y come semillas?",
+    "options": ["Perro", "Gato", "Pájaro", "Vaca"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Pakistán?",
+    "options": ["Lahore", "Karachi", "Islamabad", "Rawalpindi"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 4 x 3?",
+    "options": ["7", "12", "16", "24"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió 'El Principito'?",
+    "options": ["Julio Verne", "Antoine de Saint-Exupéry", "Albert Camus", "Marcel Proust"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para cocinar patatas fritas?",
+    "options": ["Olla", "Freidora/Sartén", "Plato", "Vaso"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso pintor es conocido por su etapa 'azul' y 'rosa'?",
+    "options": ["Dalí", "Miró", "Picasso", "Van Gogh"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el opuesto de 'Largo'?",
+    "options": ["Alto", "Corto", "Ancho", "Estrecho"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el hueso más pequeño del cuerpo humano?",
+    "options": ["Yunque", "Martillo", "Estribo", "Tibia"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal vive en el desierto y es conocido por su veneno?",
+    "options": ["Camello", "Serpiente/Escorpión", "Cebra", "Jirafa"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso músico es conocido por el sobrenombre de 'El Rey del Pop'?",
+    "options": ["Elvis Presley", "Michael Jackson", "Prince", "Freddie Mercury"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos son 50 - 25?",
+    "options": ["10", "25", "50", "75"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué ciudad es conocida por albergar la torre Burj Khalifa?",
+    "options": ["Singapur", "Shanghai", "Dubái", "Tokio"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para abrigarse la parte superior del cuerpo?",
+    "options": ["Pantalones", "Chaqueta/Jersey", "Zapatos", "Gorro"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el famoso líder de la URSS que implementó la Perestroika y la Glásnost?",
+    "options": ["Stalin", "Kruschev", "Brezhnev", "Gorbachov"],
+    "correct": 3
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Balido'?",
+    "options": ["Vaca", "Oveja/Cabra", "Perro", "Gato"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Marruecos?",
+    "options": ["Casablanca", "Marrakech", "Rabat", "Fez"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color es el resultado de mezclar blanco y negro?",
+    "options": ["Rojo", "Gris", "Azul", "Marrón"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué escritor es famoso por 'El viejo y el mar'?",
+    "options": ["Scott Fitzgerald", "Ernest Hemingway", "William Faulkner", "Mark Twain"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para cocinar arroz?",
+    "options": ["Sartén", "Arrocera/Olla", "Plato", "Vaso"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Tailandia?",
+    "options": ["Chiang Mai", "Phuket", "Bangkok", "Pattaya"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene una cola larga y se cuelga de los árboles?",
+    "options": ["Oso", "Mono", "Cebra", "Tigre"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué famoso astrónomo formuló las tres leyes del movimiento planetario?",
+    "options": ["Copérnico", "Galileo", "Kepler", "Newton"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 10 dividido entre 1?",
+    "options": ["0", "1", "10", "11"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió el libro 'Los Miserables'?",
+    "options": ["Alejandro Dumas", "Victor Hugo", "Émile Zola", "Gustave Flaubert"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué se usa para pagar en el autobús?",
+    "options": ["Libro", "Billete/Tarjeta", "Taza", "Reloj"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el nombre del famoso detective creado por Edgar Allan Poe?",
+    "options": ["Sherlock Holmes", "Hércules Poirot", "C. Auguste Dupin", "Miss Marple"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal es una mascota y hace ruido fuerte?",
+    "options": ["Gato", "Perro", "Pez", "Pájaro"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué país es conocido por la Fiesta de San Patricio?",
+    "options": ["Inglaterra", "Escocia", "Irlanda", "Gales"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos son 8 x 4?",
+    "options": ["24", "32", "40", "12"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué elemento tiene el símbolo 'Cl' y es un gas halógeno?",
+    "options": ["Carbono", "Calcio", "Cloro", "Cobre"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para ver en la noche sin luz?",
+    "options": ["Reloj", "Linterna", "Radio", "Vaso"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el famoso líder que unió Italia en el siglo XIX?",
+    "options": ["Cavour", "Mazzini", "Garibaldi", "Víctor Manuel II"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal es un mamífero y vive bajo tierra?",
+    "options": ["Perro", "Topo", "Gato", "Vaca"],
+    "correct": 1
   }
 ]
