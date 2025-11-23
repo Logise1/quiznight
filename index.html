@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Night - RTDB Edition</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconos Lucide (SVG) helpers -->
+    <script>
+        // Pequeña utilidad para iconos inline para no depender de librerías externas pesadas
+        const ICONS = {
+            monitor: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>`,
+            smartphone: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>`,
+            users: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+            crown: `<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg>`,
+            zap: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
+            brain: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>`,
+            check: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>`,
+            volume2: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>`,
+            volumeX: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" x2="17" y1="9" y2="15"/><line x1="17" x2="23" y1="9" y2="15"/></svg>`,
+            loader: `<svg class="animate-spin" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>`
+        };
+    </script>
+    <style>
+        .hidden-screen { display: none !important; }
+        .fade-in { animation: fadeIn 0.5s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-800 font-sans select-none overflow-hidden">
+
+    <!-- APP CONTAINER -->
+    <div id="app" class="min-h-screen w-full relative">
+        
+        <!-- SCREEN: LANDING -->
+        <div id="screen-landing" class="h-screen flex flex-col items-center justify-center p-4">
+            <h1 class="text-6xl font-black mb-2 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500 text-center">
+                QUIZ NIGHT
+            </h1>
+            <p class="mb-12 text-xl text-gray-500 font-medium">RTDB Edition</p>
+            
+            <div class="grid gap-6 md:grid-cols-2 w-full max-w-2xl">
+                <button onclick="app.selectMode('host')" class="group flex flex-col items-center p-8 bg-white rounded-3xl shadow-xl border-2 border-gray-100 hover:border-blue-500 hover:shadow-2xl transition-all transform hover:-translate-y-1">
+                    <div class="bg-blue-100 p-4 rounded-full mb-4 group-hover:bg-blue-600 transition-colors text-blue-600 group-hover:text-white">
+                        <script>document.write(ICONS.monitor)</script>
+                    </div>
+                    <span class="text-2xl font-bold text-slate-800">Crear Partida</span>
+                    <span class="text-gray-400 text-center mt-2">Para la TV o PC</span>
+                </button>
+                
+                <button onclick="app.selectMode('player')" class="group flex flex-col items-center p-8 bg-white rounded-3xl shadow-xl border-2 border-gray-100 hover:border-pink-500 hover:shadow-2xl transition-all transform hover:-translate-y-1">
+                    <div class="bg-pink-100 p-4 rounded-full mb-4 group-hover:bg-pink-600 transition-colors text-pink-600 group-hover:text-white">
+                        <script>document.write(ICONS.smartphone)</script>
+                    </div>
+                    <span class="text-2xl font-bold text-slate-800">Unirse</span>
+                    <span class="text-gray-400 text-center mt-2">Para el Móvil</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- SCREEN: HOST LOBBY -->
+        <div id="screen-host-lobby" class="hidden-screen h-screen flex flex-col items-center justify-center p-8 fade-in">
+             <div class="absolute top-8 right-8">
+                <button onclick="app.toggleSound()" id="btn-sound" class="bg-white p-3 rounded-full shadow-md text-slate-800">
+                    <!-- Icon injected by JS -->
+                </button>
+            </div>
+
+            <div class="bg-white p-12 rounded-[3rem] shadow-2xl text-center mb-12 border border-gray-100">
+                <p class="text-2xl uppercase font-bold tracking-widest mb-4 text-gray-400">Código de Sala</p>
+                <p id="host-game-id" class="text-9xl font-black font-mono tracking-tighter text-blue-600">...</p>
+            </div>
+            
+            <div class="flex items-center gap-4 mb-8 bg-white px-8 py-4 rounded-full shadow-lg border border-gray-100">
+                <div class="text-pink-500"><script>document.write(ICONS.users)</script></div>
+                <span id="host-player-count" class="text-3xl font-bold text-slate-700">0 Jugadores</span>
+            </div>
+
+            <div id="host-player-list" class="flex flex-wrap gap-4 justify-center max-w-5xl mb-12 min-h-[60px]">
+                <!-- Players will be injected here -->
+            </div>
+
+            <button onclick="app.startHostGame()" id="btn-start-game" disabled class="bg-slate-900 hover:bg-black text-white text-3xl font-black py-6 px-16 rounded-2xl shadow-2xl transition-all transform active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed hover:ring-4 ring-slate-200">
+                EMPEZAR JUEGO
+            </button>
+        </div>
+
+        <!-- SCREEN: HOST GAME (PREVIEW & QUESTION) -->
+        <div id="screen-host-game" class="hidden-screen h-screen flex flex-col p-6 transition-colors duration-500 fade-in bg-gray-50">
+            <!-- Header -->
+            <div class="flex justify-between items-center mb-8">
+                <div class="flex items-center gap-2">
+                    <div id="host-q-counter" class="bg-white px-6 py-3 rounded-2xl shadow-sm border border-gray-100 font-bold text-xl text-gray-500">
+                        1 / 20
+                    </div>
+                    <div id="host-type-badge">
+                        <!-- Badge injected by JS -->
+                    </div>
+                </div>
+                
+                <!-- Timer -->
+                <div class="relative flex items-center justify-center">
+                    <div id="host-timer" class="text-6xl font-black font-mono tabular-nums text-slate-800 transition-all">
+                        20
+                    </div>
+                </div>
+
+                <div class="bg-white px-6 py-3 rounded-2xl shadow-sm border border-gray-100 font-mono text-xl font-bold text-gray-500">
+                    Pin: <span id="host-game-pin-small"></span>
+                </div>
+            </div>
+
+            <!-- Question Card -->
+            <div class="flex-1 flex items-center justify-center mb-10">
+                <div id="host-q-card" class="bg-white p-16 rounded-[3rem] shadow-2xl text-center max-w-6xl w-full border border-gray-100 relative overflow-hidden">
+                    <div id="host-q-bar" class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
+                    <h2 id="host-q-text" class="text-5xl md:text-6xl font-black leading-tight text-slate-900">Cargando pregunta...</h2>
+                </div>
+            </div>
+
+            <!-- Options Grid -->
+            <div id="host-options-grid" class="grid grid-cols-2 gap-6 h-1/3 pb-4 opacity-0 transition-opacity duration-500">
+                <!-- Options injected by JS -->
+            </div>
+            
+            <div id="host-preview-msg" class="fixed bottom-12 left-0 w-full text-center pointer-events-none">
+                <div class="inline-block bg-white/90 backdrop-blur px-8 py-4 rounded-full shadow-xl">
+                    <p id="host-preview-text" class="text-3xl font-black animate-pulse text-slate-900">¡Lee la pregunta!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCREEN: HOST LEADERBOARD -->
+        <div id="screen-host-leaderboard" class="hidden-screen h-screen bg-gray-50 text-slate-900 flex flex-col p-8 fade-in">
+            <h2 class="text-6xl font-black text-center mb-12 tracking-tighter text-slate-900">CLASIFICACIÓN</h2>
+            
+            <div id="host-leaderboard-list" class="flex-1 max-w-5xl w-full mx-auto space-y-4 overflow-y-auto">
+                <!-- List Items injected by JS -->
+            </div>
+
+            <div class="flex justify-end mt-8">
+               <button onclick="app.nextQuestion()" class="bg-slate-900 hover:bg-black text-white font-bold py-5 px-10 rounded-2xl shadow-xl text-2xl flex items-center transition-all hover:-translate-y-1">
+                 Siguiente Pregunta <span class="ml-3">➔</span>
+               </button>
+            </div>
+        </div>
+
+        <!-- SCREEN: HOST FINISHED -->
+        <div id="screen-host-finished" class="hidden-screen h-screen bg-white text-slate-900 flex flex-col items-center justify-center p-4 fade-in">
+            <div class="relative">
+                <div class="absolute -top-20 left-1/2 transform -translate-x-1/2 animate-bounce text-yellow-400">
+                    <script>document.write(ICONS.crown)</script>
+                </div>
+                <h1 class="text-8xl font-black mb-12 text-slate-900 tracking-tighter mt-10">¡GANADOR!</h1>
+            </div>
+            
+            <div class="bg-gradient-to-b from-indigo-600 to-purple-600 text-white px-20 py-12 rounded-[3rem] shadow-2xl mb-12 transform scale-110 rotate-1 border-4 border-white ring-4 ring-indigo-100">
+               <span id="winner-name" class="text-7xl font-black block mb-2">Nombre</span>
+            </div>
+            
+            <div id="winner-score" class="text-5xl font-black text-slate-900 mb-16 bg-gray-100 px-10 py-4 rounded-full">
+                0 Puntos
+            </div>
+
+            <button onclick="window.location.reload()" class="bg-white border-2 border-slate-200 hover:bg-slate-50 text-slate-900 font-bold py-4 px-10 rounded-full transition-colors text-xl shadow-lg">
+                Jugar otra vez
+            </button>
+        </div>
+
+        <!-- SCREEN: PLAYER LOGIN -->
+        <div id="screen-player-login" class="hidden-screen h-screen bg-gray-50 flex flex-col items-center justify-center p-6 text-slate-900 fade-in">
+             <div class="bg-white p-4 rounded-2xl shadow-sm mb-6 border border-gray-100 text-indigo-600">
+                <script>document.write(ICONS.smartphone)</script>
+            </div>
+            <h1 class="text-4xl font-black mb-8 tracking-tight">Entrar al Quiz</h1>
+            <div class="w-full max-w-sm space-y-4">
+               <input type="number" id="player-input-pin" class="w-full p-6 text-center text-3xl bg-white rounded-2xl border-2 border-gray-200 focus:border-indigo-500 outline-none" placeholder="PIN" />
+               <input type="text" id="player-input-name" class="w-full p-6 text-center text-xl bg-white rounded-2xl border-2 border-gray-200 focus:border-indigo-500 outline-none" placeholder="Tu Nombre" maxlength="12" />
+               <p id="player-login-error" class="text-red-500 text-center font-bold hidden"></p>
+               <button onclick="app.joinGame()" class="w-full bg-slate-900 text-white font-black py-6 rounded-2xl text-xl hover:bg-black">ENTRAR</button>
+            </div>
+        </div>
+
+        <!-- SCREEN: PLAYER LOBBY -->
+        <div id="screen-player-lobby" class="hidden-screen h-screen bg-green-500 flex flex-col items-center justify-center p-6 text-white text-center fade-in">
+             <div class="mb-6 animate-bounce text-white">
+                <script>document.write(ICONS.check)</script>
+            </div>
+            <h2 class="text-4xl font-black mb-4">¡Estás dentro!</h2>
+            <p class="text-xl font-medium opacity-90">Mira la pantalla grande</p>
+            <div class="mt-12 bg-black/20 backdrop-blur-lg py-3 px-8 rounded-full">
+                <p id="player-lobby-name" class="font-bold text-lg">Nombre</p>
+            </div>
+        </div>
+
+        <!-- SCREEN: PLAYER PREVIEW -->
+        <div id="screen-player-preview" class="hidden-screen h-screen bg-indigo-600 flex flex-col items-center justify-center p-6 text-white text-center fade-in">
+            <h2 class="text-3xl font-bold mb-8">¡Atento!</h2>
+            <div class="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mb-8 animate-pulse">
+                <span class="text-7xl font-black">?</span>
+            </div>
+            <p class="text-xl">Pregunta en pantalla...</p>
+        </div>
+
+        <!-- SCREEN: PLAYER WAIT (Reading) -->
+        <div id="screen-player-wait" class="hidden-screen h-screen bg-indigo-600 flex flex-col items-center justify-center p-6 text-white text-center fade-in">
+             <div class="text-white mb-4"><script>document.write(ICONS.loader)</script></div>
+             <p class="text-xl font-bold">Leyendo...</p>
+        </div>
+
+        <!-- SCREEN: PLAYER GAME (Buttons) -->
+        <div id="screen-player-game" class="hidden-screen h-screen bg-white p-4 grid grid-cols-2 grid-rows-2 gap-4 fade-in">
+            <button onclick="app.submitAnswer(0)" class="bg-red-500 rounded-3xl shadow-lg active:scale-95 transition-transform flex items-center justify-center">
+                <span class="text-7xl text-white drop-shadow-md">▲</span>
+            </button>
+            <button onclick="app.submitAnswer(1)" class="bg-blue-500 rounded-3xl shadow-lg active:scale-95 transition-transform flex items-center justify-center">
+                <span class="text-7xl text-white drop-shadow-md">◆</span>
+            </button>
+            <button onclick="app.submitAnswer(2)" class="bg-yellow-500 rounded-3xl shadow-lg active:scale-95 transition-transform flex items-center justify-center">
+                <span class="text-7xl text-white drop-shadow-md">●</span>
+            </button>
+            <button onclick="app.submitAnswer(3)" class="bg-green-500 rounded-3xl shadow-lg active:scale-95 transition-transform flex items-center justify-center">
+                <span class="text-7xl text-white drop-shadow-md">■</span>
+            </button>
+        </div>
+
+        <!-- SCREEN: PLAYER ANSWERED -->
+        <div id="screen-player-answered" class="hidden-screen h-screen bg-slate-800 flex flex-col items-center justify-center p-6 text-white text-center fade-in">
+            <div class="bg-green-500 w-24 h-24 rounded-full flex items-center justify-center mb-6 shadow-lg animate-pulse">
+                <script>document.write(ICONS.check)</script>
+            </div>
+            <h2 class="text-3xl font-bold">¡Respondido!</h2>
+        </div>
+
+        <!-- SCREEN: PLAYER LEADERBOARD -->
+        <div id="screen-player-leaderboard" class="hidden-screen h-screen flex flex-col items-center justify-center p-6 text-white text-center transition-colors duration-500 bg-gray-800 fade-in">
+            <div class="bg-black/20 p-8 rounded-[2rem] w-full max-w-sm backdrop-blur-sm shadow-xl border border-white/10">
+                <div class="text-lg font-bold mb-2 uppercase tracking-wider opacity-80">Tu posición</div>
+                <div id="player-rank" class="text-7xl font-black mb-8">?º</div>
+                
+                <div class="bg-white/20 rounded-2xl p-6 mb-6">
+                    <div class="text-sm font-bold opacity-80 uppercase mb-1">Puntos Totales</div>
+                    <div id="player-score" class="text-4xl font-black">0</div>
+                </div>
+
+                <div id="player-feedback-positive" class="hidden">
+                     <div class="animate-bounce bg-white text-green-600 py-3 px-6 rounded-xl shadow-lg inline-block">
+                        <div id="player-points-gained" class="text-3xl font-black">+ 0</div>
+                    </div>
+                </div>
+                <div id="player-feedback-negative" class="hidden opacity-60">
+                    <div class="text-2xl font-bold">¡Fallaste!</div>
+                </div>
+            </div>
+             <button id="player-btn-exit" onclick="window.location.reload()" class="hidden mt-8 bg-white text-slate-900 px-8 py-4 rounded-xl font-bold shadow-lg">Salir</button>
+        </div>
+
+    </div>
+
+    <!-- MAIN LOGIC -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getDatabase, ref, set, get, update, onValue } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+        // --- CONFIG ---
+        const firebaseConfig = {
+            databaseURL: "https://party-e2086-default-rtdb.europe-west1.firebasedatabase.app/"
+        };
+        const appFirebase = initializeApp(firebaseConfig);
+        const db = getDatabase(appFirebase);
+
+        const AUDIO_URLS = {
+            bgm1: 'https://logise1.github.io/quiznight/bgm1.mp3',
+            bgm2: 'https://logise1.github.io/quiznight/bgm2.mp3',
+            gong: 'https://logise1.github.io/quiznight/gong.mp3'
+        };
+
+        // --- STATE ---
+        const state = {
+            userId: localStorage.getItem('fq_uid') || 'user_' + Math.random().toString(36).substr(2, 9),
+            mode: null,
+            gameId: null,
+            players: {},
+            questions: [],
+            currentQIndex: 0,
+            soundEnabled: true,
+            isHost: false,
+            hostTimer: null,
+            roundDuration: 20
+        };
+        localStorage.setItem('fq_uid', state.userId);
+
+        // --- AUDIO ---
+        const audio = {
+            bgm1: new Audio(AUDIO_URLS.bgm1),
+            bgm2: new Audio(AUDIO_URLS.bgm2),
+            gong: new Audio(AUDIO_URLS.gong)
+        };
+        
+        // Loop BGMs
+        audio.bgm1.loop = true;
+        audio.bgm2.loop = true;
+
+        const stopAllAudio = () => {
+            Object.values(audio).forEach(a => {
+                a.pause();
+                a.currentTime = 0;
+            });
+        };
+
+        const playTrack = (track) => {
+            if (!state.soundEnabled) return;
+            // Dont restart if already playing the correct track
+            if (track !== 'gong' && !audio[track].paused) return;
+
+            // Stop others
+            if (track === 'bgm1') { audio.bgm2.pause(); audio.gong.pause(); }
+            if (track === 'bgm2') { audio.bgm1.pause(); audio.gong.pause(); }
+            if (track === 'gong') { audio.bgm1.pause(); audio.bgm2.pause(); }
+
+            audio[track].volume = track === 'gong' ? 1.0 : 0.5;
+            audio[track].play().catch(e => console.log("Audio play failed (interaction needed)", e));
+        };
+
+        // --- UI HELPERS ---
+        const showScreen = (id) => {
+            document.querySelectorAll('[id^="screen-"]').forEach(el => el.classList.add('hidden-screen'));
+            document.getElementById(id).classList.remove('hidden-screen');
+        };
+
+        const updateSoundIcon = () => {
+             const btn = document.getElementById('btn-sound');
+             btn.innerHTML = state.soundEnabled ? ICONS.volume2 : ICONS.volumeX;
+        };
+
+        // --- HOST LOGIC ---
+
+        window.app = {
+            // Shared
+            selectMode: (mode) => {
+                state.mode = mode;
+                if (mode === 'host') initHost();
+                else initPlayer();
+            },
+            toggleSound: () => {
+                state.soundEnabled = !state.soundEnabled;
+                updateSoundIcon();
+                if (!state.soundEnabled) stopAllAudio();
+            },
+
+            // Host Functions
+            startHostGame: async () => {
+                await update(ref(db, `games/${state.gameId}`), { status: 'preview', currentQuestion: 0 });
+                runQuestionSequence(0);
+            },
+            nextQuestion: async () => {
+                if (state.currentQIndex + 1 < state.questions.length) {
+                    const nextIdx = state.currentQIndex + 1;
+                    state.currentQIndex = nextIdx;
+                    await update(ref(db, `games/${state.gameId}`), { currentQuestion: nextIdx });
+                    runQuestionSequence(nextIdx);
+                } else {
+                    await update(ref(db, `games/${state.gameId}`), { status: 'finished' });
+                }
+            },
+
+            // Player Functions
+            joinGame: async () => {
+                const pin = document.getElementById('player-input-pin').value;
+                const name = document.getElementById('player-input-name').value;
+                const errorEl = document.getElementById('player-login-error');
+
+                if (!pin || !name) {
+                    errorEl.textContent = "Rellena todos los campos";
+                    errorEl.classList.remove('hidden');
+                    return;
+                }
+
+                try {
+                    const snap = await get(ref(db, `games/${pin}`));
+                    if (snap.exists()) {
+                        state.gameId = pin;
+                        state.playerName = name;
+                        await update(ref(db, `games/${pin}/players/${state.userId}`), {
+                            name: name,
+                            score: 0,
+                            lastRoundPoints: 0,
+                            currentAnswer: null
+                        });
+                        setupPlayerListener();
+                    } else {
+                        errorEl.textContent = "Sala no encontrada";
+                        errorEl.classList.remove('hidden');
+                    }
+                } catch (e) {
+                    console.error(e);
+                    errorEl.textContent = "Error de conexión";
+                    errorEl.classList.remove('hidden');
+                }
+            },
+            submitAnswer: async (idx) => {
+                await update(ref(db, `games/${state.gameId}/players/${state.userId}`), {
+                    currentAnswer: idx,
+                    answerTimestamp: Date.now()
+                });
+                showScreen('screen-player-answered');
+            }
+        };
+
+        // --- HOST FLOW ---
+
+        async function initHost() {
+            // Load questions
+            try {
+                const res = await fetch('https://logise1.github.io/quiznight/q.json');
+                const data = await res.json();
+                state.questions = data.sort(() => 0.5 - Math.random()).slice(0, 20);
+            } catch (e) {
+                state.questions = [{ question: "Error loading", options: ["A", "B", "C", "D"], correct: 0, type: "bala" }];
+            }
+
+            // Create Game
+            const id = Math.floor(1000 + Math.random() * 9000).toString();
+            state.gameId = id;
+            state.isHost = true;
+            
+            await set(ref(db, `games/${id}`), {
+                hostId: state.userId,
+                status: 'lobby',
+                currentQuestion: 0,
+                players: {},
+                startTime: null,
+                optionsVisible: false
+            });
+
+            // UI
+            document.getElementById('host-game-id').textContent = id;
+            updateSoundIcon();
+            showScreen('screen-host-lobby');
+
+            // Listeners
+            onValue(ref(db, `games/${id}`), (snap) => {
+                const data = snap.val();
+                if(!data) return;
+                state.players = data.players || {};
+                updateHostUI(data);
+            });
+        }
+
+        function updateHostUI(data) {
+            // Lobby Update
+            if (data.status === 'lobby') {
+                const pList = Object.values(state.players);
+                document.getElementById('host-player-count').textContent = `${pList.length} Jugadores`;
+                document.getElementById('btn-start-game').disabled = pList.length === 0;
+                
+                const listEl = document.getElementById('host-player-list');
+                listEl.innerHTML = pList.map(p => `
+                    <div class="bg-white border-2 border-indigo-100 text-indigo-600 font-bold px-6 py-3 rounded-xl shadow-md animate-bounce">
+                        ${p.name}
+                    </div>
+                `).join('');
+            } else if (data.status === 'leaderboard') {
+                renderLeaderboard(data.players);
+            } else if (data.status === 'finished') {
+                renderFinished(data.players);
+            } else if (data.status === 'question') {
+                // Check for auto-finish
+                if (data.optionsVisible) {
+                    const pIds = Object.keys(state.players);
+                    if (pIds.length > 0) {
+                        const allAnswered = pIds.every(pid => {
+                            const p = state.players[pid];
+                            return p.currentAnswer !== undefined && p.currentAnswer !== null; // Check explicit answer
+                        });
+                        
+                        // We check if we are the host to trigger logic only once
+                        if (allAnswered && state.isHost) {
+                            if (state.hostTimer) clearInterval(state.hostTimer);
+                            calculateScores();
+                        }
+                    }
+                }
+            }
+
+            // Audio triggers
+            if (data.status === 'preview') {
+                // Odd questions (index 1, 3..) -> BGM2. Even (0, 2..) -> BGM1 (Wait, index 0 is Q1)
+                // Let's stick to logic: Even INDEX (Q1, Q3) -> BGM2 during preview? No.
+                // Logic requested: BGM2 starts BEFORE (Preview). BGM1 starts AFTER (Question).
+                const isEvenIndex = (state.currentQIndex % 2 === 0); // 0, 2, 4
+                // If even index (Q1, Q3...), isBgm1Turn = true. 
+                // BGM1 Logic: Start at Question.
+                // BGM2 Logic: Start at Preview.
+                if (!isEvenIndex) playTrack('bgm2'); // Odd Index (Q2, Q4) -> BGM2
+            } else if (data.status === 'question') {
+                 const isEvenIndex = (state.currentQIndex % 2 === 0);
+                 if (isEvenIndex) playTrack('bgm1');
+            } else if (data.status === 'leaderboard' || data.status === 'finished') {
+                playTrack('gong');
+            }
+        }
+
+        function runQuestionSequence(idx) {
+            stopAllAudio();
+            
+            // 1. Preview
+            update(ref(db, `games/${state.gameId}`), { status: 'preview', optionsVisible: false });
+            
+            // Setup UI for Question immediately so host sees it
+            renderHostQuestion(idx, false);
+            showScreen('screen-host-game');
+
+            let countdown = 5;
+            document.getElementById('host-timer').textContent = countdown;
+            document.getElementById('host-timer').className = "text-6xl font-black font-mono tabular-nums text-slate-800";
+
+            if (state.hostTimer) clearInterval(state.hostTimer);
+            state.hostTimer = setInterval(() => {
+                countdown--;
+                document.getElementById('host-timer').textContent = countdown;
+                if (countdown <= 0) {
+                    clearInterval(state.hostTimer);
+                    startAnsweringPhase(idx);
+                }
+            }, 1000);
+        }
+
+        async function startAnsweringPhase(idx) {
+            const q = state.questions[idx];
+            const isBala = q.type === 'bala';
+            state.roundDuration = isBala ? 10 : 20;
+
+            await update(ref(db, `games/${state.gameId}`), { 
+                status: 'question', 
+                optionsVisible: true, 
+                questionStartTime: Date.now(),
+                roundDuration: state.roundDuration 
+            });
+
+            renderHostQuestion(idx, true);
+
+            let countdown = state.roundDuration;
+            document.getElementById('host-timer').textContent = countdown;
+
+            if (state.hostTimer) clearInterval(state.hostTimer);
+            state.hostTimer = setInterval(() => {
+                countdown--;
+                const timerEl = document.getElementById('host-timer');
+                timerEl.textContent = countdown;
+                if (countdown <= 5) timerEl.classList.add('text-red-500', 'scale-110');
+                
+                if (countdown <= 0) {
+                    clearInterval(state.hostTimer);
+                    calculateScores();
+                }
+            }, 1000);
+        }
+
+        function renderHostQuestion(idx, showOptions) {
+            const q = state.questions[idx];
+            const isBala = q.type === 'bala';
+            const screen = document.getElementById('screen-host-game');
+            const qBar = document.getElementById('host-q-bar');
+            
+            // Theme
+            if (isBala) {
+                screen.classList.remove('bg-gray-50');
+                screen.classList.add('bg-red-50');
+                qBar.className = "absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500";
+                document.getElementById('host-q-card').classList.add('ring-4', 'ring-red-100');
+            } else {
+                screen.classList.add('bg-gray-50');
+                screen.classList.remove('bg-red-50');
+                qBar.className = "absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500";
+                document.getElementById('host-q-card').classList.remove('ring-4', 'ring-red-100');
+            }
+
+            // Content
+            document.getElementById('host-q-counter').textContent = `${idx + 1} / ${state.questions.length}`;
+            document.getElementById('host-game-pin-small').textContent = state.gameId;
+            document.getElementById('host-type-badge').innerHTML = isBala 
+                ? `<div class="bg-red-500 text-white px-6 py-3 rounded-2xl shadow-md font-black text-xl flex items-center animate-pulse">${ICONS.zap} <span class="ml-2">BALA</span></div>`
+                : `<div class="bg-blue-500 text-white px-6 py-3 rounded-2xl shadow-md font-bold text-xl flex items-center">${ICONS.brain} <span class="ml-2">CULTURA</span></div>`;
+            
+            document.getElementById('host-q-text').textContent = q.question;
+
+            // Options
+            const grid = document.getElementById('host-options-grid');
+            const previewMsg = document.getElementById('host-preview-msg');
+            const previewText = document.getElementById('host-preview-text');
+            
+            if (showOptions) {
+                const colors = ['bg-red-500', 'bg-blue-500', 'bg-yellow-500', 'bg-green-500'];
+                const shapes = ['▲', '◆', '●', '■'];
+                grid.innerHTML = q.options.map((opt, i) => `
+                    <div class="${colors[i]} rounded-3xl flex items-center p-8 shadow-xl">
+                        <div class="bg-black/20 w-20 h-20 rounded-2xl flex items-center justify-center text-4xl mr-8 text-white font-black shadow-inner">${shapes[i]}</div>
+                        <span class="text-4xl font-bold text-white drop-shadow-md">${opt}</span>
+                    </div>
+                `).join('');
+                grid.classList.remove('opacity-0');
+                previewMsg.classList.add('hidden');
+            } else {
+                grid.classList.add('opacity-0');
+                previewMsg.classList.remove('hidden');
+                previewText.textContent = isBala ? "¡RÁPIDO!" : "¡Lee la pregunta!";
+                previewText.className = `text-3xl font-black animate-pulse ${isBala ? 'text-red-600' : 'text-slate-900'}`;
+            }
+        }
+
+        async function calculateScores() {
+            // Get fresh data
+            const gameSnap = await get(ref(db, `games/${state.gameId}`));
+            const data = gameSnap.val();
+            const currentQ = state.questions[state.currentQIndex];
+            const updatedPlayers = { ...data.players };
+
+            Object.keys(updatedPlayers).forEach(pid => {
+                const p = updatedPlayers[pid];
+                p.lastRoundPoints = 0;
+
+                if (p.currentAnswer === currentQ.correct) {
+                    const timeTaken = (p.answerTimestamp - data.questionStartTime) / 1000;
+                    const speedBonus = Math.max(0, Math.floor(500 * (1 - (timeTaken / state.roundDuration))));
+                    const points = 500 + speedBonus;
+                    
+                    p.score = (p.score || 0) + points;
+                    p.lastRoundPoints = points;
+                }
+                // Reset for next
+                p.currentAnswer = null;
+                p.answerTimestamp = null;
+            });
+
+            await update(ref(db, `games/${state.gameId}`), {
+                players: updatedPlayers,
+                status: 'leaderboard'
+            });
+            
+            renderLeaderboard(updatedPlayers);
+            showScreen('screen-host-leaderboard');
+        }
+
+        function renderLeaderboard(playersData) {
+            const sorted = Object.values(playersData).sort((a, b) => b.score - a.score).slice(0, 5);
+            const list = document.getElementById('host-leaderboard-list');
+            
+            list.innerHTML = sorted.map((p, i) => {
+                const colors = ['bg-yellow-400 text-yellow-900', 'bg-gray-300 text-gray-800', 'bg-orange-400 text-orange-900', 'bg-gray-100 text-gray-500'];
+                const colorClass = colors[i] || colors[3];
+                const gain = p.lastRoundPoints > 0 ? `<div class="text-green-600 font-bold flex items-center mt-1">¡Sube +${Math.round(p.lastRoundPoints)}!</div>` : '';
+
+                return `
+                <div class="flex items-center bg-white p-6 rounded-3xl shadow-md border-2 border-gray-100 transform transition-all hover:scale-[1.02]">
+                    <div class="w-16 h-16 flex items-center justify-center rounded-2xl font-black text-2xl mr-6 ${colorClass} shadow-lg">${i + 1}</div>
+                    <div class="flex-1">
+                        <div class="text-3xl font-bold text-slate-800">${p.name}</div>
+                        ${gain}
+                    </div>
+                    <div class="text-4xl font-black text-indigo-600 tabular-nums">${Math.round(p.score)}</div>
+                </div>`;
+            }).join('');
+            
+            // Only switch screen if we are host, otherwise listener handles it via showScreen
+            if(state.isHost) showScreen('screen-host-leaderboard');
+        }
+
+        function renderFinished(playersData) {
+            const sorted = Object.values(playersData).sort((a, b) => b.score - a.score);
+            const winner = sorted[0];
+            document.getElementById('winner-name').textContent = winner ? winner.name : 'Nadie';
+            document.getElementById('winner-score').textContent = (winner ? Math.round(winner.score) : 0) + ' Puntos';
+            showScreen('screen-host-finished');
+        }
+
+
+        // --- PLAYER FLOW ---
+
+        function initPlayer() {
+            showScreen('screen-player-login');
+        }
+
+        function setupPlayerListener() {
+            onValue(ref(db, `games/${state.gameId}`), (snap) => {
+                const data = snap.val();
+                if (!data) return; // Game deleted?
+
+                // My data
+                const myData = data.players[state.userId];
+                if (!myData) return; // Kicked?
+
+                // Update Feedback on leaderboard
+                document.getElementById('player-score').textContent = Math.round(myData.score);
+                if (myData.lastRoundPoints > 0) {
+                    document.getElementById('player-points-gained').textContent = `+ ${Math.round(myData.lastRoundPoints)}`;
+                    document.getElementById('player-feedback-positive').classList.remove('hidden');
+                    document.getElementById('player-feedback-negative').classList.add('hidden');
+                    document.getElementById('screen-player-leaderboard').classList.add('bg-green-500');
+                    document.getElementById('screen-player-leaderboard').classList.remove('bg-red-500');
+                } else {
+                    document.getElementById('player-feedback-positive').classList.add('hidden');
+                    document.getElementById('player-feedback-negative').classList.remove('hidden');
+                    document.getElementById('screen-player-leaderboard').classList.remove('bg-green-500');
+                    document.getElementById('screen-player-leaderboard').classList.add('bg-red-500');
+                }
+
+                // Rank
+                const sorted = Object.values(data.players).sort((a, b) => b.score - a.score);
+                const rank = sorted.findIndex(p => p.name === myData.name) + 1;
+                document.getElementById('player-rank').textContent = `${rank}º`;
+
+                // Screen Switching
+                if (data.status === 'lobby') {
+                    document.getElementById('player-lobby-name').textContent = myData.name;
+                    showScreen('screen-player-lobby');
+                } 
+                else if (data.status === 'preview') {
+                    showScreen('screen-player-preview');
+                }
+                else if (data.status === 'question') {
+                    if (data.optionsVisible) {
+                         // Check if already answered this specific round (logic relies on host resetting currentAnswer to null at round start)
+                         // But host resets it AFTER calculation. 
+                         // To be safe, we check if local state matches DB. 
+                         if (myData.currentAnswer !== undefined && myData.currentAnswer !== null) {
+                             showScreen('screen-player-answered');
+                         } else {
+                             showScreen('screen-player-game');
+                         }
+                    } else {
+                        showScreen('screen-player-wait');
+                    }
+                } 
+                else if (data.status === 'leaderboard') {
+                     showScreen('screen-player-leaderboard');
+                }
+                else if (data.status === 'finished') {
+                    showScreen('screen-player-leaderboard');
+                    document.getElementById('player-btn-exit').classList.remove('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
