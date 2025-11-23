@@ -25,7 +25,8 @@
             loader: `<svg class="animate-spin" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>`,
             maximize: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>`,
             chevronLeft: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>`,
-            chevronRight: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>`
+            chevronRight: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>`,
+            pencil: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>`
         };
     </script>
     <style>
@@ -111,7 +112,7 @@
 
                 <!-- Right: Player Grid -->
                 <div class="flex-1 bg-black/20 rounded-3xl p-8 border border-white/5 relative overflow-hidden">
-                    <div id="host-player-list" class="flex flex-wrap content-start gap-4 h-full overflow-y-auto pb-24">
+                    <div id="host-player-list" class="flex flex-wrap content-start gap-6 h-full overflow-y-auto pb-24">
                         <!-- Players injected here -->
                     </div>
                     
@@ -125,7 +126,7 @@
             </div>
         </div>
 
-        <!-- SCREEN: HOST GAME (PREVIEW, QUESTION & REVEAL) -->
+        <!-- SCREEN: HOST GAME -->
         <div id="screen-host-game" class="hidden-screen h-screen flex flex-col p-6 transition-colors duration-500 fade-in bg-gray-50">
             <!-- Header -->
             <div class="flex justify-between items-center mb-8">
@@ -133,18 +134,11 @@
                     <div id="host-q-counter" class="bg-white px-6 py-3 rounded-2xl shadow-sm border border-gray-100 font-bold text-xl text-gray-500">
                         1 / 20
                     </div>
-                    <div id="host-type-badge">
-                        <!-- Badge injected by JS -->
-                    </div>
+                    <div id="host-type-badge"></div>
                 </div>
-                
-                <!-- Timer -->
                 <div class="relative flex items-center justify-center">
-                    <div id="host-timer" class="text-6xl font-black font-mono tabular-nums text-slate-800 transition-all">
-                        20
-                    </div>
+                    <div id="host-timer" class="text-6xl font-black font-mono tabular-nums text-slate-800 transition-all">20</div>
                 </div>
-
                 <div class="bg-white px-6 py-3 rounded-2xl shadow-sm border border-gray-100 font-mono text-xl font-bold text-gray-500">
                     Pin: <span id="host-game-pin-small"></span>
                 </div>
@@ -154,14 +148,12 @@
             <div class="flex-1 flex items-center justify-center mb-10">
                 <div id="host-q-card" class="bg-white p-16 rounded-[3rem] shadow-2xl text-center max-w-6xl w-full border border-gray-100 relative overflow-hidden">
                     <div id="host-q-bar" class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
-                    <h2 id="host-q-text" class="text-5xl md:text-6xl font-black leading-tight text-slate-900">Cargando pregunta...</h2>
+                    <h2 id="host-q-text" class="text-5xl md:text-6xl font-black leading-tight text-slate-900">Cargando...</h2>
                 </div>
             </div>
 
             <!-- Options Grid -->
-            <div id="host-options-grid" class="grid grid-cols-2 gap-6 h-1/3 pb-4 opacity-0 transition-opacity duration-500">
-                <!-- Options injected by JS -->
-            </div>
+            <div id="host-options-grid" class="grid grid-cols-2 gap-6 h-1/3 pb-4 opacity-0 transition-opacity duration-500"></div>
             
             <div id="host-preview-msg" class="fixed bottom-12 left-0 w-full text-center pointer-events-none">
                 <div class="inline-block bg-white/90 backdrop-blur px-8 py-4 rounded-full shadow-xl">
@@ -173,11 +165,7 @@
         <!-- SCREEN: HOST LEADERBOARD -->
         <div id="screen-host-leaderboard" class="hidden-screen h-screen bg-slate-900 text-white flex flex-col p-8 fade-in">
             <h2 class="text-6xl font-black text-center mb-12 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">CLASIFICACIÓN</h2>
-            
-            <div id="host-leaderboard-list" class="flex-1 max-w-5xl w-full mx-auto space-y-4 overflow-y-auto">
-                <!-- List Items injected by JS -->
-            </div>
-
+            <div id="host-leaderboard-list" class="flex-1 max-w-5xl w-full mx-auto space-y-4 overflow-y-auto"></div>
             <div class="flex justify-end mt-8">
                <button onclick="app.nextQuestion()" class="bg-white text-slate-900 hover:bg-gray-200 font-bold py-5 px-10 rounded-full shadow-xl text-2xl flex items-center transition-all hover:-translate-y-1">
                  Siguiente Pregunta <span class="ml-3">➔</span>
@@ -193,24 +181,17 @@
                 </div>
                 <h1 class="text-8xl font-black mb-12 text-white tracking-tighter mt-10">¡GANADOR!</h1>
             </div>
-            
             <div class="bg-gradient-to-b from-indigo-600 to-purple-600 text-white px-20 py-12 rounded-[3rem] shadow-2xl mb-12 transform scale-110 rotate-1 border-4 border-white ring-4 ring-indigo-500/50">
                 <div class="flex flex-col items-center">
                     <div id="winner-avatar" class="text-8xl mb-4 filter drop-shadow-lg">😎</div>
                     <span id="winner-name" class="text-7xl font-black block mb-2 text-center">Nombre</span>
                 </div>
             </div>
-            
-            <div id="winner-score" class="text-5xl font-black text-slate-900 mb-16 bg-white px-10 py-4 rounded-full">
-                0 Puntos
-            </div>
-
-            <button onclick="window.location.reload()" class="bg-white/10 border-2 border-white/20 hover:bg-white/20 text-white font-bold py-4 px-10 rounded-full transition-colors text-xl shadow-lg">
-                Jugar otra vez
-            </button>
+            <div id="winner-score" class="text-5xl font-black text-slate-900 mb-16 bg-white px-10 py-4 rounded-full">0 Puntos</div>
+            <button onclick="window.location.reload()" class="bg-white/10 border-2 border-white/20 hover:bg-white/20 text-white font-bold py-4 px-10 rounded-full transition-colors text-xl shadow-lg">Jugar otra vez</button>
         </div>
 
-        <!-- SCREEN: PLAYER LOGIN (STEP 1: PIN & NAME) -->
+        <!-- SCREEN: PLAYER LOGIN -->
         <div id="screen-player-login" class="hidden-screen h-screen bg-slate-50 flex flex-col items-center justify-center p-6 text-slate-900 fade-in">
              <div class="bg-white p-4 rounded-2xl shadow-sm mb-6 border border-slate-200 text-indigo-600">
                 <script>document.write(ICONS.smartphone)</script>
@@ -224,16 +205,12 @@
             </div>
         </div>
 
-        <!-- SCREEN: PLAYER AVATAR (STEP 2) -->
+        <!-- SCREEN: PLAYER AVATAR -->
         <div id="screen-player-avatar" class="hidden-screen h-screen bg-slate-50 flex flex-col items-center justify-center p-6 text-slate-900 fade-in">
             <h2 class="text-2xl font-bold mb-8">Crea tu Avatar</h2>
-            
-            <!-- Avatar Preview -->
             <div id="avatar-preview-container" class="w-40 h-40 rounded-full flex items-center justify-center text-7xl shadow-xl border-4 border-white mb-8 transition-colors duration-300 bg-blue-500">
                 <span id="avatar-preview-emoji">😎</span>
             </div>
-
-            <!-- Emoji Selector -->
             <div class="w-full max-w-xs mb-6">
                 <p class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2 text-center">Elige tu cara</p>
                 <div class="flex items-center justify-between bg-white p-2 rounded-xl shadow-sm border border-slate-200">
@@ -242,19 +219,14 @@
                     <button onclick="app.cycleEmoji(1)" class="p-3 hover:bg-slate-100 rounded-lg"><script>document.write(ICONS.chevronRight)</script></button>
                 </div>
             </div>
-
-            <!-- Color Selector -->
             <div class="w-full max-w-xs mb-10">
                 <p class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2 text-center">Elige tu color</p>
-                <div class="flex justify-center gap-3" id="color-picker">
-                    <!-- Colors injected JS -->
-                </div>
+                <div class="flex justify-center gap-3" id="color-picker"></div>
             </div>
-
             <button onclick="app.confirmJoin()" class="w-full max-w-sm bg-green-500 text-white font-black py-5 rounded-xl text-xl hover:bg-green-600 transition-colors shadow-lg">¡LISTO!</button>
         </div>
 
-        <!-- SCREEN: PLAYER LOBBY -->
+        <!-- SCREEN: PLAYER LOBBY (Updated) -->
         <div id="screen-player-lobby" class="hidden-screen h-screen bg-slate-900 flex flex-col items-center justify-center p-6 text-white text-center fade-in">
              <div class="mb-8 animate-bounce text-green-400">
                 <script>document.write(ICONS.check)</script>
@@ -262,9 +234,13 @@
             <h2 class="text-4xl font-black mb-2">¡Estás dentro!</h2>
             <p class="text-xl text-slate-400 mb-10">¿Ves tu nombre en pantalla?</p>
             
-            <div class="bg-white/10 p-6 rounded-3xl backdrop-blur-md border border-white/10 flex flex-col items-center">
+            <div class="relative bg-white/10 p-6 rounded-3xl backdrop-blur-md border border-white/10 flex flex-col items-center w-64">
+                <button onclick="app.editAvatar()" class="absolute top-2 right-2 p-2 bg-white/20 rounded-full hover:bg-white/30 transition-colors" title="Editar Avatar">
+                    <script>document.write(ICONS.pencil)</script>
+                </button>
+                
                 <div id="player-lobby-avatar" class="w-24 h-24 rounded-full flex items-center justify-center text-5xl shadow-lg border-2 border-white mb-4">😎</div>
-                <p id="player-lobby-name" class="font-bold text-2xl">Nombre</p>
+                <p id="player-lobby-name" class="font-bold text-2xl truncate w-full">Nombre</p>
             </div>
         </div>
 
@@ -277,13 +253,13 @@
             <p class="text-xl">Pregunta en pantalla...</p>
         </div>
 
-        <!-- SCREEN: PLAYER WAIT (Reading) -->
+        <!-- SCREEN: PLAYER WAIT -->
         <div id="screen-player-wait" class="hidden-screen h-screen bg-indigo-600 flex flex-col items-center justify-center p-6 text-white text-center fade-in">
              <div class="text-white mb-4"><script>document.write(ICONS.loader)</script></div>
              <p class="text-xl font-bold">Leyendo...</p>
         </div>
 
-        <!-- SCREEN: PLAYER GAME (Buttons) -->
+        <!-- SCREEN: PLAYER GAME -->
         <div id="screen-player-game" class="hidden-screen h-screen bg-white p-4 grid grid-cols-2 grid-rows-2 gap-4 fade-in">
             <button onclick="app.submitAnswer(0)" class="bg-red-500 rounded-3xl shadow-lg active:scale-95 transition-transform flex items-center justify-center border-b-8 border-red-700 active:border-b-0 active:mt-2">
                 <span class="text-7xl text-white drop-shadow-md">▲</span>
@@ -307,12 +283,10 @@
             <h2 class="text-3xl font-bold">¡Respondido!</h2>
         </div>
 
-        <!-- SCREEN: PLAYER RESULT (CORRECT/INCORRECT) -->
+        <!-- SCREEN: PLAYER RESULT -->
         <div id="screen-player-result" class="hidden-screen h-screen flex flex-col items-center justify-center p-6 text-white text-center fade-in">
             <div class="mb-6 animate-bounce">
-                <div id="player-result-icon">
-                    <!-- Injected Icon -->
-                </div>
+                <div id="player-result-icon"></div>
             </div>
             <h2 id="player-result-text" class="text-5xl font-black tracking-tighter"></h2>
         </div>
@@ -322,12 +296,10 @@
             <div class="bg-white/10 p-8 rounded-[2rem] w-full max-w-sm backdrop-blur-sm shadow-xl border border-white/10">
                 <div class="text-lg font-bold mb-2 uppercase tracking-wider opacity-80">Tu posición</div>
                 <div id="player-rank" class="text-7xl font-black mb-8">?º</div>
-                
                 <div class="bg-black/20 rounded-2xl p-6 mb-6">
                     <div class="text-sm font-bold opacity-80 uppercase mb-1">Puntos Totales</div>
                     <div id="player-score" class="text-4xl font-black">0</div>
                 </div>
-
                 <div id="player-feedback-positive" class="hidden">
                      <div class="animate-bounce bg-white text-green-600 py-3 px-6 rounded-xl shadow-lg inline-block">
                         <div id="player-points-gained" class="text-3xl font-black">+ 0</div>
@@ -372,19 +344,16 @@
             isHost: false,
             hostTimer: null,
             roundDuration: 20,
-            
-            // Avatar Builder State
             avatarEmojiIndex: 0,
             avatarColorIndex: 1,
-            playerName: ''
+            playerName: '',
+            joined: false
         };
         localStorage.setItem('fq_uid', state.userId);
 
-        // --- AVATAR ASSETS ---
         const AVATAR_EMOJIS = ['😎', '👻', '🤠', '👽', '🤖', '💩', '🦄', '🐱', '🐶', '🦊', '🦁', '🐼', '🐯', '🐷', '🐸', '🐙', '💀', '🤡'];
         const AVATAR_COLORS = ['bg-red-500', 'bg-blue-500', 'bg-green-500', 'bg-yellow-500', 'bg-purple-500', 'bg-pink-500', 'bg-orange-500', 'bg-teal-500'];
 
-        // --- AUDIO ---
         const audio = {
             bgm1: new Audio(AUDIO_URLS.bgm1),
             bgm2: new Audio(AUDIO_URLS.bgm2),
@@ -393,13 +362,7 @@
         audio.bgm1.loop = true;
         audio.bgm2.loop = true;
 
-        const stopAllAudio = () => {
-            Object.values(audio).forEach(a => {
-                a.pause();
-                a.currentTime = 0;
-            });
-        };
-
+        const stopAllAudio = () => { Object.values(audio).forEach(a => { a.pause(); a.currentTime = 0; }); };
         const playTrack = (track) => {
             if (!state.soundEnabled) return;
             if (track !== 'gong' && !audio[track].paused) return;
@@ -407,19 +370,13 @@
             if (track === 'bgm2') { audio.bgm1.pause(); audio.gong.pause(); }
             if (track === 'gong') { audio.bgm1.pause(); audio.bgm2.pause(); }
             audio[track].volume = track === 'gong' ? 1.0 : 0.5;
-            audio[track].play().catch(e => console.log("Audio play failed (interaction needed)", e));
+            audio[track].play().catch(e => console.log("Audio play failed", e));
         };
 
-        // --- EXIT BLOCK (PREVENTION) ---
         window.addEventListener('beforeunload', (e) => {
-            if (state.mode) {
-                e.preventDefault();
-                e.returnValue = '¿Seguro que quieres salir de la partida?';
-                return '¿Seguro que quieres salir de la partida?';
-            }
+            if (state.mode) { e.preventDefault(); e.returnValue = '¿Seguro que quieres salir?'; return '¿Seguro que quieres salir?'; }
         });
 
-        // --- CHECK URL PARAMS FOR AUTO JOIN ---
         window.onload = () => {
             const urlParams = new URLSearchParams(window.location.search);
             const pin = urlParams.get('pin');
@@ -429,7 +386,6 @@
             }
         };
 
-        // --- UI HELPERS ---
         const showScreen = (id) => {
             document.querySelectorAll('[id^="screen-"]').forEach(el => el.classList.add('hidden-screen'));
             document.getElementById(id).classList.remove('hidden-screen');
@@ -439,8 +395,6 @@
              const btn = document.getElementById('btn-sound');
              btn.innerHTML = state.soundEnabled ? ICONS.volume2 : ICONS.volumeX;
         };
-
-        // --- HOST LOGIC ---
 
         window.app = {
             selectMode: (mode) => {
@@ -477,95 +431,69 @@
                     await update(ref(db, `games/${state.gameId}`), { status: 'finished' });
                 }
             },
-            
-            // Player Avatar Logic
             goToAvatar: async () => {
                 const pin = document.getElementById('player-input-pin').value;
                 const name = document.getElementById('player-input-name').value;
                 const errorEl = document.getElementById('player-login-error');
-                
-                if (!pin || !name) {
-                    errorEl.textContent = "Rellena todos los campos";
-                    errorEl.classList.remove('hidden');
-                    return;
-                }
-
-                // Verify room exists first
+                if (!pin || !name) { errorEl.textContent = "Rellena todos los campos"; errorEl.classList.remove('hidden'); return; }
                 try {
                     const snap = await get(ref(db, `games/${pin}`));
-                    if (!snap.exists()) {
-                        errorEl.textContent = "Sala no encontrada";
-                        errorEl.classList.remove('hidden');
-                        return;
-                    }
-                    
+                    if (!snap.exists()) { errorEl.textContent = "Sala no encontrada"; errorEl.classList.remove('hidden'); return; }
                     state.gameId = pin;
                     state.playerName = name;
-                    
-                    // Enter Fullscreen on Mobile
                     app.toggleFullscreen();
-                    
-                    // Setup Avatar Screen
                     renderColorPicker();
                     updateAvatarPreview();
                     showScreen('screen-player-avatar');
-                    
-                } catch (e) {
-                    errorEl.textContent = "Error de conexión";
-                    errorEl.classList.remove('hidden');
-                }
+                } catch (e) { errorEl.textContent = "Error de conexión"; errorEl.classList.remove('hidden'); }
             },
-            
             cycleEmoji: (direction) => {
                 state.avatarEmojiIndex += direction;
                 if (state.avatarEmojiIndex < 0) state.avatarEmojiIndex = AVATAR_EMOJIS.length - 1;
                 if (state.avatarEmojiIndex >= AVATAR_EMOJIS.length) state.avatarEmojiIndex = 0;
                 updateAvatarPreview();
             },
-            
             selectColor: (index) => {
                 state.avatarColorIndex = index;
                 updateAvatarPreview();
             },
-
             confirmJoin: async () => {
                 try {
                     const avatarData = {
                         emoji: AVATAR_EMOJIS[state.avatarEmojiIndex],
                         color: AVATAR_COLORS[state.avatarColorIndex]
                     };
-                    
-                    await update(ref(db, `games/${state.gameId}/players/${state.userId}`), {
+                    // If already joined (editing), do not reset score
+                    const payload = {
                         name: state.playerName, 
-                        score: 0, 
-                        lastRoundPoints: 0, 
-                        currentAnswer: null,
                         avatar: avatarData
-                    });
+                    };
+                    if (!state.joined) {
+                        payload.score = 0;
+                        payload.lastRoundPoints = 0;
+                        payload.currentAnswer = null;
+                    }
+                    
+                    await update(ref(db, `games/${state.gameId}/players/${state.userId}`), payload);
+                    state.joined = true;
                     setupPlayerListener();
-                } catch (e) {
-                    console.error(e);
-                    alert("Error al unirse");
-                }
+                } catch (e) { console.error(e); alert("Error al unirse"); }
             },
-
+            editAvatar: () => {
+                // Go back to avatar screen
+                showScreen('screen-player-avatar');
+            },
             submitAnswer: async (idx) => {
-                await update(ref(db, `games/${state.gameId}/players/${state.userId}`), {
-                    currentAnswer: idx, answerTimestamp: Date.now()
-                });
+                await update(ref(db, `games/${state.gameId}/players/${state.userId}`), { currentAnswer: idx, answerTimestamp: Date.now() });
                 showScreen('screen-player-answered');
             }
         };
 
-        // --- AVATAR HELPERS ---
         function updateAvatarPreview() {
             const container = document.getElementById('avatar-preview-container');
             const emoji = document.getElementById('avatar-preview-emoji');
             const display = document.getElementById('avatar-emoji-display');
-            
-            // Reset classes
             container.className = `w-40 h-40 rounded-full flex items-center justify-center text-7xl shadow-xl border-4 border-white mb-8 transition-colors duration-300 ${AVATAR_COLORS[state.avatarColorIndex]}`;
-            
             const char = AVATAR_EMOJIS[state.avatarEmojiIndex];
             emoji.textContent = char;
             display.textContent = char;
@@ -578,57 +506,31 @@
             `).join('');
         }
 
-        // --- HOST FLOW ---
-
         async function initHost() {
             app.toggleFullscreen();
-
             try {
                 const res = await fetch('https://logise1.github.io/quiznight/q.json');
                 const data = await res.json();
-                
                 const balas = data.filter(q => q.type === 'bala');
                 const culturas = data.filter(q => !q.type || q.type === 'cultura'); 
-                
                 const selectedBalas = balas.sort(() => 0.5 - Math.random()).slice(0, 5);
                 const selectedCulturas = culturas.sort(() => 0.5 - Math.random()).slice(0, 15);
-                
                 state.questions = [...selectedBalas, ...selectedCulturas].sort(() => 0.5 - Math.random());
-                
             } catch (e) {
-                console.error("Error fetching", e);
                 state.questions = [{ question: "Error loading", options: ["A", "B", "C", "D"], correct: 0, type: "bala" }];
             }
-
             const id = Math.floor(1000 + Math.random() * 9000).toString();
             state.gameId = id;
             state.isHost = true;
-            
-            await set(ref(db, `games/${id}`), {
-                hostId: state.userId, status: 'lobby', currentQuestion: 0, players: {}, startTime: null, optionsVisible: false
-            });
-
+            await set(ref(db, `games/${id}`), { hostId: state.userId, status: 'lobby', currentQuestion: 0, players: {}, startTime: null, optionsVisible: false });
             document.getElementById('host-game-id').textContent = id;
             updateSoundIcon();
-            
-            // Auto Play Lobby Music for Host
             playTrack('bgm2'); 
-            
             showScreen('screen-host-lobby');
-
-            // GENERATE QR CODE
             const joinUrl = window.location.href.split('?')[0] + '?pin=' + id;
             const qrContainer = document.getElementById('qrcode');
             qrContainer.innerHTML = ''; 
-            new QRCode(qrContainer, {
-                text: joinUrl,
-                width: 150,
-                height: 150,
-                colorDark : "#000000",
-                colorLight : "#ffffff",
-                correctLevel : QRCode.CorrectLevel.H
-            });
-
+            new QRCode(qrContainer, { text: joinUrl, width: 150, height: 150, colorDark : "#000000", colorLight : "#ffffff", correctLevel : QRCode.CorrectLevel.H });
             onValue(ref(db, `games/${id}`), (snap) => {
                 const data = snap.val();
                 if(!data) return;
@@ -644,25 +546,22 @@
                 document.getElementById('btn-start-game').disabled = pList.length === 0;
                 const listEl = document.getElementById('host-player-list');
                 
-                // Render Player Cards (Kahoot Style)
                 listEl.innerHTML = pList.map(p => {
                     const avatar = p.avatar || { emoji: '😀', color: 'bg-gray-400' };
                     return `
-                    <div class="player-card flex flex-col items-center w-32 mb-6">
-                        <div class="w-20 h-20 rounded-full flex items-center justify-center text-4xl shadow-lg border-2 border-white mb-2 ${avatar.color}">
+                    <div class="player-card flex flex-col items-center w-40 mb-8 mx-4">
+                        <div class="w-32 h-32 rounded-full flex items-center justify-center text-7xl shadow-2xl border-4 border-white mb-4 ${avatar.color} transform transition-transform hover:scale-110">
                             ${avatar.emoji}
                         </div>
-                        <div class="bg-black/50 text-white px-3 py-1 rounded-lg text-sm font-bold truncate w-full text-center">
+                        <div class="bg-black/60 backdrop-blur text-white px-4 py-2 rounded-xl text-lg font-black truncate w-full text-center border border-white/10 shadow-lg">
                             ${p.name}
                         </div>
                     </div>
                 `}).join('');
                 
-            } else if (data.status === 'leaderboard') {
-                renderLeaderboard(data.players);
-            } else if (data.status === 'finished') {
-                renderFinished(data.players);
-            } else if (data.status === 'question') {
+            } else if (data.status === 'leaderboard') { renderLeaderboard(data.players); } 
+            else if (data.status === 'finished') { renderFinished(data.players); } 
+            else if (data.status === 'question') {
                 if (data.optionsVisible) {
                     const pIds = Object.keys(state.players);
                     if (pIds.length > 0) {
@@ -681,25 +580,14 @@
                 const q = state.questions[state.currentQIndex];
                 const grid = document.getElementById('host-options-grid');
                 Array.from(grid.children).forEach((el, idx) => {
-                    if (idx !== q.correct) {
-                        el.classList.add('opacity-20');
-                    } else {
-                        el.classList.add('ring-8', 'ring-green-400', 'scale-105', 'transition-all');
-                    }
+                    if (idx !== q.correct) { el.classList.add('opacity-20'); } 
+                    else { el.classList.add('ring-8', 'ring-green-400', 'scale-105', 'transition-all'); }
                 });
                 showScreen('screen-host-game');
             }
-
-            // Audio
-            if (data.status === 'preview') {
-                const isEvenIndex = (state.currentQIndex % 2 === 0); 
-                if (!isEvenIndex) playTrack('bgm2');
-            } else if (data.status === 'question') {
-                 const isEvenIndex = (state.currentQIndex % 2 === 0);
-                 if (isEvenIndex) playTrack('bgm1');
-            } else if (data.status === 'leaderboard' || data.status === 'finished') {
-                playTrack('gong');
-            }
+            if (data.status === 'preview') { const isEvenIndex = (state.currentQIndex % 2 === 0); if (!isEvenIndex) playTrack('bgm2'); } 
+            else if (data.status === 'question') { const isEvenIndex = (state.currentQIndex % 2 === 0); if (isEvenIndex) playTrack('bgm1'); } 
+            else if (data.status === 'leaderboard' || data.status === 'finished') { playTrack('gong'); }
         }
 
         function runQuestionSequence(idx) {
@@ -714,10 +602,7 @@
             state.hostTimer = setInterval(() => {
                 countdown--;
                 document.getElementById('host-timer').textContent = countdown;
-                if (countdown <= 0) {
-                    clearInterval(state.hostTimer);
-                    startAnsweringPhase(idx);
-                }
+                if (countdown <= 0) { clearInterval(state.hostTimer); startAnsweringPhase(idx); }
             }, 1000);
         }
 
@@ -725,9 +610,7 @@
             const q = state.questions[idx];
             const isBala = q.type === 'bala';
             state.roundDuration = isBala ? 10 : 20;
-            await update(ref(db, `games/${state.gameId}`), { 
-                status: 'question', optionsVisible: true, questionStartTime: Date.now(), roundDuration: state.roundDuration 
-            });
+            await update(ref(db, `games/${state.gameId}`), { status: 'question', optionsVisible: true, questionStartTime: Date.now(), roundDuration: state.roundDuration });
             renderHostQuestion(idx, true);
             let countdown = state.roundDuration;
             document.getElementById('host-timer').textContent = countdown;
@@ -737,10 +620,7 @@
                 const timerEl = document.getElementById('host-timer');
                 timerEl.textContent = countdown;
                 if (countdown <= 5) timerEl.classList.add('text-red-500', 'scale-110');
-                if (countdown <= 0) {
-                    clearInterval(state.hostTimer);
-                    calculateScores();
-                }
+                if (countdown <= 0) { clearInterval(state.hostTimer); calculateScores(); }
             }, 1000);
         }
 
@@ -801,20 +681,11 @@
                 }
                 p.currentAnswer = null; p.answerTimestamp = null;
             });
-
             if (currentQ.type !== 'bala') {
-                await update(ref(db, `games/${state.gameId}`), {
-                    players: updatedPlayers,
-                    status: 'reveal'
-                });
-                setTimeout(() => {
-                     update(ref(db, `games/${state.gameId}`), { status: 'leaderboard' });
-                }, 4000);
+                await update(ref(db, `games/${state.gameId}`), { players: updatedPlayers, status: 'reveal' });
+                setTimeout(() => { update(ref(db, `games/${state.gameId}`), { status: 'leaderboard' }); }, 4000);
             } else {
-                await update(ref(db, `games/${state.gameId}`), {
-                    players: updatedPlayers,
-                    status: 'leaderboard'
-                });
+                await update(ref(db, `games/${state.gameId}`), { players: updatedPlayers, status: 'leaderboard' });
                 renderLeaderboard(updatedPlayers);
                 showScreen('screen-host-leaderboard');
             }
@@ -827,21 +698,12 @@
                 const colors = ['bg-yellow-400 text-yellow-900', 'bg-gray-300 text-gray-800', 'bg-orange-400 text-orange-900', 'bg-gray-100 text-gray-500'];
                 const colorClass = colors[i] || colors[3];
                 const gain = p.lastRoundPoints > 0 ? `<div class="text-green-600 font-bold flex items-center mt-1">¡Sube +${Math.round(p.lastRoundPoints)}!</div>` : '';
-                
                 const avatar = p.avatar || {emoji:'🙂', color:'bg-gray-400'};
-                
                 return `
                 <div class="flex items-center bg-white text-slate-900 p-6 rounded-3xl shadow-md border-2 border-gray-100 transform transition-all hover:scale-[1.02]">
                     <div class="w-16 h-16 flex items-center justify-center rounded-2xl font-black text-2xl mr-6 ${colorClass} shadow-lg">${i + 1}</div>
-                    
-                    <div class="mr-4 w-12 h-12 rounded-full ${avatar.color} flex items-center justify-center text-2xl border border-white shadow-sm">
-                        ${avatar.emoji}
-                    </div>
-
-                    <div class="flex-1">
-                        <div class="text-3xl font-bold text-slate-800">${p.name}</div>
-                        ${gain}
-                    </div>
+                    <div class="mr-4 w-12 h-12 rounded-full ${avatar.color} flex items-center justify-center text-2xl border border-white shadow-sm">${avatar.emoji}</div>
+                    <div class="flex-1"><div class="text-3xl font-bold text-slate-800">${p.name}</div>${gain}</div>
                     <div class="text-4xl font-black text-indigo-600 tabular-nums">${Math.round(p.score)}</div>
                 </div>`;
             }).join('');
@@ -853,19 +715,13 @@
             const winner = sorted[0];
             document.getElementById('winner-name').textContent = winner ? winner.name : 'Nadie';
             document.getElementById('winner-score').textContent = (winner ? Math.round(winner.score) : 0) + ' Puntos';
-            
             const av = winner?.avatar || {emoji:'😎', color:'bg-white'};
             const avEl = document.getElementById('winner-avatar');
             avEl.textContent = av.emoji;
-            // We can't easily change parent color class dynamically in this simple block, 
-            // but emoji is key.
-            
             showScreen('screen-host-finished');
         }
 
-        function initPlayer() {
-            showScreen('screen-player-login');
-        }
+        function initPlayer() { showScreen('screen-player-login'); }
 
         function setupPlayerListener() {
             onValue(ref(db, `games/${state.gameId}`), (snap) => {
@@ -898,7 +754,6 @@
                     const avEl = document.getElementById('player-lobby-avatar');
                     avEl.textContent = av.emoji;
                     avEl.className = `w-24 h-24 rounded-full flex items-center justify-center text-5xl shadow-lg border-2 border-white mb-4 ${av.color}`;
-                    
                     showScreen('screen-player-lobby');
                 } else if (data.status === 'preview') {
                     showScreen('screen-player-preview');
