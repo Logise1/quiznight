@@ -592,5 +592,305 @@
     "question": "¿Quién inventó la bombilla?",
     "options": ["Tesla", "Edison", "Bell", "Franklin"],
     "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Alemania?",
+    "options": ["Múnich", "Hamburgo", "Berlín", "Frankfurt"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 8 + 2?",
+    "options": ["12", "9", "10", "8"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué símbolo químico es 'Au'?",
+    "options": ["Plata", "Cobre", "Oro", "Hierro"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué sonido hace la vaca?",
+    "options": ["Miau", "Guau", "Muu", "Bee"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el continente más grande?",
+    "options": ["África", "Asia", "América", "Europa"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿De qué color es una nube normal?",
+    "options": ["Verde", "Blanco", "Rojo", "Negro"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Autora de Harry Potter?",
+    "options": ["J.K. Rowling", "Agatha Christie", "Enid Blyton", "Jane Austen"],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "¿Cómo se llama el dedo gordo de la mano?",
+    "options": ["Meñique", "Índice", "Pulgar", "Anular"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Moneda del Reino Unido?",
+    "options": ["Euro", "Dólar", "Libra", "Franco"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 7 - 2?",
+    "options": ["4", "6", "5", "3"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Dios del trueno en la mitología nórdica?",
+    "options": ["Odín", "Thor", "Loki", "Freya"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué vehículo tiene dos ruedas?",
+    "options": ["Coche", "Moto", "Camión", "Autobús"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿De qué país es originario el Tango?",
+    "options": ["España", "Brasil", "Argentina", "México"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el opuesto de 'Día'?",
+    "options": ["Sol", "Tarde", "Noche", "Mañana"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cómo se llama el hueso del muslo?",
+    "options": ["Tibia", "Radio", "Fémur", "Cúbito"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene el cuello muy largo?",
+    "options": ["Oso", "Jirafa", "Cerdo", "Perro"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año comenzó la Revolución Francesa?",
+    "options": ["1776", "1492", "1789", "1812"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué fruta es pequeña, roja y tiene semillas por fuera?",
+    "options": ["Manzana", "Fresa", "Naranja", "Melón"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es conocido como el Planeta Rojo?",
+    "options": ["Marte", "Júpiter", "Venus", "Saturno"],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos minutos hay en una hora?",
+    "options": ["100", "50", "60", "30"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién pintó el Guernica?",
+    "options": ["Dalí", "Miró", "Picasso", "Goya"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué pájaro no puede volar pero nada muy bien?",
+    "options": ["Águila", "Pingüino", "Loro", "Gorrión"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué elemento químico es necesario para respirar?",
+    "options": ["Helio", "Oxígeno", "Carbono", "Neón"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 50 + 50?",
+    "options": ["100", "200", "500", "10"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Rusia?",
+    "options": ["San Petersburgo", "Moscú", "Kiev", "Minsk"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué parte del cuerpo usas para pensar?",
+    "options": ["Corazón", "Estómago", "Cerebro", "Rodilla"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién es conocido como el Rey del Pop?",
+    "options": ["Elvis Presley", "Prince", "Michael Jackson", "Madonna"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal ladra?",
+    "options": ["Gato", "Perro", "Pez", "Pájaro"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué ciudad de EEUU es famosa por sus rascacielos y la Estatua de la Libertad?",
+    "options": ["Los Ángeles", "Chicago", "Nueva York", "Miami"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿De qué color pintamos normalmente el sol?",
+    "options": ["Azul", "Verde", "Amarillo", "Morado"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién patentó el teléfono?",
+    "options": ["Alexander G. Bell", "Nikola Tesla", "Thomas Edison", "Isaac Newton"],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos dedos hay en un pie humano normal?",
+    "options": ["4", "5", "6", "10"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué ciudad italiana está la torre inclinada?",
+    "options": ["Roma", "Venecia", "Pisa", "Milán"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es la última letra del abecedario?",
+    "options": ["A", "X", "Y", "Z"],
+    "correct": 3
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué continente está el río Amazonas?",
+    "options": ["África", "América del Sur", "Asia", "Europa"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 1 + 0?",
+    "options": ["0", "1", "10", "2"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cómo se llama el protagonista de Matrix?",
+    "options": ["Morfeo", "Neo", "Trinity", "Smith"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para protegerte de la lluvia?",
+    "options": ["Gafas de sol", "Paraguas", "Sandalias", "Bañador"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Egipto?",
+    "options": ["El Cairo", "Alejandría", "Luxor", "Giza"],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal nos da lana?",
+    "options": ["Vaca", "Oveja", "Cerdo", "Pollo"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Diosa griega de la sabiduría?",
+    "options": ["Afrodita", "Hera", "Atenea", "Artemisa"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿De qué color es un limón maduro?",
+    "options": ["Rojo", "Azul", "Amarillo", "Rosa"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué elemento químico es Fe?",
+    "options": ["Flúor", "Fósforo", "Hierro", "Francio"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué tiene cinco dedos y no es un pie?",
+    "options": ["Una mano", "Una oreja", "Una nariz", "Un ojo"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Dónde se encuentra el Coliseo?",
+    "options": ["Atenas", "Roma", "París", "Londres"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 4 dividido entre 2?",
+    "options": ["1", "2", "4", "8"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el idioma oficial de Brasil?",
+    "options": ["Español", "Inglés", "Portugués", "Francés"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué es lo contrario de triste?",
+    "options": ["Enfadado", "Cansado", "Feliz", "Aburrido"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el único satélite natural de la Tierra?",
+    "options": ["Sol", "Marte", "Luna", "Europa"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué instrumento musical tiene teclas blancas y negras?",
+    "options": ["Guitarra", "Violín", "Piano", "Flauta"],
+    "correct": 2
   }
 ]
