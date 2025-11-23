@@ -1,8 +1,8 @@
 [
   {
     "type": "cultura",
-    "question": "¿Cuál es el único mamífero capaz de volar verdaderamente?",
-    "options": ["Ardilla voladora", "Murciélago", "Colugo", "Planeador del azúcar"],
+    "question": "¿A qué orden de mamíferos pertenecen los murciélagos?",
+    "options": ["Roedores", "Quirópteros", "Lagomorfos", "Marsupiales"],
     "correct": 1
   },
   {
@@ -13,9 +13,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Quién escribió 'En busca del tiempo perdido'?",
-    "options": ["Marcel Proust", "James Joyce", "Franz Kafka", "Gustave Flaubert"],
-    "correct": 0
+    "question": "¿Cuál es el primer volumen de 'En busca del tiempo perdido'?",
+    "options": ["La prisionera", "El tiempo recobrado", "Por el camino de Swann", "Sodoma y Gomorra"],
+    "correct": 2
   },
   {
     "type": "bala",
@@ -25,9 +25,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cuál es el elemento químico con el símbolo 'W'?",
-    "options": ["Wolframio", "Wutenio", "Walterio", "Wismuto"],
-    "correct": 0
+    "question": "¿Qué elemento tiene el número atómico 79 y símbolo Au?",
+    "options": ["Plata", "Cobre", "Oro", "Platino"],
+    "correct": 2
   },
   {
     "type": "bala",
@@ -37,8 +37,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿En qué año cayó el Imperio Romano de Oriente?",
-    "options": ["1492", "1453", "476", "1204"],
+    "question": "¿Cómo se llamaba Constantinopla antes de ser capital del Imperio Romano?",
+    "options": ["Cartago", "Bizancio", "Antioquía", "Alejandría"],
     "correct": 1
   },
   {
@@ -49,8 +49,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cuál es la montaña más alta de África?",
-    "options": ["Monte Kenia", "Monte Stanley", "Kilimanjaro", "Atlas"],
+    "question": "¿En qué país se encuentra el monte Kilimanjaro?",
+    "options": ["Kenia", "Sudáfrica", "Tanzania", "Etiopía"],
     "correct": 2
   },
   {
@@ -61,8 +61,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Qué filósofo dijo 'Pienso, luego existo'?",
-    "options": ["Nietzsche", "Descartes", "Platón", "Sócrates"],
+    "question": "¿En qué obra escribió Descartes 'Pienso, luego existo'?",
+    "options": ["Crítica de la razón pura", "Discurso del método", "La República", "Leviatán"],
     "correct": 1
   },
   {
@@ -73,8 +73,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cuál es el río más largo de Asia?",
-    "options": ["Ganges", "Mekong", "Yangtsé", "Amarillo"],
+    "question": "¿En qué país nace y desemboca el río Yangtsé?",
+    "options": ["India", "Vietnam", "China", "Japón"],
     "correct": 2
   },
   {
@@ -85,8 +85,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Quién compuso la ópera 'La Flauta Mágica'?",
-    "options": ["Beethoven", "Wagner", "Mozart", "Verdi"],
+    "question": "¿Cómo se llama el personaje 'cazador de pájaros' en 'La Flauta Mágica'?",
+    "options": ["Tamino", "Sarastro", "Papageno", "Monostatos"],
     "correct": 2
   },
   {
@@ -97,8 +97,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Qué tratado puso fin a la Primera Guerra Mundial?",
-    "options": ["Viena", "París", "Versalles", "Tordesillas"],
+    "question": "¿En qué año se firmó el Tratado de Versalles?",
+    "options": ["1914", "1918", "1919", "1923"],
     "correct": 2
   },
   {
@@ -109,8 +109,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cuál es el hueso más pequeño del cuerpo humano?",
-    "options": ["Yunque", "Martillo", "Estribo", "Falange"],
+    "question": "¿En qué parte del oído se encuentra el estribo?",
+    "options": ["Oído externo", "Oído interno", "Oído medio", "Lóbulo"],
     "correct": 2
   },
   {
@@ -121,9 +121,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿En qué país se encuentra la antigua ciudad de Petra?",
-    "options": ["Egipto", "Jordania", "Israel", "Líbano"],
-    "correct": 1
+    "question": "¿Qué civilización antigua construyó la ciudad de Petra?",
+    "options": ["Los Nabateos", "Los Persas", "Los Romanos", "Los Fenicios"],
+    "correct": 0
   },
   {
     "type": "bala",
@@ -133,9 +133,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Quién pintó 'El Jardín de las Delicias'?",
-    "options": ["El Bosco", "Goya", "Velázquez", "Dalí"],
-    "correct": 0
+    "question": "¿En qué museo se encuentra 'El Jardín de las Delicias'?",
+    "options": ["El Louvre", "Museo del Prado", "Uffizi", "Reina Sofía"],
+    "correct": 1
   },
   {
     "type": "bala",
@@ -145,8 +145,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Qué gas es el más abundante en la atmósfera terrestre?",
-    "options": ["Oxígeno", "CO2", "Nitrógeno", "Argón"],
+    "question": "¿Cuál es el porcentaje aproximado de nitrógeno en la atmósfera?",
+    "options": ["21%", "50%", "78%", "90%"],
     "correct": 2
   },
   {
@@ -157,9 +157,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Primera mujer en ganar un Premio Nobel?",
-    "options": ["R. Franklin", "Marie Curie", "Ada Lovelace", "Lise Meitner"],
-    "correct": 1
+    "question": "¿En qué dos campos científicos ganó Marie Curie el Nobel?",
+    "options": ["Física y Medicina", "Química y Paz", "Física y Química", "Medicina y Literatura"],
+    "correct": 2
   },
   {
     "type": "bala",
@@ -169,9 +169,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Qué civilización construyó Machu Picchu?",
-    "options": ["Azteca", "Maya", "Inca", "Olmeca"],
-    "correct": 2
+    "question": "¿Quién fue el explorador que hizo público Machu Picchu en 1911?",
+    "options": ["Francisco Pizarro", "Hiram Bingham", "David Livingstone", "Roald Amundsen"],
+    "correct": 1
   },
   {
     "type": "bala",
@@ -181,8 +181,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Quién es el autor de 'El origen de las especies'?",
-    "options": ["Newton", "Darwin", "Mendel", "Pasteur"],
+    "question": "¿En qué barco viajó Darwin durante su investigación?",
+    "options": ["Santa María", "HMS Beagle", "Mayflower", "Titanic"],
     "correct": 1
   },
   {
@@ -193,9 +193,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cuál es la capital de Canadá?",
-    "options": ["Toronto", "Vancouver", "Montreal", "Ottawa"],
-    "correct": 3
+    "question": "¿Cuál es la capital de la provincia canadiense de Quebec?",
+    "options": ["Montreal", "Quebec City", "Ottawa", "Toronto"],
+    "correct": 1
   },
   {
     "type": "bala",
@@ -205,9 +205,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Qué guerra duró de 1939 a 1945?",
-    "options": ["I Guerra Mundial", "Vietnam", "II Guerra Mundial", "Guerra Fría"],
-    "correct": 2
+    "question": "¿Qué evento marcó el inicio de la Segunda Guerra Mundial?",
+    "options": ["El ataque a Pearl Harbor", "La invasión de Polonia", "El desembarco de Normandía", "La caída de París"],
+    "correct": 1
   },
   {
     "type": "bala",
@@ -217,8 +217,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cuál es el órgano más grande del cuerpo humano?",
-    "options": ["Hígado", "Cerebro", "Piel", "Pulmones"],
+    "question": "¿Cuál es el órgano INTERNO más grande del cuerpo humano?",
+    "options": ["Cerebro", "Corazón", "Hígado", "Intestino"],
     "correct": 2
   },
   {
@@ -229,9 +229,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Quién dirigió 'El Padrino'?",
-    "options": ["Scorsese", "Coppola", "Spielberg", "Tarantino"],
-    "correct": 1
+    "question": "¿Quién escribió la novela en la que se basa 'El Padrino'?",
+    "options": ["Mario Puzo", "Francis Ford Coppola", "Stephen King", "Arthur Miller"],
+    "correct": 0
   },
   {
     "type": "bala",
@@ -241,9 +241,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Qué metal es líquido a temperatura ambiente?",
-    "options": ["Mercurio", "Plomo", "Aluminio", "Hierro"],
-    "correct": 0
+    "question": "¿Cuál es el único elemento NO metal líquido a temperatura ambiente?",
+    "options": ["Mercurio", "Bromo", "Galio", "Francio"],
+    "correct": 1
   },
   {
     "type": "bala",
@@ -253,8 +253,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cuál es el planeta más grande del Sistema Solar?",
-    "options": ["Saturno", "Júpiter", "Neptuno", "Urano"],
+    "question": "¿Cuántas lunas 'galileanas' principales tiene Júpiter?",
+    "options": ["2", "4", "12", "79"],
     "correct": 1
   },
   {
@@ -265,8 +265,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Quién escribió 'Don Quijote'?",
-    "options": ["Lope de Vega", "Cervantes", "Garcilaso", "Quevedo"],
+    "question": "¿Cómo se llamaba el caballo de Don Quijote?",
+    "options": ["Babieca", "Rocinante", "Bucéfalo", "Tornado"],
     "correct": 1
   },
   {
@@ -277,8 +277,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿En qué año llegó el hombre a la Luna?",
-    "options": ["1965", "1969", "1972", "1959"],
+    "question": "¿Cómo se llamaba el módulo lunar del Apolo 11?",
+    "options": ["Columbia", "Eagle", "Challenger", "Atlantis"],
     "correct": 1
   },
   {
@@ -289,8 +289,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cuál es la moneda oficial de Japón?",
-    "options": ["Yuan", "Won", "Yen", "Baht"],
+    "question": "¿Cuál es el nombre de la moneda oficial de China?",
+    "options": ["Yen", "Won", "Renminbi (Yuan)", "Dólar HK"],
     "correct": 2
   },
   {
@@ -301,8 +301,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Qué elemento tiene el número atómico 1?",
-    "options": ["Helio", "Hidrógeno", "Litio", "Carbono"],
+    "question": "¿Cuál es el elemento natural más pesado de la Tierra?",
+    "options": ["Plomo", "Uranio", "Osmio", "Plutonio"],
     "correct": 1
   },
   {
@@ -313,8 +313,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Quién pintó la Capilla Sixtina?",
-    "options": ["Da Vinci", "Rafael", "Miguel Ángel", "Donatello"],
+    "question": "¿Qué Papa encargó a Miguel Ángel pintar la Capilla Sixtina?",
+    "options": ["León X", "Alejandro VI", "Julio II", "Pío III"],
     "correct": 2
   },
   {
@@ -325,8 +325,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cuál es el océano más grande del mundo?",
-    "options": ["Atlántico", "Índico", "Pacífico", "Ártico"],
+    "question": "¿Cuál es la fosa oceánica más profunda de la Tierra?",
+    "options": ["Fosa de Java", "Fosa de Puerto Rico", "Fosa de las Marianas", "Fosa de las Kuriles"],
     "correct": 2
   },
   {
@@ -337,8 +337,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Qué país tiene forma de bota?",
-    "options": ["España", "Grecia", "Italia", "Portugal"],
+    "question": "¿Qué mar baña la costa este de Italia?",
+    "options": ["Tirreno", "Jónico", "Adriático", "Egeo"],
     "correct": 2
   },
   {
@@ -349,8 +349,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Primer presidente de los Estados Unidos?",
-    "options": ["Jefferson", "Lincoln", "Washington", "Adams"],
+    "question": "¿Quién fue el principal redactor de la Declaración de Independencia de EE. UU.?",
+    "options": ["G. Washington", "B. Franklin", "T. Jefferson", "J. Adams"],
     "correct": 2
   },
   {
@@ -361,8 +361,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Animal terrestre más rápido?",
-    "options": ["León", "Guepardo", "Gacela", "Leopardo"],
+    "question": "¿Cuál es el animal más rápido del mundo en picada?",
+    "options": ["Guepardo", "Halcón peregrino", "Vencejo", "Águila real"],
     "correct": 1
   },
   {
@@ -373,9 +373,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Qué instrumento toca Lisa Simpson?",
-    "options": ["Clarinete", "Trompeta", "Saxofón", "Violín"],
-    "correct": 2
+    "question": "¿Cómo se llama el ídolo de jazz de Lisa Simpson?",
+    "options": ["Encías Sangrantes Murphy", "Louis Armstrong", "Miles Davis", "Troy McClure"],
+    "correct": 0
   },
   {
     "type": "bala",
@@ -385,8 +385,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Dónde está el desierto del Sahara?",
-    "options": ["Asia", "América", "África", "Oceanía"],
+    "question": "¿Cuál es el desierto más grande del mundo (incluyendo polares)?",
+    "options": ["Sahara", "Gobi", "Antártico", "Kalahari"],
     "correct": 2
   },
   {
@@ -397,8 +397,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Quién descubrió la penicilina?",
-    "options": ["Pasteur", "Fleming", "Curie", "Koch"],
+    "question": "¿En qué año descubrió Alexander Fleming la penicilina?",
+    "options": ["1918", "1928", "1938", "1945"],
     "correct": 1
   },
   {
@@ -409,8 +409,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Capital de Australia?",
-    "options": ["Sídney", "Melbourne", "Canberra", "Perth"],
+    "question": "¿En qué estado australiano se encuentra la ciudad de Sídney?",
+    "options": ["Victoria", "Queensland", "Nueva Gales del Sur", "Australia Occidental"],
     "correct": 2
   },
   {
@@ -421,8 +421,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Qué pieza de ajedrez se mueve en cualquier dirección?",
-    "options": ["Alfil", "Torre", "Reina", "Caballo"],
+    "question": "¿Qué pieza de ajedrez es la única que no puede retroceder?",
+    "options": ["Rey", "Caballo", "Peón", "Alfil"],
     "correct": 2
   },
   {
@@ -433,8 +433,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cuántos lados tiene un heptágono?",
-    "options": ["6", "7", "8", "9"],
+    "question": "¿Cómo se llama un polígono de 12 lados?",
+    "options": ["Decágono", "Dodecágono", "Icoságono", "Endecágono"],
     "correct": 1
   },
   {
@@ -445,8 +445,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Dios griego del mar?",
-    "options": ["Zeus", "Hades", "Poseidón", "Apolo"],
+    "question": "¿Quién es la esposa de Zeus en la mitología griega?",
+    "options": ["Atenea", "Afrodita", "Hera", "Deméter"],
     "correct": 2
   },
   {
@@ -457,8 +457,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿País más grande del mundo?",
-    "options": ["China", "EEUU", "Canadá", "Rusia"],
+    "question": "¿Cuál es actualmente el país más poblado del mundo?",
+    "options": ["China", "Estados Unidos", "Indonesia", "India"],
     "correct": 3
   },
   {
@@ -469,9 +469,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Banda de Freddie Mercury?",
-    "options": ["Beatles", "Stones", "Queen", "Led Zeppelin"],
-    "correct": 2
+    "question": "¿En qué año se formó la banda Queen?",
+    "options": ["1968", "1970", "1975", "1980"],
+    "correct": 1
   },
   {
     "type": "bala",
@@ -481,9 +481,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Capital de Turquía?",
-    "options": ["Estambul", "Ankara", "Esmirna", "Bursa"],
-    "correct": 1
+    "question": "¿Cuál es el nombre antiguo de la ciudad de Estambul?",
+    "options": ["Constantinopla", "Alejandría", "Pérgamo", "Efeso"],
+    "correct": 0
   },
   {
     "type": "bala",
@@ -493,8 +493,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Autor de 'Cien años de soledad'?",
-    "options": ["Vargas Llosa", "García Márquez", "Borges", "Cortázar"],
+    "question": "¿Cómo se llama el pueblo ficticio donde ocurre 'Cien años de soledad'?",
+    "options": ["Comala", "Macondo", "Vetusta", "Santa María"],
     "correct": 1
   },
   {
@@ -505,8 +505,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Qué significa ADN?",
-    "options": ["Ácido desoxirribonucleico", "Ácido ribonucleico", "Adenosina", "Ácido nucleico"],
+    "question": "¿Quiénes recibieron el Nobel por descubrir la estructura del ADN junto a Wilkins?",
+    "options": ["Watson y Crick", "Darwin y Wallace", "Pasteur y Koch", "Curie y Rutherford"],
     "correct": 0
   },
   {
@@ -517,9 +517,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Dónde está la Torre Eiffel?",
-    "options": ["Londres", "Berlín", "París", "Roma"],
-    "correct": 2
+    "question": "¿Para qué evento se construyó la Torre Eiffel?",
+    "options": ["Juegos Olímpicos 1900", "Exposición Universal 1889", "Centenario de Napoleón", "Feria de París 1920"],
+    "correct": 1
   },
   {
     "type": "bala",
@@ -529,8 +529,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Planeta más cercano al Sol?",
-    "options": ["Venus", "Tierra", "Marte", "Mercurio"],
+    "question": "¿Cuál es el planeta más caliente del Sistema Solar?",
+    "options": ["Mercurio", "Marte", "Júpiter", "Venus"],
     "correct": 3
   },
   {
@@ -541,8 +541,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Quién pintó 'La noche estrellada'?",
-    "options": ["Monet", "Van Gogh", "Picasso", "Dalí"],
+    "question": "¿A qué movimiento artístico pertenece 'La noche estrellada'?",
+    "options": ["Impresionismo", "Postimpresionismo", "Surrealismo", "Cubismo"],
     "correct": 1
   },
   {
@@ -553,8 +553,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Idioma más hablado del mundo?",
-    "options": ["Español", "Inglés", "Mandarín", "Hindi"],
+    "question": "¿Cuál es el idioma con más hablantes nativos del mundo?",
+    "options": ["Inglés", "Chino Mandarín", "Español", "Hindi"],
     "correct": 1
   },
   {
@@ -565,9 +565,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Primer ganador del Mundial de Fútbol?",
-    "options": ["Brasil", "Argentina", "Uruguay", "Italia"],
-    "correct": 2
+    "question": "¿En qué año se celebró el primer Mundial de Fútbol?",
+    "options": ["1924", "1930", "1950", "1910"],
+    "correct": 1
   },
   {
     "type": "bala",
@@ -577,8 +577,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Metal más caro?",
-    "options": ["Oro", "Platino", "Rodio", "Paladio"],
+    "question": "¿Qué elemento es más denso: el oro o el plomo?",
+    "options": ["Plomo", "Son iguales", "Oro", "Hierro"],
     "correct": 2
   },
   {
@@ -589,14 +589,14 @@
   },
   {
     "type": "cultura",
-    "question": "¿Quién inventó la bombilla?",
-    "options": ["Tesla", "Edison", "Bell", "Franklin"],
+    "question": "¿Quién es considerado el principal impulsor de la corriente alterna?",
+    "options": ["Thomas Edison", "Nikola Tesla", "Alessandro Volta", "James Watt"],
     "correct": 1
   },
   {
     "type": "cultura",
-    "question": "¿Cuál es la capital de Alemania?",
-    "options": ["Múnich", "Hamburgo", "Berlín", "Frankfurt"],
+    "question": "¿En qué año cayó el Muro de Berlín?",
+    "options": ["1987", "1991", "1989", "1990"],
     "correct": 2
   },
   {
@@ -607,8 +607,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Qué símbolo químico es 'Au'?",
-    "options": ["Plata", "Cobre", "Oro", "Hierro"],
+    "question": "¿Qué elemento tiene el símbolo 'Ag'?",
+    "options": ["Oro", "Argón", "Plata", "Antimonio"],
     "correct": 2
   },
   {
@@ -619,8 +619,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cuál es el continente más grande?",
-    "options": ["África", "Asia", "América", "Europa"],
+    "question": "¿Cuál es el segundo continente más grande del mundo?",
+    "options": ["África", "América", "Europa", "Antártida"],
     "correct": 1
   },
   {
@@ -631,9 +631,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Autora de Harry Potter?",
-    "options": ["J.K. Rowling", "Agatha Christie", "Enid Blyton", "Jane Austen"],
-    "correct": 0
+    "question": "¿Cuál es el título del sexto libro de Harry Potter?",
+    "options": ["La Orden del Fénix", "El Misterio del Príncipe", "Las Reliquias de la Muerte", "El Cáliz de Fuego"],
+    "correct": 1
   },
   {
     "type": "bala",
@@ -643,8 +643,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Moneda del Reino Unido?",
-    "options": ["Euro", "Dólar", "Libra", "Franco"],
+    "question": "¿Qué escritora aparece en los billetes de 10 libras actuales?",
+    "options": ["Agatha Christie", "Virginia Woolf", "Jane Austen", "Mary Shelley"],
     "correct": 2
   },
   {
@@ -655,8 +655,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Dios del trueno en la mitología nórdica?",
-    "options": ["Odín", "Thor", "Loki", "Freya"],
+    "question": "¿Cómo se llama el martillo del dios Thor?",
+    "options": ["Gungnir", "Mjolnir", "Excalibur", "Aegis"],
     "correct": 1
   },
   {
@@ -667,9 +667,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿De qué país es originario el Tango?",
-    "options": ["España", "Brasil", "Argentina", "México"],
-    "correct": 2
+    "question": "¿Quién es la figura más icónica de la historia del tango?",
+    "options": ["Astor Piazzolla", "Carlos Gardel", "Julio Sosa", "Osvaldo Pugliese"],
+    "correct": 1
   },
   {
     "type": "bala",
@@ -679,8 +679,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cómo se llama el hueso del muslo?",
-    "options": ["Tibia", "Radio", "Fémur", "Cúbito"],
+    "question": "¿Cuál es el segundo hueso más largo del cuerpo humano?",
+    "options": ["Húmero", "Fémur", "Tibia", "Peroné"],
     "correct": 2
   },
   {
@@ -691,8 +691,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿En qué año comenzó la Revolución Francesa?",
-    "options": ["1776", "1492", "1789", "1812"],
+    "question": "¿Qué rey francés fue guillotinado durante la Revolución?",
+    "options": ["Luis XIV", "Luis XV", "Luis XVI", "Napoleón"],
     "correct": 2
   },
   {
@@ -703,9 +703,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cuál es conocido como el Planeta Rojo?",
-    "options": ["Marte", "Júpiter", "Venus", "Saturno"],
-    "correct": 0
+    "question": "¿Cómo se llaman las dos lunas de Marte?",
+    "options": ["Io y Europa", "Titán y Rhea", "Fobos y Deimos", "Caronte y Nix"],
+    "correct": 2
   },
   {
     "type": "bala",
@@ -715,8 +715,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Quién pintó el Guernica?",
-    "options": ["Dalí", "Miró", "Picasso", "Goya"],
+    "question": "¿En qué año pintó Picasso el 'Guernica'?",
+    "options": ["1931", "1936", "1937", "1939"],
     "correct": 2
   },
   {
@@ -727,8 +727,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Qué elemento químico es necesario para respirar?",
-    "options": ["Helio", "Oxígeno", "Carbono", "Neón"],
+    "question": "¿Qué gas noble se utiliza para hacer flotar globos?",
+    "options": ["Hidrógeno", "Helio", "Neón", "Argón"],
     "correct": 1
   },
   {
@@ -739,8 +739,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cuál es la capital de Rusia?",
-    "options": ["San Petersburgo", "Moscú", "Kiev", "Minsk"],
+    "question": "¿Cómo se llama la plaza principal de Moscú?",
+    "options": ["Plaza de la Revolución", "Plaza Roja", "Plaza del Kremlin", "Plaza San Basilio"],
     "correct": 1
   },
   {
@@ -751,9 +751,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Quién es conocido como el Rey del Pop?",
-    "options": ["Elvis Presley", "Prince", "Michael Jackson", "Madonna"],
-    "correct": 2
+    "question": "¿Cuál es el álbum musical más vendido de la historia?",
+    "options": ["Back in Black", "Thriller", "The Dark Side of the Moon", "Bad"],
+    "correct": 1
   },
   {
     "type": "bala",
@@ -763,8 +763,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Qué ciudad de EEUU es famosa por sus rascacielos y la Estatua de la Libertad?",
-    "options": ["Los Ángeles", "Chicago", "Nueva York", "Miami"],
+    "question": "¿En qué isla se encuentra la Estatua de la Libertad?",
+    "options": ["Isla de Manhattan", "Isla de Ellis", "Isla de la Libertad", "Staten Island"],
     "correct": 2
   },
   {
@@ -775,8 +775,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Quién patentó el teléfono?",
-    "options": ["Alexander G. Bell", "Nikola Tesla", "Thomas Edison", "Isaac Newton"],
+    "question": "¿A quién reconoció el Congreso de EE. UU. como inventor del teléfono en 2002?",
+    "options": ["Antonio Meucci", "Alexander Graham Bell", "Elisha Gray", "Guglielmo Marconi"],
     "correct": 0
   },
   {
@@ -787,8 +787,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿En qué ciudad italiana está la torre inclinada?",
-    "options": ["Roma", "Venecia", "Pisa", "Milán"],
+    "question": "¿De qué material está hecha principalmente la Torre de Pisa?",
+    "options": ["Granito", "Ladrillo", "Mármol", "Piedra caliza"],
     "correct": 2
   },
   {
@@ -799,8 +799,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿En qué continente está el río Amazonas?",
-    "options": ["África", "América del Sur", "Asia", "Europa"],
+    "question": "¿Cuál es el río más largo del mundo (según consensos modernos)?",
+    "options": ["Nilo", "Amazonas", "Misisipi", "Yangtsé"],
     "correct": 1
   },
   {
@@ -811,9 +811,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cómo se llama el protagonista de Matrix?",
-    "options": ["Morfeo", "Neo", "Trinity", "Smith"],
-    "correct": 1
+    "question": "¿Quiénes dirigieron la trilogía original de Matrix?",
+    "options": ["Hermanas Wachowski", "Hermanos Russo", "Christopher Nolan", "James Cameron"],
+    "correct": 0
   },
   {
     "type": "bala",
@@ -823,9 +823,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cuál es la capital de Egipto?",
-    "options": ["El Cairo", "Alejandría", "Luxor", "Giza"],
-    "correct": 0
+    "question": "¿Quién fue la última faraona de Egipto?",
+    "options": ["Nefertiti", "Hatshepsut", "Cleopatra VII", "Nefertari"],
+    "correct": 2
   },
   {
     "type": "bala",
@@ -835,9 +835,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Diosa griega de la sabiduría?",
-    "options": ["Afrodita", "Hera", "Atenea", "Artemisa"],
-    "correct": 2
+    "question": "¿Según el mito, de qué parte de Zeus nació Atenea?",
+    "options": ["Del muslo", "De la cabeza", "De la mano", "Del corazón"],
+    "correct": 1
   },
   {
     "type": "bala",
@@ -847,9 +847,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Qué elemento químico es Fe?",
-    "options": ["Flúor", "Fósforo", "Hierro", "Francio"],
-    "correct": 2
+    "question": "¿Qué elemento químico tiene el símbolo 'K'?",
+    "options": ["Kriptón", "Potasio", "Calcio", "Cobalto"],
+    "correct": 1
   },
   {
     "type": "bala",
@@ -859,8 +859,8 @@
   },
   {
     "type": "cultura",
-    "question": "¿Dónde se encuentra el Coliseo?",
-    "options": ["Atenas", "Roma", "París", "Londres"],
+    "question": "¿Bajo qué emperador romano se inauguró el Coliseo?",
+    "options": ["Nerón", "Tito", "Vespasiano", "Trajano"],
     "correct": 1
   },
   {
@@ -871,9 +871,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cuál es el idioma oficial de Brasil?",
-    "options": ["Español", "Inglés", "Portugués", "Francés"],
-    "correct": 2
+    "question": "¿Cuál es el único país de África donde el español es idioma oficial?",
+    "options": ["Marruecos", "Guinea Ecuatorial", "Angola", "Mozambique"],
+    "correct": 1
   },
   {
     "type": "bala",
@@ -883,9 +883,9 @@
   },
   {
     "type": "cultura",
-    "question": "¿Cuál es el único satélite natural de la Tierra?",
-    "options": ["Sol", "Marte", "Luna", "Europa"],
-    "correct": 2
+    "question": "¿Cómo se llama la teoría científica más aceptada sobre el origen de la Luna?",
+    "options": ["Teoría de la Captura", "Teoría del Gran Impacto", "Teoría de la Fisión", "Teoría de la Acreción"],
+    "correct": 1
   },
   {
     "type": "bala",
