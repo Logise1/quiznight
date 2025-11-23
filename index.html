@@ -37,6 +37,12 @@
         #qrcode img { margin: 0 auto; border-radius: 8px; }
         .player-card { animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
         @keyframes popIn { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        
+        /* Custom Scrollbar for Lobby */
+        .custom-scroll::-webkit-scrollbar { width: 8px; }
+        .custom-scroll::-webkit-scrollbar-track { background: rgba(255,255,255,0.1); border-radius: 4px; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.3); border-radius: 4px; }
+        .custom-scroll::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.5); }
     </style>
 </head>
 <body class="bg-gray-50 text-slate-800 font-sans select-none overflow-hidden">
@@ -73,7 +79,7 @@
         <!-- SCREEN: HOST LOBBY (KAHOOT STYLE) -->
         <div id="screen-host-lobby" class="hidden-screen h-screen flex flex-col bg-slate-900 text-white fade-in">
             <!-- Top Bar -->
-            <div class="bg-black/30 p-4 flex justify-between items-center backdrop-blur-sm border-b border-white/10">
+            <div class="bg-black/30 p-4 flex justify-between items-center backdrop-blur-sm border-b border-white/10 h-20 shrink-0">
                 <div class="flex items-center gap-4">
                     <h2 class="text-3xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400 ml-4">
                         QUIZ NIGHT
@@ -93,9 +99,9 @@
             </div>
 
             <!-- Main Content -->
-            <div class="flex-1 flex p-8 overflow-hidden gap-8">
+            <div class="flex-1 flex p-8 overflow-hidden gap-8 min-h-0">
                 <!-- Left: QR & Info -->
-                <div class="w-1/4 flex flex-col items-center justify-center bg-black/20 rounded-3xl p-6 border border-white/5">
+                <div class="w-1/4 flex flex-col items-center justify-center bg-black/20 rounded-3xl p-6 border border-white/5 shrink-0">
                     <div class="bg-white p-3 rounded-xl shadow-2xl mb-6">
                         <div id="qrcode"></div>
                     </div>
@@ -110,15 +116,16 @@
                     </div>
                 </div>
 
-                <!-- Right: Player Grid -->
-                <div class="flex-1 bg-black/20 rounded-3xl p-8 border border-white/5 relative overflow-hidden">
-                    <div id="host-player-list" class="flex flex-wrap content-start gap-6 h-full overflow-y-auto pb-24">
+                <!-- Right: Player Grid (Scrollable) -->
+                <div class="flex-1 bg-black/20 rounded-3xl p-8 border border-white/5 relative flex flex-col overflow-hidden">
+                    <!-- Player List Container -->
+                    <div id="host-player-list" class="flex-1 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 content-start overflow-y-auto custom-scroll pb-32 pr-2">
                         <!-- Players injected here -->
                     </div>
                     
-                    <!-- Start Button (Fixed Bottom) -->
-                    <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-slate-900 to-transparent flex justify-end">
-                        <button onclick="app.startHostGame()" id="btn-start-game" disabled class="bg-white text-slate-900 text-2xl font-black py-4 px-12 rounded-full shadow-2xl transition-all transform hover:scale-105 hover:shadow-white/20 disabled:opacity-50 disabled:scale-100 disabled:cursor-not-allowed flex items-center gap-3">
+                    <!-- Start Button Overlay (Fixed Bottom Right) -->
+                    <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-slate-900 via-slate-900/90 to-transparent flex justify-end pointer-events-none">
+                        <button onclick="app.startHostGame()" id="btn-start-game" disabled class="pointer-events-auto bg-white text-slate-900 text-2xl font-black py-4 px-12 rounded-full shadow-2xl transition-all transform hover:scale-105 hover:shadow-white/20 disabled:opacity-50 disabled:scale-100 disabled:cursor-not-allowed flex items-center gap-3">
                             EMPEZAR <span class="text-xl">➔</span>
                         </button>
                     </div>
@@ -132,7 +139,7 @@
             <div class="flex justify-between items-center mb-8">
                 <div class="flex items-center gap-2">
                     <div id="host-q-counter" class="bg-white px-6 py-3 rounded-2xl shadow-sm border border-gray-100 font-bold text-xl text-gray-500">
-                        1 / 20
+                        1 / 35
                     </div>
                     <div id="host-type-badge"></div>
                 </div>
@@ -513,8 +520,8 @@
                 const data = await res.json();
                 const balas = data.filter(q => q.type === 'bala');
                 const culturas = data.filter(q => !q.type || q.type === 'cultura'); 
-                const selectedBalas = balas.sort(() => 0.5 - Math.random()).slice(0, 5);
-                const selectedCulturas = culturas.sort(() => 0.5 - Math.random()).slice(0, 15);
+                const selectedBalas = balas.sort(() => 0.5 - Math.random()).slice(0, 8); // 8 Bala
+                const selectedCulturas = culturas.sort(() => 0.5 - Math.random()).slice(0, 27); // 27 Cultura
                 state.questions = [...selectedBalas, ...selectedCulturas].sort(() => 0.5 - Math.random());
             } catch (e) {
                 state.questions = [{ question: "Error loading", options: ["A", "B", "C", "D"], correct: 0, type: "bala" }];
@@ -546,14 +553,15 @@
                 document.getElementById('btn-start-game').disabled = pList.length === 0;
                 const listEl = document.getElementById('host-player-list');
                 
+                // Grid Layout for Lobby
                 listEl.innerHTML = pList.map(p => {
                     const avatar = p.avatar || { emoji: '😀', color: 'bg-gray-400' };
                     return `
-                    <div class="player-card flex flex-col items-center w-40 mb-8 mx-4">
-                        <div class="w-32 h-32 rounded-full flex items-center justify-center text-7xl shadow-2xl border-4 border-white mb-4 ${avatar.color} transform transition-transform hover:scale-110">
+                    <div class="player-card flex flex-col items-center w-full">
+                        <div class="w-28 h-28 rounded-full flex items-center justify-center text-6xl shadow-2xl border-4 border-white mb-3 ${avatar.color} transform transition-transform hover:scale-110">
                             ${avatar.emoji}
                         </div>
-                        <div class="bg-black/60 backdrop-blur text-white px-4 py-2 rounded-xl text-lg font-black truncate w-full text-center border border-white/10 shadow-lg">
+                        <div class="bg-black/60 backdrop-blur text-white px-4 py-2 rounded-xl text-lg font-black truncate w-full text-center border border-white/10 shadow-lg max-w-[140px]">
                             ${p.name}
                         </div>
                     </div>
