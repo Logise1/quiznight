@@ -1,0 +1,596 @@
+[
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el único mamífero capaz de volar verdaderamente?",
+    "options": ["Ardilla voladora", "Murciélago", "Colugo", "Planeador del azúcar"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 5 + 5?",
+    "options": ["10", "55", "25", "0"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió 'En busca del tiempo perdido'?",
+    "options": ["Marcel Proust", "James Joyce", "Franz Kafka", "Gustave Flaubert"],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "¿De qué color es el caballo blanco de Santiago?",
+    "options": ["Marrón", "Negro", "Blanco", "Gris"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el elemento químico con el símbolo 'W'?",
+    "options": ["Wolframio", "Wutenio", "Walterio", "Wismuto"],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal dice 'Miau'?",
+    "options": ["Perro", "Gato", "Vaca", "Pato"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año cayó el Imperio Romano de Oriente?",
+    "options": ["1492", "1453", "476", "1204"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es la primera letra del abecedario?",
+    "options": ["Z", "B", "A", "H"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la montaña más alta de África?",
+    "options": ["Monte Kenia", "Monte Stanley", "Kilimanjaro", "Atlas"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "Sigue la serie: 1, 2, 3...",
+    "options": ["5", "4", "A", "10"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué filósofo dijo 'Pienso, luego existo'?",
+    "options": ["Nietzsche", "Descartes", "Platón", "Sócrates"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para escribir en una pizarra?",
+    "options": ["Lápiz", "Tiza", "Bolígrafo", "Cuchara"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el río más largo de Asia?",
+    "options": ["Ganges", "Mekong", "Yangtsé", "Amarillo"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos días tiene una semana?",
+    "options": ["5", "7", "10", "30"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién compuso la ópera 'La Flauta Mágica'?",
+    "options": ["Beethoven", "Wagner", "Mozart", "Verdi"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "Rojo + Amarillo = ...",
+    "options": ["Verde", "Naranja", "Morado", "Azul"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué tratado puso fin a la Primera Guerra Mundial?",
+    "options": ["Viena", "París", "Versalles", "Tordesillas"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué objeto da la hora?",
+    "options": ["Reloj", "Brújula", "Termómetro", "Báscula"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el hueso más pequeño del cuerpo humano?",
+    "options": ["Yunque", "Martillo", "Estribo", "Falange"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál NO es una fruta?",
+    "options": ["Manzana", "Plátano", "Lechuga", "Pera"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué país se encuentra la antigua ciudad de Petra?",
+    "options": ["Egipto", "Jordania", "Israel", "Líbano"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántas patas tiene una araña?",
+    "options": ["6", "8", "4", "100"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién pintó 'El Jardín de las Delicias'?",
+    "options": ["El Bosco", "Goya", "Velázquez", "Dalí"],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el opuesto de 'Arriba'?",
+    "options": ["Izquierda", "Abajo", "Dentro", "Fuera"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué gas es el más abundante en la atmósfera terrestre?",
+    "options": ["Oxígeno", "CO2", "Nitrógeno", "Argón"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué beben las vacas?",
+    "options": ["Leche", "Agua", "Zumo", "Cola"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Primera mujer en ganar un Premio Nobel?",
+    "options": ["R. Franklin", "Marie Curie", "Ada Lovelace", "Lise Meitner"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿2 x 3?",
+    "options": ["5", "6", "9", "12"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué civilización construyó Machu Picchu?",
+    "options": ["Azteca", "Maya", "Inca", "Olmeca"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿De qué color son los Pitufos?",
+    "options": ["Verdes", "Rojos", "Azules", "Amarillos"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién es el autor de 'El origen de las especies'?",
+    "options": ["Newton", "Darwin", "Mendel", "Pasteur"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué mes viene después de Marzo?",
+    "options": ["Abril", "Mayo", "Febrero", "Junio"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Canadá?",
+    "options": ["Toronto", "Vancouver", "Montreal", "Ottawa"],
+    "correct": 3
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos dedos tienes en una mano?",
+    "options": ["4", "5", "6", "10"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué guerra duró de 1939 a 1945?",
+    "options": ["I Guerra Mundial", "Vietnam", "II Guerra Mundial", "Guerra Fría"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué forma tiene un balón de fútbol?",
+    "options": ["Cuadrada", "Triangular", "Redonda", "Plana"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el órgano más grande del cuerpo humano?",
+    "options": ["Hígado", "Cerebro", "Piel", "Pulmones"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Dónde vive Bob Esponja?",
+    "options": ["En una piña", "En una manzana", "En una pera", "En un barco"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién dirigió 'El Padrino'?",
+    "options": ["Scorsese", "Coppola", "Spielberg", "Tarantino"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es la mitad de 10?",
+    "options": ["2", "5", "4", "6"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué metal es líquido a temperatura ambiente?",
+    "options": ["Mercurio", "Plomo", "Aluminio", "Hierro"],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué idioma se habla en Francia?",
+    "options": ["Inglés", "Italiano", "Francés", "Alemán"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el planeta más grande del Sistema Solar?",
+    "options": ["Saturno", "Júpiter", "Neptuno", "Urano"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántas ruedas tiene un coche estándar?",
+    "options": ["2", "3", "4", "6"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió 'Don Quijote'?",
+    "options": ["Lope de Vega", "Cervantes", "Garcilaso", "Quevedo"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿De qué color es la hierba?",
+    "options": ["Azul", "Verde", "Roja", "Negra"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año llegó el hombre a la Luna?",
+    "options": ["1965", "1969", "1972", "1959"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal vuela?",
+    "options": ["Perro", "Pájaro", "Gato", "Elefante"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la moneda oficial de Japón?",
+    "options": ["Yuan", "Won", "Yen", "Baht"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿10 - 3?",
+    "options": ["7", "6", "8", "5"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué elemento tiene el número atómico 1?",
+    "options": ["Helio", "Hidrógeno", "Litio", "Carbono"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Quién es el hermano de Luigi?",
+    "options": ["Wario", "Mario", "Toad", "Bowser"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién pintó la Capilla Sixtina?",
+    "options": ["Da Vinci", "Rafael", "Miguel Ángel", "Donatello"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para ver?",
+    "options": ["Ojos", "Orejas", "Nariz", "Boca"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el océano más grande del mundo?",
+    "options": ["Atlántico", "Índico", "Pacífico", "Ártico"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es la capital de España?",
+    "options": ["Barcelona", "Madrid", "Sevilla", "Valencia"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué país tiene forma de bota?",
+    "options": ["España", "Grecia", "Italia", "Portugal"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántos minutos tiene una hora?",
+    "options": ["100", "60", "30", "24"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Primer presidente de los Estados Unidos?",
+    "options": ["Jefferson", "Lincoln", "Washington", "Adams"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué hace un pez?",
+    "options": ["Vuela", "Nada", "Camina", "Habla"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Animal terrestre más rápido?",
+    "options": ["León", "Guepardo", "Gacela", "Leopardo"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué color indica 'parar' en un semáforo?",
+    "options": ["Verde", "Amarillo", "Rojo", "Azul"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué instrumento toca Lisa Simpson?",
+    "options": ["Clarinete", "Trompeta", "Saxofón", "Violín"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántas estaciones tiene el año?",
+    "options": ["2", "4", "6", "12"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Dónde está el desierto del Sahara?",
+    "options": ["Asia", "América", "África", "Oceanía"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué sale por la noche?",
+    "options": ["El Sol", "La Luna", "El Arcoíris", "Las Nubes"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién descubrió la penicilina?",
+    "options": ["Pasteur", "Fleming", "Curie", "Koch"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cómo se llama el ratón de Disney?",
+    "options": ["Mickey", "Donald", "Goofy", "Pluto"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Capital de Australia?",
+    "options": ["Sídney", "Melbourne", "Canberra", "Perth"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el resultado de 1 + 1?",
+    "options": ["11", "2", "3", "0"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué pieza de ajedrez se mueve en cualquier dirección?",
+    "options": ["Alfil", "Torre", "Reina", "Caballo"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué necesitas para respirar?",
+    "options": ["Agua", "Aire", "Comida", "Fuego"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuántos lados tiene un heptágono?",
+    "options": ["6", "7", "8", "9"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Quién es el enemigo de Batman?",
+    "options": ["Joker", "Superman", "Spiderman", "Ironman"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Dios griego del mar?",
+    "options": ["Zeus", "Hades", "Poseidón", "Apolo"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal tiene trompa?",
+    "options": ["Jirafa", "Elefante", "León", "Mono"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿País más grande del mundo?",
+    "options": ["China", "EEUU", "Canadá", "Rusia"],
+    "correct": 3
+  },
+  {
+    "type": "bala",
+    "question": "¿De qué color es la sangre?",
+    "options": ["Azul", "Verde", "Roja", "Amarilla"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Banda de Freddie Mercury?",
+    "options": ["Beatles", "Stones", "Queen", "Led Zeppelin"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué día es Navidad?",
+    "options": ["25 Diciembre", "1 Enero", "31 Octubre", "14 Febrero"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Capital de Turquía?",
+    "options": ["Estambul", "Ankara", "Esmirna", "Bursa"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es más grande?",
+    "options": ["Ratón", "Elefante", "Perro", "Gato"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Autor de 'Cien años de soledad'?",
+    "options": ["Vargas Llosa", "García Márquez", "Borges", "Cortázar"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántas horas tiene un día?",
+    "options": ["12", "24", "48", "60"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué significa ADN?",
+    "options": ["Ácido desoxirribonucleico", "Ácido ribonucleico", "Adenosina", "Ácido nucleico"],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué animal pone huevos?",
+    "options": ["Perro", "Gallina", "Vaca", "Gato"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Dónde está la Torre Eiffel?",
+    "options": ["Londres", "Berlín", "París", "Roma"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es un número par?",
+    "options": ["1", "3", "4", "5"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Planeta más cercano al Sol?",
+    "options": ["Venus", "Tierra", "Marte", "Mercurio"],
+    "correct": 3
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué usas para llamar por teléfono?",
+    "options": ["Móvil", "Zapato", "Libro", "Vaso"],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién pintó 'La noche estrellada'?",
+    "options": ["Monet", "Van Gogh", "Picasso", "Dalí"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuál es el color del plátano?",
+    "options": ["Rojo", "Azul", "Amarillo", "Rosa"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Idioma más hablado del mundo?",
+    "options": ["Español", "Inglés", "Mandarín", "Hindi"],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué estación es más calurosa?",
+    "options": ["Invierno", "Verano", "Otoño", "Primavera"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Primer ganador del Mundial de Fútbol?",
+    "options": ["Brasil", "Argentina", "Uruguay", "Italia"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuántas piernas tienes?",
+    "options": ["1", "2", "3", "4"],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Metal más caro?",
+    "options": ["Oro", "Platino", "Rodio", "Paladio"],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Qué es el H2O?",
+    "options": ["Fuego", "Aire", "Agua", "Tierra"],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién inventó la bombilla?",
+    "options": ["Tesla", "Edison", "Bell", "Franklin"],
+    "correct": 1
+  }
+]
