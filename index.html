@@ -2,13 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Night - RTDB Edition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Quiz Night - Party Edition</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- QRCode.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
     <!-- Iconos Lucide (SVG) helpers -->
     <script>
-        // Pequeña utilidad para iconos inline para no depender de librerías externas pesadas
         const ICONS = {
             monitor: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>`,
             smartphone: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>`,
@@ -19,13 +21,16 @@
             check: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>`,
             volume2: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>`,
             volumeX: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" x2="17" y1="9" y2="15"/><line x1="17" x2="23" y1="9" y2="15"/></svg>`,
-            loader: `<svg class="animate-spin" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>`
+            loader: `<svg class="animate-spin" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>`,
+            maximize: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>`
         };
     </script>
     <style>
         .hidden-screen { display: none !important; }
         .fade-in { animation: fadeIn 0.5s ease-in-out; }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        /* QR Code Container Style */
+        #qrcode img { margin: 0 auto; border-radius: 10px; border: 4px solid white; }
     </style>
 </head>
 <body class="bg-gray-50 text-slate-800 font-sans select-none overflow-hidden">
@@ -60,21 +65,35 @@
         </div>
 
         <!-- SCREEN: HOST LOBBY -->
-        <div id="screen-host-lobby" class="hidden-screen h-screen flex flex-col items-center justify-center p-8 fade-in">
-             <div class="absolute top-8 right-8">
-                <button onclick="app.toggleSound()" id="btn-sound" class="bg-white p-3 rounded-full shadow-md text-slate-800">
+        <div id="screen-host-lobby" class="hidden-screen h-screen flex flex-col items-center justify-center p-8 fade-in relative">
+             <div class="absolute top-8 right-8 flex gap-4">
+                <button onclick="app.toggleFullscreen()" class="bg-white p-3 rounded-full shadow-md text-slate-800 hover:bg-gray-100" title="Pantalla Completa">
+                    <script>document.write(ICONS.maximize)</script>
+                </button>
+                <button onclick="app.toggleSound()" id="btn-sound" class="bg-white p-3 rounded-full shadow-md text-slate-800 hover:bg-gray-100">
                     <!-- Icon injected by JS -->
                 </button>
             </div>
 
-            <div class="bg-white p-12 rounded-[3rem] shadow-2xl text-center mb-12 border border-gray-100">
-                <p class="text-2xl uppercase font-bold tracking-widest mb-4 text-gray-400">Código de Sala</p>
-                <p id="host-game-id" class="text-9xl font-black font-mono tracking-tighter text-blue-600">...</p>
-            </div>
-            
-            <div class="flex items-center gap-4 mb-8 bg-white px-8 py-4 rounded-full shadow-lg border border-gray-100">
-                <div class="text-pink-500"><script>document.write(ICONS.users)</script></div>
-                <span id="host-player-count" class="text-3xl font-bold text-slate-700">0 Jugadores</span>
+            <div class="flex flex-col md:flex-row items-center gap-12 mb-12">
+                <!-- Game Code & Players -->
+                <div class="flex flex-col items-center">
+                    <div class="bg-white p-12 rounded-[3rem] shadow-2xl text-center mb-8 border border-gray-100">
+                        <p class="text-2xl uppercase font-bold tracking-widest mb-4 text-gray-400">Código de Sala</p>
+                        <p id="host-game-id" class="text-9xl font-black font-mono tracking-tighter text-blue-600">...</p>
+                    </div>
+                    
+                    <div class="flex items-center gap-4 bg-white px-8 py-4 rounded-full shadow-lg border border-gray-100">
+                        <div class="text-pink-500"><script>document.write(ICONS.users)</script></div>
+                        <span id="host-player-count" class="text-3xl font-bold text-slate-700">0 Jugadores</span>
+                    </div>
+                </div>
+
+                <!-- QR Code Section -->
+                <div class="bg-white p-6 rounded-3xl shadow-xl border-2 border-indigo-50 flex flex-col items-center transform hover:scale-105 transition-transform">
+                    <div id="qrcode" class="mb-4 bg-white p-2 rounded-xl"></div>
+                    <p class="font-bold text-slate-500 text-sm uppercase tracking-wider">Escanear para unirse</p>
+                </div>
             </div>
 
             <div id="host-player-list" class="flex flex-wrap gap-4 justify-center max-w-5xl mb-12 min-h-[60px]">
@@ -297,8 +316,6 @@
             bgm2: new Audio(AUDIO_URLS.bgm2),
             gong: new Audio(AUDIO_URLS.gong)
         };
-        
-        // Loop BGMs
         audio.bgm1.loop = true;
         audio.bgm2.loop = true;
 
@@ -311,16 +328,31 @@
 
         const playTrack = (track) => {
             if (!state.soundEnabled) return;
-            // Dont restart if already playing the correct track
             if (track !== 'gong' && !audio[track].paused) return;
-
-            // Stop others
             if (track === 'bgm1') { audio.bgm2.pause(); audio.gong.pause(); }
             if (track === 'bgm2') { audio.bgm1.pause(); audio.gong.pause(); }
             if (track === 'gong') { audio.bgm1.pause(); audio.bgm2.pause(); }
-
             audio[track].volume = track === 'gong' ? 1.0 : 0.5;
             audio[track].play().catch(e => console.log("Audio play failed (interaction needed)", e));
+        };
+
+        // --- EXIT BLOCK (PREVENTION) ---
+        window.addEventListener('beforeunload', (e) => {
+            if (state.mode) {
+                e.preventDefault();
+                e.returnValue = '¿Seguro que quieres salir de la partida?';
+                return '¿Seguro que quieres salir de la partida?';
+            }
+        });
+
+        // --- CHECK URL PARAMS FOR AUTO JOIN ---
+        window.onload = () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const pin = urlParams.get('pin');
+            if (pin) {
+                app.selectMode('player');
+                document.getElementById('player-input-pin').value = pin;
+            }
         };
 
         // --- UI HELPERS ---
@@ -337,7 +369,6 @@
         // --- HOST LOGIC ---
 
         window.app = {
-            // Shared
             selectMode: (mode) => {
                 state.mode = mode;
                 if (mode === 'host') initHost();
@@ -348,8 +379,16 @@
                 updateSoundIcon();
                 if (!state.soundEnabled) stopAllAudio();
             },
-
-            // Host Functions
+            toggleFullscreen: () => {
+                const elem = document.documentElement;
+                if (!document.fullscreenElement) {
+                    if (elem.requestFullscreen) { elem.requestFullscreen(); }
+                    else if (elem.webkitRequestFullscreen) { elem.webkitRequestFullscreen(); } /* Safari */
+                    else if (elem.msRequestFullscreen) { elem.msRequestFullscreen(); } /* IE11 */
+                } else {
+                    if (document.exitFullscreen) { document.exitFullscreen(); }
+                }
+            },
             startHostGame: async () => {
                 await update(ref(db, `games/${state.gameId}`), { status: 'preview', currentQuestion: 0 });
                 runQuestionSequence(0);
@@ -364,18 +403,18 @@
                     await update(ref(db, `games/${state.gameId}`), { status: 'finished' });
                 }
             },
-
-            // Player Functions
             joinGame: async () => {
                 const pin = document.getElementById('player-input-pin').value;
                 const name = document.getElementById('player-input-name').value;
                 const errorEl = document.getElementById('player-login-error');
-
                 if (!pin || !name) {
                     errorEl.textContent = "Rellena todos los campos";
                     errorEl.classList.remove('hidden');
                     return;
                 }
+                
+                // Attempt Fullscreen on Join (Mobile Party Mode)
+                app.toggleFullscreen();
 
                 try {
                     const snap = await get(ref(db, `games/${pin}`));
@@ -383,10 +422,7 @@
                         state.gameId = pin;
                         state.playerName = name;
                         await update(ref(db, `games/${pin}/players/${state.userId}`), {
-                            name: name,
-                            score: 0,
-                            lastRoundPoints: 0,
-                            currentAnswer: null
+                            name: name, score: 0, lastRoundPoints: 0, currentAnswer: null
                         });
                         setupPlayerListener();
                     } else {
@@ -401,8 +437,7 @@
             },
             submitAnswer: async (idx) => {
                 await update(ref(db, `games/${state.gameId}/players/${state.userId}`), {
-                    currentAnswer: idx,
-                    answerTimestamp: Date.now()
+                    currentAnswer: idx, answerTimestamp: Date.now()
                 });
                 showScreen('screen-player-answered');
             }
@@ -411,7 +446,8 @@
         // --- HOST FLOW ---
 
         async function initHost() {
-            // Load questions
+            app.toggleFullscreen();
+
             try {
                 const res = await fetch('https://logise1.github.io/quiznight/q.json');
                 const data = await res.json();
@@ -420,26 +456,31 @@
                 state.questions = [{ question: "Error loading", options: ["A", "B", "C", "D"], correct: 0, type: "bala" }];
             }
 
-            // Create Game
             const id = Math.floor(1000 + Math.random() * 9000).toString();
             state.gameId = id;
             state.isHost = true;
             
             await set(ref(db, `games/${id}`), {
-                hostId: state.userId,
-                status: 'lobby',
-                currentQuestion: 0,
-                players: {},
-                startTime: null,
-                optionsVisible: false
+                hostId: state.userId, status: 'lobby', currentQuestion: 0, players: {}, startTime: null, optionsVisible: false
             });
 
-            // UI
             document.getElementById('host-game-id').textContent = id;
             updateSoundIcon();
             showScreen('screen-host-lobby');
 
-            // Listeners
+            // GENERATE QR CODE
+            const joinUrl = window.location.href.split('?')[0] + '?pin=' + id;
+            const qrContainer = document.getElementById('qrcode');
+            qrContainer.innerHTML = ''; 
+            new QRCode(qrContainer, {
+                text: joinUrl,
+                width: 128,
+                height: 128,
+                colorDark : "#000000",
+                colorLight : "#ffffff",
+                correctLevel : QRCode.CorrectLevel.H
+            });
+
             onValue(ref(db, `games/${id}`), (snap) => {
                 const data = snap.val();
                 if(!data) return;
@@ -449,12 +490,10 @@
         }
 
         function updateHostUI(data) {
-            // Lobby Update
             if (data.status === 'lobby') {
                 const pList = Object.values(state.players);
                 document.getElementById('host-player-count').textContent = `${pList.length} Jugadores`;
                 document.getElementById('btn-start-game').disabled = pList.length === 0;
-                
                 const listEl = document.getElementById('host-player-list');
                 listEl.innerHTML = pList.map(p => `
                     <div class="bg-white border-2 border-indigo-100 text-indigo-600 font-bold px-6 py-3 rounded-xl shadow-md animate-bounce">
@@ -466,16 +505,13 @@
             } else if (data.status === 'finished') {
                 renderFinished(data.players);
             } else if (data.status === 'question') {
-                // Check for auto-finish
                 if (data.optionsVisible) {
                     const pIds = Object.keys(state.players);
                     if (pIds.length > 0) {
                         const allAnswered = pIds.every(pid => {
                             const p = state.players[pid];
-                            return p.currentAnswer !== undefined && p.currentAnswer !== null; // Check explicit answer
+                            return p.currentAnswer !== undefined && p.currentAnswer !== null;
                         });
-                        
-                        // We check if we are the host to trigger logic only once
                         if (allAnswered && state.isHost) {
                             if (state.hostTimer) clearInterval(state.hostTimer);
                             calculateScores();
@@ -483,17 +519,9 @@
                     }
                 }
             }
-
-            // Audio triggers
             if (data.status === 'preview') {
-                // Odd questions (index 1, 3..) -> BGM2. Even (0, 2..) -> BGM1 (Wait, index 0 is Q1)
-                // Let's stick to logic: Even INDEX (Q1, Q3) -> BGM2 during preview? No.
-                // Logic requested: BGM2 starts BEFORE (Preview). BGM1 starts AFTER (Question).
-                const isEvenIndex = (state.currentQIndex % 2 === 0); // 0, 2, 4
-                // If even index (Q1, Q3...), isBgm1Turn = true. 
-                // BGM1 Logic: Start at Question.
-                // BGM2 Logic: Start at Preview.
-                if (!isEvenIndex) playTrack('bgm2'); // Odd Index (Q2, Q4) -> BGM2
+                const isEvenIndex = (state.currentQIndex % 2 === 0); 
+                if (!isEvenIndex) playTrack('bgm2');
             } else if (data.status === 'question') {
                  const isEvenIndex = (state.currentQIndex % 2 === 0);
                  if (isEvenIndex) playTrack('bgm1');
@@ -504,18 +532,12 @@
 
         function runQuestionSequence(idx) {
             stopAllAudio();
-            
-            // 1. Preview
             update(ref(db, `games/${state.gameId}`), { status: 'preview', optionsVisible: false });
-            
-            // Setup UI for Question immediately so host sees it
             renderHostQuestion(idx, false);
             showScreen('screen-host-game');
-
             let countdown = 5;
             document.getElementById('host-timer').textContent = countdown;
             document.getElementById('host-timer').className = "text-6xl font-black font-mono tabular-nums text-slate-800";
-
             if (state.hostTimer) clearInterval(state.hostTimer);
             state.hostTimer = setInterval(() => {
                 countdown--;
@@ -531,26 +553,18 @@
             const q = state.questions[idx];
             const isBala = q.type === 'bala';
             state.roundDuration = isBala ? 10 : 20;
-
             await update(ref(db, `games/${state.gameId}`), { 
-                status: 'question', 
-                optionsVisible: true, 
-                questionStartTime: Date.now(),
-                roundDuration: state.roundDuration 
+                status: 'question', optionsVisible: true, questionStartTime: Date.now(), roundDuration: state.roundDuration 
             });
-
             renderHostQuestion(idx, true);
-
             let countdown = state.roundDuration;
             document.getElementById('host-timer').textContent = countdown;
-
             if (state.hostTimer) clearInterval(state.hostTimer);
             state.hostTimer = setInterval(() => {
                 countdown--;
                 const timerEl = document.getElementById('host-timer');
                 timerEl.textContent = countdown;
                 if (countdown <= 5) timerEl.classList.add('text-red-500', 'scale-110');
-                
                 if (countdown <= 0) {
                     clearInterval(state.hostTimer);
                     calculateScores();
@@ -563,34 +577,24 @@
             const isBala = q.type === 'bala';
             const screen = document.getElementById('screen-host-game');
             const qBar = document.getElementById('host-q-bar');
-            
-            // Theme
             if (isBala) {
-                screen.classList.remove('bg-gray-50');
-                screen.classList.add('bg-red-50');
+                screen.classList.remove('bg-gray-50'); screen.classList.add('bg-red-50');
                 qBar.className = "absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500";
                 document.getElementById('host-q-card').classList.add('ring-4', 'ring-red-100');
             } else {
-                screen.classList.add('bg-gray-50');
-                screen.classList.remove('bg-red-50');
+                screen.classList.add('bg-gray-50'); screen.classList.remove('bg-red-50');
                 qBar.className = "absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500";
                 document.getElementById('host-q-card').classList.remove('ring-4', 'ring-red-100');
             }
-
-            // Content
             document.getElementById('host-q-counter').textContent = `${idx + 1} / ${state.questions.length}`;
             document.getElementById('host-game-pin-small').textContent = state.gameId;
             document.getElementById('host-type-badge').innerHTML = isBala 
                 ? `<div class="bg-red-500 text-white px-6 py-3 rounded-2xl shadow-md font-black text-xl flex items-center animate-pulse">${ICONS.zap} <span class="ml-2">BALA</span></div>`
                 : `<div class="bg-blue-500 text-white px-6 py-3 rounded-2xl shadow-md font-bold text-xl flex items-center">${ICONS.brain} <span class="ml-2">CULTURA</span></div>`;
-            
             document.getElementById('host-q-text').textContent = q.question;
-
-            // Options
             const grid = document.getElementById('host-options-grid');
             const previewMsg = document.getElementById('host-preview-msg');
             const previewText = document.getElementById('host-preview-text');
-            
             if (showOptions) {
                 const colors = ['bg-red-500', 'bg-blue-500', 'bg-yellow-500', 'bg-green-500'];
                 const shapes = ['▲', '◆', '●', '■'];
@@ -600,45 +604,35 @@
                         <span class="text-4xl font-bold text-white drop-shadow-md">${opt}</span>
                     </div>
                 `).join('');
-                grid.classList.remove('opacity-0');
-                previewMsg.classList.add('hidden');
+                grid.classList.remove('opacity-0'); previewMsg.classList.add('hidden');
             } else {
-                grid.classList.add('opacity-0');
-                previewMsg.classList.remove('hidden');
+                grid.classList.add('opacity-0'); previewMsg.classList.remove('hidden');
                 previewText.textContent = isBala ? "¡RÁPIDO!" : "¡Lee la pregunta!";
                 previewText.className = `text-3xl font-black animate-pulse ${isBala ? 'text-red-600' : 'text-slate-900'}`;
             }
         }
 
         async function calculateScores() {
-            // Get fresh data
             const gameSnap = await get(ref(db, `games/${state.gameId}`));
             const data = gameSnap.val();
             const currentQ = state.questions[state.currentQIndex];
             const updatedPlayers = { ...data.players };
-
             Object.keys(updatedPlayers).forEach(pid => {
                 const p = updatedPlayers[pid];
                 p.lastRoundPoints = 0;
-
                 if (p.currentAnswer === currentQ.correct) {
                     const timeTaken = (p.answerTimestamp - data.questionStartTime) / 1000;
                     const speedBonus = Math.max(0, Math.floor(500 * (1 - (timeTaken / state.roundDuration))));
                     const points = 500 + speedBonus;
-                    
                     p.score = (p.score || 0) + points;
                     p.lastRoundPoints = points;
                 }
-                // Reset for next
-                p.currentAnswer = null;
-                p.answerTimestamp = null;
+                p.currentAnswer = null; p.answerTimestamp = null;
             });
-
             await update(ref(db, `games/${state.gameId}`), {
                 players: updatedPlayers,
                 status: 'leaderboard'
             });
-            
             renderLeaderboard(updatedPlayers);
             showScreen('screen-host-leaderboard');
         }
@@ -646,12 +640,10 @@
         function renderLeaderboard(playersData) {
             const sorted = Object.values(playersData).sort((a, b) => b.score - a.score).slice(0, 5);
             const list = document.getElementById('host-leaderboard-list');
-            
             list.innerHTML = sorted.map((p, i) => {
                 const colors = ['bg-yellow-400 text-yellow-900', 'bg-gray-300 text-gray-800', 'bg-orange-400 text-orange-900', 'bg-gray-100 text-gray-500'];
                 const colorClass = colors[i] || colors[3];
                 const gain = p.lastRoundPoints > 0 ? `<div class="text-green-600 font-bold flex items-center mt-1">¡Sube +${Math.round(p.lastRoundPoints)}!</div>` : '';
-
                 return `
                 <div class="flex items-center bg-white p-6 rounded-3xl shadow-md border-2 border-gray-100 transform transition-all hover:scale-[1.02]">
                     <div class="w-16 h-16 flex items-center justify-center rounded-2xl font-black text-2xl mr-6 ${colorClass} shadow-lg">${i + 1}</div>
@@ -662,8 +654,6 @@
                     <div class="text-4xl font-black text-indigo-600 tabular-nums">${Math.round(p.score)}</div>
                 </div>`;
             }).join('');
-            
-            // Only switch screen if we are host, otherwise listener handles it via showScreen
             if(state.isHost) showScreen('screen-host-leaderboard');
         }
 
@@ -675,9 +665,6 @@
             showScreen('screen-host-finished');
         }
 
-
-        // --- PLAYER FLOW ---
-
         function initPlayer() {
             showScreen('screen-player-login');
         }
@@ -685,13 +672,9 @@
         function setupPlayerListener() {
             onValue(ref(db, `games/${state.gameId}`), (snap) => {
                 const data = snap.val();
-                if (!data) return; // Game deleted?
-
-                // My data
+                if (!data) return;
                 const myData = data.players[state.userId];
-                if (!myData) return; // Kicked?
-
-                // Update Feedback on leaderboard
+                if (!myData) return;
                 document.getElementById('player-score').textContent = Math.round(myData.score);
                 if (myData.lastRoundPoints > 0) {
                     document.getElementById('player-points-gained').textContent = `+ ${Math.round(myData.lastRoundPoints)}`;
@@ -705,25 +688,16 @@
                     document.getElementById('screen-player-leaderboard').classList.remove('bg-green-500');
                     document.getElementById('screen-player-leaderboard').classList.add('bg-red-500');
                 }
-
-                // Rank
                 const sorted = Object.values(data.players).sort((a, b) => b.score - a.score);
                 const rank = sorted.findIndex(p => p.name === myData.name) + 1;
                 document.getElementById('player-rank').textContent = `${rank}º`;
-
-                // Screen Switching
                 if (data.status === 'lobby') {
                     document.getElementById('player-lobby-name').textContent = myData.name;
                     showScreen('screen-player-lobby');
-                } 
-                else if (data.status === 'preview') {
+                } else if (data.status === 'preview') {
                     showScreen('screen-player-preview');
-                }
-                else if (data.status === 'question') {
+                } else if (data.status === 'question') {
                     if (data.optionsVisible) {
-                         // Check if already answered this specific round (logic relies on host resetting currentAnswer to null at round start)
-                         // But host resets it AFTER calculation. 
-                         // To be safe, we check if local state matches DB. 
                          if (myData.currentAnswer !== undefined && myData.currentAnswer !== null) {
                              showScreen('screen-player-answered');
                          } else {
@@ -732,11 +706,9 @@
                     } else {
                         showScreen('screen-player-wait');
                     }
-                } 
-                else if (data.status === 'leaderboard') {
+                } else if (data.status === 'leaderboard') {
                      showScreen('screen-player-leaderboard');
-                }
-                else if (data.status === 'finished') {
+                } else if (data.status === 'finished') {
                     showScreen('screen-player-leaderboard');
                     document.getElementById('player-btn-exit').classList.remove('hidden');
                 }
