@@ -378,7 +378,14 @@
         window.app = {
             selectMode: (mode) => { state.mode = mode; if (mode === 'host') initHost(); else initPlayer(); },
             toggleSound: () => { state.soundEnabled = !state.soundEnabled; updateSoundIcon(); if (!state.soundEnabled) stopAllAudio(); },
-            toggleFullscreen: () => { if (!document.fullscreenElement) document.documentElement.requestFullscreen().catch(e=>console.log(e)); else if (document.exitFullscreen) document.exitFullscreen(); },
+            toggleFullscreen: () => { 
+                try {
+                    const elem = document.documentElement;
+                    if (elem.requestFullscreen) elem.requestFullscreen().catch(()=>{});
+                    else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
+                    else if (elem.msRequestFullscreen) elem.msRequestFullscreen();
+                } catch(e){}
+            },
             startHostGame: async () => { await update(ref(db, `games/${state.gameId}`), { status: 'preview', currentQuestion: 0 }); runQuestionSequence(0); },
             nextQuestion: async () => {
                 if (state.currentQIndex + 1 < state.questions.length) {
@@ -390,11 +397,19 @@
                 const pin = document.getElementById('player-input-pin').value;
                 const name = document.getElementById('player-input-name').value;
                 if (!pin || !name) return document.getElementById('player-login-error').classList.remove('hidden');
+                
+                // Safe Fullscreen
+                app.toggleFullscreen();
+
                 try {
                     if (!(await get(ref(db, `games/${pin}`))).exists()) throw new Error();
                     state.gameId = pin; state.playerName = name;
-                    app.toggleFullscreen(); renderColorPicker(); updateAvatarPreview(); showScreen('screen-player-avatar');
-                } catch (e) { document.getElementById('player-login-error').classList.remove('hidden'); }
+                    renderColorPicker(); updateAvatarPreview(); showScreen('screen-player-avatar');
+                } catch (e) { 
+                    const errEl = document.getElementById('player-login-error');
+                    errEl.textContent = "Sala no encontrada o error";
+                    errEl.classList.remove('hidden'); 
+                }
             },
             cycleEmoji: (d) => { state.avatarEmojiIndex = (state.avatarEmojiIndex + d + AVATAR_EMOJIS.length) % AVATAR_EMOJIS.length; updateAvatarPreview(); },
             selectColor: (i) => { state.avatarColorIndex = i; updateAvatarPreview(); },
@@ -531,6 +546,7 @@
             const qBar = document.getElementById('host-q-bar');
             const badge = document.getElementById('host-type-badge');
             
+            // Remove hidden-screen so we don't hide it by mistake when updating
             screen.className = `h-screen flex flex-col p-6 transition-colors duration-500 fade-in ${isBala ? 'bg-red-50' : (isLogica ? 'bg-purple-50' : (isRefran ? 'bg-orange-50' : 'bg-gray-50'))}`;
             qBar.className = `absolute top-0 left-0 w-full h-2 bg-gradient-to-r ${isBala ? 'from-red-500 to-yellow-500' : (isLogica ? 'from-purple-500 to-pink-500' : (isRefran ? 'from-orange-500 to-yellow-500' : 'from-blue-500 to-pink-500'))}`;
             
