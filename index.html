@@ -174,7 +174,7 @@
         <!-- SCREEN: HOST LEADERBOARD -->
         <div id="screen-host-leaderboard" class="hidden-screen h-screen bg-slate-900 text-white flex flex-col p-8 fade-in">
             <h2 class="text-6xl font-black text-center mb-12 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">CLASIFICACIÓN</h2>
-            <div id="host-leaderboard-list" class="flex-1 max-w-5xl w-full mx-auto space-y-4 overflow-y-auto"></div>
+            <div id="host-leaderboard-list" class="flex-1 max-w-5xl w-full mx-auto space-y-4 overflow-y-auto pr-2 custom-scroll"></div>
             <div class="flex justify-end mt-8">
                <button onclick="app.nextQuestion()" class="bg-white text-slate-900 hover:bg-gray-200 font-bold py-5 px-10 rounded-full shadow-xl text-2xl flex items-center transition-all hover:-translate-y-1">
                  Siguiente Pregunta <span class="ml-3">➔</span>
@@ -436,18 +436,10 @@
 
                 // Mezclar respuestas de cada pregunta
                 state.questions = mixedQuestions.map(q => {
-                    // Guardar la respuesta correcta actual
                     const correctText = q.options[q.correct];
-                    // Mezclar opciones
                     const newOptions = [...q.options].sort(() => 0.5 - Math.random());
-                    // Encontrar el nuevo índice de la correcta
                     const newCorrectIndex = newOptions.indexOf(correctText);
-                    
-                    return {
-                        ...q,
-                        options: newOptions,
-                        correct: newCorrectIndex
-                    };
+                    return { ...q, options: newOptions, correct: newCorrectIndex };
                 });
 
             } catch (e) { state.questions = [{ question: "Error", options: ["A","B","C","D"], correct: 0, type: "bala" }]; }
@@ -473,10 +465,14 @@
                 }).join('');
             } else if (data.status === 'leaderboard') renderLeaderboard(data.players);
             else if (data.status === 'finished') renderFinished(data.players);
-            else if (data.status === 'question' && data.optionsVisible && state.isHost) {
-                const pIds = Object.keys(state.players);
-                if (pIds.length > 0 && pIds.every(pid => state.players[pid].currentAnswer != null)) {
-                    if (state.hostTimer) clearInterval(state.hostTimer); calculateScores();
+            else if (data.status === 'question') {
+                if (data.optionsVisible) {
+                    renderHostQuestion(state.currentQIndex, true);
+                    showScreen('screen-host-game');
+                    const pIds = Object.keys(state.players);
+                    if (pIds.length > 0 && pIds.every(pid => state.players[pid].currentAnswer != null)) {
+                        if (state.hostTimer) clearInterval(state.hostTimer); calculateScores();
+                    }
                 }
             } else if (data.status === 'reveal') {
                 renderHostQuestion(state.currentQIndex, true);
@@ -535,7 +531,7 @@
             const qBar = document.getElementById('host-q-bar');
             const badge = document.getElementById('host-type-badge');
             
-            screen.className = `hidden-screen h-screen flex flex-col p-6 transition-colors duration-500 fade-in ${isBala ? 'bg-red-50' : (isLogica ? 'bg-purple-50' : (isRefran ? 'bg-orange-50' : 'bg-gray-50'))}`;
+            screen.className = `h-screen flex flex-col p-6 transition-colors duration-500 fade-in ${isBala ? 'bg-red-50' : (isLogica ? 'bg-purple-50' : (isRefran ? 'bg-orange-50' : 'bg-gray-50'))}`;
             qBar.className = `absolute top-0 left-0 w-full h-2 bg-gradient-to-r ${isBala ? 'from-red-500 to-yellow-500' : (isLogica ? 'from-purple-500 to-pink-500' : (isRefran ? 'from-orange-500 to-yellow-500' : 'from-blue-500 to-pink-500'))}`;
             
             if (isBala) badge.innerHTML = `<div class="bg-red-500 text-white px-6 py-3 rounded-2xl shadow-md font-black text-xl flex items-center animate-pulse">${ICONS.zap} BALA</div>`;
@@ -574,12 +570,18 @@
             Object.keys(updatedPlayers).forEach(pid => {
                 const p = updatedPlayers[pid];
                 p.lastRoundPoints = 0;
+                p.lastTimeTaken = null; // Reset
+
                 if (p.currentAnswer === currentQ.correct) {
                     const timeTaken = (p.answerTimestamp - data.questionStartTime) / 1000;
                     const speedBonus = Math.max(0, Math.floor(500 * (1 - (timeTaken / state.roundDuration))));
                     const points = 500 + speedBonus;
                     p.score = (p.score || 0) + points;
                     p.lastRoundPoints = points;
+                    p.lastTimeTaken = timeTaken.toFixed(2);
+                } else if (p.currentAnswer !== null && p.currentAnswer !== undefined && p.answerTimestamp) {
+                     const timeTaken = (p.answerTimestamp - data.questionStartTime) / 1000;
+                     p.lastTimeTaken = timeTaken.toFixed(2);
                 }
                 p.currentAnswer = null; p.answerTimestamp = null;
             });
@@ -594,12 +596,29 @@
         }
 
         function renderLeaderboard(playersData) {
-            const sorted = Object.values(playersData).sort((a, b) => b.score - a.score).slice(0, 5);
+            const sorted = Object.values(playersData).sort((a, b) => b.score - a.score);
             document.getElementById('host-leaderboard-list').innerHTML = sorted.map((p, i) => {
+                const isCorrect = p.lastRoundPoints > 0;
+                const cardBg = isCorrect ? 'bg-green-200 border-green-300' : 'bg-white border-gray-100';
                 const colors = ['bg-yellow-400 text-yellow-900', 'bg-gray-300 text-gray-800', 'bg-orange-400 text-orange-900', 'bg-gray-100 text-gray-500'];
-                const gain = p.lastRoundPoints > 0 ? `<div class="text-green-600 font-bold flex items-center mt-1">¡Sube +${Math.round(p.lastRoundPoints)}!</div>` : '';
+                const rankColor = i < 3 ? colors[i] : colors[3];
+                const gain = isCorrect ? `<div class="text-green-700 font-bold flex items-center mt-1 text-lg">¡+${Math.round(p.lastRoundPoints)}!</div>` : '';
+                const timeDisplay = p.lastTimeTaken ? `<span class="text-sm font-mono text-slate-500 ml-2">⏱️ ${p.lastTimeTaken}s</span>` : `<span class="text-sm font-mono text-slate-400 ml-2">--</span>`;
                 const a = p.avatar || {emoji:'🙂', color:'bg-gray-400'};
-                return `<div class="flex items-center bg-white text-slate-900 p-6 rounded-3xl shadow-md border-2 border-gray-100 transform transition-all hover:scale-[1.02]"><div class="w-16 h-16 flex items-center justify-center rounded-2xl font-black text-2xl mr-6 ${colors[i]||colors[3]} shadow-lg">${i+1}</div><div class="mr-4 w-12 h-12 rounded-full ${a.color} flex items-center justify-center text-2xl border border-white shadow-sm">${a.emoji}</div><div class="flex-1"><div class="text-3xl font-bold text-slate-800">${p.name}</div>${gain}</div><div class="text-4xl font-black text-indigo-600 tabular-nums">${Math.round(p.score)}</div></div>`;
+                
+                return `
+                <div class="flex items-center ${cardBg} text-slate-900 p-4 rounded-3xl shadow-md border-4 transform transition-all hover:scale-[1.02] mb-3">
+                    <div class="w-12 h-12 flex items-center justify-center rounded-2xl font-black text-xl mr-4 ${rankColor} shadow-sm">${i+1}</div>
+                    <div class="mr-4 w-12 h-12 rounded-full ${a.color} flex items-center justify-center text-2xl border-2 border-white shadow-sm">${a.emoji}</div>
+                    <div class="flex-1">
+                        <div class="flex items-center">
+                            <div class="text-2xl font-black text-slate-800 mr-2">${p.name}</div>
+                            ${timeDisplay}
+                        </div>
+                        ${gain}
+                    </div>
+                    <div class="text-4xl font-black text-indigo-900 tabular-nums">${Math.round(p.score)}</div>
+                </div>`;
             }).join('');
             if(state.isHost) showScreen('screen-host-leaderboard');
         }
