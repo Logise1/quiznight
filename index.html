@@ -432,7 +432,24 @@
                 const refranes = data.filter(q => q.type === 'refran').sort(()=>0.5-Math.random()).slice(0,7);
                 const logicas = data.filter(q => q.type === 'logica').sort(()=>0.5-Math.random()).slice(0,7);
                 
-                state.questions = [...balas, ...culturas, ...logicas, ...refranes].sort(() => 0.5 - Math.random());
+                let mixedQuestions = [...balas, ...culturas, ...logicas, ...refranes].sort(() => 0.5 - Math.random());
+
+                // Mezclar respuestas de cada pregunta
+                state.questions = mixedQuestions.map(q => {
+                    // Guardar la respuesta correcta actual
+                    const correctText = q.options[q.correct];
+                    // Mezclar opciones
+                    const newOptions = [...q.options].sort(() => 0.5 - Math.random());
+                    // Encontrar el nuevo índice de la correcta
+                    const newCorrectIndex = newOptions.indexOf(correctText);
+                    
+                    return {
+                        ...q,
+                        options: newOptions,
+                        correct: newCorrectIndex
+                    };
+                });
+
             } catch (e) { state.questions = [{ question: "Error", options: ["A","B","C","D"], correct: 0, type: "bala" }]; }
             
             const id = Math.floor(1000 + Math.random() * 9000).toString();
@@ -518,8 +535,7 @@
             const qBar = document.getElementById('host-q-bar');
             const badge = document.getElementById('host-type-badge');
             
-            // Remove hidden-screen so we don't hide it by mistake when updating
-            screen.className = `h-screen flex flex-col p-6 transition-colors duration-500 fade-in ${isBala ? 'bg-red-50' : (isLogica ? 'bg-purple-50' : (isRefran ? 'bg-orange-50' : 'bg-gray-50'))}`;
+            screen.className = `hidden-screen h-screen flex flex-col p-6 transition-colors duration-500 fade-in ${isBala ? 'bg-red-50' : (isLogica ? 'bg-purple-50' : (isRefran ? 'bg-orange-50' : 'bg-gray-50'))}`;
             qBar.className = `absolute top-0 left-0 w-full h-2 bg-gradient-to-r ${isBala ? 'from-red-500 to-yellow-500' : (isLogica ? 'from-purple-500 to-pink-500' : (isRefran ? 'from-orange-500 to-yellow-500' : 'from-blue-500 to-pink-500'))}`;
             
             if (isBala) badge.innerHTML = `<div class="bg-red-500 text-white px-6 py-3 rounded-2xl shadow-md font-black text-xl flex items-center animate-pulse">${ICONS.zap} BALA</div>`;
