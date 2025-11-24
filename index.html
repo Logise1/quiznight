@@ -18,6 +18,8 @@
             crown: `<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg>`,
             zap: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
             brain: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>`,
+            bulb: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-1 .9-2.6-.5-3-1.9-.5-2.7-3-3.5-5-.7 2-1.6 4.5-3.5 5-1.4.4-1.5 2-.5 3 .8.8 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>`,
+            quote: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/></svg>`,
             check: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>`,
             xcircle: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>`,
             volume2: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>`,
@@ -233,7 +235,7 @@
             <button onclick="app.confirmJoin()" class="w-full max-w-sm bg-green-500 text-white font-black py-5 rounded-xl text-xl hover:bg-green-600 transition-colors shadow-lg">¡LISTO!</button>
         </div>
 
-        <!-- SCREEN: PLAYER LOBBY (Updated) -->
+        <!-- SCREEN: PLAYER LOBBY -->
         <div id="screen-player-lobby" class="hidden-screen h-screen bg-slate-900 flex flex-col items-center justify-center p-6 text-white text-center fade-in">
              <div class="mb-8 animate-bounce text-green-400">
                 <script>document.write(ICONS.check)</script>
@@ -274,7 +276,7 @@
             <button onclick="app.submitAnswer(1)" class="bg-blue-500 rounded-3xl shadow-lg active:scale-95 transition-transform flex items-center justify-center border-b-8 border-blue-700 active:border-b-0 active:mt-2">
                 <span class="text-7xl text-white drop-shadow-md">◆</span>
             </button>
-            <button onclick="app.submitAnswer(2)" class="bg-yellow-500 rounded-3xl shadow-lg active:scale-95 transition-transform flex items-center justify-center border-b-8 border-yellow-600 active:border-b-0 active:mt-2">
+            <button onclick="app.submitAnswer(2)" class="bg-purple-500 rounded-3xl shadow-lg active:scale-95 transition-transform flex items-center justify-center border-b-8 border-purple-700 active:border-b-0 active:mt-2">
                 <span class="text-7xl text-white drop-shadow-md">●</span>
             </button>
             <button onclick="app.submitAnswer(3)" class="bg-green-500 rounded-3xl shadow-lg active:scale-95 transition-transform flex items-center justify-center border-b-8 border-green-700 active:border-b-0 active:mt-2">
@@ -326,10 +328,7 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
         import { getDatabase, ref, set, get, update, onValue } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
 
-        // --- CONFIG ---
-        const firebaseConfig = {
-            databaseURL: "https://party-e2086-default-rtdb.europe-west1.firebasedatabase.app/"
-        };
+        const firebaseConfig = { databaseURL: "https://party-e2086-default-rtdb.europe-west1.firebasedatabase.app/" };
         const appFirebase = initializeApp(firebaseConfig);
         const db = getDatabase(appFirebase);
 
@@ -339,35 +338,19 @@
             gong: 'https://logise1.github.io/quiznight/gong.mp3'
         };
 
-        // --- STATE ---
         const state = {
             userId: localStorage.getItem('fq_uid') || 'user_' + Math.random().toString(36).substr(2, 9),
-            mode: null,
-            gameId: null,
-            players: {},
-            questions: [],
-            currentQIndex: 0,
-            soundEnabled: true,
-            isHost: false,
-            hostTimer: null,
-            roundDuration: 20,
-            avatarEmojiIndex: 0,
-            avatarColorIndex: 1,
-            playerName: '',
-            joined: false
+            mode: null, gameId: null, players: {}, questions: [], currentQIndex: 0,
+            soundEnabled: true, isHost: false, hostTimer: null, roundDuration: 20,
+            avatarEmojiIndex: 0, avatarColorIndex: 1, playerName: '', joined: false
         };
         localStorage.setItem('fq_uid', state.userId);
 
         const AVATAR_EMOJIS = ['😎', '👻', '🤠', '👽', '🤖', '💩', '🦄', '🐱', '🐶', '🦊', '🦁', '🐼', '🐯', '🐷', '🐸', '🐙', '💀', '🤡'];
         const AVATAR_COLORS = ['bg-red-500', 'bg-blue-500', 'bg-green-500', 'bg-yellow-500', 'bg-purple-500', 'bg-pink-500', 'bg-orange-500', 'bg-teal-500'];
 
-        const audio = {
-            bgm1: new Audio(AUDIO_URLS.bgm1),
-            bgm2: new Audio(AUDIO_URLS.bgm2),
-            gong: new Audio(AUDIO_URLS.gong)
-        };
-        audio.bgm1.loop = true;
-        audio.bgm2.loop = true;
+        const audio = { bgm1: new Audio(AUDIO_URLS.bgm1), bgm2: new Audio(AUDIO_URLS.bgm2), gong: new Audio(AUDIO_URLS.gong) };
+        audio.bgm1.loop = true; audio.bgm2.loop = true;
 
         const stopAllAudio = () => { Object.values(audio).forEach(a => { a.pause(); a.currentTime = 0; }); };
         const playTrack = (track) => {
@@ -377,119 +360,52 @@
             if (track === 'bgm2') { audio.bgm1.pause(); audio.gong.pause(); }
             if (track === 'gong') { audio.bgm1.pause(); audio.bgm2.pause(); }
             audio[track].volume = track === 'gong' ? 1.0 : 0.5;
-            audio[track].play().catch(e => console.log("Audio play failed", e));
+            audio[track].play().catch(e => console.log("Audio", e));
         };
 
-        window.addEventListener('beforeunload', (e) => {
-            if (state.mode) { e.preventDefault(); e.returnValue = '¿Seguro que quieres salir?'; return '¿Seguro que quieres salir?'; }
-        });
-
+        window.addEventListener('beforeunload', (e) => { if (state.mode) { e.preventDefault(); e.returnValue = 'Salir?'; return 'Salir?'; } });
         window.onload = () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const pin = urlParams.get('pin');
-            if (pin) {
-                app.selectMode('player');
-                document.getElementById('player-input-pin').value = pin;
-            }
+            const pin = new URLSearchParams(window.location.search).get('pin');
+            if (pin) { app.selectMode('player'); document.getElementById('player-input-pin').value = pin; }
         };
 
         const showScreen = (id) => {
             document.querySelectorAll('[id^="screen-"]').forEach(el => el.classList.add('hidden-screen'));
             document.getElementById(id).classList.remove('hidden-screen');
         };
-
-        const updateSoundIcon = () => {
-             const btn = document.getElementById('btn-sound');
-             btn.innerHTML = state.soundEnabled ? ICONS.volume2 : ICONS.volumeX;
-        };
+        const updateSoundIcon = () => document.getElementById('btn-sound').innerHTML = state.soundEnabled ? ICONS.volume2 : ICONS.volumeX;
 
         window.app = {
-            selectMode: (mode) => {
-                state.mode = mode;
-                if (mode === 'host') initHost();
-                else initPlayer();
-            },
-            toggleSound: () => {
-                state.soundEnabled = !state.soundEnabled;
-                updateSoundIcon();
-                if (!state.soundEnabled) stopAllAudio();
-            },
-            toggleFullscreen: () => {
-                const elem = document.documentElement;
-                if (!document.fullscreenElement) {
-                    if (elem.requestFullscreen) { elem.requestFullscreen(); }
-                    else if (elem.webkitRequestFullscreen) { elem.webkitRequestFullscreen(); }
-                    else if (elem.msRequestFullscreen) { elem.msRequestFullscreen(); }
-                } else {
-                    if (document.exitFullscreen) { document.exitFullscreen(); }
-                }
-            },
-            startHostGame: async () => {
-                await update(ref(db, `games/${state.gameId}`), { status: 'preview', currentQuestion: 0 });
-                runQuestionSequence(0);
-            },
+            selectMode: (mode) => { state.mode = mode; if (mode === 'host') initHost(); else initPlayer(); },
+            toggleSound: () => { state.soundEnabled = !state.soundEnabled; updateSoundIcon(); if (!state.soundEnabled) stopAllAudio(); },
+            toggleFullscreen: () => { if (!document.fullscreenElement) document.documentElement.requestFullscreen().catch(e=>console.log(e)); else if (document.exitFullscreen) document.exitFullscreen(); },
+            startHostGame: async () => { await update(ref(db, `games/${state.gameId}`), { status: 'preview', currentQuestion: 0 }); runQuestionSequence(0); },
             nextQuestion: async () => {
                 if (state.currentQIndex + 1 < state.questions.length) {
-                    const nextIdx = state.currentQIndex + 1;
-                    state.currentQIndex = nextIdx;
-                    await update(ref(db, `games/${state.gameId}`), { currentQuestion: nextIdx });
-                    runQuestionSequence(nextIdx);
-                } else {
-                    await update(ref(db, `games/${state.gameId}`), { status: 'finished' });
-                }
+                    const nextIdx = state.currentQIndex + 1; state.currentQIndex = nextIdx;
+                    await update(ref(db, `games/${state.gameId}`), { currentQuestion: nextIdx }); runQuestionSequence(nextIdx);
+                } else { await update(ref(db, `games/${state.gameId}`), { status: 'finished' }); }
             },
             goToAvatar: async () => {
                 const pin = document.getElementById('player-input-pin').value;
                 const name = document.getElementById('player-input-name').value;
-                const errorEl = document.getElementById('player-login-error');
-                if (!pin || !name) { errorEl.textContent = "Rellena todos los campos"; errorEl.classList.remove('hidden'); return; }
+                if (!pin || !name) return document.getElementById('player-login-error').classList.remove('hidden');
                 try {
-                    const snap = await get(ref(db, `games/${pin}`));
-                    if (!snap.exists()) { errorEl.textContent = "Sala no encontrada"; errorEl.classList.remove('hidden'); return; }
-                    state.gameId = pin;
-                    state.playerName = name;
-                    app.toggleFullscreen();
-                    renderColorPicker();
-                    updateAvatarPreview();
-                    showScreen('screen-player-avatar');
-                } catch (e) { errorEl.textContent = "Error de conexión"; errorEl.classList.remove('hidden'); }
+                    if (!(await get(ref(db, `games/${pin}`))).exists()) throw new Error();
+                    state.gameId = pin; state.playerName = name;
+                    app.toggleFullscreen(); renderColorPicker(); updateAvatarPreview(); showScreen('screen-player-avatar');
+                } catch (e) { document.getElementById('player-login-error').classList.remove('hidden'); }
             },
-            cycleEmoji: (direction) => {
-                state.avatarEmojiIndex += direction;
-                if (state.avatarEmojiIndex < 0) state.avatarEmojiIndex = AVATAR_EMOJIS.length - 1;
-                if (state.avatarEmojiIndex >= AVATAR_EMOJIS.length) state.avatarEmojiIndex = 0;
-                updateAvatarPreview();
-            },
-            selectColor: (index) => {
-                state.avatarColorIndex = index;
-                updateAvatarPreview();
-            },
+            cycleEmoji: (d) => { state.avatarEmojiIndex = (state.avatarEmojiIndex + d + AVATAR_EMOJIS.length) % AVATAR_EMOJIS.length; updateAvatarPreview(); },
+            selectColor: (i) => { state.avatarColorIndex = i; updateAvatarPreview(); },
             confirmJoin: async () => {
-                try {
-                    const avatarData = {
-                        emoji: AVATAR_EMOJIS[state.avatarEmojiIndex],
-                        color: AVATAR_COLORS[state.avatarColorIndex]
-                    };
-                    // If already joined (editing), do not reset score
-                    const payload = {
-                        name: state.playerName, 
-                        avatar: avatarData
-                    };
-                    if (!state.joined) {
-                        payload.score = 0;
-                        payload.lastRoundPoints = 0;
-                        payload.currentAnswer = null;
-                    }
-                    
-                    await update(ref(db, `games/${state.gameId}/players/${state.userId}`), payload);
-                    state.joined = true;
-                    setupPlayerListener();
-                } catch (e) { console.error(e); alert("Error al unirse"); }
+                const avatarData = { emoji: AVATAR_EMOJIS[state.avatarEmojiIndex], color: AVATAR_COLORS[state.avatarColorIndex] };
+                const payload = { name: state.playerName, avatar: avatarData };
+                if (!state.joined) { payload.score = 0; payload.lastRoundPoints = 0; payload.currentAnswer = null; }
+                await update(ref(db, `games/${state.gameId}/players/${state.userId}`), payload);
+                state.joined = true; setupPlayerListener();
             },
-            editAvatar: () => {
-                // Go back to avatar screen
-                showScreen('screen-player-avatar');
-            },
+            editAvatar: () => showScreen('screen-player-avatar'),
             submitAnswer: async (idx) => {
                 await update(ref(db, `games/${state.gameId}/players/${state.userId}`), { currentAnswer: idx, answerTimestamp: Date.now() });
                 showScreen('screen-player-answered');
@@ -497,20 +413,13 @@
         };
 
         function updateAvatarPreview() {
-            const container = document.getElementById('avatar-preview-container');
-            const emoji = document.getElementById('avatar-preview-emoji');
-            const display = document.getElementById('avatar-emoji-display');
-            container.className = `w-40 h-40 rounded-full flex items-center justify-center text-7xl shadow-xl border-4 border-white mb-8 transition-colors duration-300 ${AVATAR_COLORS[state.avatarColorIndex]}`;
-            const char = AVATAR_EMOJIS[state.avatarEmojiIndex];
-            emoji.textContent = char;
-            display.textContent = char;
+            const c = document.getElementById('avatar-preview-container');
+            c.className = `w-40 h-40 rounded-full flex items-center justify-center text-7xl shadow-xl border-4 border-white mb-8 transition-colors duration-300 ${AVATAR_COLORS[state.avatarColorIndex]}`;
+            document.getElementById('avatar-preview-emoji').textContent = AVATAR_EMOJIS[state.avatarEmojiIndex];
+            document.getElementById('avatar-emoji-display').textContent = AVATAR_EMOJIS[state.avatarEmojiIndex];
         }
-
         function renderColorPicker() {
-            const picker = document.getElementById('color-picker');
-            picker.innerHTML = AVATAR_COLORS.map((color, i) => `
-                <button onclick="app.selectColor(${i})" class="w-10 h-10 rounded-full ${color} border-2 border-white shadow-md hover:scale-110 transition-transform ring-2 ring-transparent focus:ring-gray-400"></button>
-            `).join('');
+            document.getElementById('color-picker').innerHTML = AVATAR_COLORS.map((c, i) => `<button onclick="app.selectColor(${i})" class="w-10 h-10 rounded-full ${c} border-2 border-white shadow-md hover:scale-110 transition-transform"></button>`).join('');
         }
 
         async function initHost() {
@@ -518,32 +427,22 @@
             try {
                 const res = await fetch('https://logise1.github.io/quiznight/q.json');
                 const data = await res.json();
-                const balas = data.filter(q => q.type === 'bala');
-                const culturas = data.filter(q => !q.type || q.type === 'cultura'); 
-                const selectedBalas = balas.sort(() => 0.5 - Math.random()).slice(0, 8); // 8 Bala
-                const selectedCulturas = culturas.sort(() => 0.5 - Math.random()).slice(0, 27); // 27 Cultura
-                state.questions = [...selectedBalas, ...selectedCulturas].sort(() => 0.5 - Math.random());
-            } catch (e) {
-                state.questions = [{ question: "Error loading", options: ["A", "B", "C", "D"], correct: 0, type: "bala" }];
-            }
+                const balas = data.filter(q => q.type === 'bala').sort(()=>0.5-Math.random()).slice(0,6);
+                const culturas = data.filter(q => !q.type || q.type === 'cultura').sort(()=>0.5-Math.random()).slice(0,15);
+                const refranes = data.filter(q => q.type === 'refran').sort(()=>0.5-Math.random()).slice(0,7);
+                const logicas = data.filter(q => q.type === 'logica').sort(()=>0.5-Math.random()).slice(0,7);
+                
+                state.questions = [...balas, ...culturas, ...logicas, ...refranes].sort(() => 0.5 - Math.random());
+            } catch (e) { state.questions = [{ question: "Error", options: ["A","B","C","D"], correct: 0, type: "bala" }]; }
+            
             const id = Math.floor(1000 + Math.random() * 9000).toString();
-            state.gameId = id;
-            state.isHost = true;
+            state.gameId = id; state.isHost = true;
             await set(ref(db, `games/${id}`), { hostId: state.userId, status: 'lobby', currentQuestion: 0, players: {}, startTime: null, optionsVisible: false });
+            
             document.getElementById('host-game-id').textContent = id;
-            updateSoundIcon();
-            playTrack('bgm2'); 
-            showScreen('screen-host-lobby');
-            const joinUrl = window.location.href.split('?')[0] + '?pin=' + id;
-            const qrContainer = document.getElementById('qrcode');
-            qrContainer.innerHTML = ''; 
-            new QRCode(qrContainer, { text: joinUrl, width: 150, height: 150, colorDark : "#000000", colorLight : "#ffffff", correctLevel : QRCode.CorrectLevel.H });
-            onValue(ref(db, `games/${id}`), (snap) => {
-                const data = snap.val();
-                if(!data) return;
-                state.players = data.players || {};
-                updateHostUI(data);
-            });
+            updateSoundIcon(); playTrack('bgm2'); showScreen('screen-host-lobby');
+            new QRCode(document.getElementById('qrcode'), { text: window.location.href.split('?')[0] + '?pin=' + id, width: 150, height: 150, colorDark : "#000000", colorLight : "#ffffff", correctLevel : QRCode.CorrectLevel.H });
+            onValue(ref(db, `games/${id}`), (snap) => { if(snap.val()) { state.players = snap.val().players || {}; updateHostUI(snap.val()); } });
         }
 
         function updateHostUI(data) {
@@ -551,51 +450,27 @@
                 const pList = Object.values(state.players);
                 document.getElementById('host-player-count').textContent = pList.length;
                 document.getElementById('btn-start-game').disabled = pList.length === 0;
-                const listEl = document.getElementById('host-player-list');
-                
-                // Grid Layout for Lobby
-                listEl.innerHTML = pList.map(p => {
-                    const avatar = p.avatar || { emoji: '😀', color: 'bg-gray-400' };
-                    return `
-                    <div class="player-card flex flex-col items-center w-full">
-                        <div class="w-28 h-28 rounded-full flex items-center justify-center text-6xl shadow-2xl border-4 border-white mb-3 ${avatar.color} transform transition-transform hover:scale-110">
-                            ${avatar.emoji}
-                        </div>
-                        <div class="bg-black/60 backdrop-blur text-white px-4 py-2 rounded-xl text-lg font-black truncate w-full text-center border border-white/10 shadow-lg max-w-[140px]">
-                            ${p.name}
-                        </div>
-                    </div>
-                `}).join('');
-                
-            } else if (data.status === 'leaderboard') { renderLeaderboard(data.players); } 
-            else if (data.status === 'finished') { renderFinished(data.players); } 
-            else if (data.status === 'question') {
-                if (data.optionsVisible) {
-                    const pIds = Object.keys(state.players);
-                    if (pIds.length > 0) {
-                        const allAnswered = pIds.every(pid => {
-                            const p = state.players[pid];
-                            return p.currentAnswer !== undefined && p.currentAnswer !== null;
-                        });
-                        if (allAnswered && state.isHost) {
-                            if (state.hostTimer) clearInterval(state.hostTimer);
-                            calculateScores();
-                        }
-                    }
+                document.getElementById('host-player-list').innerHTML = pList.map(p => {
+                    const a = p.avatar || { emoji: '😀', color: 'bg-gray-400' };
+                    return `<div class="player-card flex flex-col items-center w-full"><div class="w-28 h-28 rounded-full flex items-center justify-center text-6xl shadow-2xl border-4 border-white mb-3 ${a.color} transform transition-transform hover:scale-110">${a.emoji}</div><div class="bg-black/60 backdrop-blur text-white px-4 py-2 rounded-xl text-lg font-black truncate w-full text-center border border-white/10 shadow-lg max-w-[140px]">${p.name}</div></div>`;
+                }).join('');
+            } else if (data.status === 'leaderboard') renderLeaderboard(data.players);
+            else if (data.status === 'finished') renderFinished(data.players);
+            else if (data.status === 'question' && data.optionsVisible && state.isHost) {
+                const pIds = Object.keys(state.players);
+                if (pIds.length > 0 && pIds.every(pid => state.players[pid].currentAnswer != null)) {
+                    if (state.hostTimer) clearInterval(state.hostTimer); calculateScores();
                 }
             } else if (data.status === 'reveal') {
                 renderHostQuestion(state.currentQIndex, true);
-                const q = state.questions[state.currentQIndex];
-                const grid = document.getElementById('host-options-grid');
-                Array.from(grid.children).forEach((el, idx) => {
-                    if (idx !== q.correct) { el.classList.add('opacity-20'); } 
-                    else { el.classList.add('ring-8', 'ring-green-400', 'scale-105', 'transition-all'); }
+                Array.from(document.getElementById('host-options-grid').children).forEach((el, idx) => {
+                    if (idx !== state.questions[state.currentQIndex].correct) el.classList.add('opacity-20'); else el.classList.add('ring-8', 'ring-green-400', 'scale-105');
                 });
                 showScreen('screen-host-game');
             }
-            if (data.status === 'preview') { const isEvenIndex = (state.currentQIndex % 2 === 0); if (!isEvenIndex) playTrack('bgm2'); } 
-            else if (data.status === 'question') { const isEvenIndex = (state.currentQIndex % 2 === 0); if (isEvenIndex) playTrack('bgm1'); } 
-            else if (data.status === 'leaderboard' || data.status === 'finished') { playTrack('gong'); }
+            if (data.status === 'preview') { const isEven = state.currentQIndex%2===0; if (!isEven) playTrack('bgm2'); }
+            else if (data.status === 'question') { const isEven = state.currentQIndex%2===0; if (isEven) playTrack('bgm1'); }
+            else if (data.status === 'leaderboard' || data.status === 'finished') playTrack('gong');
         }
 
         function runQuestionSequence(idx) {
@@ -605,29 +480,31 @@
             showScreen('screen-host-game');
             let countdown = 5;
             document.getElementById('host-timer').textContent = countdown;
-            document.getElementById('host-timer').className = "text-6xl font-black font-mono tabular-nums text-slate-800";
             if (state.hostTimer) clearInterval(state.hostTimer);
             state.hostTimer = setInterval(() => {
-                countdown--;
-                document.getElementById('host-timer').textContent = countdown;
+                countdown--; document.getElementById('host-timer').textContent = countdown;
                 if (countdown <= 0) { clearInterval(state.hostTimer); startAnsweringPhase(idx); }
             }, 1000);
         }
 
         async function startAnsweringPhase(idx) {
             const q = state.questions[idx];
+            let finalQ = {...q};
             const isBala = q.type === 'bala';
-            state.roundDuration = isBala ? 10 : 20;
-            await update(ref(db, `games/${state.gameId}`), { status: 'question', optionsVisible: true, questionStartTime: Date.now(), roundDuration: state.roundDuration });
+            const isLogica = q.type === 'logica';
+            const isRefran = q.type === 'refran';
+            state.roundDuration = isBala ? 10 : (isLogica || isRefran ? 25 : 20);
+
+            await update(ref(db, `games/${state.gameId}`), { status: 'question', optionsVisible: true, questionStartTime: Date.now(), roundDuration: state.roundDuration, dynamicQ: finalQ }); 
+            
             renderHostQuestion(idx, true);
             let countdown = state.roundDuration;
             document.getElementById('host-timer').textContent = countdown;
             if (state.hostTimer) clearInterval(state.hostTimer);
             state.hostTimer = setInterval(() => {
                 countdown--;
-                const timerEl = document.getElementById('host-timer');
-                timerEl.textContent = countdown;
-                if (countdown <= 5) timerEl.classList.add('text-red-500', 'scale-110');
+                document.getElementById('host-timer').textContent = countdown;
+                if (countdown <= 5) document.getElementById('host-timer').classList.add('text-red-500', 'scale-110');
                 if (countdown <= 0) { clearInterval(state.hostTimer); calculateScores(); }
             }, 1000);
         }
@@ -635,28 +512,29 @@
         function renderHostQuestion(idx, showOptions) {
             const q = state.questions[idx];
             const isBala = q.type === 'bala';
+            const isLogica = q.type === 'logica';
+            const isRefran = q.type === 'refran';
             const screen = document.getElementById('screen-host-game');
             const qBar = document.getElementById('host-q-bar');
-            if (isBala) {
-                screen.classList.remove('bg-gray-50'); screen.classList.add('bg-red-50');
-                qBar.className = "absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500";
-                document.getElementById('host-q-card').classList.add('ring-4', 'ring-red-100');
-            } else {
-                screen.classList.add('bg-gray-50'); screen.classList.remove('bg-red-50');
-                qBar.className = "absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500";
-                document.getElementById('host-q-card').classList.remove('ring-4', 'ring-red-100');
-            }
+            const badge = document.getElementById('host-type-badge');
+            
+            screen.className = `hidden-screen h-screen flex flex-col p-6 transition-colors duration-500 fade-in ${isBala ? 'bg-red-50' : (isLogica ? 'bg-purple-50' : (isRefran ? 'bg-orange-50' : 'bg-gray-50'))}`;
+            qBar.className = `absolute top-0 left-0 w-full h-2 bg-gradient-to-r ${isBala ? 'from-red-500 to-yellow-500' : (isLogica ? 'from-purple-500 to-pink-500' : (isRefran ? 'from-orange-500 to-yellow-500' : 'from-blue-500 to-pink-500'))}`;
+            
+            if (isBala) badge.innerHTML = `<div class="bg-red-500 text-white px-6 py-3 rounded-2xl shadow-md font-black text-xl flex items-center animate-pulse">${ICONS.zap} BALA</div>`;
+            else if (isLogica) badge.innerHTML = `<div class="bg-purple-600 text-white px-6 py-3 rounded-2xl shadow-md font-bold text-xl flex items-center">${ICONS.bulb} LÓGICA</div>`;
+            else if (isRefran) badge.innerHTML = `<div class="bg-orange-500 text-white px-6 py-3 rounded-2xl shadow-md font-bold text-xl flex items-center">${ICONS.quote} REFRÁN</div>`;
+            else badge.innerHTML = `<div class="bg-blue-500 text-white px-6 py-3 rounded-2xl shadow-md font-bold text-xl flex items-center">${ICONS.brain} CULTURA</div>`;
+
             document.getElementById('host-q-counter').textContent = `${idx + 1} / ${state.questions.length}`;
             document.getElementById('host-game-pin-small').textContent = state.gameId;
-            document.getElementById('host-type-badge').innerHTML = isBala 
-                ? `<div class="bg-red-500 text-white px-6 py-3 rounded-2xl shadow-md font-black text-xl flex items-center animate-pulse">${ICONS.zap} <span class="ml-2">BALA</span></div>`
-                : `<div class="bg-blue-500 text-white px-6 py-3 rounded-2xl shadow-md font-bold text-xl flex items-center">${ICONS.brain} <span class="ml-2">CULTURA</span></div>`;
             document.getElementById('host-q-text').textContent = q.question;
+
             const grid = document.getElementById('host-options-grid');
             const previewMsg = document.getElementById('host-preview-msg');
-            const previewText = document.getElementById('host-preview-text');
+            
             if (showOptions) {
-                const colors = ['bg-red-500', 'bg-blue-500', 'bg-yellow-500', 'bg-green-500'];
+                const colors = ['bg-red-500', 'bg-blue-500', 'bg-purple-500', 'bg-green-500']; 
                 const shapes = ['▲', '◆', '●', '■'];
                 grid.innerHTML = q.options.map((opt, i) => `
                     <div class="${colors[i]} rounded-3xl flex items-center p-8 shadow-xl transition-all duration-500">
@@ -667,8 +545,7 @@
                 grid.classList.remove('opacity-0'); previewMsg.classList.add('hidden');
             } else {
                 grid.classList.add('opacity-0'); previewMsg.classList.remove('hidden');
-                previewText.textContent = isBala ? "¡RÁPIDO!" : "¡Lee la pregunta!";
-                previewText.className = `text-3xl font-black animate-pulse ${isBala ? 'text-red-600' : 'text-slate-900'}`;
+                document.getElementById('host-preview-text').textContent = isBala ? "¡RÁPIDO!" : (isLogica ? "¡PIENSA!" : (isRefran ? "¡COMPLETA!" : "¡Lee la pregunta!"));
             }
         }
 
@@ -689,109 +566,87 @@
                 }
                 p.currentAnswer = null; p.answerTimestamp = null;
             });
-            if (currentQ.type !== 'bala') {
+
+            if (currentQ.type === 'bala') {
+                await update(ref(db, `games/${state.gameId}`), { players: updatedPlayers, status: 'leaderboard' });
+                renderLeaderboard(updatedPlayers); showScreen('screen-host-leaderboard');
+            } else {
                 await update(ref(db, `games/${state.gameId}`), { players: updatedPlayers, status: 'reveal' });
                 setTimeout(() => { update(ref(db, `games/${state.gameId}`), { status: 'leaderboard' }); }, 4000);
-            } else {
-                await update(ref(db, `games/${state.gameId}`), { players: updatedPlayers, status: 'leaderboard' });
-                renderLeaderboard(updatedPlayers);
-                showScreen('screen-host-leaderboard');
             }
         }
 
         function renderLeaderboard(playersData) {
             const sorted = Object.values(playersData).sort((a, b) => b.score - a.score).slice(0, 5);
-            const list = document.getElementById('host-leaderboard-list');
-            list.innerHTML = sorted.map((p, i) => {
+            document.getElementById('host-leaderboard-list').innerHTML = sorted.map((p, i) => {
                 const colors = ['bg-yellow-400 text-yellow-900', 'bg-gray-300 text-gray-800', 'bg-orange-400 text-orange-900', 'bg-gray-100 text-gray-500'];
-                const colorClass = colors[i] || colors[3];
                 const gain = p.lastRoundPoints > 0 ? `<div class="text-green-600 font-bold flex items-center mt-1">¡Sube +${Math.round(p.lastRoundPoints)}!</div>` : '';
-                const avatar = p.avatar || {emoji:'🙂', color:'bg-gray-400'};
-                return `
-                <div class="flex items-center bg-white text-slate-900 p-6 rounded-3xl shadow-md border-2 border-gray-100 transform transition-all hover:scale-[1.02]">
-                    <div class="w-16 h-16 flex items-center justify-center rounded-2xl font-black text-2xl mr-6 ${colorClass} shadow-lg">${i + 1}</div>
-                    <div class="mr-4 w-12 h-12 rounded-full ${avatar.color} flex items-center justify-center text-2xl border border-white shadow-sm">${avatar.emoji}</div>
-                    <div class="flex-1"><div class="text-3xl font-bold text-slate-800">${p.name}</div>${gain}</div>
-                    <div class="text-4xl font-black text-indigo-600 tabular-nums">${Math.round(p.score)}</div>
-                </div>`;
+                const a = p.avatar || {emoji:'🙂', color:'bg-gray-400'};
+                return `<div class="flex items-center bg-white text-slate-900 p-6 rounded-3xl shadow-md border-2 border-gray-100 transform transition-all hover:scale-[1.02]"><div class="w-16 h-16 flex items-center justify-center rounded-2xl font-black text-2xl mr-6 ${colors[i]||colors[3]} shadow-lg">${i+1}</div><div class="mr-4 w-12 h-12 rounded-full ${a.color} flex items-center justify-center text-2xl border border-white shadow-sm">${a.emoji}</div><div class="flex-1"><div class="text-3xl font-bold text-slate-800">${p.name}</div>${gain}</div><div class="text-4xl font-black text-indigo-600 tabular-nums">${Math.round(p.score)}</div></div>`;
             }).join('');
             if(state.isHost) showScreen('screen-host-leaderboard');
         }
 
         function renderFinished(playersData) {
-            const sorted = Object.values(playersData).sort((a, b) => b.score - a.score);
-            const winner = sorted[0];
-            document.getElementById('winner-name').textContent = winner ? winner.name : 'Nadie';
-            document.getElementById('winner-score').textContent = (winner ? Math.round(winner.score) : 0) + ' Puntos';
-            const av = winner?.avatar || {emoji:'😎', color:'bg-white'};
-            const avEl = document.getElementById('winner-avatar');
-            avEl.textContent = av.emoji;
+            const w = Object.values(playersData).sort((a, b) => b.score - a.score)[0];
+            const a = w?.avatar || {emoji:'😎', color:'bg-white'};
+            document.getElementById('winner-name').textContent = w ? w.name : 'Nadie';
+            document.getElementById('winner-score').textContent = (w ? Math.round(w.score) : 0) + ' Puntos';
+            document.getElementById('winner-avatar').textContent = a.emoji;
             showScreen('screen-host-finished');
         }
 
         function initPlayer() { showScreen('screen-player-login'); }
-
         function setupPlayerListener() {
             onValue(ref(db, `games/${state.gameId}`), (snap) => {
                 const data = snap.val();
-                if (!data) return;
+                if (!data || !data.players[state.userId]) return;
                 const myData = data.players[state.userId];
-                if (!myData) return;
                 
                 document.getElementById('player-score').textContent = Math.round(myData.score);
+                const gainEl = document.getElementById('player-points-gained');
+                const posFeed = document.getElementById('player-feedback-positive');
+                const negFeed = document.getElementById('player-feedback-negative');
+                const lbScreen = document.getElementById('screen-player-leaderboard');
+                
                 if (myData.lastRoundPoints > 0) {
-                    document.getElementById('player-points-gained').textContent = `+ ${Math.round(myData.lastRoundPoints)}`;
-                    document.getElementById('player-feedback-positive').classList.remove('hidden');
-                    document.getElementById('player-feedback-negative').classList.add('hidden');
-                    document.getElementById('screen-player-leaderboard').classList.add('bg-green-500');
-                    document.getElementById('screen-player-leaderboard').classList.remove('bg-slate-900');
+                    gainEl.textContent = `+ ${Math.round(myData.lastRoundPoints)}`;
+                    posFeed.classList.remove('hidden'); negFeed.classList.add('hidden');
+                    lbScreen.classList.add('bg-green-500'); lbScreen.classList.remove('bg-slate-900');
                 } else {
-                    document.getElementById('player-feedback-positive').classList.add('hidden');
-                    document.getElementById('player-feedback-negative').classList.remove('hidden');
-                    document.getElementById('screen-player-leaderboard').classList.remove('bg-green-500');
-                    document.getElementById('screen-player-leaderboard').classList.add('bg-slate-900');
+                    posFeed.classList.add('hidden'); negFeed.classList.remove('hidden');
+                    lbScreen.classList.remove('bg-green-500'); lbScreen.classList.add('bg-slate-900');
                 }
                 
-                const sorted = Object.values(data.players).sort((a, b) => b.score - a.score);
-                const rank = sorted.findIndex(p => p.name === myData.name) + 1;
+                const rank = Object.values(data.players).sort((a, b) => b.score - a.score).findIndex(p => p.name === myData.name) + 1;
                 document.getElementById('player-rank').textContent = `${rank}º`;
 
                 if (data.status === 'lobby') {
                     document.getElementById('player-lobby-name').textContent = myData.name;
-                    const av = myData.avatar || {emoji: '😎', color: 'bg-gray-400'};
-                    const avEl = document.getElementById('player-lobby-avatar');
-                    avEl.textContent = av.emoji;
-                    avEl.className = `w-24 h-24 rounded-full flex items-center justify-center text-5xl shadow-lg border-2 border-white mb-4 ${av.color}`;
+                    const a = myData.avatar || {emoji: '😎', color: 'bg-gray-400'};
+                    document.getElementById('player-lobby-avatar').textContent = a.emoji;
+                    document.getElementById('player-lobby-avatar').className = `w-24 h-24 rounded-full flex items-center justify-center text-5xl shadow-lg border-2 border-white mb-4 ${a.color}`;
                     showScreen('screen-player-lobby');
-                } else if (data.status === 'preview') {
-                    showScreen('screen-player-preview');
-                } else if (data.status === 'question') {
+                } else if (data.status === 'preview') showScreen('screen-player-preview');
+                else if (data.status === 'question') {
                     if (data.optionsVisible) {
-                         if (myData.currentAnswer !== undefined && myData.currentAnswer !== null) {
-                             showScreen('screen-player-answered');
-                         } else {
-                             showScreen('screen-player-game');
-                         }
-                    } else {
-                        showScreen('screen-player-wait');
-                    }
+                         if (myData.currentAnswer != null) showScreen('screen-player-answered');
+                         else showScreen('screen-player-game');
+                    } else showScreen('screen-player-wait');
                 } else if (data.status === 'reveal') {
+                    const resIcon = document.getElementById('player-result-icon');
+                    const resText = document.getElementById('player-result-text');
+                    const resScreen = document.getElementById('screen-player-result');
                     if (myData.lastRoundPoints > 0) {
-                        document.getElementById('player-result-icon').innerHTML = ICONS.check;
-                        document.getElementById('player-result-text').textContent = "¡CORRECTO!";
-                        document.getElementById('screen-player-result').className = "h-screen flex flex-col items-center justify-center p-6 text-white text-center fade-in bg-green-500";
+                        resIcon.innerHTML = ICONS.check; resText.textContent = "¡CORRECTO!";
+                        resScreen.className = "h-screen flex flex-col items-center justify-center p-6 text-white text-center fade-in bg-green-500";
                     } else {
-                        document.getElementById('player-result-icon').innerHTML = ICONS.xcircle;
-                        document.getElementById('player-result-text').textContent = "INCORRECTO";
-                        document.getElementById('screen-player-result').className = "h-screen flex flex-col items-center justify-center p-6 text-white text-center fade-in bg-red-500";
+                        resIcon.innerHTML = ICONS.xcircle; resText.textContent = "INCORRECTO";
+                        resScreen.className = "h-screen flex flex-col items-center justify-center p-6 text-white text-center fade-in bg-red-500";
                     }
                     showScreen('screen-player-result');
-                } else if (data.status === 'leaderboard') {
-                     showScreen('screen-player-leaderboard');
-                } else if (data.status === 'finished') {
-                    showScreen('screen-player-leaderboard');
-                    document.getElementById('player-btn-exit').classList.remove('hidden');
-                }
+                } else if (data.status === 'leaderboard') showScreen('screen-player-leaderboard');
+                else if (data.status === 'finished') { showScreen('screen-player-leaderboard'); document.getElementById('player-btn-exit').classList.remove('hidden'); }
             });
         }
     </script>
