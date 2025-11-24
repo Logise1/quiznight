@@ -518,7 +518,8 @@
             const qBar = document.getElementById('host-q-bar');
             const badge = document.getElementById('host-type-badge');
             
-            screen.className = `hidden-screen h-screen flex flex-col p-6 transition-colors duration-500 fade-in ${isBala ? 'bg-red-50' : (isLogica ? 'bg-purple-50' : (isRefran ? 'bg-orange-50' : 'bg-gray-50'))}`;
+            // Remove hidden-screen so we don't hide it by mistake when updating
+            screen.className = `h-screen flex flex-col p-6 transition-colors duration-500 fade-in ${isBala ? 'bg-red-50' : (isLogica ? 'bg-purple-50' : (isRefran ? 'bg-orange-50' : 'bg-gray-50'))}`;
             qBar.className = `absolute top-0 left-0 w-full h-2 bg-gradient-to-r ${isBala ? 'from-red-500 to-yellow-500' : (isLogica ? 'from-purple-500 to-pink-500' : (isRefran ? 'from-orange-500 to-yellow-500' : 'from-blue-500 to-pink-500'))}`;
             
             if (isBala) badge.innerHTML = `<div class="bg-red-500 text-white px-6 py-3 rounded-2xl shadow-md font-black text-xl flex items-center animate-pulse">${ICONS.zap} BALA</div>`;
