@@ -93,149 +93,211 @@
             background: rgba(255, 255, 255, 0.5);
         }
 
-        /* --- XMAS LIGHTS ANIMATION --- */
-        .stage-lights {
-            background-color: #0f172a;
-            /* Slate 900 base */
-            position: relative;
-            overflow: hidden;
+        /* --- NEW COZY XMAS ATMOSPHERE --- */
+        body {
+            /* Dark Wood Background Base */
+            background-color: #2c1b0e;
+            background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%);
+            color: #f0e6d2;
+            /* Warm off-white text */
         }
 
-        /* Spotlights */
-        .stage-lights::before,
-        .stage-lights::after {
-            content: '';
+        /* Top String Lights Container */
+        .xmas-lights-container {
             position: absolute;
-            width: 100vw;
-            height: 100vh;
+            top: -10px;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            z-index: 5;
+            display: flex;
+            justify-content: space-around;
+            padding: 0 20px;
             pointer-events: none;
-            z-index: 0;
-            background:
-                radial-gradient(circle at 20% 20%, rgba(255, 0, 0, 0.4) 0%, transparent 40%),
-                radial-gradient(circle at 80% 80%, rgba(0, 255, 0, 0.4) 0%, transparent 40%),
-                radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 60%),
-                radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.3) 0%, transparent 30%),
-                radial-gradient(circle at 20% 80%, rgba(0, 0, 255, 0.3) 0%, transparent 30%);
-            background-size: 150% 150%;
-            animation: lightShow 6s infinite alternate ease-in-out;
-            mix-blend-mode: screen;
+            border-top: 2px solid rgba(50, 30, 10, 0.6);
+            /* Wire */
         }
 
-        .stage-lights::after {
-            background:
-                radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.5) 0%, transparent 50%);
-            animation: spotLight 4s infinite alternate ease-in-out;
-            opacity: 0.5;
+        /* Individual Bulb */
+        .light-bulb {
+            width: 14px;
+            height: 22px;
+            border-radius: 50% 50% 40% 40%;
+            background: #ffd700;
+            /* Gold base */
+            box-shadow: 0 2px 15px rgba(255, 215, 0, 0.8), inset 0 -2px 5px rgba(255, 140, 0, 0.5);
+            animation: twinkle 2.5s infinite ease-in-out alternate;
         }
 
-        @keyframes lightShow {
+        /* Varying delays for natural twinkling */
+        .light-bulb:nth-child(2n) {
+            animation-delay: 0.5s;
+            background: #ff6b6b;
+            box-shadow: 0 2px 15px rgba(255, 107, 107, 0.8);
+        }
+
+        .light-bulb:nth-child(3n) {
+            animation-delay: 1.2s;
+            background: #4ecdc4;
+            box-shadow: 0 2px 15px rgba(78, 205, 196, 0.8);
+        }
+
+        .light-bulb:nth-child(5n) {
+            animation-delay: 1.8s;
+        }
+
+        @keyframes twinkle {
             0% {
-                background-position: 0% 0%;
-                filter: hue-rotate(0deg);
+                opacity: 0.5;
+                transform: scale(0.9);
+                filter: brightness(0.8);
             }
 
             100% {
-                background-position: 100% 100%;
-                filter: hue-rotate(45deg);
+                opacity: 1;
+                transform: scale(1.1);
+                filter: brightness(1.2);
             }
         }
 
-        @keyframes spotLight {
-            0% {
-                transform: translateX(-30%) rotate(-10deg);
-                opacity: 0.3;
-            }
-
-            100% {
-                transform: translateX(30%) rotate(10deg);
-                opacity: 0.6;
-            }
+        /* Corner Decorations (Abstract Pine/Berries) */
+        .corner-decor {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            z-index: 4;
+            pointer-events: none;
+            opacity: 0.7;
         }
 
-        /* Ensure content sits above the lights */
+        .corner-decor-left {
+            top: 0;
+            left: 0;
+            background: radial-gradient(circle at 0% 0%, rgba(34, 139, 34, 0.5) 10%, transparent 60%),
+                radial-gradient(circle at 10% 10%, rgba(165, 42, 42, 0.6) 2%, transparent 10%);
+            /* Berries */
+        }
+
+        .corner-decor-right {
+            top: 0;
+            right: 0;
+            background: radial-gradient(circle at 100% 0%, rgba(34, 139, 34, 0.5) 10%, transparent 60%),
+                radial-gradient(circle at 90% 10%, rgba(165, 42, 42, 0.6) 2%, transparent 10%);
+        }
+
+        /* Ensure content sits above decorations */
         .z-content {
             position: relative;
             z-index: 10;
         }
+
+        /* Update inputs for dark theme */
+        input[type="text"],
+        input[type="number"] {
+            background-color: rgba(255, 255, 255, 0.9) !important;
+            color: #1a1a1a !important;
+        }
     </style>
 </head>
 
-<body class="bg-gray-50 text-slate-800 font-sans select-none overflow-hidden">
+<body class="font-sans select-none overflow-hidden">
 
     <!-- APP CONTAINER -->
     <div id="app" class="min-h-screen w-full relative">
 
+        <!-- XMAS DECORATIONS (Fixed over background) -->
+        <div class="xmas-lights-container">
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+        </div>
+        <div class="corner-decor corner-decor-left"></div>
+        <div class="corner-decor corner-decor-right"></div>
+
         <!-- SCREEN: LANDING -->
-        <div id="screen-landing" class="stage-lights h-screen flex flex-col items-center justify-center p-4 text-white">
+        <div id="screen-landing" class="h-screen flex flex-col items-center justify-center p-4">
             <div class="z-content flex flex-col items-center">
-                <h1
-                    class="text-7xl font-black mb-2 tracking-tighter text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)] text-center">
+                <h1 class="text-7xl font-black mb-2 tracking-tighter text-amber-100 drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)] text-center"
+                    style="font-family: serif;">
                     QUIZ NIGHT
                 </h1>
                 <div
-                    class="mb-12 flex items-center gap-2 bg-white/10 px-6 py-2 rounded-full backdrop-blur-md border border-white/20">
-                    <span class="text-2xl animate-pulse">🎄</span>
-                    <p class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-white to-green-400"
-                        style="text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+                    class="mb-12 flex items-center gap-2 bg-black/30 px-8 py-3 rounded-full backdrop-blur-md border border-amber-500/30 shadow-[0_0_30px_rgba(255,180,0,0.2)]">
+                    <span class="text-3xl">🎄</span>
+                    <p class="text-2xl font-bold text-amber-200 tracking-wider"
+                        style="text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
                         XMAS EDITION
                     </p>
-                    <span class="text-2xl animate-pulse">🎅</span>
+                    <span class="text-3xl">✨</span>
                 </div>
 
                 <div class="grid gap-6 md:grid-cols-2 w-full max-w-2xl">
                     <button onclick="app.selectMode('host')"
-                        class="group flex flex-col items-center p-8 bg-white/10 rounded-3xl border-2 border-white/10 hover:bg-white/20 transition-all transform hover:-translate-y-1 backdrop-blur-sm shadow-[0_0_30px_rgba(0,255,0,0.2)] hover:shadow-[0_0_50px_rgba(0,255,0,0.4)]">
-                        <div class="text-green-400 mb-4 drop-shadow-lg">
+                        class="group flex flex-col items-center p-8 bg-gradient-to-br from-amber-900/40 to-red-900/40 rounded-3xl border border-amber-500/20 hover:bg-amber-800/40 transition-all transform hover:-translate-y-1 backdrop-blur-sm shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_30px_rgba(165,42,42,0.5)]">
+                        <div class="text-green-300 mb-4 drop-shadow-lg">
                             <script>document.write(ICONS.monitor)</script>
                         </div>
-                        <span class="text-2xl font-bold">Crear Partida</span>
-                        <span class="text-slate-300 text-center mt-2">TV / Proyector</span>
+                        <span class="text-2xl font-bold text-amber-100">Crear Partida</span>
+                        <span class="text-amber-300/70 text-center mt-2 font-medium">TV / Proyector</span>
                     </button>
 
                     <button onclick="app.selectMode('player')"
-                        class="group flex flex-col items-center p-8 bg-white/10 rounded-3xl border-2 border-white/10 hover:bg-white/20 transition-all transform hover:-translate-y-1 backdrop-blur-sm shadow-[0_0_30px_rgba(255,0,0,0.2)] hover:shadow-[0_0_50px_rgba(255,0,0,0.4)]">
-                        <div class="text-red-400 mb-4 drop-shadow-lg">
+                        class="group flex flex-col items-center p-8 bg-gradient-to-br from-amber-900/40 to-red-900/40 rounded-3xl border border-amber-500/20 hover:bg-amber-800/40 transition-all transform hover:-translate-y-1 backdrop-blur-sm shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_30px_rgba(165,42,42,0.5)]">
+                        <div class="text-red-300 mb-4 drop-shadow-lg">
                             <script>document.write(ICONS.smartphone)</script>
                         </div>
-                        <span class="text-2xl font-bold">Unirse</span>
-                        <span class="text-slate-300 text-center mt-2">Tu Móvil</span>
+                        <span class="text-2xl font-bold text-amber-100">Unirse</span>
+                        <span class="text-amber-300/70 text-center mt-2 font-medium">Tu Móvil</span>
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- SCREEN: HOST LOBBY (KAHOOT STYLE) -->
-        <div id="screen-host-lobby" class="hidden-screen stage-lights h-screen flex flex-col text-white fade-in">
+        <!-- SCREEN: HOST LOBBY -->
+        <div id="screen-host-lobby" class="hidden-screen h-screen flex flex-col fade-in">
             <!-- Top Bar -->
             <div
-                class="z-content bg-black/40 p-4 flex justify-between items-center backdrop-blur-md border-b border-white/10 h-24 shrink-0 shadow-lg">
+                class="z-content bg-black/30 p-4 flex justify-between items-center backdrop-blur-md border-b border-amber-500/20 h-24 shrink-0 shadow-lg relative mt-10">
                 <div class="flex items-center gap-4">
                     <div class="flex flex-col ml-4">
-                        <h2 class="text-3xl font-black tracking-tighter text-white drop-shadow-md">
+                        <h2 class="text-3xl font-black tracking-tighter text-amber-100 drop-shadow-md"
+                            style="font-family: serif;">
                             QUIZ NIGHT
                         </h2>
-                        <span
-                            class="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-green-400 tracking-widest uppercase">
-                            🎄 Xmas Edition
+                        <span class="text-sm font-bold text-red-300 tracking-widest uppercase">
+                            🎅 Xmas Edition
                         </span>
                     </div>
                 </div>
                 <div class="flex items-center gap-6">
                     <div class="flex flex-col items-end mr-4">
-                        <span class="text-xs text-slate-300 uppercase font-bold tracking-wider mb-1">Código de
+                        <span class="text-xs text-amber-200/70 uppercase font-bold tracking-wider mb-1">Código de
                             Sala</span>
-                        <div class="bg-white text-slate-900 px-8 py-2 rounded-full font-black text-5xl tracking-widest shadow-[0_0_20px_rgba(255,255,255,0.4)] font-mono border-4 border-red-500"
+                        <div class="bg-amber-100 text-red-900 px-8 py-2 rounded-full font-black text-5xl tracking-widest shadow-[0_0_25px_rgba(255,0,0,0.3)] font-mono border-4 border-red-600"
                             id="host-game-id">
                             ...
                         </div>
                     </div>
 
                     <button onclick="app.toggleSound()" id="btn-sound"
-                        class="bg-white/10 p-3 rounded-full hover:bg-white/20 transition-colors border border-white/20">
+                        class="bg-black/30 p-3 rounded-full hover:bg-black/50 transition-colors border border-amber-500/30 text-amber-100">
                         <!-- Icon injected by JS -->
                     </button>
                     <button onclick="app.toggleFullscreen()"
-                        class="bg-white/10 p-3 rounded-full hover:bg-white/20 transition-colors border border-white/20">
+                        class="bg-black/30 p-3 rounded-full hover:bg-black/50 transition-colors border border-amber-500/30 text-amber-100">
                         <script>document.write(ICONS.maximize)</script>
                     </button>
                 </div>
@@ -245,38 +307,40 @@
             <div class="z-content flex-1 flex p-8 overflow-hidden gap-8 min-h-0">
                 <!-- Left: QR & Info -->
                 <div
-                    class="w-1/4 flex flex-col items-center justify-center bg-black/30 rounded-3xl p-6 border border-white/10 shrink-0 backdrop-blur-sm shadow-2xl">
+                    class="w-1/4 flex flex-col items-center justify-center bg-gradient-to-b from-red-900/30 to-amber-900/30 rounded-3xl p-6 border border-amber-500/20 shrink-0 backdrop-blur-sm shadow-2xl">
                     <div
-                        class="bg-white p-4 rounded-xl shadow-2xl mb-6 rotate-1 hover:rotate-0 transition-transform duration-300">
+                        class="bg-amber-100 p-4 rounded-xl shadow-lg mb-6 rotate-1 hover:rotate-0 transition-transform duration-300 border-4 border-red-700">
                         <div id="qrcode"></div>
                     </div>
                     <div class="text-center">
-                        <p class="text-red-300 uppercase tracking-widest text-sm font-bold mb-2">Únete para jugar</p>
-                        <p class="text-3xl font-black mb-6 text-white drop-shadow-md">Escanea el QR</p>
+                        <p class="text-amber-200 uppercase tracking-widest text-sm font-bold mb-2">Únete para jugar</p>
+                        <p class="text-3xl font-black mb-6 text-amber-100 drop-shadow-md" style="font-family: serif;">
+                            Escanea el QR</p>
 
-                        <div class="bg-black/40 px-8 py-4 rounded-full flex items-center gap-4 border border-white/10">
-                            <span class="text-green-400 animate-bounce">
+                        <div
+                            class="bg-black/40 px-8 py-4 rounded-full flex items-center gap-4 border border-red-500/30 shadow-inner">
+                            <span class="text-green-400 animate-bounce drop-shadow">
                                 <script>document.write(ICONS.users)</script>
                             </span>
-                            <span id="host-player-count" class="text-4xl font-black">0</span>
+                            <span id="host-player-count" class="text-4xl font-black text-amber-100">0</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right: Player Grid (Scrollable) -->
+                <!-- Right: Player Grid -->
                 <div
-                    class="flex-1 bg-black/30 rounded-3xl p-8 border border-white/10 relative flex flex-col overflow-hidden backdrop-blur-sm shadow-inner">
+                    class="flex-1 bg-gradient-to-b from-amber-900/20 to-black/40 rounded-3xl p-8 border border-amber-500/10 relative flex flex-col overflow-hidden backdrop-blur-sm shadow-inner">
                     <!-- Player List Container -->
                     <div id="host-player-list"
                         class="flex-1 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 content-start overflow-y-auto custom-scroll pb-32 pr-2">
                         <!-- Players injected here -->
                     </div>
 
-                    <!-- Start Button Overlay (Fixed Bottom Right) -->
+                    <!-- Start Button Overlay -->
                     <div
-                        class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black via-black/80 to-transparent flex justify-end pointer-events-none">
+                        class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/90 via-black/70 to-transparent flex justify-end pointer-events-none">
                         <button onclick="app.startHostGame()" id="btn-start-game" disabled
-                            class="pointer-events-auto bg-gradient-to-r from-green-500 to-emerald-600 text-white text-2xl font-black py-4 px-12 rounded-full shadow-[0_0_20px_rgba(34,197,94,0.6)] transition-all transform hover:scale-105 hover:shadow-[0_0_40px_rgba(34,197,94,0.8)] disabled:opacity-50 disabled:scale-100 disabled:cursor-not-allowed flex items-center gap-3 border-2 border-green-400">
+                            class="pointer-events-auto bg-gradient-to-r from-red-600 to-red-800 text-amber-100 text-2xl font-black py-4 px-12 rounded-full shadow-[0_0_30px_rgba(220,20,60,0.5)] transition-all transform hover:scale-105 hover:shadow-[0_0_50px_rgba(220,20,60,0.7)] disabled:opacity-50 disabled:scale-100 disabled:cursor-not-allowed flex items-center gap-3 border-4 border-red-500/50">
                             EMPEZAR <span class="text-xl">➔</span>
                         </button>
                     </div>
@@ -286,9 +350,9 @@
 
         <!-- SCREEN: HOST GAME -->
         <div id="screen-host-game"
-            class="hidden-screen h-screen flex flex-col p-6 transition-colors duration-500 fade-in bg-gray-50">
+            class="hidden-screen h-screen flex flex-col p-6 transition-colors duration-500 fade-in bg-amber-50 text-slate-800">
             <!-- Header -->
-            <div class="flex justify-between items-center mb-8">
+            <div class="flex justify-between items-center mb-8 z-content pt-10">
                 <div class="flex items-center gap-2">
                     <div id="host-q-counter"
                         class="bg-white px-6 py-3 rounded-2xl shadow-sm border border-gray-100 font-bold text-xl text-gray-500">
@@ -298,7 +362,8 @@
                 </div>
                 <div class="relative flex items-center justify-center">
                     <div id="host-timer"
-                        class="text-6xl font-black font-mono tabular-nums text-slate-800 transition-all">20</div>
+                        class="text-6xl font-black font-mono tabular-nums text-slate-800 transition-all drop-shadow-sm">
+                        20</div>
                 </div>
                 <div
                     class="bg-white px-6 py-3 rounded-2xl shadow-sm border border-gray-100 font-mono text-xl font-bold text-gray-500">
@@ -307,40 +372,39 @@
             </div>
 
             <!-- Question Card -->
-            <div class="flex-1 flex items-center justify-center mb-10">
+            <div class="flex-1 flex items-center justify-center mb-10 z-content">
                 <div id="host-q-card"
-                    class="bg-white p-16 rounded-[3rem] shadow-2xl text-center max-w-6xl w-full border border-gray-100 relative overflow-hidden">
+                    class="bg-white/95 p-16 rounded-[3rem] shadow-2xl text-center max-w-6xl w-full border-4 border-red-100 relative overflow-hidden">
                     <div id="host-q-bar"
-                        class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+                        class="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-red-500 via-green-500 to-red-500">
                     </div>
-                    <h2 id="host-q-text" class="text-5xl md:text-6xl font-black leading-tight text-slate-900">
-                        Cargando...</h2>
+                    <h2 id="host-q-text" class="text-5xl md:text-6xl font-black leading-tight text-slate-900"
+                        style="font-family: serif;">Cargando...</h2>
                 </div>
             </div>
 
             <!-- Options Grid -->
             <div id="host-options-grid"
-                class="grid grid-cols-2 gap-6 h-1/3 pb-4 opacity-0 transition-opacity duration-500"></div>
+                class="grid grid-cols-2 gap-6 h-1/3 pb-4 opacity-0 transition-opacity duration-500 z-content"></div>
 
-            <div id="host-preview-msg" class="fixed bottom-12 left-0 w-full text-center pointer-events-none">
-                <div class="inline-block bg-white/90 backdrop-blur px-8 py-4 rounded-full shadow-xl">
-                    <p id="host-preview-text" class="text-3xl font-black animate-pulse text-slate-900">¡Lee la pregunta!
-                    </p>
+            <div id="host-preview-msg" class="fixed bottom-12 left-0 w-full text-center pointer-events-none z-content">
+                <div
+                    class="inline-block bg-white/95 backdrop-blur px-10 py-5 rounded-full shadow-xl border-2 border-red-200">
+                    <p id="host-preview-text" class="text-4xl font-black animate-pulse text-red-800"
+                        style="font-family: serif;">¡Atención!</p>
                 </div>
             </div>
         </div>
 
         <!-- SCREEN: HOST LEADERBOARD -->
-        <div id="screen-host-leaderboard"
-            class="hidden-screen h-screen bg-slate-900 text-white flex flex-col p-8 fade-in">
-            <h2
-                class="text-6xl font-black text-center mb-12 tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
-                CLASIFICACIÓN</h2>
+        <div id="screen-host-leaderboard" class="hidden-screen h-screen text-white flex flex-col p-8 fade-in pt-16">
+            <h2 class="text-6xl font-black text-center mb-12 tracking-tighter text-amber-100 drop-shadow-[0_4px_10px_rgba(180,0,0,0.5)]"
+                style="font-family: serif; text-shadow: 2px 2px 0 #8b0000;">CLASIFICACIÓN</h2>
             <div id="host-leaderboard-list"
-                class="flex-1 max-w-5xl w-full mx-auto space-y-4 overflow-y-auto pr-2 custom-scroll"></div>
-            <div class="flex justify-end mt-8">
+                class="flex-1 max-w-5xl w-full mx-auto space-y-4 overflow-y-auto pr-2 custom-scroll z-content"></div>
+            <div class="flex justify-end mt-8 z-content">
                 <button onclick="app.nextQuestion()"
-                    class="bg-white text-slate-900 hover:bg-gray-200 font-bold py-5 px-10 rounded-full shadow-xl text-2xl flex items-center transition-all hover:-translate-y-1">
+                    class="bg-gradient-to-r from-amber-100 to-amber-200 text-red-900 hover:from-white hover:to-amber-100 font-bold py-5 px-10 rounded-full shadow-[0_0_25px_rgba(255,215,0,0.4)] text-2xl flex items-center transition-all hover:-translate-y-1 border-4 border-amber-300">
                     Siguiente Pregunta <span class="ml-3">➔</span>
                 </button>
             </div>
@@ -348,182 +412,220 @@
 
         <!-- SCREEN: HOST FINISHED -->
         <div id="screen-host-finished"
-            class="hidden-screen h-screen bg-slate-900 text-white flex flex-col items-center justify-center p-4 fade-in">
-            <div class="relative">
-                <div class="absolute -top-20 left-1/2 transform -translate-x-1/2 animate-bounce text-yellow-400">
+            class="hidden-screen h-screen text-white flex flex-col items-center justify-center p-4 fade-in">
+            <div class="relative z-content">
+                <div
+                    class="absolute -top-24 left-1/2 transform -translate-x-1/2 animate-bounce text-amber-300 drop-shadow-[0_0_20px_rgba(255,215,0,0.8)]">
                     <script>document.write(ICONS.crown)</script>
                 </div>
-                <h1 class="text-8xl font-black mb-12 text-white tracking-tighter mt-10">¡GANADOR!</h1>
+                <h1 class="text-8xl font-black mb-12 text-amber-100 tracking-tighter mt-10"
+                    style="font-family: serif; text-shadow: 3px 3px 0 #8b0000;">¡GANADOR!</h1>
             </div>
             <div
-                class="bg-gradient-to-b from-indigo-600 to-purple-600 text-white px-20 py-12 rounded-[3rem] shadow-2xl mb-12 transform scale-110 rotate-1 border-4 border-white ring-4 ring-indigo-500/50">
+                class="z-content bg-gradient-to-b from-red-700 to-red-900 text-white px-20 py-12 rounded-[3rem] shadow-2xl mb-12 transform scale-110 rotate-1 border-8 border-amber-300 ring-4 ring-red-900/50">
                 <div class="flex flex-col items-center">
-                    <div id="winner-avatar" class="text-8xl mb-4 filter drop-shadow-lg">😎</div>
-                    <span id="winner-name" class="text-7xl font-black block mb-2 text-center">Nombre</span>
+                    <div id="winner-avatar" class="text-9xl mb-4 filter drop-shadow-lg">😎</div>
+                    <span id="winner-name" class="text-7xl font-black block mb-2 text-center text-amber-100"
+                        style="font-family: serif;">Nombre</span>
                 </div>
             </div>
-            <div id="winner-score" class="text-5xl font-black text-slate-900 mb-16 bg-white px-10 py-4 rounded-full">0
-                Puntos</div>
+            <div id="winner-score"
+                class="z-content text-6xl font-black text-red-900 mb-16 bg-amber-100 px-12 py-6 rounded-full shadow-xl border-4 border-red-800">
+                0 Puntos</div>
             <button onclick="window.location.reload()"
-                class="bg-white/10 border-2 border-white/20 hover:bg-white/20 text-white font-bold py-4 px-10 rounded-full transition-colors text-xl shadow-lg">Jugar
+                class="z-content bg-black/40 border-2 border-amber-500/50 hover:bg-red-900/50 text-amber-100 font-bold py-5 px-12 rounded-full transition-all text-2xl shadow-lg hover:shadow-amber-500/30">Jugar
                 otra vez</button>
         </div>
 
         <!-- SCREEN: PLAYER LOGIN -->
         <div id="screen-player-login"
-            class="hidden-screen h-screen bg-slate-50 flex flex-col items-center justify-center p-6 text-slate-900 fade-in">
-            <div class="bg-white p-4 rounded-2xl shadow-sm mb-6 border border-slate-200 text-indigo-600">
+            class="hidden-screen h-screen flex flex-col items-center justify-center p-6 text-slate-900 fade-in pt-20">
+            <div
+                class="bg-white p-5 rounded-3xl shadow-lg mb-6 border-4 border-red-200 text-red-600 z-content transform rotate-2">
                 <script>document.write(ICONS.smartphone)</script>
             </div>
-            <h1 class="text-4xl font-black mb-2 tracking-tight">Entrar al Quiz</h1>
-            <p class="mb-8 text-green-600 font-bold text-sm bg-green-100 px-3 py-1 rounded-full">🎄 Xmas Edition</p>
-            <div class="w-full max-w-sm space-y-4">
+            <h1 class="text-5xl font-black mb-4 tracking-tight text-amber-100 drop-shadow-md z-content"
+                style="font-family: serif;">Entrar al Quiz</h1>
+            <div
+                class="mb-10 flex items-center gap-2 bg-red-800/60 px-6 py-2 rounded-full border border-red-400/30 z-content">
+                <span class="text-xl">🎄</span>
+                <p class="text-amber-100 font-bold text-lg">Xmas Edition</p>
+            </div>
+
+            <div class="w-full max-w-sm space-y-5 z-content">
                 <input type="number" id="player-input-pin"
-                    class="w-full p-5 text-center text-2xl bg-white rounded-xl border-2 border-slate-200 focus:border-green-500 outline-none transition-colors"
+                    class="w-full p-6 text-center text-3xl bg-white/95 rounded-2xl border-4 border-red-200 focus:border-green-500 outline-none transition-colors font-bold text-slate-800 placeholder-slate-400 shadow-md"
                     placeholder="PIN de Juego" />
                 <input type="text" id="player-input-name"
-                    class="w-full p-5 text-center text-xl bg-white rounded-xl border-2 border-slate-200 focus:border-green-500 outline-none transition-colors"
+                    class="w-full p-6 text-center text-2xl bg-white/95 rounded-2xl border-4 border-red-200 focus:border-green-500 outline-none transition-colors font-bold text-slate-800 placeholder-slate-400 shadow-md"
                     placeholder="Tu Apodo" maxlength="12" />
-                <p id="player-login-error" class="text-red-500 text-center font-bold hidden"></p>
+                <p id="player-login-error"
+                    class="text-red-300 bg-red-900/80 px-4 py-2 rounded-lg text-center font-bold hidden"></p>
                 <button onclick="app.goToAvatar()"
-                    class="w-full bg-slate-900 text-white font-black py-5 rounded-xl text-xl hover:bg-black transition-colors shadow-lg">SIGUIENTE</button>
+                    class="w-full bg-gradient-to-r from-green-600 to-green-800 text-white font-black py-6 rounded-2xl text-2xl hover:from-green-500 hover:to-green-700 transition-all shadow-lg border-b-4 border-green-900 active:border-b-0 active:translate-y-1">SIGUIENTE</button>
             </div>
         </div>
 
         <!-- SCREEN: PLAYER AVATAR -->
         <div id="screen-player-avatar"
-            class="hidden-screen h-screen bg-slate-50 flex flex-col items-center justify-center p-6 text-slate-900 fade-in">
-            <h2 class="text-2xl font-bold mb-8">Crea tu Avatar</h2>
+            class="hidden-screen h-screen flex flex-col items-center justify-center p-6 text-slate-900 fade-in pt-20">
+            <h2 class="text-3xl font-bold mb-8 text-amber-100 z-content" style="font-family: serif;">Crea tu Avatar
+                Festivo</h2>
             <div id="avatar-preview-container"
-                class="w-40 h-40 rounded-full flex items-center justify-center text-7xl shadow-xl border-4 border-white mb-8 transition-colors duration-300 bg-blue-500">
-                <span id="avatar-preview-emoji">😎</span>
+                class="z-content w-48 h-48 rounded-full flex items-center justify-center text-8xl shadow-[0_0_30px_rgba(255,255,255,0.3)] border-8 border-white mb-10 transition-colors duration-300 bg-red-600">
+                <span id="avatar-preview-emoji" class="filter drop-shadow-md">😎</span>
             </div>
-            <div class="w-full max-w-xs mb-6">
-                <p class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2 text-center">Elige tu cara</p>
+            <div class="w-full max-w-xs mb-8 z-content">
+                <p class="text-sm font-bold text-amber-200 uppercase tracking-wider mb-3 text-center">Elige tu cara</p>
                 <div
-                    class="flex items-center justify-between bg-white p-2 rounded-xl shadow-sm border border-slate-200">
-                    <button onclick="app.cycleEmoji(-1)" class="p-3 hover:bg-slate-100 rounded-lg">
+                    class="flex items-center justify-between bg-black/30 p-3 rounded-2xl shadow-inner border border-white/20 backdrop-blur-sm">
+                    <button onclick="app.cycleEmoji(-1)"
+                        class="p-4 hover:bg-white/10 rounded-xl text-white transition-colors">
                         <script>document.write(ICONS.chevronLeft)</script>
                     </button>
-                    <span id="avatar-emoji-display" class="text-4xl">😎</span>
-                    <button onclick="app.cycleEmoji(1)" class="p-3 hover:bg-slate-100 rounded-lg">
+                    <span id="avatar-emoji-display" class="text-5xl filter drop-shadow">😎</span>
+                    <button onclick="app.cycleEmoji(1)"
+                        class="p-4 hover:bg-white/10 rounded-xl text-white transition-colors">
                         <script>document.write(ICONS.chevronRight)</script>
                     </button>
                 </div>
             </div>
-            <div class="w-full max-w-xs mb-10">
-                <p class="text-sm font-bold text-slate-400 uppercase tracking-wider mb-2 text-center">Elige tu color</p>
-                <div class="flex justify-center gap-3" id="color-picker"></div>
+            <div class="w-full max-w-xs mb-12 z-content">
+                <p class="text-sm font-bold text-amber-200 uppercase tracking-wider mb-3 text-center">Elige tu color</p>
+                <div class="flex justify-center gap-4" id="color-picker"></div>
             </div>
             <button onclick="app.confirmJoin()"
-                class="w-full max-w-sm bg-green-500 text-white font-black py-5 rounded-xl text-xl hover:bg-green-600 transition-colors shadow-lg">¡LISTO!</button>
+                class="z-content w-full max-w-sm bg-gradient-to-r from-green-500 to-emerald-600 text-white font-black py-6 rounded-2xl text-2xl hover:from-green-400 hover:to-emerald-500 transition-all shadow-[0_0_25px_rgba(34,197,94,0.5)] border-b-4 border-green-800 active:border-b-0 active:translate-y-1">¡LISTO
+                PARA JUGAR!</button>
         </div>
 
         <!-- SCREEN: PLAYER LOBBY -->
         <div id="screen-player-lobby"
-            class="hidden-screen h-screen bg-slate-900 flex flex-col items-center justify-center p-6 text-white text-center fade-in">
-            <div class="mb-8 animate-bounce text-green-400">
-                <script>document.write(ICONS.check)</script>
+            class="hidden-screen h-screen flex flex-col items-center justify-center p-6 text-white text-center fade-in pt-20">
+            <div class="mb-8 animate-bounce text-green-400 drop-shadow-[0_0_15px_rgba(74,222,128,0.8)] z-content">
+                <div class="bg-white/10 p-4 rounded-full border-4 border-green-400">
+                    <script>document.write(ICONS.check)</script>
+                </div>
             </div>
-            <h2 class="text-4xl font-black mb-2">¡Estás dentro!</h2>
-            <p class="text-xl text-slate-400 mb-10">¿Ves tu nombre en pantalla?</p>
+            <h2 class="text-5xl font-black mb-4 text-amber-100 z-content" style="font-family: serif;">¡Estás dentro!
+            </h2>
+            <p class="text-2xl text-amber-200/80 mb-12 z-content font-medium">Mira la pantalla principal</p>
 
             <div
-                class="relative bg-white/10 p-6 rounded-3xl backdrop-blur-md border border-white/10 flex flex-col items-center w-64">
+                class="relative bg-gradient-to-b from-red-900/50 to-black/50 p-8 rounded-[3rem] backdrop-blur-md border-2 border-red-400/30 flex flex-col items-center w-72 shadow-2xl z-content transform hover:scale-105 transition-transform">
                 <button onclick="app.editAvatar()"
-                    class="absolute top-2 right-2 p-2 bg-white/20 rounded-full hover:bg-white/30 transition-colors"
+                    class="absolute top-4 right-4 p-3 bg-black/30 rounded-full hover:bg-white/20 transition-colors border border-white/30"
                     title="Editar Avatar">
                     <script>document.write(ICONS.pencil)</script>
                 </button>
 
                 <div id="player-lobby-avatar"
-                    class="w-24 h-24 rounded-full flex items-center justify-center text-5xl shadow-lg border-2 border-white mb-4">
+                    class="w-32 h-32 rounded-full flex items-center justify-center text-7xl shadow-lg border-4 border-white mb-6">
                     😎</div>
-                <p id="player-lobby-name" class="font-bold text-2xl truncate w-full">Nombre</p>
+                <p id="player-lobby-name" class="font-black text-3xl truncate w-full text-amber-100"
+                    style="font-family: serif;">Nombre</p>
+                <div
+                    class="mt-4 bg-red-800/50 px-4 py-1 rounded-full text-sm font-bold text-red-200 border border-red-500/30">
+                    Jugador</div>
             </div>
         </div>
 
         <!-- SCREEN: PLAYER PREVIEW -->
         <div id="screen-player-preview"
-            class="hidden-screen h-screen bg-indigo-600 flex flex-col items-center justify-center p-6 text-white text-center fade-in">
-            <h2 class="text-3xl font-bold mb-8">¡Atento!</h2>
-            <div class="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mb-8 animate-pulse">
-                <span class="text-7xl font-black">?</span>
+            class="hidden-screen h-screen bg-red-800 flex flex-col items-center justify-center p-6 text-white text-center fade-in pt-20">
+            <h2 class="text-4xl font-bold mb-10 text-amber-100 z-content" style="font-family: serif;">¡Atento!</h2>
+            <div
+                class="w-40 h-40 bg-red-900/50 rounded-full flex items-center justify-center mb-10 animate-pulse border-4 border-red-400/50 shadow-[0_0_30px_rgba(255,0,0,0.4)] z-content">
+                <span class="text-8xl font-black text-amber-100">?</span>
             </div>
-            <p class="text-xl">Pregunta en pantalla...</p>
+            <p class="text-2xl font-bold text-amber-200 z-content">Pregunta en pantalla...</p>
         </div>
 
         <!-- SCREEN: PLAYER WAIT -->
         <div id="screen-player-wait"
-            class="hidden-screen h-screen bg-indigo-600 flex flex-col items-center justify-center p-6 text-white text-center fade-in">
-            <div class="text-white mb-4">
+            class="hidden-screen h-screen bg-red-800 flex flex-col items-center justify-center p-6 text-white text-center fade-in pt-20">
+            <div class="text-amber-100 mb-6 scale-150 z-content drop-shadow-md">
                 <script>document.write(ICONS.loader)</script>
             </div>
-            <p class="text-xl font-bold">Leyendo...</p>
+            <p class="text-3xl font-bold text-amber-100 z-content" style="font-family: serif;">Esperando...</p>
         </div>
 
         <!-- SCREEN: PLAYER GAME -->
         <div id="screen-player-game"
-            class="hidden-screen h-screen bg-white p-4 grid grid-cols-2 grid-rows-2 gap-4 fade-in">
+            class="hidden-screen h-screen bg-amber-50 p-4 grid grid-cols-2 grid-rows-2 gap-4 fade-in pt-16">
             <button onclick="app.submitAnswer(0)"
-                class="bg-red-500 rounded-3xl shadow-lg active:scale-95 transition-transform flex items-center justify-center border-b-8 border-red-700 active:border-b-0 active:mt-2">
-                <span class="text-7xl text-white drop-shadow-md">▲</span>
+                class="z-content bg-red-600 rounded-3xl shadow-xl active:scale-95 transition-all flex items-center justify-center border-b-8 border-red-800 active:border-b-0 active:mt-2 hover:bg-red-500">
+                <span class="text-8xl text-white drop-shadow-lg">▲</span>
             </button>
             <button onclick="app.submitAnswer(1)"
-                class="bg-blue-500 rounded-3xl shadow-lg active:scale-95 transition-transform flex items-center justify-center border-b-8 border-blue-700 active:border-b-0 active:mt-2">
-                <span class="text-7xl text-white drop-shadow-md">◆</span>
+                class="z-content bg-blue-600 rounded-3xl shadow-xl active:scale-95 transition-all flex items-center justify-center border-b-8 border-blue-800 active:border-b-0 active:mt-2 hover:bg-blue-500">
+                <span class="text-8xl text-white drop-shadow-lg">◆</span>
             </button>
             <button onclick="app.submitAnswer(2)"
-                class="bg-purple-500 rounded-3xl shadow-lg active:scale-95 transition-transform flex items-center justify-center border-b-8 border-purple-700 active:border-b-0 active:mt-2">
-                <span class="text-7xl text-white drop-shadow-md">●</span>
+                class="z-content bg-purple-600 rounded-3xl shadow-xl active:scale-95 transition-all flex items-center justify-center border-b-8 border-purple-800 active:border-b-0 active:mt-2 hover:bg-purple-500">
+                <span class="text-8xl text-white drop-shadow-lg">●</span>
             </button>
             <button onclick="app.submitAnswer(3)"
-                class="bg-green-500 rounded-3xl shadow-lg active:scale-95 transition-transform flex items-center justify-center border-b-8 border-green-700 active:border-b-0 active:mt-2">
-                <span class="text-7xl text-white drop-shadow-md">■</span>
+                class="z-content bg-green-600 rounded-3xl shadow-xl active:scale-95 transition-all flex items-center justify-center border-b-8 border-green-800 active:border-b-0 active:mt-2 hover:bg-green-500">
+                <span class="text-8xl text-white drop-shadow-lg">■</span>
             </button>
         </div>
 
         <!-- SCREEN: PLAYER ANSWERED -->
         <div id="screen-player-answered"
-            class="hidden-screen h-screen bg-slate-800 flex flex-col items-center justify-center p-6 text-white text-center fade-in">
+            class="hidden-screen h-screen bg-slate-900 flex flex-col items-center justify-center p-6 text-white text-center fade-in pt-20">
             <div
-                class="bg-green-500 w-24 h-24 rounded-full flex items-center justify-center mb-6 shadow-lg animate-pulse">
-                <script>document.write(ICONS.check)</script>
+                class="bg-green-500 w-32 h-32 rounded-full flex items-center justify-center mb-8 shadow-[0_0_40px_rgba(34,197,94,0.6)] animate-pulse border-4 border-green-300 z-content">
+                <div class="scale-150">
+                    <script>document.write(ICONS.check)</script>
+                </div>
             </div>
-            <h2 class="text-3xl font-bold">¡Respondido!</h2>
+            <h2 class="text-4xl font-bold text-amber-100 z-content" style="font-family: serif;">¡Respondido!</h2>
+            <p class="text-xl text-green-300 mt-4 z-content">Espera el resultado...</p>
         </div>
 
         <!-- SCREEN: PLAYER RESULT -->
         <div id="screen-player-result"
-            class="hidden-screen h-screen flex flex-col items-center justify-center p-6 text-white text-center fade-in">
-            <div class="mb-6 animate-bounce">
+            class="hidden-screen h-screen flex flex-col items-center justify-center p-6 text-white text-center fade-in pt-20">
+            <div class="mb-8 animate-bounce z-content scale-150 drop-shadow-lg">
                 <div id="player-result-icon"></div>
             </div>
-            <h2 id="player-result-text" class="text-5xl font-black tracking-tighter"></h2>
+            <h2 id="player-result-text" class="text-6xl font-black tracking-tighter z-content text-amber-100"
+                style="font-family: serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"></h2>
         </div>
 
         <!-- SCREEN: PLAYER LEADERBOARD -->
         <div id="screen-player-leaderboard"
-            class="hidden-screen h-screen flex flex-col items-center justify-center p-6 text-white text-center transition-colors duration-500 bg-slate-900 fade-in">
+            class="hidden-screen h-screen flex flex-col items-center justify-center p-6 text-white text-center transition-colors duration-500 bg-slate-900 fade-in pt-20">
             <div
-                class="bg-white/10 p-8 rounded-[2rem] w-full max-w-sm backdrop-blur-sm shadow-xl border border-white/10">
-                <div class="text-lg font-bold mb-2 uppercase tracking-wider opacity-80">Tu posición</div>
-                <div id="player-rank" class="text-7xl font-black mb-8">?º</div>
-                <div class="bg-black/20 rounded-2xl p-6 mb-6">
-                    <div class="text-sm font-bold opacity-80 uppercase mb-1">Puntos Totales</div>
-                    <div id="player-score" class="text-4xl font-black">0</div>
+                class="bg-black/40 p-10 rounded-[3rem] w-full max-w-md backdrop-blur-md shadow-2xl border-2 border-white/10 z-content relative overflow-hidden">
+                <!-- Decorative shine -->
+                <div
+                    class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent pointer-events-none">
                 </div>
+
+                <div class="text-xl font-bold mb-4 uppercase tracking-wider text-amber-200/80">Tu posición</div>
+                <div id="player-rank"
+                    class="text-8xl font-black mb-10 text-amber-100 drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]"
+                    style="font-family: serif;">?º</div>
+
+                <div class="bg-black/30 rounded-3xl p-8 mb-8 border border-white/10 shadow-inner">
+                    <div class="text-sm font-bold text-amber-200/80 uppercase mb-2 tracking-wider">Puntos Totales</div>
+                    <div id="player-score" class="text-5xl font-black text-amber-100 tabular-nums">0</div>
+                </div>
+
                 <div id="player-feedback-positive" class="hidden">
-                    <div class="animate-bounce bg-white text-green-600 py-3 px-6 rounded-xl shadow-lg inline-block">
-                        <div id="player-points-gained" class="text-3xl font-black">+ 0</div>
+                    <div
+                        class="animate-bounce bg-gradient-to-r from-green-500 to-emerald-600 text-white py-4 px-8 rounded-2xl shadow-[0_0_25px_rgba(34,197,94,0.6)] inline-block border-2 border-green-300">
+                        <div id="player-points-gained" class="text-4xl font-black">+ 0</div>
                     </div>
                 </div>
                 <div id="player-feedback-negative" class="hidden opacity-60">
-                    <div class="text-2xl font-bold">Sin puntos extra</div>
+                    <div class="text-2xl font-bold text-red-300">Sin puntos extra</div>
                 </div>
             </div>
             <button id="player-btn-exit" onclick="window.location.reload()"
-                class="hidden mt-8 bg-white text-slate-900 px-8 py-4 rounded-xl font-bold shadow-lg">Salir</button>
+                class="hidden mt-10 z-content bg-red-800/80 text-amber-100 px-10 py-5 rounded-2xl font-bold shadow-lg border-2 border-red-600/50 hover:bg-red-700 transition-colors text-xl">Salir</button>
         </div>
 
     </div>
@@ -551,8 +653,9 @@
         };
         localStorage.setItem('fq_uid', state.userId);
 
-        const AVATAR_EMOJIS = ['😎', '👻', '🤠', '👽', '🤖', '💩', '🦄', '🐱', '🐶', '🦊', '🦁', '🐼', '🐯', '🐷', '🐸', '🐙', '💀', '🤡'];
-        const AVATAR_COLORS = ['bg-red-500', 'bg-blue-500', 'bg-green-500', 'bg-yellow-500', 'bg-purple-500', 'bg-pink-500', 'bg-orange-500', 'bg-teal-500'];
+        const AVATAR_EMOJIS = ['😎', '👻', '🤠', '👽', '🤖', '💩', '🦄', '🐱', '🐶', '🦊', '🦁', '🐼', '🐯', '🐷', '🐸', '🐙', '💀', '🤡', '🎅', '🤶', '🧝', '🦌', '☃️', '❄️'];
+        // Xmas colors for avatars
+        const AVATAR_COLORS = ['bg-red-600', 'bg-green-600', 'bg-red-700', 'bg-green-700', 'bg-amber-500', 'bg-emerald-600', 'bg-rose-600', 'bg-teal-700'];
 
         const audio = { bgm1: new Audio(AUDIO_URLS.bgm1), bgm2: new Audio(AUDIO_URLS.bgm2), gong: new Audio(AUDIO_URLS.gong) };
         audio.bgm1.loop = true; audio.bgm2.loop = true;
@@ -634,12 +737,13 @@
 
         function updateAvatarPreview() {
             const c = document.getElementById('avatar-preview-container');
-            c.className = `w-40 h-40 rounded-full flex items-center justify-center text-7xl shadow-xl border-4 border-white mb-8 transition-colors duration-300 ${AVATAR_COLORS[state.avatarColorIndex]}`;
+            // Add xmas border and shadow
+            c.className = `w-48 h-48 rounded-full flex items-center justify-center text-8xl shadow-[0_0_30px_rgba(255,255,255,0.3)] border-8 border-white mb-10 transition-colors duration-300 ${AVATAR_COLORS[state.avatarColorIndex]}`;
             document.getElementById('avatar-preview-emoji').textContent = AVATAR_EMOJIS[state.avatarEmojiIndex];
             document.getElementById('avatar-emoji-display').textContent = AVATAR_EMOJIS[state.avatarEmojiIndex];
         }
         function renderColorPicker() {
-            document.getElementById('color-picker').innerHTML = AVATAR_COLORS.map((c, i) => `<button onclick="app.selectColor(${i})" class="w-10 h-10 rounded-full ${c} border-2 border-white shadow-md hover:scale-110 transition-transform"></button>`).join('');
+            document.getElementById('color-picker').innerHTML = AVATAR_COLORS.map((c, i) => `<button onclick="app.selectColor(${i})" class="w-12 h-12 rounded-full ${c} border-4 border-white/50 shadow-md hover:scale-110 transition-transform hover:border-white"></button>`).join('');
         }
 
         async function initHost() {
@@ -681,7 +785,8 @@
                 document.getElementById('btn-start-game').disabled = pList.length === 0;
                 document.getElementById('host-player-list').innerHTML = pList.map(p => {
                     const a = p.avatar || { emoji: '😀', color: 'bg-gray-400' };
-                    return `<div class="player-card flex flex-col items-center w-full"><div class="w-28 h-28 rounded-full flex items-center justify-center text-6xl shadow-2xl border-4 border-white mb-3 ${a.color} transform transition-transform hover:scale-110">${a.emoji}</div><div class="bg-black/60 backdrop-blur text-white px-4 py-2 rounded-xl text-lg font-black truncate w-full text-center border border-white/10 shadow-lg max-w-[140px]">${p.name}</div></div>`;
+                    // Player card styled for Xmas
+                    return `<div class="player-card flex flex-col items-center w-full mb-4"><div class="w-28 h-28 rounded-full flex items-center justify-center text-6xl shadow-[0_0_20px_rgba(255,255,255,0.3)] border-4 border-white mb-3 ${a.color} transform transition-transform hover:scale-110 relative"><span class="filter drop-shadow-md">${a.emoji}</span></div><div class="bg-black/60 backdrop-blur text-amber-100 px-4 py-2 rounded-xl text-lg font-black truncate w-full text-center border border-red-500/30 shadow-lg max-w-[140px]" style="font-family: serif;">${p.name}</div></div>`;
                 }).join('');
             } else if (data.status === 'leaderboard') renderLeaderboard(data.players);
             else if (data.status === 'finished') renderFinished(data.players);
@@ -697,7 +802,7 @@
             } else if (data.status === 'reveal') {
                 renderHostQuestion(state.currentQIndex, true);
                 Array.from(document.getElementById('host-options-grid').children).forEach((el, idx) => {
-                    if (idx !== state.questions[state.currentQIndex].correct) el.classList.add('opacity-20'); else el.classList.add('ring-8', 'ring-green-400', 'scale-105');
+                    if (idx !== state.questions[state.currentQIndex].correct) el.classList.add('opacity-40', 'scale-95'); else el.classList.add('ring-8', 'ring-green-500', 'scale-105', 'shadow-[0_0_30px_rgba(34,197,94,0.8)]');
                 });
                 showScreen('screen-host-game');
             }
@@ -737,7 +842,7 @@
             state.hostTimer = setInterval(() => {
                 countdown--;
                 document.getElementById('host-timer').textContent = countdown;
-                if (countdown <= 5) document.getElementById('host-timer').classList.add('text-red-500', 'scale-110');
+                if (countdown <= 5) document.getElementById('host-timer').classList.add('text-red-600', 'scale-110', 'drop-shadow-[0_0_10px_rgba(220,20,60,0.8)]');
                 if (countdown <= 0) { clearInterval(state.hostTimer); calculateScores(); }
             }, 1000);
         }
@@ -751,14 +856,14 @@
             const qBar = document.getElementById('host-q-bar');
             const badge = document.getElementById('host-type-badge');
 
-            // Remove hidden-screen so we don't hide it by mistake when updating
-            screen.className = `h-screen flex flex-col p-6 transition-colors duration-500 fade-in ${isBala ? 'bg-red-50' : (isLogica ? 'bg-purple-50' : (isRefran ? 'bg-orange-50' : 'bg-gray-50'))}`;
-            qBar.className = `absolute top-0 left-0 w-full h-2 bg-gradient-to-r ${isBala ? 'from-red-500 to-yellow-500' : (isLogica ? 'from-purple-500 to-pink-500' : (isRefran ? 'from-orange-500 to-yellow-500' : 'from-blue-500 to-pink-500'))}`;
+            // Theme the host screen background based on question type
+            screen.className = `h-screen flex flex-col p-6 transition-colors duration-500 fade-in text-slate-800 ${isBala ? 'bg-red-100' : (isLogica ? 'bg-purple-100' : (isRefran ? 'bg-orange-100' : 'bg-blue-100'))}`;
+            qBar.className = `absolute top-0 left-0 w-full h-3 bg-gradient-to-r ${isBala ? 'from-red-600 to-orange-600' : (isLogica ? 'from-purple-600 to-pink-600' : (isRefran ? 'from-orange-600 to-yellow-600' : 'from-blue-600 to-cyan-600'))}`;
 
-            if (isBala) badge.innerHTML = `<div class="bg-red-500 text-white px-6 py-3 rounded-2xl shadow-md font-black text-xl flex items-center animate-pulse">${ICONS.zap} BALA</div>`;
+            if (isBala) badge.innerHTML = `<div class="bg-red-600 text-white px-6 py-3 rounded-2xl shadow-md font-black text-xl flex items-center animate-pulse">${ICONS.zap} BALA</div>`;
             else if (isLogica) badge.innerHTML = `<div class="bg-purple-600 text-white px-6 py-3 rounded-2xl shadow-md font-bold text-xl flex items-center">${ICONS.bulb} LÓGICA</div>`;
-            else if (isRefran) badge.innerHTML = `<div class="bg-orange-500 text-white px-6 py-3 rounded-2xl shadow-md font-bold text-xl flex items-center">${ICONS.quote} REFRÁN</div>`;
-            else badge.innerHTML = `<div class="bg-blue-500 text-white px-6 py-3 rounded-2xl shadow-md font-bold text-xl flex items-center">${ICONS.brain} CULTURA</div>`;
+            else if (isRefran) badge.innerHTML = `<div class="bg-orange-600 text-white px-6 py-3 rounded-2xl shadow-md font-bold text-xl flex items-center">${ICONS.quote} REFRÁN</div>`;
+            else badge.innerHTML = `<div class="bg-blue-600 text-white px-6 py-3 rounded-2xl shadow-md font-bold text-xl flex items-center">${ICONS.brain} CULTURA</div>`;
 
             document.getElementById('host-q-counter').textContent = `${idx + 1} / ${state.questions.length}`;
             document.getElementById('host-game-pin-small').textContent = state.gameId;
@@ -768,12 +873,13 @@
             const previewMsg = document.getElementById('host-preview-msg');
 
             if (showOptions) {
-                const colors = ['bg-red-500', 'bg-blue-500', 'bg-purple-500', 'bg-green-500'];
+                const colors = ['bg-red-600', 'bg-blue-600', 'bg-purple-600', 'bg-green-600'];
+                const hoverColors = ['hover:bg-red-500', 'hover:bg-blue-500', 'hover:bg-purple-500', 'hover:bg-green-500'];
                 const shapes = ['▲', '◆', '●', '■'];
                 grid.innerHTML = q.options.map((opt, i) => `
-                    <div class="${colors[i]} rounded-3xl flex items-center p-8 shadow-xl transition-all duration-500">
-                        <div class="bg-black/20 w-20 h-20 rounded-2xl flex items-center justify-center text-4xl mr-8 text-white font-black shadow-inner">${shapes[i]}</div>
-                        <span class="text-4xl font-bold text-white drop-shadow-md">${opt}</span>
+                    <div class="${colors[i]} ${hoverColors[i]} rounded-[2rem] flex items-center p-8 shadow-xl transition-all duration-300 transform hover:scale-[1.02] border-b-8 border-black/20">
+                        <div class="bg-black/20 w-24 h-24 rounded-2xl flex items-center justify-center text-5xl mr-8 text-white font-black shadow-inner">${shapes[i]}</div>
+                        <span class="text-5xl font-bold text-white drop-shadow-md leading-tight">${opt}</span>
                     </div>
                 `).join('');
                 grid.classList.remove('opacity-0'); previewMsg.classList.add('hidden');
@@ -820,25 +926,27 @@
             const sorted = Object.values(playersData).sort((a, b) => b.score - a.score);
             document.getElementById('host-leaderboard-list').innerHTML = sorted.map((p, i) => {
                 const isCorrect = p.lastRoundPoints > 0;
-                const cardBg = isCorrect ? 'bg-green-200 border-green-300' : 'bg-white border-gray-100';
-                const colors = ['bg-yellow-400 text-yellow-900', 'bg-gray-300 text-gray-800', 'bg-orange-400 text-orange-900', 'bg-gray-100 text-gray-500'];
+                // Xmas themed leaderboard cards
+                const cardBg = isCorrect ? 'bg-gradient-to-r from-green-800 to-emerald-900 border-green-500' : 'bg-gradient-to-r from-red-900 to-red-950 border-red-800';
+                const colors = ['bg-amber-400 text-red-900', 'bg-gray-300 text-gray-800', 'bg-orange-400 text-red-900', 'bg-red-800 text-red-200'];
                 const rankColor = i < 3 ? colors[i] : colors[3];
-                const gain = isCorrect ? `<div class="text-green-700 font-bold flex items-center mt-1 text-lg">¡+${Math.round(p.lastRoundPoints)}!</div>` : '';
-                const timeDisplay = p.lastTimeTaken ? `<span class="text-sm font-mono text-slate-500 ml-2">⏱️ ${p.lastTimeTaken}s</span>` : `<span class="text-sm font-mono text-slate-400 ml-2">--</span>`;
+                const gain = isCorrect ? `<div class="text-green-400 font-black flex items-center mt-1 text-2xl drop-shadow-[0_0_10px_rgba(34,197,94,0.8)]">¡+${Math.round(p.lastRoundPoints)}!</div>` : '';
+                const timeDisplay = p.lastTimeTaken ? `<span class="text-base font-mono text-amber-200/70 ml-3">⏱️ ${p.lastTimeTaken}s</span>` : `<span class="text-base font-mono text-amber-200/50 ml-3">--</span>`;
                 const a = p.avatar || { emoji: '🙂', color: 'bg-gray-400' };
 
                 return `
-                <div class="flex items-center ${cardBg} text-slate-900 p-4 rounded-3xl shadow-md border-4 transform transition-all hover:scale-[1.02] mb-3">
-                    <div class="w-12 h-12 flex items-center justify-center rounded-2xl font-black text-xl mr-4 ${rankColor} shadow-sm">${i + 1}</div>
-                    <div class="mr-4 w-12 h-12 rounded-full ${a.color} flex items-center justify-center text-2xl border-2 border-white shadow-sm">${a.emoji}</div>
+                <div class="flex items-center ${cardBg} text-white p-5 rounded-[2rem] shadow-2xl border-4 transform transition-all hover:scale-[1.02] mb-4 relative overflow-hidden z-content">
+                    <div class="absolute top-0 left-0 w-full h-full bg-white/5 pointer-events-none"></div>
+                    <div class="w-16 h-16 flex items-center justify-center rounded-2xl font-black text-3xl mr-6 ${rankColor} shadow-lg border-2 border-white/20">${i + 1}</div>
+                    <div class="mr-6 w-20 h-20 rounded-full ${a.color} flex items-center justify-center text-5xl border-4 border-white/30 shadow-md relative"><span class="filter drop-shadow-md">${a.emoji}</span></div>
                     <div class="flex-1">
                         <div class="flex items-center">
-                            <div class="text-2xl font-black text-slate-800 mr-2">${p.name}</div>
+                            <div class="text-3xl font-black text-amber-100 mr-2" style="font-family: serif;">${p.name}</div>
                             ${timeDisplay}
                         </div>
                         ${gain}
                     </div>
-                    <div class="text-4xl font-black text-indigo-900 tabular-nums">${Math.round(p.score)}</div>
+                    <div class="text-6xl font-black text-amber-100 tabular-nums drop-shadow-md" style="font-family: serif;">${Math.round(p.score)}</div>
                 </div>`;
             }).join('');
             if (state.isHost) showScreen('screen-host-leaderboard');
@@ -869,10 +977,10 @@
                 if (myData.lastRoundPoints > 0) {
                     gainEl.textContent = `+ ${Math.round(myData.lastRoundPoints)}`;
                     posFeed.classList.remove('hidden'); negFeed.classList.add('hidden');
-                    lbScreen.classList.add('bg-green-500'); lbScreen.classList.remove('bg-slate-900');
+                    lbScreen.classList.add('bg-gradient-to-b', 'from-green-800', 'to-emerald-900'); lbScreen.classList.remove('bg-slate-900');
                 } else {
                     posFeed.classList.add('hidden'); negFeed.classList.remove('hidden');
-                    lbScreen.classList.remove('bg-green-500'); lbScreen.classList.add('bg-slate-900');
+                    lbScreen.classList.remove('bg-gradient-to-b', 'from-green-800', 'to-emerald-900'); lbScreen.classList.add('bg-slate-900');
                 }
 
                 const rank = Object.values(data.players).sort((a, b) => b.score - a.score).findIndex(p => p.name === myData.name) + 1;
@@ -882,7 +990,8 @@
                     document.getElementById('player-lobby-name').textContent = myData.name;
                     const a = myData.avatar || { emoji: '😎', color: 'bg-gray-400' };
                     document.getElementById('player-lobby-avatar').textContent = a.emoji;
-                    document.getElementById('player-lobby-avatar').className = `w-24 h-24 rounded-full flex items-center justify-center text-5xl shadow-lg border-2 border-white mb-4 ${a.color}`;
+                    // Xmas styled player lobby avatar
+                    document.getElementById('player-lobby-avatar').className = `w-36 h-36 rounded-full flex items-center justify-center text-7xl shadow-[0_0_30px_rgba(255,255,255,0.3)] border-8 border-white mb-6 ${a.color}`;
                     showScreen('screen-player-lobby');
                 } else if (data.status === 'preview') showScreen('screen-player-preview');
                 else if (data.status === 'question') {
@@ -895,11 +1004,13 @@
                     const resText = document.getElementById('player-result-text');
                     const resScreen = document.getElementById('screen-player-result');
                     if (myData.lastRoundPoints > 0) {
-                        resIcon.innerHTML = ICONS.check; resText.textContent = "¡CORRECTO!";
-                        resScreen.className = "h-screen flex flex-col items-center justify-center p-6 text-white text-center fade-in bg-green-500";
+                        resIcon.innerHTML = '<div class="bg-green-500 p-6 rounded-full border-8 border-green-300 shadow-[0_0_50px_rgba(34,197,94,0.8)]">' + ICONS.check + '</div>';
+                        resText.textContent = "¡CORRECTO!";
+                        resScreen.className = "h-screen flex flex-col items-center justify-center p-6 text-white text-center fade-in bg-gradient-to-b from-green-700 to-emerald-900";
                     } else {
-                        resIcon.innerHTML = ICONS.xcircle; resText.textContent = "INCORRECTO";
-                        resScreen.className = "h-screen flex flex-col items-center justify-center p-6 text-white text-center fade-in bg-red-500";
+                        resIcon.innerHTML = '<div class="bg-red-500 p-6 rounded-full border-8 border-red-300 shadow-[0_0_50px_rgba(239,68,68,0.8)]">' + ICONS.xcircle + '</div>';
+                        resText.textContent = "INCORRECTO";
+                        resScreen.className = "h-screen flex flex-col items-center justify-center p-6 text-white text-center fade-in bg-gradient-to-b from-red-800 to-red-950";
                     }
                     showScreen('screen-player-result');
                 } else if (data.status === 'leaderboard') showScreen('screen-player-leaderboard');
