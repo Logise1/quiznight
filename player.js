@@ -121,3 +121,7 @@ function setupPlayerListener() {
         else if (data.status === 'finished') { showScreen('screen-player-leaderboard'); document.getElementById('player-btn-exit').classList.remove('hidden'); }
     });
 }
+
+// Enable the login next button once the script is loaded
+const btnNext = document.getElementById('btn-login-next');
+if (btnNext) btnNext.disabled = false;

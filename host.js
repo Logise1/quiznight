@@ -9,7 +9,8 @@ const AUDIO_URLS = {
 const state = {
     userId: localStorage.getItem('fq_host_uid') || 'host_' + Math.random().toString(36).substr(2, 9),
     gameId: null, players: {}, questions: [], currentQIndex: 0,
-    soundEnabled: true, hostTimer: null, roundDuration: 20
+    soundEnabled: true, hostTimer: null, roundDuration: 20,
+    isHost: true
 };
 localStorage.setItem('fq_host_uid', state.userId);
 
@@ -63,6 +64,7 @@ async function initHost() {
     try {
         const res = await fetch('https://logise1.github.io/quiznight/q.json');
         const data = await res.json();
+        // Logic to pick questions
         const balas = data.filter(q => q.type === 'bala').sort(() => 0.5 - Math.random()).slice(0, 6);
         const culturas = data.filter(q => !q.type || q.type === 'cultura').sort(() => 0.5 - Math.random()).slice(0, 15);
         const refranes = data.filter(q => q.type === 'refran').sort(() => 0.5 - Math.random()).slice(0, 7);
@@ -77,7 +79,7 @@ async function initHost() {
             return { ...q, options: newOptions, correct: newCorrectIndex };
         });
 
-    } catch (e) { state.questions = [{ question: "Error loading questions", options: ["A", "B", "C", "D"], correct: 0, type: "bala" }]; }
+    } catch (e) { state.questions = [{ question: "Error cargando preguntas", options: ["A", "B", "C", "D"], correct: 0, type: "bala" }]; }
 
     const id = Math.floor(1000 + Math.random() * 9000).toString();
     state.gameId = id;
@@ -172,10 +174,10 @@ function renderHostQuestion(idx, showOptions) {
 
     const badge = document.getElementById('host-type-badge');
 
-    if (isBala) badge.innerHTML = `<div class="bg-red-600 text-white px-4 py-2 rounded-xl shadow-lg font-bold flex items-center animate-pulse">⚡ SPEED</div>`;
-    else if (isLogica) badge.innerHTML = `<div class="bg-purple-600 text-white px-4 py-2 rounded-xl shadow-lg font-bold flex items-center">💡 LOGIC</div>`;
-    else if (isRefran) badge.innerHTML = `<div class="bg-orange-600 text-white px-4 py-2 rounded-xl shadow-lg font-bold flex items-center">📜 QUOTE</div>`;
-    else badge.innerHTML = `<div class="bg-blue-600 text-white px-4 py-2 rounded-xl shadow-lg font-bold flex items-center">🧠 TRIVIA</div>`;
+    if (isBala) badge.innerHTML = `<div class="bg-red-600 text-white px-4 py-2 rounded-xl shadow-lg font-bold flex items-center animate-pulse">⚡ VELOCIDAD</div>`;
+    else if (isLogica) badge.innerHTML = `<div class="bg-purple-600 text-white px-4 py-2 rounded-xl shadow-lg font-bold flex items-center">💡 LÓGICA</div>`;
+    else if (isRefran) badge.innerHTML = `<div class="bg-orange-600 text-white px-4 py-2 rounded-xl shadow-lg font-bold flex items-center">📜 REFRÁN</div>`;
+    else badge.innerHTML = `<div class="bg-blue-600 text-white px-4 py-2 rounded-xl shadow-lg font-bold flex items-center">🧠 CULTURA</div>`;
 
     document.getElementById('host-q-counter').textContent = `${idx + 1} / ${state.questions.length}`;
     document.getElementById('host-q-text').textContent = q.question;
@@ -195,7 +197,7 @@ function renderHostQuestion(idx, showOptions) {
         grid.classList.remove('opacity-0'); previewMsg.classList.add('hidden');
     } else {
         grid.classList.add('opacity-0'); previewMsg.classList.remove('hidden');
-        document.getElementById('host-preview-text').textContent = isBala ? "GET READY!" : "READ CAREFULLY";
+        document.getElementById('host-preview-text').textContent = isBala ? "¡RÁPIDO!" : "LEE ATENTAMENTE";
     }
 }
 
@@ -268,3 +270,7 @@ function renderFinished(playersData) {
     document.getElementById('winner-avatar').textContent = a.emoji;
     showScreen('screen-host-finished');
 }
+
+// Enable the create game button once the script is loaded
+const btnCreate = document.getElementById('btn-create-game');
+if (btnCreate) btnCreate.disabled = false;
