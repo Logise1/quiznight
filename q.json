@@ -1,203 +1,2774 @@
 [
-  { "type": "cultura", "question": "¿Qué océano está entre América y Asia?", "options": ["Atlántico", "Índico", "Pacífico", "Ártico"], "correct": 2 },
-  { "type": "cultura", "question": "¿Quién escribió 'Romeo y Julieta'?", "options": ["Cervantes", "Shakespeare", "Molière", "Dante"], "correct": 1 },
-  { "type": "cultura", "question": "¿Cuál es el metal precioso con símbolo 'Ag'?", "options": ["Oro", "Plata", "Platino", "Cobre"], "correct": 1 },
-  { "type": "cultura", "question": "¿En qué continente está Egipto?", "options": ["Asia", "Europa", "África", "América"], "correct": 2 },
-  { "type": "cultura", "question": "¿Qué planeta tiene más lunas conocidas?", "options": ["Marte", "Júpiter", "Saturno", "Neptuno"], "correct": 2 },
-  { "type": "cultura", "question": "¿Quién pintó el techo de la Capilla Sixtina?", "options": ["Rafael", "Miguel Ángel", "Leonardo", "Donatello"], "correct": 1 },
-  { "type": "cultura", "question": "¿Cuál es la capital de Suiza?", "options": ["Zúrich", "Ginebra", "Berna", "Basilea"], "correct": 2 },
-  { "type": "cultura", "question": "¿Qué gas necesitan las plantas para la fotosíntesis?", "options": ["Oxígeno", "Hidrógeno", "CO2", "Nitrógeno"], "correct": 2 },
-  { "type": "cultura", "question": "¿Quién descubrió América?", "options": ["Vasco da Gama", "Marco Polo", "Cristóbal Colón", "Fernando Magallanes"], "correct": 2 },
-  { "type": "cultura", "question": "¿Cuál es el río más largo de España?", "options": ["Ebro", "Duero", "Tajo", "Guadalquivir"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Qué trajeron los Reyes Magos al niño Jesús?", "options": ["Joyas y sedas", "Oro, incienso y mirra", "Pan y vino", "Animales"], "correct": 1 },
-  { "type": "cultura", "question": "Navidad: ¿Cómo se llama el reno de nariz roja?", "options": ["Donner", "Blitzen", "Rudolph", "Dasher"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Qué se cuelga en las puertas en Navidad?", "options": ["Guirnaldas", "Campanas", "Coronas", "Calcetines"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Cuántos días tiene el Adviento?", "options": ["12", "24", "28", "31"], "correct": 1 },
-  { "type": "cultura", "question": "¿Quién escribió 'La Odisea'?", "options": ["Virgilio", "Homero", "Sófocles", "Platón"], "correct": 1 },
-  { "type": "cultura", "question": "¿Cuántos huesos tiene el cuerpo humano adulto?", "options": ["186", "206", "226", "246"], "correct": 1 },
-  { "type": "cultura", "question": "¿Qué país tiene forma de bota?", "options": ["Grecia", "Portugal", "Italia", "Croacia"], "correct": 2 },
-  { "type": "cultura", "question": "¿Quién inventó la bombilla eléctrica?", "options": ["Tesla", "Edison", "Bell", "Marconi"], "correct": 1 },
-  { "type": "cultura", "question": "¿Cuál es el animal más grande del mundo?", "options": ["Elefante africano", "Tiburón ballena", "Ballena azul", "Calamar gigante"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Qué villancico habla de campanas?", "options": ["Noche de Paz", "Campana sobre campana", "Los peces en el río", "Arre borriquito"], "correct": 1 },
-  { "type": "cultura", "question": "Navidad: ¿Dónde nació Jesús según la tradición?", "options": ["Jerusalén", "Nazaret", "Belén", "Galilea"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Qué día se celebra San Esteban?", "options": ["24 diciembre", "25 diciembre", "26 diciembre", "31 diciembre"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Cómo se llama el ayudante de Santa Claus?", "options": ["Duende", "Elfo", "Gnomo", "Hada"], "correct": 1 },
-  { "type": "cultura", "question": "Navidad: ¿Qué fruta se come a las 12 campanadas?", "options": ["Manzanas", "Naranjas", "Uvas", "Cerezas"], "correct": 2 },
-  { "type": "cultura", "question": "¿Cuál es la montaña más alta del mundo?", "options": ["K2", "Everest", "Kilimanjaro", "Mont Blanc"], "correct": 1 },
-  { "type": "cultura", "question": "¿Qué idioma se habla en Brasil?", "options": ["Español", "Inglés", "Portugués", "Francés"], "correct": 2 },
-  { "type": "cultura", "question": "¿Quién escribió 'El Quijote'?", "options": ["Lope de Vega", "Calderón", "Cervantes", "Quevedo"], "correct": 2 },
-  { "type": "cultura", "question": "¿Cuál es el planeta más cercano al Sol?", "options": ["Venus", "Marte", "Mercurio", "Tierra"], "correct": 2 },
-  { "type": "cultura", "question": "¿En qué año comenzó la Segunda Guerra Mundial?", "options": ["1936", "1939", "1941", "1945"], "correct": 1 },
-  { "type": "cultura", "question": "¿Cuántos continentes hay?", "options": ["5", "6", "7", "8"], "correct": 2 },
-  { "type": "cultura", "question": "¿Quién pintó 'La Gioconda' o 'Mona Lisa'?", "options": ["Miguel Ángel", "Leonardo da Vinci", "Rafael", "Donatello"], "correct": 1 },
-  { "type": "cultura", "question": "¿Cuál es el océano más grande?", "options": ["Atlántico", "Índico", "Pacífico", "Ártico"], "correct": 2 },
-  { "type": "cultura", "question": "¿En qué país está la Torre Eiffel?", "options": ["Italia", "España", "Francia", "Inglaterra"], "correct": 2 },
-  { "type": "cultura", "question": "¿Qué estudia la biología?", "options": ["Rocas", "Estrellas", "Seres vivos", "Números"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Cuántos Reyes Magos fueron?", "options": ["2", "3", "4", "5"], "correct": 1 },
-  { "type": "cultura", "question": "Navidad: ¿De qué color es Rodolfo el reno?", "options": ["Blanco", "Gris", "Marrón", "Negro"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Qué se pone en la punta del árbol de Navidad?", "options": ["Un ángel o estrella", "Una bola", "Una campana", "Luces"], "correct": 0 },
-  { "type": "cultura", "question": "Navidad: ¿Qué dulce español es típico en Navidad?", "options": ["Churros", "Turrón", "Flan", "Natillas"], "correct": 1 },
-  { "type": "cultura", "question": "Navidad: ¿Qué día es Nochevieja?", "options": ["24 diciembre", "25 diciembre", "30 diciembre", "31 diciembre"], "correct": 3 },
-  { "type": "cultura", "question": "¿Cuál es el satélite natural de la Tierra?", "options": ["Sol", "Marte", "Luna", "Venus"], "correct": 2 },
-  { "type": "cultura", "question": "¿Qué ciudad es la capital de España?", "options": ["Barcelona", "Madrid", "Valencia", "Sevilla"], "correct": 1 },
-  { "type": "cultura", "question": "¿Cuántos lados tiene un triángulo?", "options": ["2", "3", "4", "5"], "correct": 1 },
-  { "type": "cultura", "question": "¿Quién escribió 'Hamlet'?", "options": ["Dickens", "Shakespeare", "Poe", "Wilde"], "correct": 1 },
-  { "type": "cultura", "question": "¿Qué instrumento tiene 88 teclas?", "options": ["Guitarra", "Violín", "Piano", "Flauta"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Qué significa 'Feliz Navidad' en inglés?", "options": ["Happy Christmas", "Merry Christmas", "Good Christmas", "Nice Christmas"], "correct": 1 },
-  { "type": "cultura", "question": "Navidad: ¿Qué planta se cuelga en las puertas y da besos debajo?", "options": ["Acebo", "Muérdago", "Hiedra", "Pino"], "correct": 1 },
-  { "type": "cultura", "question": "Navidad: ¿Qué canción navideña dice 'din don dan'?", "options": ["Noche de Paz", "Campana sobre campana", "Blanca Navidad", "Jingle Bells"], "correct": 1 },
-  { "type": "cultura", "question": "Navidad: ¿En qué vehículo viaja Santa Claus?", "options": ["Coche", "Trineo", "Avión", "Caballo"], "correct": 1 },
-  { "type": "cultura", "question": "Navidad: ¿Qué color NO es típico de Navidad?", "options": ["Rojo", "Verde", "Dorado", "Naranja"], "correct": 3 },
-  { "type": "cultura", "question": "¿Cuántos ojos tiene una persona?", "options": ["1", "2", "3", "4"], "correct": 1 },
-  { "type": "cultura", "question": "¿De qué color es el cielo en un día despejado?", "options": ["Rojo", "Verde", "Azul", "Amarillo"], "correct": 2 },
-  { "type": "cultura", "question": "¿Qué animal hace 'miau'?", "options": ["Perro", "Vaca", "Gato", "Pájaro"], "correct": 2 },
-  { "type": "cultura", "question": "¿Cuántas estaciones tiene el año?", "options": ["2", "3", "4", "5"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿De qué color es la nariz de Rudolph?", "options": ["Verde", "Azul", "Roja", "Amarilla"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Qué tiran los Reyes Magos en las cabalgatas?", "options": ["Flores", "Agua", "Caramelos", "Confeti"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Qué bebida caliente se toma en Navidad?", "options": ["Limonada", "Cerveza", "Chocolate", "Refresco"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Dónde vive Santa Claus?", "options": ["España", "México", "Polo Norte", "Australia"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Qué animal tira del trineo de Santa?", "options": ["Caballos", "Perros", "Renos", "Osos"], "correct": 2 },
-  { "type": "cultura", "question": "¿Cuántos dedos tiene una mano?", "options": ["3", "4", "5", "6"], "correct": 2 },
-  { "type": "cultura", "question": "¿Qué sale por el día y se esconde por la noche?", "options": ["Luna", "Estrellas", "Sol", "Planetas"], "correct": 2 },
-  { "type": "cultura", "question": "¿Qué color sale al mezclar rojo y amarillo?", "options": ["Verde", "Morado", "Naranja", "Marrón"], "correct": 2 },
-  { "type": "cultura", "question": "¿Cuántas patas tiene una araña?", "options": ["4", "6", "8", "10"], "correct": 2 },
-  { "type": "cultura", "question": "¿Qué forma tiene un balón de fútbol?", "options": ["Cuadrada", "Triangular", "Redonda", "Rectangular"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Qué comen en Nochebuena?", "options": ["Paella", "Pizza", "Pavo o cordero", "Hamburguesas"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Qué número aparece en el calendario de Navidad?", "options": ["24", "25", "26", "31"], "correct": 1 },
-  { "type": "cultura", "question": "Navidad: ¿Qué se enciende en el árbol de Navidad?", "options": ["Velas o luces", "Nada", "Fuego", "Linternas"], "correct": 0 },
-  { "type": "cultura", "question": "Navidad: ¿Qué comes a las 12 de la noche en Fin de Año?", "options": ["Manzanas", "Plátanos", "Uvas", "Naranjas"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Cuántas uvas se comen en Fin de Año?", "options": ["6", "10", "12", "15"], "correct": 2 },
-  { "type": "cultura", "question": "¿Quién pintó 'La noche estrellada'?", "options": ["Picasso", "Van Gogh", "Monet", "Dalí"], "correct": 1 },
-  { "type": "cultura", "question": "¿Cuál es el país más grande del mundo?", "options": ["China", "Canadá", "Rusia", "EE.UU."], "correct": 2 },
-  { "type": "cultura", "question": "¿Qué planeta es conocido como el planeta rojo?", "options": ["Venus", "Júpiter", "Marte", "Saturno"], "correct": 2 },
-  { "type": "cultura", "question": "¿Cuántos jugadores hay en un equipo de fútbol?", "options": ["9", "10", "11", "12"], "correct": 2 },
-  { "type": "cultura", "question": "¿Qué instrumento tocaba Mozart?", "options": ["Violín", "Piano", "Guitarra", "Flauta"], "correct": 1 },
-  { "type": "cultura", "question": "Navidad: ¿Qué rey mago llevó mirra?", "options": ["Melchor", "Gaspar", "Baltasar", "Ninguno"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Cuántos renos tiene Santa Claus?", "options": ["6", "8", "9", "12"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿Qué postre italiano es típico en Navidad?", "options": ["Tiramisú", "Gelato", "Panettone", "Cannoli"], "correct": 2 },
-  { "type": "cultura", "question": "Navidad: ¿En qué mes comienza el Adviento?", "options": ["Octubre", "Noviembre", "Diciembre", "Enero"], "correct": 1 },
-  { "type": "cultura", "question": "Navidad: ¿Qué color es típico del traje de Santa?", "options": ["Verde", "Azul", "Rojo", "Dorado"], "correct": 2 },
-  { "type": "logica", "question": "Si ayer fue martes, ¿qué día será pasado mañana?", "options": ["Jueves", "Viernes", "Sábado", "Domingo"], "correct": 2 },
-  { "type": "logica", "question": "Tengo el doble de edad que tú tenías cuando yo tenía tu edad. Si ahora tengo 40, ¿cuántos años tienes?", "options": ["20", "25", "30", "35"], "correct": 2 },
-  { "type": "logica", "question": "Un caracol sube 3m de día y baja 2m de noche. ¿En cuántos días sale de un pozo de 10m?", "options": ["7", "8", "9", "10"], "correct": 1 },
-  { "type": "logica", "question": "¿Qué pesa más: un kilo de hierro o un kilo de plumas?", "options": ["Hierro", "Plumas", "Igual", "Depende"], "correct": 2 },
-  { "type": "logica", "question": "Si 2 gatos cazan 2 ratones en 2 minutos, ¿cuántos gatos cazan 6 ratones en 6 minutos?", "options": ["2", "3", "6", "12"], "correct": 0 },
-  { "type": "logica", "question": "¿Cuántos meses tienen 28 días?", "options": ["1", "4", "6", "12"], "correct": 3 },
-  { "type": "logica", "question": "Si una hora tiene 60 minutos, ¿cuántos minutos hay en 2 horas y media?", "options": ["120", "130", "150", "180"], "correct": 2 },
-  { "type": "logica", "question": "¿Qué viene después en la serie: 2, 4, 8, 16, ...?", "options": ["24", "32", "20", "30"], "correct": 1 },
-  { "type": "logica", "question": "Si un tren sale a las 15:00 y tarda 2 horas y 45 minutos, ¿a qué hora llega?", "options": ["17:15", "17:30", "17:45", "18:00"], "correct": 2 },
-  { "type": "logica", "question": "¿Cuántos lados tiene un octógono?", "options": ["6", "7", "8", "9"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Si un árbol tiene 50 luces y 20 están apagadas, ¿cuántas funcionan?", "options": ["20", "25", "30", "40"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Si Santa visita 5 casas por hora, ¿cuántas visita en 4 horas?", "options": ["15", "20", "25", "30"], "correct": 1 },
-  { "type": "logica", "question": "Navidad: Tienes 3 cajas de turrones con 8 cada una. ¿Cuántos turrones tienes?", "options": ["11", "21", "24", "32"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Si hay 9 renos y cada uno lleva 2 cascabeles, ¿cuántos cascabeles hay?", "options": ["11", "16", "18", "20"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Compras 5 regalos de 12€ cada uno. ¿Cuánto gastas?", "options": ["50€", "55€", "60€", "65€"], "correct": 2 },
-  { "type": "logica", "question": "Si el padre de Juan es el hijo de mi padre, ¿qué soy yo de Juan?", "options": ["Padre", "Hermano", "Tío", "Abuelo"], "correct": 0 },
-  { "type": "logica", "question": "¿Cuántos triángulos hay en una estrella de 5 puntas?", "options": ["5", "10", "15", "20"], "correct": 1 },
-  { "type": "logica", "question": "Si 3 manzanas cuestan 6€, ¿cuánto cuestan 7 manzanas?", "options": ["12€", "14€", "16€", "18€"], "correct": 1 },
-  { "type": "logica", "question": "¿Cuántos grados suman los ángulos de un triángulo?", "options": ["90", "120", "180", "360"], "correct": 2 },
-  { "type": "logica", "question": "Un libro tiene 200 páginas. ¿En qué página está el centro exacto?", "options": ["Entre 99 y 100", "Entre 100 y 101", "La 100", "Entre 50 y 51"], "correct": 1 },
-  { "type": "logica", "question": "Navidad: Si decoras un árbol con 30 bolas rojas y 20 verdes, ¿cuántas bolas tiene?", "options": ["40", "45", "50", "55"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Una caja de 24 bombones se reparte entre 6 personas. ¿Cuántos recibe cada uno?", "options": ["3", "4", "5", "6"], "correct": 1 },
-  { "type": "logica", "question": "Navidad: Si cada regalo cuesta 15€ y compras 8, ¿cuánto gastas?", "options": ["100€", "110€", "120€", "130€"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Tienes 100€ y gastas 35€ en decoración. ¿Cuánto te queda?", "options": ["55€", "60€", "65€", "70€"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Si preparas 18 galletas y se comen 1/3, ¿cuántas quedan?", "options": ["6", "9", "12", "15"], "correct": 2 },
-  { "type": "logica", "question": "Si hoy es lunes, ¿qué día será en 5 días?", "options": ["Jueves", "Viernes", "Sábado", "Domingo"], "correct": 2 },
-  { "type": "logica", "question": "¿Cuántos dedos hay en 3 manos?", "options": ["10", "12", "15", "20"], "correct": 2 },
-  { "type": "logica", "question": "Si un lápiz cuesta 2€, ¿cuánto cuestan 5 lápices?", "options": ["7€", "8€", "10€", "12€"], "correct": 2 },
-  { "type": "logica", "question": "¿Cuántas patas tienen 4 perros?", "options": ["12", "14", "16", "18"], "correct": 2 },
-  { "type": "logica", "question": "Si sales a las 10:00 y vuelves 3 horas después, ¿a qué hora vuelves?", "options": ["12:00", "13:00", "14:00", "15:00"], "correct": 1 },
-  { "type": "logica", "question": "Navidad: Si comes 2 turrones al día durante 5 días, ¿cuántos comes?", "options": ["7", "8", "10", "12"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Si cada regalo pesa 2 kg y tienes 6 regalos, ¿cuánto pesan?", "options": ["8 kg", "10 kg", "12 kg", "14 kg"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Si decoras 4 ventanas con 5 adornos cada una, ¿cuántos usas?", "options": ["15", "18", "20", "25"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Si cantas 3 villancicos de 4 minutos cada uno, ¿cuántos minutos cantas?", "options": ["10", "12", "15", "18"], "correct": 1 },
-  { "type": "logica", "question": "Navidad: Si hay 7 días de vacaciones y trabajas 2, ¿cuántos descansas?", "options": ["3", "4", "5", "6"], "correct": 2 },
-  { "type": "logica", "question": "¿Cuántas horas hay en un día?", "options": ["12", "18", "24", "36"], "correct": 2 },
-  { "type": "logica", "question": "Si una docena son 12, ¿cuántos son media docena?", "options": ["4", "5", "6", "7"], "correct": 2 },
-  { "type": "logica", "question": "¿Cuántos días tiene una semana?", "options": ["5", "6", "7", "8"], "correct": 2 },
-  { "type": "logica", "question": "Si tienes 20€ y gastas 7€, ¿cuánto te queda?", "options": ["11€", "12€", "13€", "14€"], "correct": 2 },
-  { "type": "logica", "question": "¿Cuántas ruedas tiene un triciclo?", "options": ["2", "3", "4", "5"], "correct": 1 },
-  { "type": "logica", "question": "Navidad: Si una estrella tiene 5 puntas y tienes 3 estrellas, ¿cuántas puntas hay?", "options": ["8", "12", "15", "18"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Si preparas 20 galletas y regalas 8, ¿cuántas te quedan?", "options": ["10", "11", "12", "13"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Si envuelves 5 regalos en 25 minutos, ¿cuánto tardas por regalo?", "options": ["3 min", "4 min", "5 min", "6 min"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Si compras 3 árboles a 30€ cada uno, ¿cuánto gastas?", "options": ["60€", "75€", "90€", "105€"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Si hay 12 campanadas y cada una dura 2 segundos, ¿cuánto duran?", "options": ["20 seg", "22 seg", "24 seg", "26 seg"], "correct": 2 },
-  { "type": "logica", "question": "Si tienes 5 manzanas y comes 2, ¿cuántas tienes?", "options": ["2", "3", "4", "5"], "correct": 1 },
-  { "type": "logica", "question": "¿Cuántos meses tienen 30 días?", "options": ["2", "4", "6", "8"], "correct": 1 },
-  { "type": "logica", "question": "Si una gallina pone un huevo cada día, ¿cuántos pone en una semana?", "options": ["5", "6", "7", "8"], "correct": 2 },
-  { "type": "logica", "question": "¿Cuántos lados tiene un cuadrado?", "options": ["3", "4", "5", "6"], "correct": 1 },
-  { "type": "logica", "question": "Si compras 3 caramelos de 1€ cada uno, ¿cuánto pagas?", "options": ["2€", "3€", "4€", "5€"], "correct": 1 },
-  { "type": "logica", "question": "Navidad: Si tienes 10 adornos y pones 6 en el árbol, ¿cuántos te quedan?", "options": ["2", "3", "4", "5"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Si cada caja tiene 4 galletas y tienes 5 cajas, ¿cuántas galletas hay?", "options": ["15", "18", "20", "24"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Si preparas 8 regalos en 2 días, ¿cuántos preparas por día?", "options": ["2", "3", "4", "5"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Si cantas 2 villancicos de 3 minutos, ¿cuántos minutos cantas?", "options": ["4", "5", "6", "7"], "correct": 2 },
-  { "type": "logica", "question": "Navidad: Si tienes 15€ y gastas 8€ en decoración, ¿cuánto te queda?", "options": ["5€", "6€", "7€", "8€"], "correct": 2 },
-  { "type": "refran", "question": "Completa: No dejes para mañana...", "options": ["...lo que puedas hacer hoy", "...lo que no quieras hacer", "...nada importante", "...tus problemas"], "correct": 0 },
-  { "type": "refran", "question": "Completa: Más vale pájaro en mano...", "options": ["...que ciento volando", "...que águila en el cielo", "...que nada", "...que dos en el aire"], "correct": 0 },
-  { "type": "refran", "question": "Completa: A quien madruga...", "options": ["...Dios le ayuda", "...le da sueño", "...trabaja más", "...come primero"], "correct": 0 },
-  { "type": "refran", "question": "Completa: No hay mal que...", "options": ["...dure para siempre", "...por bien no venga", "...no tenga solución", "...sea eterno"], "correct": 1 },
-  { "type": "refran", "question": "Completa: En casa de herrero...", "options": ["...cuchillo de palo", "...todo de hierro", "...mucho trabajo", "...buen metal"], "correct": 0 },
-  { "type": "refran", "question": "Navidad: 'En Navidad, cada oveja con su...'", "options": ["...pareja", "...cordero", "...lana", "...pastor"], "correct": 0 },
-  { "type": "refran", "question": "Navidad: 'Año de nieves, año de...'", "options": ["...fríos", "...bienes", "...males", "...hielos"], "correct": 1 },
-  { "type": "refran", "question": "Navidad: 'Por Navidad, cada cual en su...'", "options": ["...hogar", "...casa", "...ciudad", "...familia"], "correct": 0 },
-  { "type": "refran", "question": "Navidad: 'Diciembre tiritando, buen enero...'", "options": ["...llegando", "...esperando", "...pasando", "...nevando"], "correct": 1 },
-  { "type": "refran", "question": "Navidad: 'Navidad al sol, Pascua al...'", "options": ["...tizón", "...carbón", "...fogón", "...calor"], "correct": 0 },
-  { "type": "refran", "question": "Completa: El que mucho abarca...", "options": ["...poco aprieta", "...todo pierde", "...se cansa", "...nada agarra"], "correct": 0 },
-  { "type": "refran", "question": "Completa: Ojos que no ven...", "options": ["...corazón que no siente", "...mente tranquila", "...no ven nada", "...están ciegos"], "correct": 0 },
-  { "type": "refran", "question": "Completa: Perro ladrador...", "options": ["...poco mordedor", "...mucho ruido", "...mal guardián", "...buen vigilante"], "correct": 0 },
-  { "type": "refran", "question": "Completa: Del dicho al hecho...", "options": ["...hay mucho trecho", "...va un paso", "...hay diferencia", "...hay tiempo"], "correct": 0 },
-  { "type": "refran", "question": "Completa: Más vale tarde...", "options": ["...que nunca", "...que mal", "...que pronto mal", "...que temprano"], "correct": 0 },
-  { "type": "refran", "question": "Completa: A caballo regalado...", "options": ["...no le mires el diente", "...móntalo rápido", "...cuídalo bien", "...dale de comer"], "correct": 0 },
-  { "type": "refran", "question": "Completa: Más vale prevenir...", "options": ["...que curar", "...que lamentar", "...que llorar", "...que sufrir"], "correct": 0 },
-  { "type": "refran", "question": "Completa: Dime con quién andas...", "options": ["...y te diré quién eres", "...y sabré tu destino", "...y te juzgaré", "...y te conoceré"], "correct": 0 },
-  { "type": "refran", "question": "Completa: A palabras necias...", "options": ["...oídos sordos", "...no hagas caso", "...responde con silencio", "...ignóralas"], "correct": 0 },
-  { "type": "refran", "question": "Completa: Hombre prevenido...", "options": ["...vale por dos", "...nunca pierde", "...siempre gana", "...está tranquilo"], "correct": 0 },
-  { "type": "refran", "question": "Navidad: 'Si el Niño llora, viento en...'", "options": ["...la cola", "...Zamora", "...demora", "...la aurora"], "correct": 0 },
-  { "type": "refran", "question": "Navidad: 'Sol de diciembre, raro...'", "options": ["...suele ser", "...es de ver", "...de tener", "...de creer"], "correct": 1 },
-  { "type": "refran", "question": "Navidad: 'Navidad sin luna, año de...'", "options": ["...fortuna", "...desgracia", "...oscura", "...locura"], "correct": 0 },
-  { "type": "refran", "question": "Completa: El que ríe último...", "options": ["...ríe mejor", "...ríe más", "...es feliz", "...gana"], "correct": 0 },
-  { "type": "refran", "question": "Completa: En boca cerrada...", "options": ["...no entran moscas", "...no hay palabras", "...hay silencio", "...está la paz"], "correct": 0 },
-  { "type": "refran", "question": "Completa: Quien siembra vientos...", "options": ["...recoge tempestades", "...pierde cosecha", "...no cultiva", "...sufre mucho"], "correct": 0 },
-  { "type": "refran", "question": "Completa: Cuando el río suena...", "options": ["...agua lleva", "...corre mucho", "...hay tormenta", "...pasa algo"], "correct": 0 },
-  { "type": "refran", "question": "Completa: A falta de pan...", "options": ["...buenas son tortas", "...come otra cosa", "...ayuna", "...bebe agua"], "correct": 0 },
-  { "type": "bala", "question": "¿Cuánto es 12 x 12?", "options": ["124", "144", "154", "164"], "correct": 1 },
-  { "type": "bala", "question": "¿Cuánto es 200 / 5?", "options": ["30", "35", "40", "45"], "correct": 2 },
-  { "type": "bala", "question": "¿Cuánto es 145 + 78?", "options": ["213", "223", "233", "243"], "correct": 1 },
-  { "type": "bala", "question": "¿Cuánto es 300 - 147?", "options": ["143", "153", "163", "173"], "correct": 1 },
-  { "type": "bala", "question": "¿Cuánto es 18 x 9?", "options": ["152", "162", "172", "182"], "correct": 1 },
-  { "type": "bala", "question": "Navidad: 48 regalos en 6 cajas iguales. ¿Cuántos por caja?", "options": ["6", "7", "8", "9"], "correct": 2 },
-  { "type": "bala", "question": "Navidad: 7 días x 4 regalos diarios. ¿Cuántos en total?", "options": ["24", "26", "28", "30"], "correct": 2 },
-  { "type": "bala", "question": "Navidad: Árbol con 80 luces, se funden 25. ¿Cuántas funcionan?", "options": ["45", "50", "55", "60"], "correct": 2 },
-  { "type": "bala", "question": "Navidad: Compras 9 regalos a 15€ cada uno. ¿Cuánto gastas?", "options": ["125€", "130€", "135€", "140€"], "correct": 2 },
-  { "type": "bala", "question": "Navidad: Tienes 250€ y gastas el 40%. ¿Cuánto te queda?", "options": ["100€", "125€", "150€", "175€"], "correct": 2 },
-  { "type": "bala", "question": "¿Cuánto es 25 x 6?", "options": ["130", "140", "150", "160"], "correct": 2 },
-  { "type": "bala", "question": "¿Cuánto es 360 / 9?", "options": ["35", "40", "45", "50"], "correct": 1 },
-  { "type": "bala", "question": "¿Cuánto es 287 + 156?", "options": ["433", "443", "453", "463"], "correct": 1 },
-  { "type": "bala", "question": "¿Cuánto es 500 - 238?", "options": ["252", "262", "272", "282"], "correct": 1 },
-  { "type": "bala", "question": "¿Cuánto es 14 x 11?", "options": ["144", "154", "164", "174"], "correct": 1 },
-  { "type": "bala", "question": "Navidad: 72 bombones entre 8 familias. ¿Cuántos por familia?", "options": ["7", "8", "9", "10"], "correct": 2 },
-  { "type": "bala", "question": "Navidad: 12 días x 3 comidas al día. ¿Cuántas comidas?", "options": ["30", "33", "36", "39"], "correct": 2 },
-  { "type": "bala", "question": "Navidad: 60 luces repartidas en 5 guirnaldas. ¿Cuántas por guirnalda?", "options": ["10", "11", "12", "13"], "correct": 2 },
-  { "type": "bala", "question": "Navidad: Cena de 180€ entre 6 personas. ¿Cuánto paga cada uno?", "options": ["25€", "30€", "35€", "40€"], "correct": 1 },
-  { "type": "bala", "question": "Navidad: Compras 15 adornos a 8€. ¿Cuánto gastas?", "options": ["100€", "110€", "120€", "130€"], "correct": 2 },
-  { "type": "bala", "question": "¿Cuánto es 16 x 8?", "options": ["118", "128", "138", "148"], "correct": 1 },
-  { "type": "bala", "question": "¿Cuánto es 150 / 6?", "options": ["20", "25", "30", "35"], "correct": 1 },
-  { "type": "bala", "question": "¿Cuánto es 234 + 189?", "options": ["413", "423", "433", "443"], "correct": 1 },
-  { "type": "bala", "question": "¿Cuánto es 400 - 156?", "options": ["234", "244", "254", "264"], "correct": 1 },
-  { "type": "bala", "question": "¿Cuánto es 22 x 7?", "options": ["144", "154", "164", "174"], "correct": 1 },
-  { "type": "bala", "question": "Navidad: 96 turrones en 12 cajas. ¿Cuántos por caja?", "options": ["6", "7", "8", "9"], "correct": 2 },
-  { "type": "bala", "question": "Navidad: 8 días x 6 comidas al día. ¿Cuántas comidas?", "options": ["42", "46", "48", "52"], "correct": 2 },
-  { "type": "bala", "question": "Navidad: 100 luces, se funden 35. ¿Cuántas funcionan?", "options": ["55", "60", "65", "70"], "correct": 2 },
-  { "type": "bala", "question": "Navidad: Compras 13 adornos a 11€. ¿Cuánto gastas?", "options": ["133€", "143€", "153€", "163€"], "correct": 1 },
-  { "type": "bala", "question": "Navidad: Tienes 320€ y gastas 30%. ¿Cuánto te queda?", "options": ["204€", "214€", "224€", "234€"], "correct": 2 },
-  { "type": "bala", "question": "¿Cuánto es 19 x 9?", "options": ["161", "171", "181", "191"], "correct": 1 },
-  { "type": "bala", "question": "¿Cuánto es 288 / 12?", "options": ["22", "24", "26", "28"], "correct": 1 },
-  { "type": "bala", "question": "¿Cuánto es 567 + 348?", "options": ["905", "915", "925", "935"], "correct": 1 },
-  { "type": "bala", "question": "¿Cuánto es 600 - 278?", "options": ["312", "322", "332", "342"], "correct": 1 },
-  { "type": "bala", "question": "¿Cuánto es 17 x 13?", "options": ["211", "221", "231", "241"], "correct": 1 },
-  { "type": "bala", "question": "Navidad: 144 galletas entre 16 familias. ¿Cuántas por familia?", "options": ["7", "8", "9", "10"], "correct": 2 },
-  { "type": "bala", "question": "Navidad: 15 regalos a 14€. ¿Cuánto gastas?", "options": ["200€", "210€", "220€", "230€"], "correct": 1 },
-  { "type": "bala", "question": "Navidad: 90 luces en 6 guirnaldas. ¿Cuántas por guirnalda?", "options": ["12", "13", "14", "15"], "correct": 3 },
-  { "type": "bala", "question": "Navidad: Cena de 240€ entre 8 personas. ¿Cuánto paga cada uno?", "options": ["25€", "30€", "35€", "40€"], "correct": 1 },
-  { "type": "bala", "question": "Navidad: Compras 20 regalos a 9€. ¿Cuánto gastas?", "options": ["160€", "170€", "180€", "190€"], "correct": 2 }
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Alemania?",
+    "options": [
+      "Múnich",
+      "Berlín",
+      "Hamburgo",
+      "Frankfurt"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué elemento químico tiene el símbolo 'O'?",
+    "options": [
+      "Oro",
+      "Osmio",
+      "Oxígeno",
+      "Oliva"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió 'Harry Potter'?",
+    "options": [
+      "Tolkien",
+      "J.K. Rowling",
+      "Stephen King",
+      "George R.R. Martin"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuántas patas tiene una mosca?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué país se encuentra la Gran Muralla?",
+    "options": [
+      "Japón",
+      "Corea",
+      "China",
+      "Vietnam"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el planeta más grande del Sistema Solar?",
+    "options": [
+      "Saturno",
+      "Júpiter",
+      "Tierra",
+      "Urano"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué dulce redondo con fruta escarchada se come el 6 de enero?",
+    "options": [
+      "Panettone",
+      "Roscón de Reyes",
+      "Turrón",
+      "Mazapán"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Cómo se llama el Grinch?",
+    "options": [
+      "El Grinch",
+      "Scrooge",
+      "Jack",
+      "Krampus"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el océano más frío?",
+    "options": [
+      "Atlántico",
+      "Pacífico",
+      "Índico",
+      "Ártico"
+    ],
+    "correct": 3
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién pintó el 'Guernica'?",
+    "options": [
+      "Dalí",
+      "Miró",
+      "Picasso",
+      "Velázquez"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la moneda del Reino Unido?",
+    "options": [
+      "Euro",
+      "Dólar",
+      "Libra",
+      "Franco"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué día se celebra el Día de los Inocentes en España?",
+    "options": [
+      "1 abril",
+      "28 diciembre",
+      "6 enero",
+      "31 diciembre"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué animal es conocido como el rey de la selva?",
+    "options": [
+      "Tigre",
+      "Elefante",
+      "Gorila",
+      "León"
+    ],
+    "correct": 3
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuántos colores tiene el arcoíris?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué continente está el desierto del Sahara?",
+    "options": [
+      "Asia",
+      "América",
+      "África",
+      "Oceanía"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué planta navideña tiene hojas rojas?",
+    "options": [
+      "Acebo",
+      "Flor de Pascua",
+      "Abeto",
+      "Muérdago"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el hueso más largo del cuerpo humano?",
+    "options": [
+      "Fémur",
+      "Húmero",
+      "Tibia",
+      "Radio"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién fue el primer hombre en pisar la Luna?",
+    "options": [
+      "Gagarin",
+      "Armstrong",
+      "Aldrin",
+      "Collins"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué instrumento se toca con un arco?",
+    "options": [
+      "Guitarra",
+      "Piano",
+      "Violín",
+      "Trompeta"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué ciudad se asocia con el sorteo de lotería de Navidad en España?",
+    "options": [
+      "Barcelona",
+      "Madrid",
+      "Sevilla",
+      "Valencia"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "Si adelantas al segundo en una carrera, ¿en qué posición vas?",
+    "options": [
+      "Primero",
+      "Segundo",
+      "Tercero",
+      "Último"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "¿Qué es tuyo pero los demás lo usan más que tú?",
+    "options": [
+      "Tu dinero",
+      "Tu nombre",
+      "Tu coche",
+      "Tu casa"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "El padre de Ana tiene 5 hijas: Lala, Lele, Lili, Lolo y...",
+    "options": [
+      "Lulu",
+      "Ana",
+      "Susana",
+      "Lula"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "¿Qué se moja mientras seca?",
+    "options": [
+      "El agua",
+      "El sol",
+      "La toalla",
+      "El viento"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si tienes un pastel y lo cortas en 4 trozos, ¿cuántas esquinas tiene un trozo triangular?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "¿Qué mes tiene 28 días?",
+    "options": [
+      "Febrero",
+      "Solo Febrero",
+      "Todos",
+      "Ninguno"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Si hay 3 peces y 2 se ahogan, ¿cuántos quedan?",
+    "options": [
+      "1",
+      "3",
+      "0",
+      "Los peces no se ahogan"
+    ],
+    "correct": 3
+  },
+  {
+    "type": "logica",
+    "question": "¿Qué pesa más, un litro de agua o un litro de aceite?",
+    "options": [
+      "Agua",
+      "Aceite",
+      "Igual",
+      "Depende"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si en una mano tengo 5 castañas y en la otra 6, ¿qué tengo?",
+    "options": [
+      "11 castañas",
+      "Manos grandes",
+      "Hambre",
+      "Muchas castañas"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "¿Qué animal anda a cuatro patas por la mañana, dos al mediodía y tres por la noche?",
+    "options": [
+      "El perro",
+      "El hombre",
+      "El gato",
+      "El mono"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "Si dices mi nombre, me rompo. ¿Qué soy?",
+    "options": [
+      "El cristal",
+      "El silencio",
+      "El hielo",
+      "El secreto"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "¿Cuántas letras tiene el abecedario?",
+    "options": [
+      "26",
+      "27",
+      "28",
+      "29"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "refran",
+    "question": "Completa: Al mal tiempo...",
+    "options": [
+      "...buena cara",
+      "...paraguas",
+      "...poca lluvia",
+      "...abrigo"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: Cría cuervos...",
+    "options": [
+      "...y tendrás muchos",
+      "...y te sacarán los ojos",
+      "...y volarán",
+      "...y serán negros"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "refran",
+    "question": "Completa: Aunque la mona se vista de seda...",
+    "options": [
+      "...guapa se queda",
+      "...mona se queda",
+      "...parece reina",
+      "...seda se queda"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "refran",
+    "question": "Completa: En abril...",
+    "options": [
+      "...flores mil",
+      "...aguas mil",
+      "...sol mil",
+      "...ni una nube"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "refran",
+    "question": "Completa: Quien tiene boca...",
+    "options": [
+      "...come",
+      "...habla",
+      "...se equivoca",
+      "...ríe"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "refran",
+    "question": "Completa: A quien a buen árbol se arrima...",
+    "options": [
+      "...buena sombra le cobija",
+      "...buen fruto recibe",
+      "...le caen hojas",
+      "...se moja menos"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: El que la sigue...",
+    "options": [
+      "...la pierde",
+      "...la consigue",
+      "...se cansa",
+      "...llega lejos"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 50 + 50 + 50?",
+    "options": [
+      "100",
+      "150",
+      "200",
+      "250"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 10 al cuadrado (10²)?",
+    "options": [
+      "20",
+      "100",
+      "200",
+      "1000"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 7 x 8?",
+    "options": [
+      "54",
+      "56",
+      "58",
+      "62"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 1000 - 1?",
+    "options": [
+      "990",
+      "999",
+      "900",
+      "909"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es la mitad de 500?",
+    "options": [
+      "200",
+      "225",
+      "250",
+      "275"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: 12 uvas x 4 personas. ¿Cuántas uvas?",
+    "options": [
+      "36",
+      "40",
+      "48",
+      "52"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 15 + 15 + 15 + 15?",
+    "options": [
+      "45",
+      "50",
+      "60",
+      "75"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 80 / 4?",
+    "options": [
+      "10",
+      "20",
+      "25",
+      "40"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: Si un turrón cuesta 5€, ¿cuánto cuestan 6?",
+    "options": [
+      "25€",
+      "30€",
+      "35€",
+      "40€"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 9 x 9?",
+    "options": [
+      "72",
+      "81",
+      "90",
+      "99"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 120 - 21?",
+    "options": [
+      "99",
+      "101",
+      "109",
+      "89"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: Si tienes 2 semanas de vacaciones, ¿cuántos días son?",
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué océano está entre América y Asia?",
+    "options": [
+      "Atlántico",
+      "Índico",
+      "Pacífico",
+      "Ártico"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió 'Romeo y Julieta'?",
+    "options": [
+      "Cervantes",
+      "Shakespeare",
+      "Molière",
+      "Dante"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el metal precioso con símbolo 'Ag'?",
+    "options": [
+      "Oro",
+      "Plata",
+      "Platino",
+      "Cobre"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué continente está Egipto?",
+    "options": [
+      "Asia",
+      "Europa",
+      "África",
+      "América"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué planeta tiene más lunas conocidas?",
+    "options": [
+      "Marte",
+      "Júpiter",
+      "Saturno",
+      "Neptuno"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién pintó el techo de la Capilla Sixtina?",
+    "options": [
+      "Rafael",
+      "Miguel Ángel",
+      "Leonardo",
+      "Donatello"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Suiza?",
+    "options": [
+      "Zúrich",
+      "Ginebra",
+      "Berna",
+      "Basilea"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué gas necesitan las plantas para la fotosíntesis?",
+    "options": [
+      "Oxígeno",
+      "Hidrógeno",
+      "CO2",
+      "Nitrógeno"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién descubrió América?",
+    "options": [
+      "Vasco da Gama",
+      "Marco Polo",
+      "Cristóbal Colón",
+      "Fernando Magallanes"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el río más largo de España?",
+    "options": [
+      "Ebro",
+      "Duero",
+      "Tajo",
+      "Guadalquivir"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué trajeron los Reyes Magos al niño Jesús?",
+    "options": [
+      "Joyas y sedas",
+      "Oro, incienso y mirra",
+      "Pan y vino",
+      "Animales"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Cómo se llama el reno de nariz roja?",
+    "options": [
+      "Donner",
+      "Blitzen",
+      "Rudolph",
+      "Dasher"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué se cuelga en las puertas en Navidad?",
+    "options": [
+      "Guirnaldas",
+      "Campanas",
+      "Coronas",
+      "Calcetines"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Cuántos días tiene el Adviento?",
+    "options": [
+      "12",
+      "24",
+      "28",
+      "31"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió 'La Odisea'?",
+    "options": [
+      "Virgilio",
+      "Homero",
+      "Sófocles",
+      "Platón"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuántos huesos tiene el cuerpo humano adulto?",
+    "options": [
+      "186",
+      "206",
+      "226",
+      "246"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué país tiene forma de bota?",
+    "options": [
+      "Grecia",
+      "Portugal",
+      "Italia",
+      "Croacia"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién inventó la bombilla eléctrica?",
+    "options": [
+      "Tesla",
+      "Edison",
+      "Bell",
+      "Marconi"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el animal más grande del mundo?",
+    "options": [
+      "Elefante africano",
+      "Tiburón ballena",
+      "Ballena azul",
+      "Calamar gigante"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué villancico habla de campanas?",
+    "options": [
+      "Noche de Paz",
+      "Campana sobre campana",
+      "Los peces en el río",
+      "Arre borriquito"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Dónde nació Jesús según la tradición?",
+    "options": [
+      "Jerusalén",
+      "Nazaret",
+      "Belén",
+      "Galilea"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué día se celebra San Esteban?",
+    "options": [
+      "24 diciembre",
+      "25 diciembre",
+      "26 diciembre",
+      "31 diciembre"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Cómo se llama el ayudante de Santa Claus?",
+    "options": [
+      "Duende",
+      "Elfo",
+      "Gnomo",
+      "Hada"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué fruta se come a las 12 campanadas?",
+    "options": [
+      "Manzanas",
+      "Naranjas",
+      "Uvas",
+      "Cerezas"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la montaña más alta del mundo?",
+    "options": [
+      "K2",
+      "Everest",
+      "Kilimanjaro",
+      "Mont Blanc"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué idioma se habla en Brasil?",
+    "options": [
+      "Español",
+      "Inglés",
+      "Portugués",
+      "Francés"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió 'El Quijote'?",
+    "options": [
+      "Lope de Vega",
+      "Calderón",
+      "Cervantes",
+      "Quevedo"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el planeta más cercano al Sol?",
+    "options": [
+      "Venus",
+      "Marte",
+      "Mercurio",
+      "Tierra"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
+    "options": [
+      "1936",
+      "1939",
+      "1941",
+      "1945"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuántos continentes hay?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién pintó 'La Gioconda' o 'Mona Lisa'?",
+    "options": [
+      "Miguel Ángel",
+      "Leonardo da Vinci",
+      "Rafael",
+      "Donatello"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el océano más grande?",
+    "options": [
+      "Atlántico",
+      "Índico",
+      "Pacífico",
+      "Ártico"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué país está la Torre Eiffel?",
+    "options": [
+      "Italia",
+      "España",
+      "Francia",
+      "Inglaterra"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué estudia la biología?",
+    "options": [
+      "Rocas",
+      "Estrellas",
+      "Seres vivos",
+      "Números"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Cuántos Reyes Magos fueron?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿De qué color es Rodolfo el reno?",
+    "options": [
+      "Blanco",
+      "Gris",
+      "Marrón",
+      "Negro"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué se pone en la punta del árbol de Navidad?",
+    "options": [
+      "Un ángel o estrella",
+      "Una bola",
+      "Una campana",
+      "Luces"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué dulce español es típico en Navidad?",
+    "options": [
+      "Churros",
+      "Turrón",
+      "Flan",
+      "Natillas"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué día es Nochevieja?",
+    "options": [
+      "24 diciembre",
+      "25 diciembre",
+      "30 diciembre",
+      "31 diciembre"
+    ],
+    "correct": 3
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el satélite natural de la Tierra?",
+    "options": [
+      "Sol",
+      "Marte",
+      "Luna",
+      "Venus"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué ciudad es la capital de España?",
+    "options": [
+      "Barcelona",
+      "Madrid",
+      "Valencia",
+      "Sevilla"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuántos lados tiene un triángulo?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió 'Hamlet'?",
+    "options": [
+      "Dickens",
+      "Shakespeare",
+      "Poe",
+      "Wilde"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué instrumento tiene 88 teclas?",
+    "options": [
+      "Guitarra",
+      "Violín",
+      "Piano",
+      "Flauta"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué significa 'Feliz Navidad' en inglés?",
+    "options": [
+      "Happy Christmas",
+      "Merry Christmas",
+      "Good Christmas",
+      "Nice Christmas"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué planta se cuelga en las puertas y da besos debajo?",
+    "options": [
+      "Acebo",
+      "Muérdago",
+      "Hiedra",
+      "Pino"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué canción navideña dice 'din don dan'?",
+    "options": [
+      "Noche de Paz",
+      "Campana sobre campana",
+      "Blanca Navidad",
+      "Jingle Bells"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿En qué vehículo viaja Santa Claus?",
+    "options": [
+      "Coche",
+      "Trineo",
+      "Avión",
+      "Caballo"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué color NO es típico de Navidad?",
+    "options": [
+      "Rojo",
+      "Verde",
+      "Dorado",
+      "Naranja"
+    ],
+    "correct": 3
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuántos ojos tiene una persona?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿De qué color es el cielo en un día despejado?",
+    "options": [
+      "Rojo",
+      "Verde",
+      "Azul",
+      "Amarillo"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué animal hace 'miau'?",
+    "options": [
+      "Perro",
+      "Vaca",
+      "Gato",
+      "Pájaro"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuántas estaciones tiene el año?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿De qué color es la nariz de Rudolph?",
+    "options": [
+      "Verde",
+      "Azul",
+      "Roja",
+      "Amarilla"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué tiran los Reyes Magos en las cabalgatas?",
+    "options": [
+      "Flores",
+      "Agua",
+      "Caramelos",
+      "Confeti"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué bebida caliente se toma en Navidad?",
+    "options": [
+      "Limonada",
+      "Cerveza",
+      "Chocolate",
+      "Refresco"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Dónde vive Santa Claus?",
+    "options": [
+      "España",
+      "México",
+      "Polo Norte",
+      "Australia"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué animal tira del trineo de Santa?",
+    "options": [
+      "Caballos",
+      "Perros",
+      "Renos",
+      "Osos"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuántos dedos tiene una mano?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué sale por el día y se esconde por la noche?",
+    "options": [
+      "Luna",
+      "Estrellas",
+      "Sol",
+      "Planetas"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué color sale al mezclar rojo y amarillo?",
+    "options": [
+      "Verde",
+      "Morado",
+      "Naranja",
+      "Marrón"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuántas patas tiene una araña?",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué forma tiene un balón de fútbol?",
+    "options": [
+      "Cuadrada",
+      "Triangular",
+      "Redonda",
+      "Rectangular"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué comen en Nochebuena?",
+    "options": [
+      "Paella",
+      "Pizza",
+      "Pavo o cordero",
+      "Hamburguesas"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué número aparece en el calendario de Navidad?",
+    "options": [
+      "24",
+      "25",
+      "26",
+      "31"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué se enciende en el árbol de Navidad?",
+    "options": [
+      "Velas o luces",
+      "Nada",
+      "Fuego",
+      "Linternas"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué comes a las 12 de la noche en Fin de Año?",
+    "options": [
+      "Manzanas",
+      "Plátanos",
+      "Uvas",
+      "Naranjas"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Cuántas uvas se comen en Fin de Año?",
+    "options": [
+      "6",
+      "10",
+      "12",
+      "15"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién pintó 'La noche estrellada'?",
+    "options": [
+      "Picasso",
+      "Van Gogh",
+      "Monet",
+      "Dalí"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el país más grande del mundo?",
+    "options": [
+      "China",
+      "Canadá",
+      "Rusia",
+      "EE.UU."
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué planeta es conocido como el planeta rojo?",
+    "options": [
+      "Venus",
+      "Júpiter",
+      "Marte",
+      "Saturno"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuántos jugadores hay en un equipo de fútbol?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué instrumento tocaba Mozart?",
+    "options": [
+      "Violín",
+      "Piano",
+      "Guitarra",
+      "Flauta"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué rey mago llevó mirra?",
+    "options": [
+      "Melchor",
+      "Gaspar",
+      "Baltasar",
+      "Ninguno"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Cuántos renos tiene Santa Claus?",
+    "options": [
+      "6",
+      "8",
+      "9",
+      "12"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué postre italiano es típico en Navidad?",
+    "options": [
+      "Tiramisú",
+      "Gelato",
+      "Panettone",
+      "Cannoli"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿En qué mes comienza el Adviento?",
+    "options": [
+      "Octubre",
+      "Noviembre",
+      "Diciembre",
+      "Enero"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "Navidad: ¿Qué color es típico del traje de Santa?",
+    "options": [
+      "Verde",
+      "Azul",
+      "Rojo",
+      "Dorado"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Si ayer fue martes, ¿qué día será pasado mañana?",
+    "options": [
+      "Jueves",
+      "Viernes",
+      "Sábado",
+      "Domingo"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Tengo el doble de edad que tú tenías cuando yo tenía tu edad. Si ahora tengo 40, ¿cuántos años tienes?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Un caracol sube 3m de día y baja 2m de noche. ¿En cuántos días sale de un pozo de 10m?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "¿Qué pesa más: un kilo de hierro o un kilo de plumas?",
+    "options": [
+      "Hierro",
+      "Plumas",
+      "Igual",
+      "Depende"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Si 2 gatos cazan 2 ratones en 2 minutos, ¿cuántos gatos cazan 6 ratones en 6 minutos?",
+    "options": [
+      "2",
+      "3",
+      "6",
+      "12"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "logica",
+    "question": "¿Cuántos meses tienen 28 días?",
+    "options": [
+      "1",
+      "4",
+      "6",
+      "12"
+    ],
+    "correct": 3
+  },
+  {
+    "type": "logica",
+    "question": "Si una hora tiene 60 minutos, ¿cuántos minutos hay en 2 horas y media?",
+    "options": [
+      "120",
+      "130",
+      "150",
+      "180"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "¿Qué viene después en la serie: 2, 4, 8, 16, ...?",
+    "options": [
+      "24",
+      "32",
+      "20",
+      "30"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "Si un tren sale a las 15:00 y tarda 2 horas y 45 minutos, ¿a qué hora llega?",
+    "options": [
+      "17:15",
+      "17:30",
+      "17:45",
+      "18:00"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "¿Cuántos lados tiene un octógono?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si un árbol tiene 50 luces y 20 están apagadas, ¿cuántas funcionan?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "40"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si Santa visita 5 casas por hora, ¿cuántas visita en 4 horas?",
+    "options": [
+      "15",
+      "20",
+      "25",
+      "30"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Tienes 3 cajas de turrones con 8 cada una. ¿Cuántos turrones tienes?",
+    "options": [
+      "11",
+      "21",
+      "24",
+      "32"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si hay 9 renos y cada uno lleva 2 cascabeles, ¿cuántos cascabeles hay?",
+    "options": [
+      "11",
+      "16",
+      "18",
+      "20"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Compras 5 regalos de 12€ cada uno. ¿Cuánto gastas?",
+    "options": [
+      "50€",
+      "55€",
+      "60€",
+      "65€"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Si el padre de Juan es el hijo de mi padre, ¿qué soy yo de Juan?",
+    "options": [
+      "Padre",
+      "Hermano",
+      "Tío",
+      "Abuelo"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "logica",
+    "question": "¿Cuántos triángulos hay en una estrella de 5 puntas?",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "20"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "Si 3 manzanas cuestan 6€, ¿cuánto cuestan 7 manzanas?",
+    "options": [
+      "12€",
+      "14€",
+      "16€",
+      "18€"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "¿Cuántos grados suman los ángulos de un triángulo?",
+    "options": [
+      "90",
+      "120",
+      "180",
+      "360"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Un libro tiene 200 páginas. ¿En qué página está el centro exacto?",
+    "options": [
+      "Entre 99 y 100",
+      "Entre 100 y 101",
+      "La 100",
+      "Entre 50 y 51"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si decoras un árbol con 30 bolas rojas y 20 verdes, ¿cuántas bolas tiene?",
+    "options": [
+      "40",
+      "45",
+      "50",
+      "55"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Una caja de 24 bombones se reparte entre 6 personas. ¿Cuántos recibe cada uno?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si cada regalo cuesta 15€ y compras 8, ¿cuánto gastas?",
+    "options": [
+      "100€",
+      "110€",
+      "120€",
+      "130€"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Tienes 100€ y gastas 35€ en decoración. ¿Cuánto te queda?",
+    "options": [
+      "55€",
+      "60€",
+      "65€",
+      "70€"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si preparas 18 galletas y se comen 1/3, ¿cuántas quedan?",
+    "options": [
+      "6",
+      "9",
+      "12",
+      "15"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Si hoy es lunes, ¿qué día será en 5 días?",
+    "options": [
+      "Jueves",
+      "Viernes",
+      "Sábado",
+      "Domingo"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "¿Cuántos dedos hay en 3 manos?",
+    "options": [
+      "10",
+      "12",
+      "15",
+      "20"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Si un lápiz cuesta 2€, ¿cuánto cuestan 5 lápices?",
+    "options": [
+      "7€",
+      "8€",
+      "10€",
+      "12€"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "¿Cuántas patas tienen 4 perros?",
+    "options": [
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Si sales a las 10:00 y vuelves 3 horas después, ¿a qué hora vuelves?",
+    "options": [
+      "12:00",
+      "13:00",
+      "14:00",
+      "15:00"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si comes 2 turrones al día durante 5 días, ¿cuántos comes?",
+    "options": [
+      "7",
+      "8",
+      "10",
+      "12"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si cada regalo pesa 2 kg y tienes 6 regalos, ¿cuánto pesan?",
+    "options": [
+      "8 kg",
+      "10 kg",
+      "12 kg",
+      "14 kg"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si decoras 4 ventanas con 5 adornos cada una, ¿cuántos usas?",
+    "options": [
+      "15",
+      "18",
+      "20",
+      "25"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si cantas 3 villancicos de 4 minutos cada uno, ¿cuántos minutos cantas?",
+    "options": [
+      "10",
+      "12",
+      "15",
+      "18"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si hay 7 días de vacaciones y trabajas 2, ¿cuántos descansas?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "¿Cuántas horas hay en un día?",
+    "options": [
+      "12",
+      "18",
+      "24",
+      "36"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Si una docena son 12, ¿cuántos son media docena?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "¿Cuántos días tiene una semana?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Si tienes 20€ y gastas 7€, ¿cuánto te queda?",
+    "options": [
+      "11€",
+      "12€",
+      "13€",
+      "14€"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "¿Cuántas ruedas tiene un triciclo?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si una estrella tiene 5 puntas y tienes 3 estrellas, ¿cuántas puntas hay?",
+    "options": [
+      "8",
+      "12",
+      "15",
+      "18"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si preparas 20 galletas y regalas 8, ¿cuántas te quedan?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si envuelves 5 regalos en 25 minutos, ¿cuánto tardas por regalo?",
+    "options": [
+      "3 min",
+      "4 min",
+      "5 min",
+      "6 min"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si compras 3 árboles a 30€ cada uno, ¿cuánto gastas?",
+    "options": [
+      "60€",
+      "75€",
+      "90€",
+      "105€"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si hay 12 campanadas y cada una dura 2 segundos, ¿cuánto duran?",
+    "options": [
+      "20 seg",
+      "22 seg",
+      "24 seg",
+      "26 seg"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Si tienes 5 manzanas y comes 2, ¿cuántas tienes?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "¿Cuántos meses tienen 30 días?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "Si una gallina pone un huevo cada día, ¿cuántos pone en una semana?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "¿Cuántos lados tiene un cuadrado?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "Si compras 3 caramelos de 1€ cada uno, ¿cuánto pagas?",
+    "options": [
+      "2€",
+      "3€",
+      "4€",
+      "5€"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si tienes 10 adornos y pones 6 en el árbol, ¿cuántos te quedan?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si cada caja tiene 4 galletas y tienes 5 cajas, ¿cuántas galletas hay?",
+    "options": [
+      "15",
+      "18",
+      "20",
+      "24"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si preparas 8 regalos en 2 días, ¿cuántos preparas por día?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si cantas 2 villancicos de 3 minutos, ¿cuántos minutos cantas?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Navidad: Si tienes 15€ y gastas 8€ en decoración, ¿cuánto te queda?",
+    "options": [
+      "5€",
+      "6€",
+      "7€",
+      "8€"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "refran",
+    "question": "Completa: No dejes para mañana...",
+    "options": [
+      "...lo que puedas hacer hoy",
+      "...lo que no quieras hacer",
+      "...nada importante",
+      "...tus problemas"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: Más vale pájaro en mano...",
+    "options": [
+      "...que ciento volando",
+      "...que águila en el cielo",
+      "...que nada",
+      "...que dos en el aire"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: A quien madruga...",
+    "options": [
+      "...Dios le ayuda",
+      "...le da sueño",
+      "...trabaja más",
+      "...come primero"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: No hay mal que...",
+    "options": [
+      "...dure para siempre",
+      "...por bien no venga",
+      "...no tenga solución",
+      "...sea eterno"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "refran",
+    "question": "Completa: En casa de herrero...",
+    "options": [
+      "...cuchillo de palo",
+      "...todo de hierro",
+      "...mucho trabajo",
+      "...buen metal"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Navidad: 'En Navidad, cada oveja con su...'",
+    "options": [
+      "...pareja",
+      "...cordero",
+      "...lana",
+      "...pastor"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Navidad: 'Año de nieves, año de...'",
+    "options": [
+      "...fríos",
+      "...bienes",
+      "...males",
+      "...hielos"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "refran",
+    "question": "Navidad: 'Por Navidad, cada cual en su...'",
+    "options": [
+      "...hogar",
+      "...casa",
+      "...ciudad",
+      "...familia"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Navidad: 'Diciembre tiritando, buen enero...'",
+    "options": [
+      "...llegando",
+      "...esperando",
+      "...pasando",
+      "...nevando"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "refran",
+    "question": "Navidad: 'Navidad al sol, Pascua al...'",
+    "options": [
+      "...tizón",
+      "...carbón",
+      "...fogón",
+      "...calor"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: El que mucho abarca...",
+    "options": [
+      "...poco aprieta",
+      "...todo pierde",
+      "...se cansa",
+      "...nada agarra"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: Ojos que no ven...",
+    "options": [
+      "...corazón que no siente",
+      "...mente tranquila",
+      "...no ven nada",
+      "...están ciegos"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: Perro ladrador...",
+    "options": [
+      "...poco mordedor",
+      "...mucho ruido",
+      "...mal guardián",
+      "...buen vigilante"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: Del dicho al hecho...",
+    "options": [
+      "...hay mucho trecho",
+      "...va un paso",
+      "...hay diferencia",
+      "...hay tiempo"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: Más vale tarde...",
+    "options": [
+      "...que nunca",
+      "...que mal",
+      "...que pronto mal",
+      "...que temprano"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: A caballo regalado...",
+    "options": [
+      "...no le mires el diente",
+      "...móntalo rápido",
+      "...cuídalo bien",
+      "...dale de comer"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: Más vale prevenir...",
+    "options": [
+      "...que curar",
+      "...que lamentar",
+      "...que llorar",
+      "...que sufrir"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: Dime con quién andas...",
+    "options": [
+      "...y te diré quién eres",
+      "...y sabré tu destino",
+      "...y te juzgaré",
+      "...y te conoceré"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: A palabras necias...",
+    "options": [
+      "...oídos sordos",
+      "...no hagas caso",
+      "...responde con silencio",
+      "...ignóralas"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: Hombre prevenido...",
+    "options": [
+      "...vale por dos",
+      "...nunca pierde",
+      "...siempre gana",
+      "...está tranquilo"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Navidad: 'Si el Niño llora, viento en...'",
+    "options": [
+      "...la cola",
+      "...Zamora",
+      "...demora",
+      "...la aurora"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Navidad: 'Sol de diciembre, raro...'",
+    "options": [
+      "...suele ser",
+      "...es de ver",
+      "...de tener",
+      "...de creer"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "refran",
+    "question": "Navidad: 'Navidad sin luna, año de...'",
+    "options": [
+      "...fortuna",
+      "...desgracia",
+      "...oscura",
+      "...locura"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: El que ríe último...",
+    "options": [
+      "...ríe mejor",
+      "...ríe más",
+      "...es feliz",
+      "...gana"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: En boca cerrada...",
+    "options": [
+      "...no entran moscas",
+      "...no hay palabras",
+      "...hay silencio",
+      "...está la paz"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: Quien siembra vientos...",
+    "options": [
+      "...recoge tempestades",
+      "...pierde cosecha",
+      "...no cultiva",
+      "...sufre mucho"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: Cuando el río suena...",
+    "options": [
+      "...agua lleva",
+      "...corre mucho",
+      "...hay tormenta",
+      "...pasa algo"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Completa: A falta de pan...",
+    "options": [
+      "...buenas son tortas",
+      "...come otra cosa",
+      "...ayuna",
+      "...bebe agua"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 12 x 12?",
+    "options": [
+      "124",
+      "144",
+      "154",
+      "164"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 200 / 5?",
+    "options": [
+      "30",
+      "35",
+      "40",
+      "45"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 145 + 78?",
+    "options": [
+      "213",
+      "223",
+      "233",
+      "243"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 300 - 147?",
+    "options": [
+      "143",
+      "153",
+      "163",
+      "173"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 18 x 9?",
+    "options": [
+      "152",
+      "162",
+      "172",
+      "182"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: 48 regalos en 6 cajas iguales. ¿Cuántos por caja?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: 7 días x 4 regalos diarios. ¿Cuántos en total?",
+    "options": [
+      "24",
+      "26",
+      "28",
+      "30"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: Árbol con 80 luces, se funden 25. ¿Cuántas funcionan?",
+    "options": [
+      "45",
+      "50",
+      "55",
+      "60"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: Compras 9 regalos a 15€ cada uno. ¿Cuánto gastas?",
+    "options": [
+      "125€",
+      "130€",
+      "135€",
+      "140€"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: Tienes 250€ y gastas el 40%. ¿Cuánto te queda?",
+    "options": [
+      "100€",
+      "125€",
+      "150€",
+      "175€"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 25 x 6?",
+    "options": [
+      "130",
+      "140",
+      "150",
+      "160"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 360 / 9?",
+    "options": [
+      "35",
+      "40",
+      "45",
+      "50"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 287 + 156?",
+    "options": [
+      "433",
+      "443",
+      "453",
+      "463"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 500 - 238?",
+    "options": [
+      "252",
+      "262",
+      "272",
+      "282"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 14 x 11?",
+    "options": [
+      "144",
+      "154",
+      "164",
+      "174"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: 72 bombones entre 8 familias. ¿Cuántos por familia?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: 12 días x 3 comidas al día. ¿Cuántas comidas?",
+    "options": [
+      "30",
+      "33",
+      "36",
+      "39"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: 60 luces repartidas en 5 guirnaldas. ¿Cuántas por guirnalda?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: Cena de 180€ entre 6 personas. ¿Cuánto paga cada uno?",
+    "options": [
+      "25€",
+      "30€",
+      "35€",
+      "40€"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: Compras 15 adornos a 8€. ¿Cuánto gastas?",
+    "options": [
+      "100€",
+      "110€",
+      "120€",
+      "130€"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 16 x 8?",
+    "options": [
+      "118",
+      "128",
+      "138",
+      "148"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 150 / 6?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 234 + 189?",
+    "options": [
+      "413",
+      "423",
+      "433",
+      "443"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 400 - 156?",
+    "options": [
+      "234",
+      "244",
+      "254",
+      "264"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 22 x 7?",
+    "options": [
+      "144",
+      "154",
+      "164",
+      "174"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: 96 turrones en 12 cajas. ¿Cuántos por caja?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: 8 días x 6 comidas al día. ¿Cuántas comidas?",
+    "options": [
+      "42",
+      "46",
+      "48",
+      "52"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: 100 luces, se funden 35. ¿Cuántas funcionan?",
+    "options": [
+      "55",
+      "60",
+      "65",
+      "70"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: Compras 13 adornos a 11€. ¿Cuánto gastas?",
+    "options": [
+      "133€",
+      "143€",
+      "153€",
+      "163€"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: Tienes 320€ y gastas 30%. ¿Cuánto te queda?",
+    "options": [
+      "204€",
+      "214€",
+      "224€",
+      "234€"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 19 x 9?",
+    "options": [
+      "161",
+      "171",
+      "181",
+      "191"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 288 / 12?",
+    "options": [
+      "22",
+      "24",
+      "26",
+      "28"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 567 + 348?",
+    "options": [
+      "905",
+      "915",
+      "925",
+      "935"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 600 - 278?",
+    "options": [
+      "312",
+      "322",
+      "332",
+      "342"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "¿Cuánto es 17 x 13?",
+    "options": [
+      "211",
+      "221",
+      "231",
+      "241"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: 144 galletas entre 16 familias. ¿Cuántas por familia?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: 15 regalos a 14€. ¿Cuánto gastas?",
+    "options": [
+      "200€",
+      "210€",
+      "220€",
+      "230€"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: 90 luces en 6 guirnaldas. ¿Cuántas por guirnalda?",
+    "options": [
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "correct": 3
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: Cena de 240€ entre 8 personas. ¿Cuánto paga cada uno?",
+    "options": [
+      "25€",
+      "30€",
+      "35€",
+      "40€"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "Navidad: Compras 20 regalos a 9€. ¿Cuánto gastas?",
+    "options": [
+      "160€",
+      "170€",
+      "180€",
+      "190€"
+    ],
+    "correct": 2
+  }
 ]
