@@ -2770,5 +2770,1204 @@
       "190€"
     ],
     "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la capital de Noruega?",
+    "options": [
+      "Estocolmo",
+      "Oslo",
+      "Copenhague",
+      "Helsinki"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué elemento tiene el símbolo 'Au'?",
+    "options": [
+      "Plata",
+      "Cobre",
+      "Oro",
+      "Aluminio"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién pintó 'Las Meninas'?",
+    "options": [
+      "Goya",
+      "Velázquez",
+      "El Greco",
+      "Dalí"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el río más largo del mundo?",
+    "options": [
+      "Nilo",
+      "Amazonas",
+      "Yangtsé",
+      "Misisipi"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué año llegó el hombre a la Luna?",
+    "options": [
+      "1965",
+      "1969",
+      "1972",
+      "1980"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué país tiene forma de hexágono?",
+    "options": [
+      "España",
+      "Alemania",
+      "Francia",
+      "Polonia"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el animal terrestre más rápido?",
+    "options": [
+      "León",
+      "Gacela",
+      "Guepardo",
+      "Caballo"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién escribió 'Cien años de soledad'?",
+    "options": [
+      "Vargas Llosa",
+      "García Márquez",
+      "Cortázar",
+      "Borges"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué vitamina nos da el sol?",
+    "options": [
+      "Vitamina A",
+      "Vitamina C",
+      "Vitamina D",
+      "Vitamina E"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el planeta más grande?",
+    "options": [
+      "Tierra",
+      "Saturno",
+      "Júpiter",
+      "Urano"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuántas cuerdas tiene una guitarra estándar?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué país se originó el sushi?",
+    "options": [
+      "China",
+      "Japón",
+      "Tailandia",
+      "Corea"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el océano más grande del mundo?",
+    "options": [
+      "Atlántico",
+      "Índico",
+      "Pacífico",
+      "Ártico"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién es el rey del pop?",
+    "options": [
+      "Elvis",
+      "Prince",
+      "Michael Jackson",
+      "Madonna"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué órgano limpia la sangre?",
+    "options": [
+      "Corazón",
+      "Pulmones",
+      "Riñones",
+      "Estómago"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿En qué continente está Kenia?",
+    "options": [
+      "Asia",
+      "África",
+      "América",
+      "Oceanía"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué instrumento mide la temperatura?",
+    "options": [
+      "Barómetro",
+      "Termómetro",
+      "Cronómetro",
+      "Altímetro"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es el idioma más hablado del mundo?",
+    "options": [
+      "Inglés",
+      "Español",
+      "Chino Mandarín",
+      "Hindi"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién descubrió la penicilina?",
+    "options": [
+      "Pasteur",
+      "Fleming",
+      "Curie",
+      "Einstein"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué ciudad es conocida como la Gran Manzana?",
+    "options": [
+      "Londres",
+      "París",
+      "Nueva York",
+      "Tokio"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuál es la moneda de Japón?",
+    "options": [
+      "Yuan",
+      "Won",
+      "Yen",
+      "Dólar"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Quién compuso la Novena Sinfonía?",
+    "options": [
+      "Mozart",
+      "Bach",
+      "Beethoven",
+      "Vivaldi"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué gas respiramos principalmente?",
+    "options": [
+      "Oxígeno",
+      "Nitrógeno",
+      "Helio",
+      "Hidrógeno"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "cultura",
+    "question": "¿Cuántos años tiene un siglo?",
+    "options": [
+      "10",
+      "50",
+      "100",
+      "1000"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "cultura",
+    "question": "¿Qué es un vivíparo?",
+    "options": [
+      "Nace de huevo",
+      "Nace del vientre",
+      "Come carne",
+      "Vive en el agua"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "¿Qué pesa más: un kilo de paja o un kilo de plomo?",
+    "options": [
+      "Paja",
+      "Plomo",
+      "Iguales",
+      "Ninguno"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Si hay 5 manzanas y te llevas 3, ¿cuántas tienes?",
+    "options": [
+      "2",
+      "3",
+      "5",
+      "0"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "¿Qué mes tiene 28 días?",
+    "options": [
+      "Febrero",
+      "Ninguno",
+      "Todos",
+      "Enero"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "El padre de Juan tiene 4 hijos: Pipi, Popo, Pupu y...",
+    "options": [
+      "Pepe",
+      "Juan",
+      "Papa",
+      "Papi"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "¿Qué sube pero nunca baja?",
+    "options": [
+      "La lluvia",
+      "El precio",
+      "La edad",
+      "El ascensor"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "¿Cuántos meses tienen 31 días?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "Si vas en una carrera y pasas al último, ¿en qué posición quedas?",
+    "options": [
+      "Último",
+      "Penúltimo",
+      "Primero",
+      "Imposible"
+    ],
+    "correct": 3
+  },
+  {
+    "type": "logica",
+    "question": "¿Qué tiene ojos pero no ve?",
+    "options": [
+      "Una aguja",
+      "Una patata",
+      "Una tormenta",
+      "Un zapato"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "logica",
+    "question": "¿Qué hay en medio de París?",
+    "options": [
+      "La Torre Eiffel",
+      "La letra R",
+      "El Sena",
+      "Gente"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "¿Qué se rompe si lo nombras?",
+    "options": [
+      "El cristal",
+      "El silencio",
+      "La voz",
+      "El hielo"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "¿De qué color son las mangas del chaleco rojo?",
+    "options": [
+      "Rojas",
+      "Blancas",
+      "No tiene",
+      "Negras"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "logica",
+    "question": "¿Qué entra duro y sale blando?",
+    "options": [
+      "El chicle",
+      "El macarrón",
+      "El hielo",
+      "El pan"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "¿Qué animal come con la cola?",
+    "options": [
+      "Todos",
+      "El elefante",
+      "El oso hormiguero",
+      "Ninguno, se las quitan"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "logica",
+    "question": "¿Cuántas letras tiene 'abecedario'?",
+    "options": [
+      "27",
+      "10",
+      "9",
+      "5"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "logica",
+    "question": "Si un tren eléctrico va al norte, ¿hacia dónde va el humo?",
+    "options": [
+      "Sur",
+      "Norte",
+      "Este",
+      "No echa humo"
+    ],
+    "correct": 3
+  },
+  {
+    "type": "refran",
+    "question": "Más vale tarde...",
+    "options": [
+      "...que nunca",
+      "...que pronto",
+      "...que mal",
+      "...que esperar"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "A caballo regalado...",
+    "options": [
+      "...ponle silla",
+      "...no le mires el diente",
+      "...dale agua",
+      "...móntalo"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "refran",
+    "question": "En casa de herrero...",
+    "options": [
+      "...cuchara de palo",
+      "...cuchillo de hierro",
+      "...martillo grande",
+      "...todo es metal"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "No por mucho madrugar...",
+    "options": [
+      "...se duerme menos",
+      "...amanece más temprano",
+      "...se llega antes",
+      "...haces más cosas"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "refran",
+    "question": "Camarón que se duerme...",
+    "options": [
+      "...se lo comen",
+      "...se lo lleva la corriente",
+      "...descansa bien",
+      "...crece más"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "refran",
+    "question": "Quien mucho abarca...",
+    "options": [
+      "...poco aprieta",
+      "...mucho tiene",
+      "...se cansa",
+      "...todo pierde"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Ojos que no ven...",
+    "options": [
+      "...gafas necesitan",
+      "...corazón que no siente",
+      "...se chocan",
+      "...pasan de largo"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "refran",
+    "question": "A palabras necias...",
+    "options": [
+      "...boca cerrada",
+      "...oídos sordos",
+      "...gritos fuertes",
+      "...risas"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "refran",
+    "question": "Perro ladrador...",
+    "options": [
+      "...buen guardián",
+      "...poco mordedor",
+      "...mucho come",
+      "...no duerme"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "refran",
+    "question": "Dime con quién andas...",
+    "options": [
+      "...y te diré quién eres",
+      "...y iré contigo",
+      "...y te invitaré",
+      "...y sabré a dónde vas"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "No hay mal que por bien...",
+    "options": [
+      "...no venga",
+      "...no pase",
+      "...no duela",
+      "...se quede"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "refran",
+    "question": "Cuando el río suena...",
+    "options": [
+      "...piedras trae",
+      "...agua lleva",
+      "...música es",
+      "...se desborda"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "5 x 5",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "35"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "8 x 8",
+    "options": [
+      "56",
+      "64",
+      "72",
+      "81"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "9 x 6",
+    "options": [
+      "52",
+      "54",
+      "56",
+      "58"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "7 x 9",
+    "options": [
+      "61",
+      "62",
+      "63",
+      "64"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "12 x 10",
+    "options": [
+      "110",
+      "120",
+      "130",
+      "140"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "15 + 15",
+    "options": [
+      "25",
+      "30",
+      "35",
+      "40"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "100 - 35",
+    "options": [
+      "55",
+      "65",
+      "75",
+      "85"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "50 / 2",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "15"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "200 / 4",
+    "options": [
+      "40",
+      "50",
+      "60",
+      "25"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "11 x 11",
+    "options": [
+      "111",
+      "121",
+      "131",
+      "141"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "6 x 7",
+    "options": [
+      "41",
+      "42",
+      "43",
+      "44"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "45 + 55",
+    "options": [
+      "90",
+      "100",
+      "110",
+      "105"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "25 x 4",
+    "options": [
+      "75",
+      "100",
+      "125",
+      "150"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "80 - 15",
+    "options": [
+      "55",
+      "65",
+      "75",
+      "45"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "1000 / 10",
+    "options": [
+      "10",
+      "100",
+      "1000",
+      "1"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "3 x 3 x 3",
+    "options": [
+      "9",
+      "18",
+      "27",
+      "36"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "20 + 30 + 50",
+    "options": [
+      "80",
+      "90",
+      "100",
+      "110"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "150 - 50",
+    "options": [
+      "50",
+      "100",
+      "150",
+      "200"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "12 / 4",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "7 + 8 + 9",
+    "options": [
+      "22",
+      "23",
+      "24",
+      "25"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "50 x 2",
+    "options": [
+      "100",
+      "150",
+      "200",
+      "52"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "300 - 150",
+    "options": [
+      "100",
+      "150",
+      "200",
+      "250"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "90 / 3",
+    "options": [
+      "20",
+      "30",
+      "40",
+      "50"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "11 x 2",
+    "options": [
+      "21",
+      "22",
+      "23",
+      "24"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "13 + 27",
+    "options": [
+      "30",
+      "35",
+      "40",
+      "45"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "70 - 20",
+    "options": [
+      "40",
+      "50",
+      "60",
+      "30"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "10 x 5",
+    "options": [
+      "40",
+      "50",
+      "60",
+      "45"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "48 / 6",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "25 + 25 + 25",
+    "options": [
+      "50",
+      "75",
+      "100",
+      "125"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "99 + 1",
+    "options": [
+      "100",
+      "101",
+      "110",
+      "98"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "20 x 5",
+    "options": [
+      "80",
+      "100",
+      "120",
+      "140"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "144 / 12",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "15 x 3",
+    "options": [
+      "35",
+      "40",
+      "45",
+      "50"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "60 + 60",
+    "options": [
+      "100",
+      "110",
+      "120",
+      "130"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "500 - 250",
+    "options": [
+      "200",
+      "250",
+      "300",
+      "350"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "8 x 5",
+    "options": [
+      "35",
+      "40",
+      "45",
+      "50"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "33 / 3",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "18 + 12",
+    "options": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "4 x 25",
+    "options": [
+      "75",
+      "100",
+      "125",
+      "150"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "75 - 25",
+    "options": [
+      "40",
+      "45",
+      "50",
+      "55"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "120 / 10",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "6 x 8",
+    "options": [
+      "46",
+      "48",
+      "50",
+      "52"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "100 x 0",
+    "options": [
+      "100",
+      "10",
+      "0",
+      "1"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "1 + 2 + 3 + 4",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "12"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "50 - 49",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "81 / 9",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "7"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "2 x 2 x 2",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "1000 + 500",
+    "options": [
+      "1500",
+      "1050",
+      "5100",
+      "1005"
+    ],
+    "correct": 0
+  },
+  {
+    "type": "bala",
+    "question": "40 x 2",
+    "options": [
+      "60",
+      "80",
+      "100",
+      "120"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "24 / 6",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "13 - 6",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "9 + 9",
+    "options": [
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "15 / 5",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "20 x 3",
+    "options": [
+      "50",
+      "60",
+      "70",
+      "80"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "30 - 15",
+    "options": [
+      "10",
+      "15",
+      "20",
+      "25"
+    ],
+    "correct": 1
+  },
+  {
+    "type": "bala",
+    "question": "4 x 4",
+    "options": [
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "correct": 2
+  },
+  {
+    "type": "bala",
+    "question": "10 + 20",
+    "options": [
+      "20",
+      "30",
+      "40",
+      "50"
+    ],
+    "correct": 1
   }
 ]
