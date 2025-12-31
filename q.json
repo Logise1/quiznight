@@ -1,0 +1,2532 @@
+[
+    {
+        "type": "cultura",
+        "question": "¿Cuál es la capital de Australia?",
+        "options": [
+            "Sídney",
+            "Melbourne",
+            "Canberra",
+            "Brisbane"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Qué elemento tiene el símbolo 'K'?",
+        "options": [
+            "Kriptón",
+            "Potasio",
+            "Calcio",
+            "Kelvin"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿En qué año llegó el hombre a la Luna?",
+        "options": [
+            "1965",
+            "1968",
+            "1969",
+            "1971"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Quién pintó 'El Grito'?",
+        "options": [
+            "Van Gogh",
+            "Munch",
+            "Picasso",
+            "Dalí"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es el río más largo del mundo?",
+        "options": [
+            "Nilo",
+            "Amazonas",
+            "Yangtsé",
+            "Misisipi"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Qué país tiene más islas en el mundo?",
+        "options": [
+            "Indonesia",
+            "Filipinas",
+            "Suecia",
+            "Canadá"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "Navidad: ¿En qué país se originó el árbol de Navidad?",
+        "options": [
+            "Noruega",
+            "Alemania",
+            "EE.UU.",
+            "Reino Unido"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "Navidad: ¿Cómo se llama el reno de la nariz roja en inglés?",
+        "options": [
+            "Dasher",
+            "Rudolph",
+            "Vixen",
+            "Comet"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Quién escribió 'Cien años de soledad'?",
+        "options": [
+            "Vargas Llosa",
+            "García Márquez",
+            "Cortázar",
+            "Borges"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Qué planeta es conocido como el 'Planeta Rojo'?",
+        "options": [
+            "Venus",
+            "Júpiter",
+            "Marte",
+            "Saturno"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es el hueso más pequeño del cuerpo humano?",
+        "options": [
+            "Estribo",
+            "Martillo",
+            "Yunque",
+            "Falange"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "cultura",
+        "question": "Navidad: ¿Qué mirra regaló Baltasar?",
+        "options": [
+            "Oro",
+            "Incienso",
+            "Mirra",
+            "Plata"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es la capital de Brasil?",
+        "options": [
+            "Río de Janeiro",
+            "São Paulo",
+            "Brasilia",
+            "Buenos Aires"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Quién pintó la Mona Lisa?",
+        "options": [
+            "Miguel Ángel",
+            "Da Vinci",
+            "Botticelli",
+            "Caravaggio"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "El padre de Juan tiene 4 hijos: Ene, Eni, Eno... ¿Cómo se llama el cuarto?",
+        "options": [
+            "Enu",
+            "Juan",
+            "Pepe",
+            "Ena"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué tiene llaves pero no abre puertas?",
+        "options": [
+            "Un piano",
+            "Un mapa",
+            "Un reloj",
+            "Un libro"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "Si me nombras, desaparezco. ¿Qué soy?",
+        "options": [
+            "El futuro",
+            "El silencio",
+            "El ayer",
+            "El viento"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué sube pero nunca baja?",
+        "options": [
+            "La edad",
+            "La lluvia",
+            "El precio",
+            "El sol"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué va hacia arriba y hacia abajo pero no se mueve?",
+        "options": [
+            "El ascensor",
+            "La escalera",
+            "La temperatura",
+            "El viento"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué tiene cuello pero no cabeza?",
+        "options": [
+            "Una camisa",
+            "Una botella",
+            "Una jirafa",
+            "Una guitarra"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué mes tiene 28 días?",
+        "options": [
+            "Febrero",
+            "Ninguno",
+            "Todos",
+            "Diciembre"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "refran",
+        "question": "Más vale pájaro en mano...",
+        "options": [
+            "...que cientos volando",
+            "...que ciento volando",
+            "...que pollo en corral",
+            "...que pluma en suelo"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "refran",
+        "question": "A caballo regalado...",
+        "options": [
+            "...no le mires el diente",
+            "...ponle una silla",
+            "...corre más rápido",
+            "...gracias se le dan"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "En boca cerrada...",
+        "options": [
+            "...no entran moscas",
+            "...no sale ruido",
+            "...todo es secreto",
+            "...se respira mejor"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Camarón que se duerme...",
+        "options": [
+            "...se lo lleva la corriente",
+            "...pierde el tren",
+            "...se despierta tarde",
+            "...se lo comen los peces"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "No hay mal que por bien...",
+        "options": [
+            "...no venga",
+            "...no pase",
+            "...no termine",
+            "...no cure"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "A quien madruga...",
+        "options": [
+            "...Dios le ayuda",
+            "...poco le dura",
+            "...encuentra tesoro",
+            "...duerme siesta"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Perro ladrador...",
+        "options": [
+            "...poco mordedor",
+            "...gran corredor",
+            "...buen cuidador",
+            "...despierta al señor"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "12 x 12",
+        "options": [
+            "124",
+            "144",
+            "148",
+            "122"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "25% de 200",
+        "options": [
+            "25",
+            "40",
+            "50",
+            "60"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "bala",
+        "question": "1000 - 450",
+        "options": [
+            "550",
+            "650",
+            "450",
+            "500"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "15 + 15 + 15 + 15",
+        "options": [
+            "45",
+            "55",
+            "60",
+            "65"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "bala",
+        "question": "Mitad de 70",
+        "options": [
+            "30",
+            "35",
+            "40",
+            "45"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "3 al cubo (3³)",
+        "options": [
+            "9",
+            "18",
+            "27",
+            "33"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "bala",
+        "question": "Días en un año bisiesto",
+        "options": [
+            "364",
+            "365",
+            "366",
+            "367"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "bala",
+        "question": "50% de 50",
+        "options": [
+            "20",
+            "25",
+            "30",
+            "15"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué pesa más? 1kg de hierro o 1kg de paja",
+        "options": [
+            "Hierro",
+            "Paja",
+            "Iguales",
+            "Depende"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿De qué colores es la bandera de Francia?",
+        "options": [
+            "Azul, blanco, rojo",
+            "Verde, blanco, rojo",
+            "Azul, amarillo, el rojo",
+            "Rojo, amarillo, morado"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "cultura",
+        "question": "¿Quién es el autor de 'Don Quijote'?",
+        "options": [
+            "Lope de Vega",
+            "Cervantes",
+            "Góngora",
+            "Quevedo"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "4 x 4 + 4",
+        "options": [
+            "16",
+            "20",
+            "24",
+            "32"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿En qué año cayó el Muro de Berlín?",
+        "options": [
+            "1987",
+            "1989",
+            "1991",
+            "1993"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es el país más grande del mundo?",
+        "options": [
+            "China",
+            "Estados Unidos",
+            "Rusia",
+            "Canadá"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Quién escribió 'Romeo y Julieta'?",
+        "options": [
+            "Charles Dickens",
+            "William Shakespeare",
+            "Jane Austen",
+            "Mark Twain"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es el océano más grande?",
+        "options": [
+            "Atlántico",
+            "Índico",
+            "Pacífico",
+            "Ártico"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿En qué continente está Egipto?",
+        "options": [
+            "Asia",
+            "África",
+            "Europa",
+            "América"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es la capital de España?",
+        "options": [
+            "Barcelona",
+            "Madrid",
+            "Sevilla",
+            "Valencia"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Quién pintó 'La última cena'?",
+        "options": [
+            "Dalí",
+            "Botticelli",
+            "Da Vinci",
+            "Miguel Ángel"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es el metal más caro del mundo (tradicionalmente)?",
+        "options": [
+            "Oro",
+            "Plata",
+            "Rodio",
+            "Platino"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuántos corazones tiene un pulpo?",
+        "options": [
+            "Uno",
+            "Dos",
+            "Tres",
+            "Cuatro"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
+        "options": [
+            "1914",
+            "1939",
+            "1945",
+            "1950"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es el edificio más alto del mundo?",
+        "options": [
+            "Empire State",
+            "Torre Eiffel",
+            "Burj Khalifa",
+            "Torre de Shanghái"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Qué instrumento toca Lisa Simpson?",
+        "options": [
+            "Saxofón",
+            "Trompeta",
+            "Flauta",
+            "Violín"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es la moneda de Japón?",
+        "options": [
+            "Dólar",
+            "Yuan",
+            "Won",
+            "Yen"
+        ],
+        "correct": 3
+    },
+    {
+        "type": "cultura",
+        "question": "¿Quién es el rey de la selva?",
+        "options": [
+            "Tigre",
+            "Elefante",
+            "León",
+            "Gorila"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Qué gas respiramos principalmente?",
+        "options": [
+            "Oxígeno",
+            "Nitrógeno",
+            "Dióxido de carbono",
+            "Hidrógeno"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es el planeta más cercano al Sol?",
+        "options": [
+            "Venus",
+            "Marte",
+            "Mercurio",
+            "Tierra"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿En qué país se encuentran las ruinas de Machu Picchu?",
+        "options": [
+            "Bolivia",
+            "México",
+            "Perú",
+            "Chile"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Quién inventó la bombilla?",
+        "options": [
+            "Tesla",
+            "Edison",
+            "Graham Bell",
+            "Einstein"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es la capital de Italia?",
+        "options": [
+            "Milán",
+            "Venecia",
+            "Roma",
+            "Nápoles"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Qué animal es el símbolo de la paz?",
+        "options": [
+            "Paloma",
+            "Águila",
+            "León",
+            "Elefante"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuántas patas tiene una araña?",
+        "options": [
+            "6",
+            "8",
+            "10",
+            "12"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es el río más largo de Europa?",
+        "options": [
+            "Danubio",
+            "Rin",
+            "Volga",
+            "Sena"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Qué selección ganó el mundial de fútbol 2010?",
+        "options": [
+            "Brasil",
+            "Alemania",
+            "España",
+            "Argentina"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es el elemento químico más abundante en el universo?",
+        "options": [
+            "Oxígeno",
+            "Helio",
+            "Hidrógeno",
+            "Carbono"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Quién escribió 'El Principito'?",
+        "options": [
+            "Saint-Exupéry",
+            "Verne",
+            "Hugo",
+            "Zola"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cómo se llama el triángulo con dos lados iguales?",
+        "options": [
+            "Equilátero",
+            "Isósceles",
+            "Escaleno",
+            "Rectángulo"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué es tuyo pero otros lo usan más que tú?",
+        "options": [
+            "Tu dinero",
+            "Tu nombre",
+            "Tu casa",
+            "Tu coche"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué se rompe si lo nombras?",
+        "options": [
+            "El cristal",
+            "El silencio",
+            "El hielo",
+            "El fuego"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "Siempre estoy en el agua pero nunca me mojo. ¿Qué soy?",
+        "options": [
+            "El pez",
+            "El reflejo",
+            "El barco",
+            "La piedra"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué tiene ojos y no ve?",
+        "options": [
+            "Una aguja",
+            "Una patata",
+            "Un dado",
+            "Una cerradura"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "Si hay 3 manzanas y tomas 2, ¿cuántas tienes?",
+        "options": [
+            "1",
+            "2",
+            "3",
+            "0"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "¿De qué color son las mangas del chaleco rojo de Pedro?",
+        "options": [
+            "Rojas",
+            "Blancas",
+            "No tiene mangas",
+            "Neguas"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué sube y baja sin moverse?",
+        "options": [
+            "La temperatura",
+            "Una escalera",
+            "El ascensor",
+            "El mar"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "Tengo ciudades, pero no casas. Tengo montañas, pero no árboles. ¿Qué soy?",
+        "options": [
+            "Un sueño",
+            "Un mapa",
+            "Un dibujo",
+            "Un planeta"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "Cuanto más quitas, más grande se hace. ¿Qué es?",
+        "options": [
+            "Un agujero",
+            "Una deuda",
+            "El hambre",
+            "Una herida"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "Es blanco como la sal, y aunque se puede abrir, no se cierra. ¿Qué es?",
+        "options": [
+            "El huevo",
+            "El libro",
+            "El ojo",
+            "La puerta"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué cosa silba sin labios y corre sin pies?",
+        "options": [
+            "El río",
+            "El viento",
+            "La serpiente",
+            "El tren"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "Soy alto cuando soy joven, y bajo cuando soy viejo. ¿Qué soy?",
+        "options": [
+            "El hombre",
+            "Una vela",
+            "Un árbol",
+            "Un lápiz"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué tiene dientes pero no puede comer?",
+        "options": [
+            "Un ajo",
+            "Un peine",
+            "Una sierra",
+            "Un engranaje"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué se moja mientras seca?",
+        "options": [
+            "El agua",
+            "La toalla",
+            "El sol",
+            "El viento"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "No muerdo, pero tengo dientes. ¿Qué soy?",
+        "options": [
+            "Un perro",
+            "Un ajo",
+            "Una cremallera",
+            "Un cuchillo"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué palabra se escribe incorrectamente en todos los diccionarios?",
+        "options": [
+            "Incorrectamente",
+            "Ninguna",
+            "Errata",
+            "Fallo"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué puedes sostener en tu mano derecha pero nunca en tu izquierda?",
+        "options": [
+            "Tu codo derecho",
+            "Tu codo izquierdo",
+            "Un lápiz",
+            "Una piedra"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "Si conduces un bus con 43 personas desde Chicago, paras en Pittsburgh y suben 7 y bajan 5. ¿Cómo se llama el conductor?",
+        "options": [
+            "Juan",
+            "Tu nombre",
+            "Pedro",
+            "No se sabe"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué paso ayer en París de 6 a 7 de la tarde?",
+        "options": [
+            "Cenaron",
+            "Llovió",
+            "Una hora",
+            "Se hizo de noche"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "logica",
+        "question": "¿Dónde va la gente que muere en un accidente de avión en la frontera de dos países?",
+        "options": [
+            "Al país A",
+            "Al país B",
+            "A ninguno",
+            "Al hospital"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué animal anda a cuatro patas por la mañana, dos al mediodía y tres por latarde?",
+        "options": [
+            "El perro",
+            "El hombre",
+            "El gato",
+            "El mono"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "Tengo agujas pero no sé coser, tengo números pero no sé leer. ¿Qué soy?",
+        "options": [
+            "Un reloj",
+            "Una brújula",
+            "Una jeringa",
+            "Un cactus"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué es lo que nadie quiere tener, pero cuando lo tiene no lo quiere perder?",
+        "options": [
+            "Un juicio",
+            "Un calvo",
+            "La vida",
+            "Un secreto"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "Entra duro y grande, y sale blando y pequeño. ¿Qué es?",
+        "options": [
+            "Un chicle",
+            "Un hielo",
+            "Un pan",
+            "Una vela"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "A quien a buen árbol se arrima...",
+        "options": [
+            "buena sombra le cobija",
+            "buen fruto recibe",
+            "buena rama le cae",
+            "buen viento le da"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Ojos que no ven...",
+        "options": [
+            "pies que no tropiezan",
+            "corazón que no siente",
+            "mente que no piensa",
+            "boca que no habla"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "refran",
+        "question": "Dime con quién andas...",
+        "options": [
+            "y te diré quién eres",
+            "y te diré a dónde vas",
+            "y te diré qué haces",
+            "y te diré tu futuro"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Quien mucho abarca...",
+        "options": [
+            "poco aprieta",
+            "poco avanza",
+            "mucho se cansa",
+            "mucho pierde"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "No por mucho madrugar...",
+        "options": [
+            "se ven más cosas",
+            "se trabaja más",
+            "amanece más temprano",
+            "se vive mejor"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "refran",
+        "question": "Cuando el río suena...",
+        "options": [
+            "agua lleva",
+            "piedras trae",
+            "peces hay",
+            "fuerte baja"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "A palabras necias...",
+        "options": [
+            "oídos sordos",
+            "boca cerrada",
+            "mente abierta",
+            "oídos atentos"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "En casa de herrero...",
+        "options": [
+            "cuchara de palo",
+            "cuchillo de acero",
+            "puerta de hierro",
+            "fuego encendido"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Mal de muchos...",
+        "options": [
+            "consuelo de tontos",
+            "epidemia segura",
+            "tristeza general",
+            "problema de todos"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "De tal palo...",
+        "options": [
+            "tal astilla",
+            "tal rama",
+            "tal árbol",
+            "tal madera"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Quien ríe último...",
+        "options": [
+            "ríe mejor",
+            "ríe más fuerte",
+            "es porque no entendió",
+            "ríe con ganas"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Al mal tiempo...",
+        "options": [
+            "buena cara",
+            "paraguas",
+            "abrigo",
+            "paciencia"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Más sabe el diablo por viejo...",
+        "options": [
+            "que por diablo",
+            "que por listo",
+            "que por malo",
+            "que por sabio"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Cría cuervos...",
+        "options": [
+            "y te sacarán los ojos",
+            "y tendrás muchos",
+            "y volarán lejos",
+            "y te picarán"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "El que espera...",
+        "options": [
+            "desespera",
+            "alcanza",
+            "se cansa",
+            "nunca llega"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "A barriga llena...",
+        "options": [
+            "corazón contento",
+            "sueño seguro",
+            "mente despejada",
+            "ganas de nada"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Agua pasada...",
+        "options": [
+            "no mueve molino",
+            "no quita la sed",
+            "ya no vuelve",
+            "se pierde"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Aunque la mona se vista de seda...",
+        "options": [
+            "mona se queda",
+            "bonita se ve",
+            "elegante parece",
+            "seda se rompe"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "El que tiene boca...",
+        "options": [
+            "se equivoca",
+            "come",
+            "habla",
+            "canta"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Genio y figura...",
+        "options": [
+            "hasta la sepultura",
+            "hasta la hermosura",
+            "siempre perdura",
+            "nunca madura"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Haz bien...",
+        "options": [
+            "y no mires a quién",
+            "y recibirás bien",
+            "siempre que puedas",
+            "todo el tiempo"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Preguntando...",
+        "options": [
+            "se llega a Roma",
+            "se aprende",
+            "se sabe todo",
+            "no se pierde"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "No es oro todo...",
+        "options": [
+            "lo que reluce",
+            "lo que brilla",
+            "lo que vale",
+            "lo que parece"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Quien tiene tienda...",
+        "options": [
+            "que la atienda",
+            "que la venda",
+            "que la cierre",
+            "que la limpie"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Vísteme despacio...",
+        "options": [
+            "que tengo prisa",
+            "que voy lento",
+            "que quiero llegar",
+            "que estoy cansado"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "3 x 3 x 3",
+        "options": [
+            "9",
+            "18",
+            "27",
+            "33"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "bala",
+        "question": "Mitad de 150",
+        "options": [
+            "70",
+            "75",
+            "80",
+            "65"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "10% de 500",
+        "options": [
+            "5",
+            "50",
+            "10",
+            "100"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "Doble de 64",
+        "options": [
+            "120",
+            "128",
+            "132",
+            "118"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "100 / 4",
+        "options": [
+            "20",
+            "25",
+            "24",
+            "15"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "7 x 8",
+        "options": [
+            "54",
+            "56",
+            "58",
+            "48"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "150 + 250",
+        "options": [
+            "300",
+            "350",
+            "400",
+            "450"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "bala",
+        "question": "1000 - 1",
+        "options": [
+            "990",
+            "999",
+            "909",
+            "1001"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "5 x 5 + 5",
+        "options": [
+            "25",
+            "30",
+            "35",
+            "55"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "Raíz cuadrada de 64",
+        "options": [
+            "6",
+            "7",
+            "8",
+            "9"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "bala",
+        "question": "Minutos en 2 horas",
+        "options": [
+            "100",
+            "120",
+            "150",
+            "180"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "Número anterior a 1000",
+        "options": [
+            "900",
+            "990",
+            "999",
+            "99"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "bala",
+        "question": "25 + 75",
+        "options": [
+            "90",
+            "100",
+            "110",
+            "95"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "1/2 + 1/2",
+        "options": [
+            "1",
+            "2",
+            "0.5",
+            "1/4"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Triple de 15",
+        "options": [
+            "30",
+            "40",
+            "45",
+            "50"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "bala",
+        "question": "11 x 11",
+        "options": [
+            "111",
+            "121",
+            "131",
+            "141"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "Lados de un hexágono",
+        "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "20 x 5",
+        "options": [
+            "80",
+            "90",
+            "100",
+            "110"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "bala",
+        "question": "Un cuarto de 100",
+        "options": [
+            "20",
+            "25",
+            "30",
+            "40"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "Grados en un ángulo recto",
+        "options": [
+            "45",
+            "90",
+            "180",
+            "360"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "8 x 9",
+        "options": [
+            "72",
+            "64",
+            "81",
+            "70"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "120 / 2",
+        "options": [
+            "50",
+            "60",
+            "70",
+            "80"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "500 - 150",
+        "options": [
+            "300",
+            "350",
+            "400",
+            "450"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "Suma de ángulos de triángulo",
+        "options": [
+            "90",
+            "180",
+            "270",
+            "360"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "bala",
+        "question": "15 x 2",
+        "options": [
+            "20",
+            "25",
+            "30",
+            "35"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es la capital de Alemania?",
+        "options": [
+            "Berlín",
+            "Múnich",
+            "Hamburgo",
+            "Frankfurt"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es el símbolo químico del Hierro?",
+        "options": [
+            "Fe",
+            "Ir",
+            "Hi",
+            "He"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "cultura",
+        "question": "¿Quién escribió Harry Potter?",
+        "options": [
+            "Tolkien",
+            "J.K. Rowling",
+            "Stephen King",
+            "G.R.R. Martin"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es el animal terrestre más rápido?",
+        "options": [
+            "Guepardo",
+            "León",
+            "Tigre",
+            "Águila"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es el planeta más grande del sistema solar?",
+        "options": [
+            "Júpiter",
+            "Saturno",
+            "Tierra",
+            "Sol"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "cultura",
+        "question": "¿Quién fue el primer presidente de EE.UU.?",
+        "options": [
+            "Lincoln",
+            "Washington",
+            "Jefferson",
+            "Kennedy"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es la moneda del Reino Unido?",
+        "options": [
+            "Euro",
+            "Dólar",
+            "Libra esterlina",
+            "Franco"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Quién pintó 'La noche estrellada'?",
+        "options": [
+            "Picasso",
+            "Dalí",
+            "Van Gogh",
+            "Monet"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿En qué continente está el desierto del Sahara?",
+        "options": [
+            "Asia",
+            "América",
+            "África",
+            "Europa"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿A qué temperatura hierve el agua (nivel del mar)?",
+        "options": [
+            "90°C",
+            "100°C",
+            "110°C",
+            "80°C"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuántos jugadores hay en un equipo de fútbol en el campo?",
+        "options": [
+            "10",
+            "11",
+            "12",
+            "9"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Qué elemento tiene el símbolo 'O'?",
+        "options": [
+            "Oro",
+            "Osmio",
+            "Oxígeno",
+            "Ópalo"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es la capital de Argentina?",
+        "options": [
+            "Lima",
+            "Santiago",
+            "Buenos Aires",
+            "Bogotá"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿A quién se atribuye el descubrimiento de América?",
+        "options": [
+            "Cristóbal Colón",
+            "Magallanes",
+            "Hernán Cortés",
+            "Pizarro"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "cultura",
+        "question": "¿Quién es el dios romano de la guerra?",
+        "options": [
+            "Júpiter",
+            "Marte",
+            "Venus",
+            "Neptuno"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es el hueso más largo del cuerpo humano?",
+        "options": [
+            "Fémur",
+            "Tibia",
+            "Radio",
+            "Húmero"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es la capital de Portugal?",
+        "options": [
+            "Oporto",
+            "Lisboa",
+            "Faro",
+            "Braga"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es el mineral más duro?",
+        "options": [
+            "Cuarzo",
+            "Topacio",
+            "Diamante",
+            "Rubí"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Qué idioma se habla principalmente en Brasil?",
+        "options": [
+            "Español",
+            "Brasileño",
+            "Portugués",
+            "Inglés"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Quién pintó la Capilla Sixtina?",
+        "options": [
+            "Rafael",
+            "Donatello",
+            "Miguel Ángel",
+            "Leonardo"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es el continente más frío?",
+        "options": [
+            "Europa",
+            "Antártida",
+            "Asia",
+            "América"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es la moneda de México?",
+        "options": [
+            "Dólar",
+            "Peso",
+            "Real",
+            "Sol"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Qué planeta es famoso por sus grandes anillos?",
+        "options": [
+            "Marte",
+            "Júpiter",
+            "Saturno",
+            "Venus"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es la capital de Rusia?",
+        "options": [
+            "San Petersburgo",
+            "Moscú",
+            "Kiev",
+            "Minsk"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "cultura",
+        "question": "¿Cuál es la temperatura corporal normal promedio?",
+        "options": [
+            "35°C",
+            "36°C",
+            "37°C",
+            "38°C"
+        ],
+        "correct": 2
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué tiene piernas pero no puede caminar?",
+        "options": [
+            "Una mesa",
+            "Una silla",
+            "Un pantalón",
+            "Todas las anteriores"
+        ],
+        "correct": 3
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué cae pero nunca sube?",
+        "options": [
+            "La lluvia",
+            "La nieve",
+            "El granizo",
+            "Todas las anteriores"
+        ],
+        "correct": 3
+    },
+    {
+        "type": "logica",
+        "question": "Tengo ciudades pero no casas, montañas pero no árboles, agua pero no peces. ¿Qué soy?",
+        "options": [
+            "Un mapa",
+            "Un globo",
+            "Un libro",
+            "Una foto"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué tiene cabeza y cola pero no cuerpo?",
+        "options": [
+            "Una moneda",
+            "Una serpiente",
+            "Un gusano",
+            "Una cometa"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué hay que romper antes de usarlo?",
+        "options": [
+            "Un huevo",
+            "Una nuez",
+            "Un coco",
+            "Todas las anteriores"
+        ],
+        "correct": 3
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué está lleno de agujeros pero aún retiene agua?",
+        "options": [
+            "Una red",
+            "Una esponja",
+            "Un colador",
+            "Una tela"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué se hace más grande cuanto más le quitas?",
+        "options": [
+            "Un agujero",
+            "Una deuda",
+            "El hambre",
+            "La sed"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "Soy alto cuando soy joven y bajo cuando soy viejo. ¿Qué soy?",
+        "options": [
+            "Una vela",
+            "Un humano",
+            "Un árbol",
+            "Un lápiz"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "¿Dónde viene hoy antes de ayer?",
+        "options": [
+            "En el diccionario",
+            "En el calendario",
+            "En la semana",
+            "Jamás"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué está siempre enfrente de ti pero no se puede ver?",
+        "options": [
+            "Tu nariz",
+            "El futuro",
+            "El aire",
+            "Tu espalda"
+        ],
+        "correct": 1
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué puedes romper, aunque nunca lo cojas ni lo toques?",
+        "options": [
+            "Una promesa",
+            "Un corazón",
+            "Un récord",
+            "El silencio"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué atraviesa ciudades y campos, pero nunca se mueve?",
+        "options": [
+            "Una carretera",
+            "Un río",
+            "El viento",
+            "Una nube"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "Me afeito todos los días, pero mi barba sigue igual. ¿Qué soy?",
+        "options": [
+            "Un barbero",
+            "Un calvo",
+            "Un niño",
+            "Un actor"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué tiene palabras, pero nunca habla?",
+        "options": [
+            "Un libro",
+            "Una radio",
+            "Una tele",
+            "Un mudo"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué tiene pulgar y cuatro dedos, pero no es una mano?",
+        "options": [
+            "Un guante",
+            "Un pie",
+            "Un mono",
+            "Una garra"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué tiene una cara y dos manos pero no brazos ni piernas?",
+        "options": [
+            "Un reloj",
+            "Un robot",
+            "Un mutante",
+            "Una estatua"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué puede llenar una habitación pero no ocupa espacio?",
+        "options": [
+            "La luz",
+            "El aire",
+            "El olor",
+            "El ruido"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "Si me tiras me rompo, si me sonríes te sonrío. ¿Qué soy?",
+        "options": [
+            "Un espejo",
+            "Un cristal",
+            "El hielo",
+            "El agua"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "Cuanto más hay de mí, menos ves. ¿Qué soy?",
+        "options": [
+            "La oscuridad",
+            "La niebla",
+            "El humo",
+            "La lluvia"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué tiene 13 corazones pero ningún otro órgano?",
+        "options": [
+            "Una baraja de cartas",
+            "Un pulpo",
+            "Un hospital",
+            "Una tienda"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "No tengo vida, pero puedo morir. ¿Qué soy?",
+        "options": [
+            "Una batería",
+            "El fuego",
+            "Una estrella",
+            "Todas las anteriores"
+        ],
+        "correct": 3
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué puedes atrapar, pero no lanzar?",
+        "options": [
+            "Un resfriado",
+            "Un balón",
+            "Un consejo",
+            "Un regalo"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué tiene muchos dientes, pero no puede morder?",
+        "options": [
+            "Un peine",
+            "Una sierra",
+            "Un tenedor",
+            "Todas las anteriores"
+        ],
+        "correct": 3
+    },
+    {
+        "type": "logica",
+        "question": "¿Qué es negro cuando está limpio y blanco cuando está sucio?",
+        "options": [
+            "Una pizarra",
+            "El carbón",
+            "Un zapato",
+            "Un coche"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "A mal tiempo...",
+        "options": [
+            "...buena cara",
+            "...paraguas",
+            "...abrigo",
+            "...corre"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "No dejes para mañana...",
+        "options": [
+            "...lo que puedas hacer hoy",
+            "...dormir",
+            "...comer",
+            "...jugar"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "La avaricia...",
+        "options": [
+            "...rompe el saco",
+            "...es mala",
+            "...mata",
+            "...enriquece"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Del dicho al hecho...",
+        "options": [
+            "...hay mucho trecho",
+            "...un paso",
+            "...nada",
+            "...mentira"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "A falta de pan...",
+        "options": [
+            "...buenas son tortas",
+            "...hambre",
+            "...agua",
+            "...ayuno"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Hombre precavido...",
+        "options": [
+            "...vale por dos",
+            "...vive más",
+            "...gasta menos",
+            "...teme"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Más vale maña...",
+        "options": [
+            "...que fuerza",
+            "...que dinero",
+            "...que fama",
+            "...que nada"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Muerto el perro...",
+        "options": [
+            "...se acabó la rabia",
+            "...entierro",
+            "...lloros",
+            "...paz"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "No hay peor sordo...",
+        "options": [
+            "...que el que no quiere oír",
+            "...viejo",
+            "...tapado",
+            "...lejos"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Quien tiene boca...",
+        "options": [
+            "...se equivoca",
+            "...come",
+            "...habla",
+            "...ríe"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "El que busca...",
+        "options": [
+            "...encuentra",
+            "...pierde",
+            "...mira",
+            "...cansa"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Dios los cría...",
+        "options": [
+            "...y ellos se juntan",
+            "...el viento",
+            "...se pelean",
+            "...crecen"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "El saber...",
+        "options": [
+            "...no ocupa lugar",
+            "...pesa",
+            "...cuesta",
+            "...cansa"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Gato con guantes...",
+        "options": [
+            "...no caza ratones",
+            "...elegante",
+            "...frío",
+            "...araña"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "A lo hecho...",
+        "options": [
+            "...pecho",
+            "...techo",
+            "...lecho",
+            "...deshecho"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "refran",
+        "question": "Cada oveja...",
+        "options": [
+            "...con su pareja",
+            "...lana",
+            "...come",
+            "...bala"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 10 + 10",
+        "options": [
+            "20",
+            "1010",
+            "30",
+            "0"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 5 x 5",
+        "options": [
+            "25",
+            "10",
+            "55",
+            "30"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 50 / 2",
+        "options": [
+            "25",
+            "20",
+            "30",
+            "100"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 100 - 30",
+        "options": [
+            "70",
+            "60",
+            "130",
+            "30"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 3 x 7",
+        "options": [
+            "21",
+            "10",
+            "24",
+            "28"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 8 x 8",
+        "options": [
+            "64",
+            "16",
+            "88",
+            "72"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 9 x 9",
+        "options": [
+            "81",
+            "18",
+            "99",
+            "72"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 15 x 2",
+        "options": [
+            "30",
+            "17",
+            "45",
+            "60"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 40 + 60",
+        "options": [
+            "100",
+            "90",
+            "110",
+            "20"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 200 - 50",
+        "options": [
+            "150",
+            "100",
+            "250",
+            "50"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 12 / 4",
+        "options": [
+            "3",
+            "4",
+            "2",
+            "6"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 6 x 6",
+        "options": [
+            "36",
+            "12",
+            "48",
+            "24"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 7 x 8",
+        "options": [
+            "56",
+            "49",
+            "64",
+            "15"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 9 x 5",
+        "options": [
+            "45",
+            "40",
+            "50",
+            "54"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 100 / 10",
+        "options": [
+            "10",
+            "100",
+            "1",
+            "5"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 25 + 25",
+        "options": [
+            "50",
+            "2525",
+            "100",
+            "0"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 75 - 25",
+        "options": [
+            "50",
+            "25",
+            "100",
+            "40"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 11 x 11",
+        "options": [
+            "121",
+            "111",
+            "22",
+            "1111"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 30 / 3",
+        "options": [
+            "10",
+            "3",
+            "33",
+            "90"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 150 / 2",
+        "options": [
+            "75",
+            "50",
+            "100",
+            "25"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 80 + 20",
+        "options": [
+            "100",
+            "90",
+            "120",
+            "160"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 60 - 40",
+        "options": [
+            "20",
+            "100",
+            "30",
+            "40"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 13 + 13",
+        "options": [
+            "26",
+            "39",
+            "1313",
+            "36"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 45 - 5",
+        "options": [
+            "40",
+            "50",
+            "35",
+            "45"
+        ],
+        "correct": 0
+    },
+    {
+        "type": "bala",
+        "question": "Calcula: 4 x 25",
+        "options": [
+            "100",
+            "75",
+            "50",
+            "125"
+        ],
+        "correct": 0
+    }
+]

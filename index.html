@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Quiz Night - Xmas Edition</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- QRCode.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <!-- Iconos Lucide (SVG) helpers -->
+    <script>
+        const ICONS = {
+            monitor: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>`,
+            smartphone: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>`,
+            users: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+            crown: `<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 4 3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"/></svg>`,
+            zap: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
+            brain: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 1.98-3A2.5 2.5 0 0 1 9.5 2Z"/><path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-1.98-3A2.5 2.5 0 0 0 14.5 2Z"/></svg>`,
+            bulb: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-1 .9-2.6-.5-3-1.9-.5-2.7-3-3.5-5-.7 2-1.6 4.5-3.5 5-1.4.4-1.5 2-.5 3 .8.8 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>`,
+            quote: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/></svg>`,
+            check: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>`,
+            xcircle: `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>`,
+            volume2: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>`,
+            volumeX: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" x2="17" y1="9" y2="15"/><line x1="17" x2="23" y1="9" y2="15"/></svg>`,
+            loader: `<svg class="animate-spin" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>`,
+            maximize: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>`,
+            chevronLeft: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>`,
+            chevronRight: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>`,
+            pencil: `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></svg>`
+        };
+    </script>
+    <style>
+        .hidden-screen {
+            display: none !important;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* QR Code Container Style */
+        #qrcode img {
+            margin: 0 auto;
+            border-radius: 8px;
+            border: 4px solid white;
+        }
+
+        .player-card {
+            animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @keyframes popIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Custom Scrollbar for Lobby */
+        .custom-scroll::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .custom-scroll::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+        }
+
+        .custom-scroll::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+
+        /* --- NEW COZY XMAS ATMOSPHERE --- */
+        body {
+            /* Dark Wood Background Base */
+            background-color: #2c1b0e;
+            background-image: radial-gradient(circle at center, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 100%);
+            color: #f0e6d2;
+            /* Warm off-white text */
+        }
+
+        /* Top String Lights Container */
+        .xmas-lights-container {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            z-index: 5;
+            display: flex;
+            justify-content: space-around;
+            padding: 0 20px;
+            pointer-events: none;
+            border-top: 2px solid rgba(50, 30, 10, 0.6);
+            /* Wire */
+        }
+
+        /* Individual Bulb */
+        .light-bulb {
+            width: 14px;
+            height: 22px;
+            border-radius: 50% 50% 40% 40%;
+            background: #ffd700;
+            /* Gold base */
+            box-shadow: 0 2px 15px rgba(255, 215, 0, 0.8), inset 0 -2px 5px rgba(255, 140, 0, 0.5);
+            animation: twinkle 2.5s infinite ease-in-out alternate;
+        }
+
+        /* Varying delays for natural twinkling */
+        .light-bulb:nth-child(2n) {
+            animation-delay: 0.5s;
+            background: #ff6b6b;
+            box-shadow: 0 2px 15px rgba(255, 107, 107, 0.8);
+        }
+
+        .light-bulb:nth-child(3n) {
+            animation-delay: 1.2s;
+            background: #4ecdc4;
+            box-shadow: 0 2px 15px rgba(78, 205, 196, 0.8);
+        }
+
+        .light-bulb:nth-child(5n) {
+            animation-delay: 1.8s;
+        }
+
+        @keyframes twinkle {
+            0% {
+                opacity: 0.5;
+                transform: scale(0.9);
+                filter: brightness(0.8);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1.1);
+                filter: brightness(1.2);
+            }
+        }
+
+        /* Corner Decorations (Abstract Pine/Berries) */
+        .corner-decor {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            z-index: 4;
+            pointer-events: none;
+            opacity: 0.7;
+        }
+
+        .corner-decor-left {
+            top: 0;
+            left: 0;
+            background: radial-gradient(circle at 0% 0%, rgba(34, 139, 34, 0.5) 10%, transparent 60%),
+                radial-gradient(circle at 10% 10%, rgba(165, 42, 42, 0.6) 2%, transparent 10%);
+            /* Berries */
+        }
+
+        .corner-decor-right {
+            top: 0;
+            right: 0;
+            background: radial-gradient(circle at 100% 0%, rgba(34, 139, 34, 0.5) 10%, transparent 60%),
+                radial-gradient(circle at 90% 10%, rgba(165, 42, 42, 0.6) 2%, transparent 10%);
+        }
+
+        /* Ensure content sits above decorations */
+        .z-content {
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Update inputs for dark theme */
+        input[type="text"],
+        input[type="number"] {
+            background-color: rgba(255, 255, 255, 0.9) !important;
+            color: #1a1a1a !important;
+        }
+    </style>
+</head>
+
+<body class="font-sans select-none overflow-hidden">
+
+    <!-- APP CONTAINER -->
+    <div id="app" class="min-h-screen w-full relative">
+
+        <!-- XMAS DECORATIONS (Fixed over background) -->
+        <div class="xmas-lights-container">
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+            <div class="light-bulb"></div>
+        </div>
+        <div class="corner-decor corner-decor-left"></div>
+        <div class="corner-decor corner-decor-right"></div>
+
+        <!-- SCREEN: LANDING -->
+        <div id="screen-landing" class="h-screen flex flex-col items-center justify-center p-4">
+            <div class="z-content flex flex-col items-center">
+                <h1 class="text-7xl font-black mb-2 tracking-tighter text-amber-100 drop-shadow-[0_4px_8px_rgba(0,0,0,0.6)] text-center"
+                    style="font-family: serif;">
+                    QUIZ NIGHT
+                </h1>
+                <div
+                    class="mb-12 flex items-center gap-2 bg-black/30 px-8 py-3 rounded-full backdrop-blur-md border border-amber-500/30 shadow-[0_0_30px_rgba(255,180,0,0.2)]">
+                    <span class="text-3xl">🎄</span>
+                    <p class="text-2xl font-bold text-amber-200 tracking-wider"
+                        style="text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
+                        XMAS EDITION
+                    </p>
+                    <span class="text-3xl">✨</span>
+                </div>
+
+                <div class="grid gap-6 md:grid-cols-2 w-full max-w-2xl">
+                    <button onclick="app.selectMode('host')"
+                        class="group flex flex-col items-center p-8 bg-gradient-to-br from-amber-900/40 to-red-900/40 rounded-3xl border border-amber-500/20 hover:bg-amber-800/40 transition-all transform hover:-translate-y-1 backdrop-blur-sm shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_30px_rgba(165,42,42,0.5)]">
+                        <div class="text-green-300 mb-4 drop-shadow-lg">
+                            <script>document.write(ICONS.monitor)</script>
+                        </div>
+                        <span class="text-2xl font-bold text-amber-100">Crear Partida</span>
+                        <span class="text-amber-300/70 text-center mt-2 font-medium">TV / Proyector</span>
+                    </button>
+
+                    <button onclick="app.selectMode('player')"
+                        class="group flex flex-col items-center p-8 bg-gradient-to-br from-amber-900/40 to-red-900/40 rounded-3xl border border-amber-500/20 hover:bg-amber-800/40 transition-all transform hover:-translate-y-1 backdrop-blur-sm shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:shadow-[0_8px_30px_rgba(165,42,42,0.5)]">
+                        <div class="text-red-300 mb-4 drop-shadow-lg">
+                            <script>document.write(ICONS.smartphone)</script>
+                        </div>
+                        <span class="text-2xl font-bold text-amber-100">Unirse</span>
+                        <span class="text-amber-300/70 text-center mt-2 font-medium">Tu Móvil</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCREEN: HOST LOBBY -->
+        <div id="screen-host-lobby" class="hidden-screen h-screen flex flex-col fade-in">
+            <!-- Top Bar -->
+            <div
+                class="z-content bg-black/30 p-4 flex justify-between items-center backdrop-blur-md border-b border-amber-500/20 h-24 shrink-0 shadow-lg relative mt-10">
+                <div class="flex items-center gap-4">
+                    <div class="flex flex-col ml-4">
+                        <h2 class="text-3xl font-black tracking-tighter text-amber-100 drop-shadow-md"
+                            style="font-family: serif;">
+                            QUIZ NIGHT
+                        </h2>
+                        <span class="text-sm font-bold text-red-300 tracking-widest uppercase">
+                            🎅 Xmas Edition
+                        </span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6">
+                    <div class="flex flex-col items-end mr-4">
+                        <span class="text-xs text-amber-200/70 uppercase font-bold tracking-wider mb-1">Código de
+                            Sala</span>
+                        <div class="bg-amber-100 text-red-900 px-8 py-2 rounded-full font-black text-5xl tracking-widest shadow-[0_0_25px_rgba(255,0,0,0.3)] font-mono border-4 border-red-600"
+                            id="host-game-id">
+                            ...
+                        </div>
+                    </div>
+
+                    <button onclick="app.toggleSound()" id="btn-sound"
+                        class="bg-black/30 p-3 rounded-full hover:bg-black/50 transition-colors border border-amber-500/30 text-amber-100">
+                        <!-- Icon injected by JS -->
+                    </button>
+                    <button onclick="app.toggleFullscreen()"
+                        class="bg-black/30 p-3 rounded-full hover:bg-black/50 transition-colors border border-amber-500/30 text-amber-100">
+                        <script>document.write(ICONS.maximize)</script>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="z-content flex-1 flex p-8 overflow-hidden gap-8 min-h-0">
+                <!-- Left: QR & Info -->
+                <div
+                    class="w-1/4 flex flex-col items-center justify-center bg-gradient-to-b from-red-900/30 to-amber-900/30 rounded-3xl p-6 border border-amber-500/20 shrink-0 backdrop-blur-sm shadow-2xl">
+                    <div
+                        class="bg-amber-100 p-4 rounded-xl shadow-lg mb-6 rotate-1 hover:rotate-0 transition-transform duration-300 border-4 border-red-700">
+                        <div id="qrcode"></div>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-amber-200 uppercase tracking-widest text-sm font-bold mb-2">Únete para jugar</p>
+                        <p class="text-3xl font-black mb-6 text-amber-100 drop-shadow-md" style="font-family: serif;">
+                            Escanea el QR</p>
+
+                        <div
+                            class="bg-black/40 px-8 py-4 rounded-full flex items-center gap-4 border border-red-500/30 shadow-inner">
+                            <span class="text-green-400 animate-bounce drop-shadow">
+                                <script>document.write(ICONS.users)</script>
+                            </span>
+                            <span id="host-player-count" class="text-4xl font-black text-amber-100">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Player Grid -->
+                <div
+                    class="flex-1 bg-gradient-to-b from-amber-900/20 to-black/40 rounded-3xl p-8 border border-amber-500/10 relative flex flex-col overflow-hidden backdrop-blur-sm shadow-inner">
+                    <!-- Player List Container -->
+                    <div id="host-player-list"
+                        class="flex-1 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 content-start overflow-y-auto custom-scroll pb-32 pr-2">
+                        <!-- Players injected here -->
+                    </div>
+
+                    <!-- Start Button Overlay -->
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/90 via-black/70 to-transparent flex justify-end pointer-events-none">
+                        <button onclick="app.startHostGame()" id="btn-start-game" disabled
+                            class="pointer-events-auto bg-gradient-to-r from-red-600 to-red-800 text-amber-100 text-2xl font-black py-4 px-12 rounded-full shadow-[0_0_30px_rgba(220,20,60,0.5)] transition-all transform hover:scale-105 hover:shadow-[0_0_50px_rgba(220,20,60,0.7)] disabled:opacity-50 disabled:scale-100 disabled:cursor-not-allowed flex items-center gap-3 border-4 border-red-500/50">
+                            EMPEZAR <span class="text-xl">➔</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCREEN: HOST GAME -->
+        <div id="screen-host-game"
+            class="hidden-screen h-screen flex flex-col p-6 transition-colors duration-500 fade-in bg-amber-50 text-slate-800">
+            <!-- Header -->
+            <div class="flex justify-between items-center mb-8 z-content pt-10">
+                <div class="flex items-center gap-2">
+                    <div id="host-q-counter"
+                        class="bg-white px-6 py-3 rounded-2xl shadow-sm border border-gray-100 font-bold text-xl text-gray-500">
+                        1 / 35
+                    </div>
+                    <div id="host-type-badge"></div>
+                </div>
+                <div class="relative flex items-center justify-center">
+                    <div id="host-timer"
+                        class="text-6xl font-black font-mono tabular-nums text-slate-800 transition-all drop-shadow-sm">
+                        20</div>
+                </div>
+                <div
+                    class="bg-white px-6 py-3 rounded-2xl shadow-sm border border-gray-100 font-mono text-xl font-bold text-gray-500">
+                    Pin: <span id="host-game-pin-small"></span>
+                </div>
+            </div>
+
+            <!-- Question Card -->
+            <div class="flex-1 flex items-center justify-center mb-10 z-content">
+                <div id="host-q-card"
+                    class="bg-white/95 p-16 rounded-[3rem] shadow-2xl text-center max-w-6xl w-full border-4 border-red-100 relative overflow-hidden">
+                    <div id="host-q-bar"
+                        class="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-red-500 via-green-500 to-red-500">
+                    </div>
+                    <h2 id="host-q-text" class="text-5xl md:text-6xl font-black leading-tight text-slate-900"
+                        style="font-family: serif;">Cargando...</h2>
+                </div>
+            </div>
+
+            <!-- Options Grid (Listed) -->
+            <div id="host-options-grid"
+                class="flex flex-col gap-3 h-auto pb-4 opacity-0 transition-opacity duration-500 z-content max-w-5xl mx-auto w-full">
+            </div>
+
+            <div id="host-preview-msg" class="fixed bottom-12 left-0 w-full text-center pointer-events-none z-content">
+                <div
+                    class="inline-block bg-white/95 backdrop-blur px-10 py-5 rounded-full shadow-xl border-2 border-red-200">
+                    <p id="host-preview-text" class="text-4xl font-black animate-pulse text-red-800"
+                        style="font-family: serif;">¡Atención!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCREEN: HOST LEADERBOARD -->
+        <div id="screen-host-leaderboard" class="hidden-screen h-screen text-white flex flex-col p-8 fade-in pt-16">
+            <h2 class="text-6xl font-black text-center mb-12 tracking-tighter text-amber-100 drop-shadow-[0_4px_10px_rgba(180,0,0,0.5)]"
+                style="font-family: serif; text-shadow: 2px 2px 0 #8b0000;">CLASIFICACIÓN</h2>
+            <div id="host-leaderboard-list"
+                class="flex-1 max-w-5xl w-full mx-auto space-y-4 overflow-y-auto pr-2 custom-scroll z-content"></div>
+            <div class="flex justify-end mt-8 z-content">
+                <button onclick="app.nextQuestion()"
+                    class="bg-gradient-to-r from-amber-100 to-amber-200 text-red-900 hover:from-white hover:to-amber-100 font-bold py-5 px-10 rounded-full shadow-[0_0_25px_rgba(255,215,0,0.4)] text-2xl flex items-center transition-all hover:-translate-y-1 border-4 border-amber-300">
+                    Siguiente Pregunta <span class="ml-3">➔</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- SCREEN: HOST FINISHED -->
+        <div id="screen-host-finished"
+            class="hidden-screen h-screen text-white flex flex-col items-center justify-center p-4 fade-in">
+            <div class="relative z-content">
+                <div
+                    class="absolute -top-24 left-1/2 transform -translate-x-1/2 animate-bounce text-amber-300 drop-shadow-[0_0_20px_rgba(255,215,0,0.8)]">
+                    <script>document.write(ICONS.crown)</script>
+                </div>
+                <h1 class="text-8xl font-black mb-12 text-amber-100 tracking-tighter mt-10"
+                    style="font-family: serif; text-shadow: 3px 3px 0 #8b0000;">¡GANADOR!</h1>
+            </div>
+            <div
+                class="z-content bg-gradient-to-b from-red-700 to-red-900 text-white px-20 py-12 rounded-[3rem] shadow-2xl mb-12 transform scale-110 rotate-1 border-8 border-amber-300 ring-4 ring-red-900/50">
+                <div class="flex flex-col items-center">
+                    <div id="winner-avatar" class="text-9xl mb-4 filter drop-shadow-lg">😎</div>
+                    <span id="winner-name" class="text-7xl font-black block mb-2 text-center text-amber-100"
+                        style="font-family: serif;">Nombre</span>
+                </div>
+            </div>
+            <div id="winner-score"
+                class="z-content text-6xl font-black text-red-900 mb-16 bg-amber-100 px-12 py-6 rounded-full shadow-xl border-4 border-red-800">
+                0 Puntos</div>
+            <button onclick="window.location.reload()"
+                class="z-content bg-black/40 border-2 border-amber-500/50 hover:bg-red-900/50 text-amber-100 font-bold py-5 px-12 rounded-full transition-all text-2xl shadow-lg hover:shadow-amber-500/30">Jugar
+                otra vez</button>
+        </div>
+
+        <!-- SCREEN: PLAYER LOGIN -->
+        <div id="screen-player-login"
+            class="hidden-screen h-screen flex flex-col items-center justify-center p-6 text-slate-900 fade-in pt-20">
+            <div
+                class="bg-white p-5 rounded-3xl shadow-lg mb-6 border-4 border-red-200 text-red-600 z-content transform rotate-2">
+                <script>document.write(ICONS.smartphone)</script>
+            </div>
+            <h1 class="text-5xl font-black mb-4 tracking-tight text-amber-100 drop-shadow-md z-content"
+                style="font-family: serif;">Entrar al Quiz</h1>
+            <div
+                class="mb-10 flex items-center gap-2 bg-red-800/60 px-6 py-2 rounded-full border border-red-400/30 z-content">
+                <span class="text-xl">🎄</span>
+                <p class="text-amber-100 font-bold text-lg">Xmas Edition</p>
+            </div>
+
+            <div class="w-full max-w-sm space-y-5 z-content">
+                <input type="number" id="player-input-pin"
+                    class="w-full p-6 text-center text-3xl bg-white/95 rounded-2xl border-4 border-red-200 focus:border-green-500 outline-none transition-colors font-bold text-slate-800 placeholder-slate-400 shadow-md"
+                    placeholder="PIN de Juego" />
+                <input type="text" id="player-input-name"
+                    class="w-full p-6 text-center text-2xl bg-white/95 rounded-2xl border-4 border-red-200 focus:border-green-500 outline-none transition-colors font-bold text-slate-800 placeholder-slate-400 shadow-md"
+                    placeholder="Tu Apodo" maxlength="12" />
+                <p id="player-login-error"
+                    class="text-red-300 bg-red-900/80 px-4 py-2 rounded-lg text-center font-bold hidden"></p>
+                <button onclick="app.goToAvatar()"
+                    class="w-full bg-gradient-to-r from-green-600 to-green-800 text-white font-black py-6 rounded-2xl text-2xl hover:from-green-500 hover:to-green-700 transition-all shadow-lg border-b-4 border-green-900 active:border-b-0 active:translate-y-1">SIGUIENTE</button>
+            </div>
+        </div>
+
+        <!-- SCREEN: PLAYER AVATAR -->
+        <div id="screen-player-avatar"
+            class="hidden-screen h-screen flex flex-col items-center justify-center p-6 text-slate-900 fade-in pt-20">
+            <h2 class="text-3xl font-bold mb-8 text-amber-100 z-content" style="font-family: serif;">Crea tu Avatar
+                Festivo</h2>
+            <div id="avatar-preview-container"
+                class="z-content w-48 h-48 rounded-full flex items-center justify-center text-8xl shadow-[0_0_30px_rgba(255,255,255,0.3)] border-8 border-white mb-10 transition-colors duration-300 bg-red-600">
+                <span id="avatar-preview-emoji" class="filter drop-shadow-md">😎</span>
+            </div>
+            <div class="w-full max-w-xs mb-8 z-content">
+                <p class="text-sm font-bold text-amber-200 uppercase tracking-wider mb-3 text-center">Elige tu cara</p>
+                <div id="emoji-picker-container"
+                    class="grid grid-cols-5 gap-2 max-h-48 overflow-y-scroll w-full max-w-xs mb-8 z-content bg-black/30 p-4 rounded-xl custom-scroll border border-white/20 shadow-inner">
+                </div>
+            </div>
+            <div class="w-full max-w-xs mb-12 z-content">
+                <p class="text-sm font-bold text-amber-200 uppercase tracking-wider mb-3 text-center">Elige tu color</p>
+                <div class="flex justify-center gap-4" id="color-picker"></div>
+            </div>
+            <button onclick="app.confirmJoin()"
+                class="z-content w-full max-w-sm bg-gradient-to-r from-green-500 to-emerald-600 text-white font-black py-6 rounded-2xl text-2xl hover:from-green-400 hover:to-emerald-500 transition-all shadow-[0_0_25px_rgba(34,197,94,0.5)] border-b-4 border-green-800 active:border-b-0 active:translate-y-1">¡LISTO
+                PARA JUGAR!</button>
+        </div>
+
+        <!-- SCREEN: PLAYER LOBBY -->
+        <div id="screen-player-lobby"
+            class="hidden-screen h-screen flex flex-col items-center justify-center p-6 text-white text-center fade-in pt-20">
+            <div class="mb-8 animate-bounce text-green-400 drop-shadow-[0_0_15px_rgba(74,222,128,0.8)] z-content">
+                <div class="bg-white/10 p-4 rounded-full border-4 border-green-400">
+                    <script>document.write(ICONS.check)</script>
+                </div>
+            </div>
+            <h2 class="text-5xl font-black mb-4 text-amber-100 z-content" style="font-family: serif;">¡Estás dentro!
+            </h2>
+            <p class="text-2xl text-amber-200/80 mb-12 z-content font-medium">Mira la pantalla principal</p>
+
+            <div
+                class="relative bg-gradient-to-b from-red-900/50 to-black/50 p-8 rounded-[3rem] backdrop-blur-md border-2 border-red-400/30 flex flex-col items-center w-72 shadow-2xl z-content transform hover:scale-105 transition-transform">
+                <button onclick="app.editAvatar()"
+                    class="absolute top-4 right-4 p-3 bg-black/30 rounded-full hover:bg-white/20 transition-colors border border-white/30"
+                    title="Editar Avatar">
+                    <script>document.write(ICONS.pencil)</script>
+                </button>
+
+                <div id="player-lobby-avatar"
+                    class="w-32 h-32 rounded-full flex items-center justify-center text-7xl shadow-lg border-4 border-white mb-6">
+                    😎</div>
+                <p id="player-lobby-name" class="font-black text-3xl truncate w-full text-amber-100"
+                    style="font-family: serif;">Nombre</p>
+                <div
+                    class="mt-4 bg-red-800/50 px-4 py-1 rounded-full text-sm font-bold text-red-200 border border-red-500/30">
+                    Jugador</div>
+            </div>
+        </div>
+
+        <!-- SCREEN: PLAYER PREVIEW -->
+        <div id="screen-player-preview"
+            class="hidden-screen h-screen bg-red-800 flex flex-col items-center justify-center p-6 text-white text-center fade-in pt-20">
+            <h2 class="text-4xl font-bold mb-10 text-amber-100 z-content" style="font-family: serif;">¡Atento!</h2>
+            <div
+                class="w-40 h-40 bg-red-900/50 rounded-full flex items-center justify-center mb-10 animate-pulse border-4 border-red-400/50 shadow-[0_0_30px_rgba(255,0,0,0.4)] z-content">
+                <span class="text-8xl font-black text-amber-100">?</span>
+            </div>
+            <p class="text-2xl font-bold text-amber-200 z-content">Pregunta en pantalla...</p>
+        </div>
+
+        <!-- SCREEN: PLAYER WAIT -->
+        <div id="screen-player-wait"
+            class="hidden-screen h-screen bg-red-800 flex flex-col items-center justify-center p-6 text-white text-center fade-in pt-20">
+            <div class="text-amber-100 mb-6 scale-150 z-content drop-shadow-md">
+                <script>document.write(ICONS.loader)</script>
+            </div>
+            <p class="text-3xl font-bold text-amber-100 z-content" style="font-family: serif;">Esperando...</p>
+        </div>
+
+        <!-- SCREEN: PLAYER GAME -->
+        <div id="screen-player-game"
+            class="hidden-screen h-screen bg-amber-50 p-4 grid grid-cols-2 grid-rows-2 gap-4 fade-in pt-16">
+            <button onclick="app.submitAnswer(0)"
+                class="z-content bg-red-600 rounded-3xl shadow-xl active:scale-95 transition-all flex items-center justify-center border-b-8 border-red-800 active:border-b-0 active:mt-2 hover:bg-red-500">
+                <span class="text-8xl text-white drop-shadow-lg">▲</span>
+            </button>
+            <button onclick="app.submitAnswer(1)"
+                class="z-content bg-blue-600 rounded-3xl shadow-xl active:scale-95 transition-all flex items-center justify-center border-b-8 border-blue-800 active:border-b-0 active:mt-2 hover:bg-blue-500">
+                <span class="text-8xl text-white drop-shadow-lg">◆</span>
+            </button>
+            <button onclick="app.submitAnswer(2)"
+                class="z-content bg-purple-600 rounded-3xl shadow-xl active:scale-95 transition-all flex items-center justify-center border-b-8 border-purple-800 active:border-b-0 active:mt-2 hover:bg-purple-500">
+                <span class="text-8xl text-white drop-shadow-lg">●</span>
+            </button>
+            <button onclick="app.submitAnswer(3)"
+                class="z-content bg-green-600 rounded-3xl shadow-xl active:scale-95 transition-all flex items-center justify-center border-b-8 border-green-800 active:border-b-0 active:mt-2 hover:bg-green-500">
+                <span class="text-8xl text-white drop-shadow-lg">■</span>
+            </button>
+        </div>
+
+        <!-- SCREEN: PLAYER ANSWERED -->
+        <div id="screen-player-answered"
+            class="hidden-screen h-screen bg-slate-900 flex flex-col items-center justify-center p-6 text-white text-center fade-in pt-20">
+            <div
+                class="bg-green-500 w-32 h-32 rounded-full flex items-center justify-center mb-8 shadow-[0_0_40px_rgba(34,197,94,0.6)] animate-pulse border-4 border-green-300 z-content">
+                <div class="scale-150">
+                    <script>document.write(ICONS.check)</script>
+                </div>
+            </div>
+            <h2 class="text-4xl font-bold text-amber-100 z-content" style="font-family: serif;">¡Respondido!</h2>
+            <p class="text-xl text-green-300 mt-4 z-content">Espera el resultado...</p>
+        </div>
+
+        <!-- SCREEN: PLAYER RESULT -->
+        <div id="screen-player-result"
+            class="hidden-screen h-screen flex flex-col items-center justify-center p-6 text-white text-center fade-in pt-20">
+            <div class="mb-8 animate-bounce z-content scale-150 drop-shadow-lg">
+                <div id="player-result-icon"></div>
+            </div>
+            <h2 id="player-result-text" class="text-6xl font-black tracking-tighter z-content text-amber-100"
+                style="font-family: serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"></h2>
+        </div>
+
+        <!-- SCREEN: PLAYER LEADERBOARD -->
+        <div id="screen-player-leaderboard"
+            class="hidden-screen h-screen flex flex-col items-center justify-center p-6 text-white text-center transition-colors duration-500 bg-slate-900 fade-in pt-20">
+            <div
+                class="bg-black/40 p-10 rounded-[3rem] w-full max-w-md backdrop-blur-md shadow-2xl border-2 border-white/10 z-content relative overflow-hidden">
+                <!-- Decorative shine -->
+                <div
+                    class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent pointer-events-none">
+                </div>
+
+                <div class="text-xl font-bold mb-4 uppercase tracking-wider text-amber-200/80">Tu posición</div>
+                <div id="player-rank"
+                    class="text-8xl font-black mb-10 text-amber-100 drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]"
+                    style="font-family: serif;">?º</div>
+
+                <div class="bg-black/30 rounded-3xl p-8 mb-8 border border-white/10 shadow-inner">
+                    <div class="text-sm font-bold text-amber-200/80 uppercase mb-2 tracking-wider">Puntos Totales</div>
+                    <div id="player-score" class="text-5xl font-black text-amber-100 tabular-nums">0</div>
+                </div>
+
+                <div id="player-feedback-positive" class="hidden">
+                    <div
+                        class="animate-bounce bg-gradient-to-r from-green-500 to-emerald-600 text-white py-4 px-8 rounded-2xl shadow-[0_0_25px_rgba(34,197,94,0.6)] inline-block border-2 border-green-300">
+                        <div id="player-points-gained" class="text-4xl font-black">+ 0</div>
+                    </div>
+                </div>
+                <div id="player-feedback-negative" class="hidden opacity-60">
+                    <div class="text-2xl font-bold text-red-300">Sin puntos extra</div>
+                </div>
+            </div>
+            <button id="player-btn-exit" onclick="window.location.reload()"
+                class="hidden mt-10 z-content bg-red-800/80 text-amber-100 px-10 py-5 rounded-2xl font-bold shadow-lg border-2 border-red-600/50 hover:bg-red-700 transition-colors text-xl">Salir</button>
+        </div>
+
+    </div>
+
+    <!-- MAIN LOGIC -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getDatabase, ref, set, get, update, onValue } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+        const firebaseConfig = { databaseURL: "https://party-e2086-default-rtdb.europe-west1.firebasedatabase.app/" };
+        const appFirebase = initializeApp(firebaseConfig);
+        const db = getDatabase(appFirebase);
+
+        const AUDIO_URLS = {
+            bgm1: 'https://logise1.github.io/quiznight/bgm1.mp3',
+            bgm2: 'https://logise1.github.io/quiznight/bgm2.mp3',
+            gong: 'https://logise1.github.io/quiznight/gong.mp3'
+        };
+
+        const state = {
+            userId: localStorage.getItem('fq_uid') || 'user_' + Math.random().toString(36).substr(2, 9),
+            mode: null, gameId: null, players: {}, questions: [], currentQIndex: 0,
+            soundEnabled: true, isHost: false, hostTimer: null, roundDuration: 20,
+            avatarEmojiIndex: 0, avatarColorIndex: 1, playerName: '', joined: false
+        };
+        localStorage.setItem('fq_uid', state.userId);
+
+        const AVATAR_EMOJIS = ['😎', '👻', '🤠', '👽', '🤖', '💩', '🦄', '🐱', '🐶', '🦊', '🦁', '🐼', '🐯', '🐷', '🐸', '🐙', '💀', '🤡', '🎅', '🤶', '🧝', '🦌', '☃️', '❄️', '🐲', '🐹', '🐻', '🐨', '🐯', '🦁', '🐮', '🐷', '🐸', '🐵', '🐔', '🐧', '🐦', '🐤', '🐺', '🐗', '🐴', '🐝', '🐛', '🦋', '🐌', '🐞', '🐜', '🦟', '🦗', '🕷', '🕸', '🐢', '🐍', '🦎', '🦖', '🦕'];
+        // Xmas colors for avatars
+        const AVATAR_COLORS = ['bg-red-600', 'bg-green-600', 'bg-blue-600', 'bg-purple-600', 'bg-yellow-500', 'bg-pink-600', 'bg-indigo-600', 'bg-teal-500', 'bg-cyan-600', 'bg-orange-500', 'bg-lime-600', 'bg-fuchsia-600', 'bg-rose-500', 'bg-emerald-500', 'bg-violet-600', 'bg-amber-600'];
+
+        const audio = { bgm1: new Audio(AUDIO_URLS.bgm1), bgm2: new Audio(AUDIO_URLS.bgm2), gong: new Audio(AUDIO_URLS.gong) };
+        audio.bgm1.loop = true; audio.bgm2.loop = true;
+
+        const stopAllAudio = () => { Object.values(audio).forEach(a => { a.pause(); a.currentTime = 0; }); };
+        const playTrack = (track) => {
+            if (!state.soundEnabled) return;
+            if (track !== 'gong' && !audio[track].paused) return;
+            if (track === 'bgm1') { audio.bgm2.pause(); audio.gong.pause(); }
+            if (track === 'bgm2') { audio.bgm1.pause(); audio.gong.pause(); }
+            if (track === 'gong') { audio.bgm1.pause(); audio.bgm2.pause(); }
+            audio[track].volume = track === 'gong' ? 1.0 : 0.5;
+            audio[track].play().catch(e => console.log("Audio", e));
+        };
+
+        window.addEventListener('beforeunload', (e) => { if (state.mode) { e.preventDefault(); e.returnValue = 'Salir?'; return 'Salir?'; } });
+        window.onload = () => {
+            const pin = new URLSearchParams(window.location.search).get('pin');
+            if (pin) { app.selectMode('player'); document.getElementById('player-input-pin').value = pin; }
+        };
+
+        const showScreen = (id) => {
+            document.querySelectorAll('[id^="screen-"]').forEach(el => el.classList.add('hidden-screen'));
+            document.getElementById(id).classList.remove('hidden-screen');
+        };
+        const updateSoundIcon = () => document.getElementById('btn-sound').innerHTML = state.soundEnabled ? ICONS.volume2 : ICONS.volumeX;
+
+        window.app = {
+            selectMode: (mode) => { state.mode = mode; if (mode === 'host') initHost(); else initPlayer(); },
+            toggleSound: () => { state.soundEnabled = !state.soundEnabled; updateSoundIcon(); if (!state.soundEnabled) stopAllAudio(); },
+            toggleFullscreen: () => {
+                try {
+                    const elem = document.documentElement;
+                    if (elem.requestFullscreen) elem.requestFullscreen().catch(() => { });
+                    else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
+                    else if (elem.msRequestFullscreen) elem.msRequestFullscreen();
+                } catch (e) { }
+            },
+            startHostGame: async () => { await update(ref(db, `games/${state.gameId}`), { status: 'preview', currentQuestion: 0 }); runQuestionSequence(0); },
+            nextQuestion: async () => {
+                if (state.currentQIndex + 1 < state.questions.length) {
+                    const nextIdx = state.currentQIndex + 1; state.currentQIndex = nextIdx;
+                    await update(ref(db, `games/${state.gameId}`), { currentQuestion: nextIdx }); runQuestionSequence(nextIdx);
+                } else { await update(ref(db, `games/${state.gameId}`), { status: 'finished' }); }
+            },
+            goToAvatar: async () => {
+                const pin = document.getElementById('player-input-pin').value;
+                const name = document.getElementById('player-input-name').value;
+                if (!pin || !name) return document.getElementById('player-login-error').classList.remove('hidden');
+
+                // Safe Fullscreen
+                app.toggleFullscreen();
+
+                try {
+                    if (!(await get(ref(db, `games/${pin}`))).exists()) throw new Error();
+                    state.gameId = pin; state.playerName = name;
+                    renderColorPicker(); renderEmojiPicker(); updateAvatarPreview(); showScreen('screen-player-avatar');
+                } catch (e) {
+                    const errEl = document.getElementById('player-login-error');
+                    errEl.textContent = "Sala no encontrada o error";
+                    errEl.classList.remove('hidden');
+                }
+            },
+            selectEmoji: (i) => { state.avatarEmojiIndex = i; updateAvatarPreview(); },
+            selectColor: (i) => { state.avatarColorIndex = i; updateAvatarPreview(); },
+            confirmJoin: async () => {
+                const avatarData = { emoji: AVATAR_EMOJIS[state.avatarEmojiIndex], color: AVATAR_COLORS[state.avatarColorIndex] };
+                const payload = { name: state.playerName, avatar: avatarData };
+                if (!state.joined) { payload.score = 0; payload.lastRoundPoints = 0; payload.currentAnswer = null; }
+                await update(ref(db, `games/${state.gameId}/players/${state.userId}`), payload);
+                state.joined = true; setupPlayerListener();
+            },
+            editAvatar: () => showScreen('screen-player-avatar'),
+            submitAnswer: async (idx) => {
+                await update(ref(db, `games/${state.gameId}/players/${state.userId}`), { currentAnswer: idx, answerTimestamp: Date.now() });
+                showScreen('screen-player-answered');
+            }
+        };
+
+        function updateAvatarPreview() {
+            const c = document.getElementById('avatar-preview-container');
+            // Add xmas border and shadow
+            c.className = `w-48 h-48 rounded-full flex items-center justify-center text-8xl shadow-[0_0_30px_rgba(255,255,255,0.3)] border-8 border-white mb-10 transition-colors duration-300 ${AVATAR_COLORS[state.avatarColorIndex]}`;
+            document.getElementById('avatar-preview-emoji').textContent = AVATAR_EMOJIS[state.avatarEmojiIndex];
+        }
+        function renderColorPicker() {
+            document.getElementById('color-picker').innerHTML = AVATAR_COLORS.map((c, i) => `<button onclick="app.selectColor(${i})" class="w-12 h-12 rounded-full ${c} border-4 border-white/50 shadow-md hover:scale-110 transition-transform hover:border-white"></button>`).join('');
+        }
+        function renderEmojiPicker() {
+            document.getElementById('emoji-picker-container').innerHTML = AVATAR_EMOJIS.map((e, i) => `<button onclick="app.selectEmoji(${i})" class="text-3xl p-2 hover:bg-white/20 rounded-lg transition-colors cursor-pointer">${e}</button>`).join('');
+        }
+
+        async function initHost() {
+            app.toggleFullscreen();
+            try {
+                const res = await fetch('https://logise1.github.io/quiznight/q.json');
+                const data = await res.json();
+                const balas = data.filter(q => q.type === 'bala').sort(() => 0.5 - Math.random()).slice(0, 6);
+                const culturas = data.filter(q => !q.type || q.type === 'cultura').sort(() => 0.5 - Math.random()).slice(0, 15);
+                const refranes = data.filter(q => q.type === 'refran').sort(() => 0.5 - Math.random()).slice(0, 7);
+                const logicas = data.filter(q => q.type === 'logica').sort(() => 0.5 - Math.random()).slice(0, 7);
+
+                let mixedQuestions = [...balas, ...culturas, ...logicas, ...refranes].sort(() => 0.5 - Math.random());
+
+                // Mezclar respuestas de cada pregunta
+                state.questions = mixedQuestions.map(q => {
+                    const correctText = q.options[q.correct];
+                    const newOptions = [...q.options].sort(() => 0.5 - Math.random());
+                    const newCorrectIndex = newOptions.indexOf(correctText);
+                    return { ...q, options: newOptions, correct: newCorrectIndex };
+                });
+
+            } catch (e) { state.questions = [{ question: "Error", options: ["A", "B", "C", "D"], correct: 0, type: "bala" }]; }
+
+            const id = Math.floor(1000 + Math.random() * 9000).toString();
+            state.gameId = id; state.isHost = true;
+            await set(ref(db, `games/${id}`), { hostId: state.userId, status: 'lobby', currentQuestion: 0, players: {}, startTime: null, optionsVisible: false });
+
+            document.getElementById('host-game-id').textContent = id;
+            updateSoundIcon(); playTrack('bgm2'); showScreen('screen-host-lobby');
+            new QRCode(document.getElementById('qrcode'), { text: window.location.href.split('?')[0] + '?pin=' + id, width: 150, height: 150, colorDark: "#000000", colorLight: "#ffffff", correctLevel: QRCode.CorrectLevel.H });
+            onValue(ref(db, `games/${id}`), (snap) => { if (snap.val()) { state.players = snap.val().players || {}; updateHostUI(snap.val()); } });
+        }
+
+        function updateHostUI(data) {
+            if (data.status === 'lobby') {
+                const pList = Object.values(state.players);
+                document.getElementById('host-player-count').textContent = pList.length;
+                document.getElementById('btn-start-game').disabled = pList.length === 0;
+                document.getElementById('host-player-list').innerHTML = pList.map(p => {
+                    const a = p.avatar || { emoji: '😀', color: 'bg-gray-400' };
+                    // Player card styled for Xmas
+                    return `<div class="player-card flex flex-col items-center w-full mb-4"><div class="w-28 h-28 rounded-full flex items-center justify-center text-6xl shadow-[0_0_20px_rgba(255,255,255,0.3)] border-4 border-white mb-3 ${a.color} transform transition-transform hover:scale-110 relative"><span class="filter drop-shadow-md">${a.emoji}</span></div><div class="bg-black/60 backdrop-blur text-amber-100 px-4 py-2 rounded-xl text-lg font-black truncate w-full text-center border border-red-500/30 shadow-lg max-w-[140px]" style="font-family: serif;">${p.name}</div></div>`;
+                }).join('');
+            } else if (data.status === 'leaderboard') renderLeaderboard(data.players);
+            else if (data.status === 'finished') renderFinished(data.players);
+            else if (data.status === 'question') {
+                if (data.optionsVisible) {
+                    renderHostQuestion(state.currentQIndex, true);
+                    showScreen('screen-host-game');
+                    const pIds = Object.keys(state.players);
+                    if (pIds.length > 0 && pIds.every(pid => state.players[pid].currentAnswer != null)) {
+                        if (state.hostTimer) clearInterval(state.hostTimer); calculateScores();
+                    }
+                }
+            } else if (data.status === 'reveal') {
+                renderHostQuestion(state.currentQIndex, true);
+                Array.from(document.getElementById('host-options-grid').children).forEach((el, idx) => {
+                    if (idx !== state.questions[state.currentQIndex].correct) el.classList.add('opacity-40', 'scale-95'); else el.classList.add('ring-8', 'ring-green-500', 'scale-105', 'shadow-[0_0_30px_rgba(34,197,94,0.8)]');
+                });
+                showScreen('screen-host-game');
+            }
+            if (data.status === 'preview') { const isEven = state.currentQIndex % 2 === 0; if (!isEven) playTrack('bgm2'); }
+            else if (data.status === 'question') { const isEven = state.currentQIndex % 2 === 0; if (isEven) playTrack('bgm1'); }
+            else if (data.status === 'leaderboard' || data.status === 'finished') playTrack('gong');
+        }
+
+        function runQuestionSequence(idx) {
+            stopAllAudio();
+            update(ref(db, `games/${state.gameId}`), { status: 'preview', optionsVisible: false });
+            renderHostQuestion(idx, false);
+            showScreen('screen-host-game');
+            let countdown = 5;
+            document.getElementById('host-timer').textContent = countdown;
+            if (state.hostTimer) clearInterval(state.hostTimer);
+            state.hostTimer = setInterval(() => {
+                countdown--; document.getElementById('host-timer').textContent = countdown;
+                if (countdown <= 0) { clearInterval(state.hostTimer); startAnsweringPhase(idx); }
+            }, 1000);
+        }
+
+        async function startAnsweringPhase(idx) {
+            const q = state.questions[idx];
+            let finalQ = { ...q };
+            const isBala = q.type === 'bala';
+            const isLogica = q.type === 'logica';
+            const isRefran = q.type === 'refran';
+            state.roundDuration = isBala ? 10 : (isLogica || isRefran ? 25 : 20);
+
+            await update(ref(db, `games/${state.gameId}`), { status: 'question', optionsVisible: true, questionStartTime: Date.now(), roundDuration: state.roundDuration, dynamicQ: finalQ });
+
+            renderHostQuestion(idx, true);
+            let countdown = state.roundDuration;
+            document.getElementById('host-timer').textContent = countdown;
+            if (state.hostTimer) clearInterval(state.hostTimer);
+            state.hostTimer = setInterval(() => {
+                countdown--;
+                document.getElementById('host-timer').textContent = countdown;
+                if (countdown <= 5) document.getElementById('host-timer').classList.add('text-red-600', 'scale-110', 'drop-shadow-[0_0_10px_rgba(220,20,60,0.8)]');
+                if (countdown <= 0) { clearInterval(state.hostTimer); calculateScores(); }
+            }, 1000);
+        }
+
+        function renderHostQuestion(idx, showOptions) {
+            const q = state.questions[idx];
+            const isBala = q.type === 'bala';
+            const isLogica = q.type === 'logica';
+            const isRefran = q.type === 'refran';
+            const screen = document.getElementById('screen-host-game');
+            const qBar = document.getElementById('host-q-bar');
+            const badge = document.getElementById('host-type-badge');
+
+            // Theme the host screen background based on question type
+            screen.className = `h-screen flex flex-col p-6 transition-colors duration-500 fade-in text-slate-800 ${isBala ? 'bg-red-100' : (isLogica ? 'bg-purple-100' : (isRefran ? 'bg-orange-100' : 'bg-blue-100'))}`;
+            qBar.className = `absolute top-0 left-0 w-full h-3 bg-gradient-to-r ${isBala ? 'from-red-600 to-orange-600' : (isLogica ? 'from-purple-600 to-pink-600' : (isRefran ? 'from-orange-600 to-yellow-600' : 'from-blue-600 to-cyan-600'))}`;
+
+            if (isBala) badge.innerHTML = `<div class="bg-red-600 text-white px-6 py-3 rounded-2xl shadow-md font-black text-xl flex items-center animate-pulse">${ICONS.zap} BALA</div>`;
+            else if (isLogica) badge.innerHTML = `<div class="bg-purple-600 text-white px-6 py-3 rounded-2xl shadow-md font-bold text-xl flex items-center">${ICONS.bulb} LÓGICA</div>`;
+            else if (isRefran) badge.innerHTML = `<div class="bg-orange-600 text-white px-6 py-3 rounded-2xl shadow-md font-bold text-xl flex items-center">${ICONS.quote} REFRÁN</div>`;
+            else badge.innerHTML = `<div class="bg-blue-600 text-white px-6 py-3 rounded-2xl shadow-md font-bold text-xl flex items-center">${ICONS.brain} CULTURA</div>`;
+
+            document.getElementById('host-q-counter').textContent = `${idx + 1} / ${state.questions.length}`;
+            document.getElementById('host-game-pin-small').textContent = state.gameId;
+            document.getElementById('host-q-text').textContent = q.question;
+
+            const grid = document.getElementById('host-options-grid');
+            const previewMsg = document.getElementById('host-preview-msg');
+
+            if (showOptions) {
+                const colors = ['bg-red-600', 'bg-blue-600', 'bg-purple-600', 'bg-green-600'];
+                const hoverColors = ['hover:bg-red-500', 'hover:bg-blue-500', 'hover:bg-purple-500', 'hover:bg-green-500'];
+                const shapes = ['▲', '◆', '●', '■'];
+                grid.innerHTML = q.options.map((opt, i) => `
+                    <div class="${colors[i]} ${hoverColors[i]} rounded-2xl flex items-center p-4 shadow-xl transition-all duration-300 transform hover:scale-[1.01] border-b-4 border-black/20 w-full">
+                        <div class="bg-black/20 w-16 h-16 rounded-xl flex items-center justify-center text-3xl mr-6 text-white font-black shadow-inner flex-shrink-0">${shapes[i]}</div>
+                        <span class="text-3xl font-bold text-white drop-shadow-md leading-tight text-left flex-1">${opt}</span>
+                    </div>
+                `).join('');
+                grid.classList.remove('opacity-0'); previewMsg.classList.add('hidden');
+            } else {
+                grid.classList.add('opacity-0'); previewMsg.classList.remove('hidden');
+                document.getElementById('host-preview-text').textContent = isBala ? "¡RÁPIDO!" : (isLogica ? "¡PIENSA!" : (isRefran ? "¡COMPLETA!" : "¡Lee la pregunta!"));
+            }
+        }
+
+        async function calculateScores() {
+            const gameSnap = await get(ref(db, `games/${state.gameId}`));
+            const data = gameSnap.val();
+            const currentQ = state.questions[state.currentQIndex];
+            const updatedPlayers = { ...data.players };
+            Object.keys(updatedPlayers).forEach(pid => {
+                const p = updatedPlayers[pid];
+                p.lastRoundPoints = 0;
+                p.lastTimeTaken = null; // Reset
+
+                if (p.currentAnswer === currentQ.correct) {
+                    const timeTaken = (p.answerTimestamp - data.questionStartTime) / 1000;
+                    const speedBonus = Math.max(0, Math.floor(500 * (1 - (timeTaken / state.roundDuration))));
+                    const points = 500 + speedBonus;
+                    p.score = (p.score || 0) + points;
+                    p.lastRoundPoints = points;
+                    p.lastTimeTaken = timeTaken.toFixed(2);
+                } else if (p.currentAnswer !== null && p.currentAnswer !== undefined && p.answerTimestamp) {
+                    const timeTaken = (p.answerTimestamp - data.questionStartTime) / 1000;
+                    p.lastTimeTaken = timeTaken.toFixed(2);
+                }
+                p.currentAnswer = null; p.answerTimestamp = null;
+            });
+
+            if (currentQ.type === 'bala') {
+                await update(ref(db, `games/${state.gameId}`), { players: updatedPlayers, status: 'leaderboard' });
+                renderLeaderboard(updatedPlayers); showScreen('screen-host-leaderboard');
+            } else {
+                await update(ref(db, `games/${state.gameId}`), { players: updatedPlayers, status: 'reveal' });
+                setTimeout(() => { update(ref(db, `games/${state.gameId}`), { status: 'leaderboard' }); }, 4000);
+            }
+        }
+
+        function renderLeaderboard(playersData) {
+            const sorted = Object.values(playersData).sort((a, b) => b.score - a.score);
+            document.getElementById('host-leaderboard-list').innerHTML = sorted.map((p, i) => {
+                const isCorrect = p.lastRoundPoints > 0;
+                // Xmas themed leaderboard cards
+                const cardBg = isCorrect ? 'bg-gradient-to-r from-green-800 to-emerald-900 border-green-500' : 'bg-gradient-to-r from-red-900 to-red-950 border-red-800';
+                const colors = ['bg-amber-400 text-red-900', 'bg-gray-300 text-gray-800', 'bg-orange-400 text-red-900', 'bg-red-800 text-red-200'];
+                const rankColor = i < 3 ? colors[i] : colors[3];
+                const gain = isCorrect ? `<div class="text-green-400 font-black flex items-center mt-1 text-2xl drop-shadow-[0_0_10px_rgba(34,197,94,0.8)]">¡+${Math.round(p.lastRoundPoints)}!</div>` : '';
+                const timeDisplay = p.lastTimeTaken ? `<span class="text-base font-mono text-amber-200/70 ml-3">⏱️ ${p.lastTimeTaken}s</span>` : `<span class="text-base font-mono text-amber-200/50 ml-3">--</span>`;
+                const a = p.avatar || { emoji: '🙂', color: 'bg-gray-400' };
+
+                return `
+                <div class="flex items-center ${cardBg} text-white p-5 rounded-[2rem] shadow-2xl border-4 transform transition-all hover:scale-[1.02] mb-4 relative overflow-hidden z-content">
+                    <div class="absolute top-0 left-0 w-full h-full bg-white/5 pointer-events-none"></div>
+                    <div class="w-16 h-16 flex items-center justify-center rounded-2xl font-black text-3xl mr-6 ${rankColor} shadow-lg border-2 border-white/20">${i + 1}</div>
+                    <div class="mr-6 w-20 h-20 rounded-full ${a.color} flex items-center justify-center text-5xl border-4 border-white/30 shadow-md relative"><span class="filter drop-shadow-md">${a.emoji}</span></div>
+                    <div class="flex-1">
+                        <div class="flex items-center">
+                            <div class="text-3xl font-black text-amber-100 mr-2" style="font-family: serif;">${p.name}</div>
+                            ${timeDisplay}
+                        </div>
+                        ${gain}
+                    </div>
+                    <div class="text-6xl font-black text-amber-100 tabular-nums drop-shadow-md" style="font-family: serif;">${Math.round(p.score)}</div>
+                </div>`;
+            }).join('');
+            if (state.isHost) showScreen('screen-host-leaderboard');
+        }
+
+        function renderFinished(playersData) {
+            const w = Object.values(playersData).sort((a, b) => b.score - a.score)[0];
+            const a = w?.avatar || { emoji: '😎', color: 'bg-white' };
+            document.getElementById('winner-name').textContent = w ? w.name : 'Nadie';
+            document.getElementById('winner-score').textContent = (w ? Math.round(w.score) : 0) + ' Puntos';
+            document.getElementById('winner-avatar').textContent = a.emoji;
+            showScreen('screen-host-finished');
+        }
+
+        function initPlayer() { showScreen('screen-player-login'); }
+        function setupPlayerListener() {
+            onValue(ref(db, `games/${state.gameId}`), (snap) => {
+                const data = snap.val();
+                if (!data || !data.players[state.userId]) return;
+                const myData = data.players[state.userId];
+
+                document.getElementById('player-score').textContent = Math.round(myData.score);
+                const gainEl = document.getElementById('player-points-gained');
+                const posFeed = document.getElementById('player-feedback-positive');
+                const negFeed = document.getElementById('player-feedback-negative');
+                const lbScreen = document.getElementById('screen-player-leaderboard');
+
+                if (myData.lastRoundPoints > 0) {
+                    gainEl.textContent = `+ ${Math.round(myData.lastRoundPoints)}`;
+                    posFeed.classList.remove('hidden'); negFeed.classList.add('hidden');
+                    lbScreen.classList.add('bg-gradient-to-b', 'from-green-800', 'to-emerald-900'); lbScreen.classList.remove('bg-slate-900');
+                } else {
+                    posFeed.classList.add('hidden'); negFeed.classList.remove('hidden');
+                    lbScreen.classList.remove('bg-gradient-to-b', 'from-green-800', 'to-emerald-900'); lbScreen.classList.add('bg-slate-900');
+                }
+
+                const rank = Object.values(data.players).sort((a, b) => b.score - a.score).findIndex(p => p.name === myData.name) + 1;
+                document.getElementById('player-rank').textContent = `${rank}º`;
+
+                if (data.status === 'lobby') {
+                    document.getElementById('player-lobby-name').textContent = myData.name;
+                    const a = myData.avatar || { emoji: '😎', color: 'bg-gray-400' };
+                    document.getElementById('player-lobby-avatar').textContent = a.emoji;
+                    // Xmas styled player lobby avatar
+                    document.getElementById('player-lobby-avatar').className = `w-36 h-36 rounded-full flex items-center justify-center text-7xl shadow-[0_0_30px_rgba(255,255,255,0.3)] border-8 border-white mb-6 ${a.color}`;
+                    showScreen('screen-player-lobby');
+                } else if (data.status === 'preview') showScreen('screen-player-preview');
+                else if (data.status === 'question') {
+                    if (data.optionsVisible) {
+                        if (myData.currentAnswer != null) showScreen('screen-player-answered');
+                        else showScreen('screen-player-game');
+                    } else showScreen('screen-player-wait');
+                } else if (data.status === 'reveal') {
+                    const resIcon = document.getElementById('player-result-icon');
+                    const resText = document.getElementById('player-result-text');
+                    const resScreen = document.getElementById('screen-player-result');
+                    if (myData.lastRoundPoints > 0) {
+                        resIcon.innerHTML = '<div class="bg-green-500 p-6 rounded-full border-8 border-green-300 shadow-[0_0_50px_rgba(34,197,94,0.8)]">' + ICONS.check + '</div>';
+                        resText.textContent = "¡CORRECTO!";
+                        resScreen.className = "h-screen flex flex-col items-center justify-center p-6 text-white text-center fade-in bg-gradient-to-b from-green-700 to-emerald-900";
+                    } else {
+                        resIcon.innerHTML = '<div class="bg-red-500 p-6 rounded-full border-8 border-red-300 shadow-[0_0_50px_rgba(239,68,68,0.8)]">' + ICONS.xcircle + '</div>';
+                        resText.textContent = "INCORRECTO";
+                        resScreen.className = "h-screen flex flex-col items-center justify-center p-6 text-white text-center fade-in bg-gradient-to-b from-red-800 to-red-950";
+                    }
+                    showScreen('screen-player-result');
+                } else if (data.status === 'leaderboard') showScreen('screen-player-leaderboard');
+                else if (data.status === 'finished') { showScreen('screen-player-leaderboard'); document.getElementById('player-btn-exit').classList.remove('hidden'); }
+            });
+        }
+    </script>
+</body>
+
+</html>
